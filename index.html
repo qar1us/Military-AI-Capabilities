@@ -54,7 +54,9 @@
             --land-data: #0d7377;
         }
 
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
+
 
         body {
             font-family: 'Montserrat', -apple-system, sans-serif;
@@ -64,9 +66,11 @@
             line-height: 1.7;
         }
 
+
         h1, h2, h3, h4, h5, h6, .header-font {
             font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
         }
+
 
         .container {
             max-width: 1800px;
@@ -74,12 +78,14 @@
             padding: 60px 50px;
         }
 
+
         header {
             text-align: center;
             margin-bottom: 40px;
             padding-bottom: 0;
             border-bottom: none;
         }
+
 
         .overline {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -91,6 +97,7 @@
             margin-bottom: 20px;
         }
 
+
         h1 {
             font-size: clamp(2.2rem, 4vw, 3.2rem);
             font-weight: 800;
@@ -99,6 +106,7 @@
             letter-spacing: -0.5px;
             line-height: 1.2;
         }
+
 
         .subtitle {
             font-size: 1.1rem;
@@ -109,6 +117,7 @@
             line-height: 1.6;
         }
 
+
         .line-decoration {
             display: flex;
             align-items: center;
@@ -117,8 +126,10 @@
             margin-top: 32px;
         }
 
+
         .line-decoration .line { width: 80px; height: 2px; background: var(--coral); }
         .line-decoration .dot { width: 8px; height: 8px; background: var(--coral); border-radius: 50%; }
+
 
         /* ===== MAP ===== */
         .map-container {
@@ -130,6 +141,7 @@
             margin-bottom: 40px;
         }
 
+
         .map-controls {
             position: absolute;
             top: 16px;
@@ -139,6 +151,7 @@
             gap: 8px;
             z-index: 10;
         }
+
 
         .map-control-btn {
             width: 36px;
@@ -157,10 +170,12 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
 
+
         .map-control-btn:hover {
             background: white;
             transform: scale(1.05);
         }
+
 
         .map-hint {
             position: absolute;
@@ -174,6 +189,7 @@
             z-index: 10;
         }
 
+
         #map-svg { 
             width: 100%; 
             height: 550px; 
@@ -181,13 +197,16 @@
             cursor: grab;
         }
 
+
         #map-svg:active {
             cursor: grabbing;
         }
 
+
         .ocean {
             fill: var(--ocean);
         }
+
 
         .country-path {
             fill: var(--land);
@@ -196,23 +215,28 @@
             transition: fill 0.3s ease;
         }
 
+
         .country-path.has-data { 
             fill: var(--land-data); 
             cursor: pointer; 
         }
 
+
         .country-path.has-data:hover { 
             fill: #10918f; 
         }
+
 
         .country-path.selected { 
             fill: rgba(240, 228, 210, 0.8) !important;
         }
 
+
         .country-path.disabled { 
             opacity: 0.5; 
             cursor: not-allowed; 
         }
+
 
         .country-path.alliance-member {
             fill: var(--teal) !important;
@@ -221,17 +245,20 @@
             cursor: pointer;
         }
 
+
         .country-path.alliance-member:hover {
             fill: #0d7a78 !important;
             stroke: #ffffff !important;
             stroke-width: 1px !important;
         }
 
+
         .graticule { 
             fill: none; 
             stroke: rgba(255,255,255,0.08); 
             stroke-width: 0.5; 
         }
+
 
         .tooltip {
             position: fixed;
@@ -247,9 +274,11 @@
             color: var(--text-light);
         }
 
+
         .tooltip.visible { opacity: 1; }
         .tooltip-title { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; }
         .tooltip-subtitle { font-size: 0.75rem; color: var(--text-muted); margin-top: 4px; }
+
 
         /* ===== TABS ===== */
         .view-tabs {
@@ -262,6 +291,7 @@
             display: inline-flex;
             box-shadow: 0 2px 8px rgba(26, 39, 68, 0.06);
         }
+
 
         .view-tab {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -276,11 +306,14 @@
             transition: all 0.2s;
         }
 
+
         .view-tab:hover { color: var(--navy); }
         .view-tab.active { background: var(--navy); color: white; }
 
+
         /* ===== COUNTRY CHIPS ===== */
         .country-selector { margin-bottom: 20px; }
+
 
         .country-selector-controls {
             display: flex;
@@ -290,11 +323,13 @@
             flex-wrap: wrap;
         }
 
+
         .country-search-wrapper {
             position: relative;
             width: 250px;
             flex-shrink: 0;
         }
+
 
         .country-search {
             width: 100%;
@@ -309,20 +344,24 @@
             transition: all 0.2s ease;
         }
 
+
         .country-search::placeholder {
             color: var(--text-muted);
             font-weight: 400;
         }
 
+
         .country-search:hover {
             border-color: #ccc;
         }
+
 
         .country-search:focus {
             outline: none;
             border-color: var(--teal);
             box-shadow: 0 0 0 2px rgba(42, 157, 143, 0.1);
         }
+
 
         .search-results-dropdown {
             position: absolute;
@@ -340,9 +379,11 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
+
         .search-results-dropdown.visible {
             display: block;
         }
+
 
         .search-result-item {
             padding: 10px 14px;
@@ -352,21 +393,26 @@
             transition: background 0.15s;
         }
 
+
         .search-result-item:hover {
             background: var(--cream);
         }
+
 
         .search-result-item:first-child {
             border-radius: 8px 8px 0 0;
         }
 
+
         .search-result-item:last-child {
             border-radius: 0 0 8px 8px;
         }
 
+
         .search-result-item:only-child {
             border-radius: 8px;
         }
+
 
         .search-message {
             position: absolute;
@@ -384,6 +430,7 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
+
         .search-message.visible {
             display: block;
         }
@@ -398,6 +445,7 @@
             }
         }
 
+
         .country-selector-label {
             font-family: 'Plus Jakarta Sans', sans-serif;
             font-size: 0.75rem;
@@ -411,12 +459,14 @@
             gap: 12px;
         }
 
+
         .selection-limit {
             font-weight: 500;
             font-size: 0.7rem;
             color: var(--coral);
             letter-spacing: 1px;
         }
+
 
         .country-dropdown {
             width: 350px;
@@ -437,9 +487,11 @@
             background-position: right 12px center;
         }
 
+
         .country-dropdown:hover {
             border-color: var(--teal);
         }
+
 
         .country-dropdown:focus {
             outline: none;
@@ -447,12 +499,14 @@
             box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.15);
         }
 
+
         .selected-countries {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
             margin-top: 8px;
         }
+
 
         .selected-tag {
             display: inline-flex;
@@ -468,6 +522,7 @@
             cursor: default;
         }
 
+
         .selected-tag .remove-btn {
             display: flex;
             align-items: center;
@@ -482,9 +537,11 @@
             padding: 0;
         }
 
+
         .selected-tag .remove-btn:hover {
             background: rgba(255,255,255,0.4);
         }
+
 
         .selected-tag .remove-btn svg {
             width: 12px;
@@ -492,7 +549,9 @@
             stroke: white;
         }
 
+
         .country-chips { display: flex; flex-wrap: wrap; gap: 12px; }
+
 
         .country-chip {
             display: flex;
@@ -510,10 +569,12 @@
             color: var(--navy);
         }
 
+
         .country-chip:hover { border-color: var(--teal); }
         .country-chip.selected { background: var(--coral); border-color: var(--coral); color: white; }
         .country-chip.disabled { opacity: 0.4; cursor: not-allowed; border-color: var(--cream-dark); }
         .country-chip.disabled:hover { border-color: var(--cream-dark); }
+
 
         .country-chip .check-icon {
             width: 18px;
@@ -526,11 +587,14 @@
             transition: all 0.2s;
         }
 
+
         .country-chip.selected .check-icon { background: white; border-color: white; }
         .country-chip .check-icon svg { width: 12px; height: 12px; opacity: 0; color: var(--coral); }
         .country-chip.selected .check-icon svg { opacity: 1; }
 
+
         .view-overview .country-chip .check-icon { display: none; }
+
 
         /* ===== MAIN SECTION ===== */
         .main-section {
@@ -539,6 +603,7 @@
             box-shadow: 0 4px 20px rgba(26, 39, 68, 0.06);
             min-height: 500px;
         }
+
 
         .section-header {
             padding: 24px 28px;
@@ -550,7 +615,9 @@
             gap: 20px;
         }
 
+
         .section-title-area { display: flex; align-items: baseline; gap: 20px; }
+
 
         .section-title {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -560,9 +627,12 @@
             letter-spacing: -0.3px;
         }
 
+
         .section-subtitle { font-size: 0.9rem; color: var(--text-muted); }
 
+
         .policy-area-selector { display: flex; align-items: center; gap: 16px; }
+
 
         .policy-area-label {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -572,6 +642,7 @@
             letter-spacing: 1.5px;
             color: var(--text-muted);
         }
+
 
         .policy-area-dropdown {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -587,9 +658,12 @@
             min-width: 280px;
         }
 
+
         .policy-area-dropdown:hover, .policy-area-dropdown:focus { border-color: var(--teal); outline: none; }
 
+
         .filters { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+
 
         .filter-label {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -600,7 +674,9 @@
             font-weight: 700;
         }
 
+
         .filter-group { display: flex; align-items: center; gap: 10px; }
+
 
         .filter-checkbox {
             display: flex;
@@ -617,11 +693,13 @@
             border-left: 3px solid transparent;
         }
 
+
         .filter-checkbox:hover { background: var(--cream-dark); }
         .filter-checkbox input { accent-color: var(--teal); width: 15px; height: 15px; }
         .filter-checkbox.legal { border-left-color: var(--navy); }
         .filter-checkbox.policy { border-left-color: var(--teal); }
         .filter-checkbox.statement { border-left-color: var(--coral); }
+
 
         .section-content { padding: 36px; }
         
@@ -654,6 +732,7 @@
             margin-bottom: 4px;
         }
 
+
         .placeholder {
             display: flex;
             flex-direction: column;
@@ -664,11 +743,14 @@
             text-align: center;
         }
 
+
         .placeholder svg { width: 60px; height: 60px; margin-bottom: 20px; opacity: 0.25; }
         .placeholder p { font-size: 1rem; line-height: 1.6; }
 
+
         /* ===== POLICY AREAS (Overview) ===== */
         .policy-areas { display: flex; flex-direction: column; gap: 16px; }
+
 
         /* ===== ALLIANCE MEMBERS LIST ===== */
         .alliance-members-list {
@@ -713,6 +795,7 @@
             background: var(--navy-light);
             transform: translateY(-1px);
         }
+
 
         /* ===== ALLIANCE VISUALIZATIONS ===== */
         .alliance-insights-row {
@@ -984,7 +1067,9 @@
             visibility: visible;
         }
 
+
         .policy-area { background: var(--cream); border-radius: 12px; overflow: hidden; }
+
 
         .policy-area-header {
             display: flex;
@@ -995,7 +1080,9 @@
             transition: background 0.2s;
         }
 
+
         .policy-area-header:hover { background: var(--cream-dark); }
+
 
         .policy-area-title {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -1007,6 +1094,7 @@
             gap: 14px;
         }
 
+
         .policy-area-title::before {
             content: '';
             width: 5px;
@@ -1015,6 +1103,7 @@
             background: var(--teal);
         }
 
+
         .policy-area[data-area="laws"] .policy-area-title::before { background: var(--navy); }
         .policy-area[data-area="adoption"] .policy-area-title::before { background: var(--coral); }
         .policy-area[data-area="acquisition"] .policy-area-title::before { background: var(--purple); }
@@ -1022,8 +1111,10 @@
         .policy-area[data-area="technical"] .policy-area-title::before { background: #e07020; }
         .policy-area[data-area="ethical"] .policy-area-title::before { background: #4a9d5b; }
 
+
         .policy-area-meta { display: flex; align-items: center; gap: 14px; }
         .source-count { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; }
+
 
         .expand-icon {
             width: 20px;
@@ -1032,10 +1123,13 @@
             transition: transform 0.3s;
         }
 
+
         .policy-area.expanded .expand-icon { transform: rotate(180deg); }
+
 
         .policy-area-content { display: none; padding: 0 24px 24px; }
         .policy-area.expanded .policy-area-content { display: block; }
+
 
         /* ===== COMPARISON GRID ===== */
         .comparison-grid {
@@ -1044,6 +1138,7 @@
             gap: 16px;
             width: 100%;
         }
+
 
         .country-column { 
             background: white; 
@@ -1062,6 +1157,7 @@
             background: #3d5a7f;
         }
 
+
         .country-column-header {
             background: var(--navy);
             color: white;
@@ -1077,6 +1173,7 @@
             z-index: 10;
         }
 
+
         .country-column-header .col-source-count { 
             font-size: 0.75rem; 
             font-weight: 500; 
@@ -1085,6 +1182,7 @@
             padding: 4px 10px;
             border-radius: 12px;
         }
+
 
         .country-column-content { 
             padding: 14px; 
@@ -1095,9 +1193,11 @@
             background: #fafbfc;
         }
 
+
         .col-policy-area { margin-bottom: 18px; }
         .col-policy-area:last-child { margin-bottom: 0; }
         
+
 
         /* === REDESIGNED COMPARE VIEW === */
         .compare-header-chips {
@@ -1291,6 +1391,8 @@
         .country-name-spacer {
             width: 220px;
         }
+
+
 
 
         
@@ -1784,6 +1886,7 @@
             opacity: 1;
         }
 
+
         @media (max-width: 768px) {
             .chart-row {
                 grid-template-columns: 35px 1fr 140px 1fr 35px;
@@ -1801,11 +1904,13 @@
             }
         }
 
+
         @media (max-width: 768px) {
             .comparison-grid {
                 grid-template-columns: 1fr;
             }
         }
+
 
         .col-policy-area-title {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -1820,14 +1925,17 @@
             box-shadow: 0 1px 3px rgba(0,0,0,0.04);
         }
 
+
         .col-policy-area:nth-child(2) .col-policy-area-title { border-left-color: var(--coral); }
         .col-policy-area:nth-child(3) .col-policy-area-title { border-left-color: var(--purple); }
         .col-policy-area:nth-child(4) .col-policy-area-title { border-left-color: var(--navy); }
         .col-policy-area:nth-child(5) .col-policy-area-title { border-left-color: var(--teal); }
 
+
         /* ===== SOURCE TYPE SECTIONS ===== */
         .source-section { margin-top: 10px; }
         .source-section:first-child { margin-top: 0; }
+
 
         .source-type-header {
             font-family: 'Montserrat', sans-serif;
@@ -1843,6 +1951,7 @@
             gap: 5px;
         }
 
+
         .source-type-header::before { content: ''; width: 5px; height: 5px; border-radius: 50%; }
         .source-type-header.legal { background: rgba(26, 39, 68, 0.08); color: var(--navy); }
         .source-type-header.legal::before { background: var(--navy); }
@@ -1851,7 +1960,9 @@
         .source-type-header.statement { background: rgba(214, 64, 69, 0.08); color: var(--coral); }
         .source-type-header.statement::before { background: var(--coral); }
 
+
         .source-items { display: flex; flex-direction: column; gap: 5px; }
+
 
         .source-item {
             background: white;
@@ -1859,6 +1970,7 @@
             overflow: hidden;
             border: 1px solid var(--cream-dark);
         }
+
 
         .source-item-header {
             padding: 10px 12px;
@@ -1870,9 +1982,12 @@
             transition: background 0.2s;
         }
 
+
         .source-item-header:hover { background: var(--cream); }
 
+
         .source-item-title-row { display: flex; align-items: center; gap: 8px; flex: 1; position: relative; }
+
 
         .source-item-title {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -1882,6 +1997,7 @@
             color: var(--navy);
             line-height: 1.35;
         }
+
 
         .source-item-date {
             flex-shrink: 0;
@@ -1896,6 +2012,7 @@
             letter-spacing: 0.01em;
             align-self: center;
         }
+
 
         .source-link {
             display: inline-flex;
@@ -1921,8 +2038,10 @@
             font-family: inherit;
         }
 
+
         .source-link:hover { background: var(--navy); transform: translateY(-1px); }
         .source-link svg { width: 14px; height: 14px; pointer-events: none; }
+
 
         .source-item-expand {
             width: 14px;
@@ -1933,7 +2052,9 @@
             transition: transform 0.3s;
         }
 
+
         .source-item.expanded .source-item-expand { transform: rotate(180deg); }
+
 
         .source-item-details {
             display: none;
@@ -1944,9 +2065,11 @@
             border-top: 1px solid var(--cream);
         }
 
+
         .source-item.expanded .source-item-details { display: block; padding-top: 12px; }
         .source-item-details p { margin-bottom: 8px; }
         .source-item-details p:last-child { margin-bottom: 0; }
+
 
         .no-data-message {
             text-align: center;
@@ -1955,6 +2078,7 @@
             font-size: 0.9rem;
         }
 
+
         .loading {
             display: flex;
             align-items: center;
@@ -1962,6 +2086,7 @@
             height: 550px;
             color: rgba(255,255,255,0.6);
         }
+
 
         .loading-spinner {
             width: 32px;
@@ -1973,7 +2098,9 @@
             margin-right: 14px;
         }
 
+
         @keyframes spin { to { transform: rotate(360deg); } }
+
 
         footer {
             text-align: center;
@@ -1988,6 +2115,7 @@
             justify-content: center;
             gap: 8px;
         }
+
 
         footer p:first-child {
             display: flex;
@@ -2009,8 +2137,10 @@
             font-style: italic;
         }
 
+
         .view-content { display: none; }
         .view-content.active { display: block; }
+
 
         @media (max-width: 900px) {
             .container { padding: 40px 30px; }
@@ -2018,6 +2148,7 @@
             .policy-area-dropdown { width: 100%; }
             header { margin-bottom: 40px; padding-bottom: 30px; }
         }
+
 
         @media (max-width: 600px) {
             .container { padding: 30px 20px; }
@@ -2048,6 +2179,7 @@
             </div>
         </header>
 
+
         <div class="map-container">
             <div class="map-controls">
                 <button class="map-control-btn" id="zoom-in" title="Zoom in">+</button>
@@ -2062,11 +2194,13 @@
             <svg id="map-svg" style="display: none;"></svg>
         </div>
 
+
         <div class="view-tabs">
             <button class="view-tab active" data-view="overview">Country Overview</button>
             <button class="view-tab" data-view="alliance">Alliance Overview</button>
             <button class="view-tab" data-view="compare">Compare Countries</button>
         </div>
+
 
         <!-- OVERVIEW VIEW -->
         <div id="view-overview" class="view-content view-overview active">
@@ -2083,6 +2217,7 @@
                     </div>
                 </div>
             </div>
+
 
             <section class="main-section">
                 <div class="section-header" id="overview-header" style="display: none;">
@@ -2120,6 +2255,7 @@
             </section>
         </div>
 
+
         <!-- ALLIANCE VIEW -->
         <div id="view-alliance" class="view-content view-alliance">
             <div class="country-selector">
@@ -2131,6 +2267,7 @@
                     <option value="FVEY">Five Eyes (FVEY)</option>
                 </select>
             </div>
+
 
             <section class="main-section">
                 <div class="section-header" id="alliance-header" style="display: none;">
@@ -2168,6 +2305,7 @@
             </section>
         </div>
 
+
         <!-- COMPARE VIEW -->
         <div id="view-compare" class="view-content">
             <div class="country-selector">
@@ -2188,6 +2326,7 @@
                 <div class="selected-countries" id="selected-countries"></div>
             </div>
 
+
             <section class="main-section">
                 <div class="section-header" style="display:none;">
                     <h2 class="section-title">Policy Comparison</h2>
@@ -2203,16 +2342,19 @@
             </section>
         </div>
 
+
         <footer>
             <p>Data compiled from official government documents, national document submissions, public statements, press releases, and secondary sources where primary information is not publicly available</p>
             <p class="data-disclaimer">Data current as of November 2025</p>
         </footer>
     </div>
 
+
     <div class="tooltip" id="tooltip">
         <div class="tooltip-title"></div>
         <div class="tooltip-subtitle"></div>
     </div>
+
 
     <script id="policy-data" type="application/json">
 {
@@ -6077,11 +6219,13 @@
 }
     </script>
 
+
     <script>
         const rawData = JSON.parse(document.getElementById("policy-data").textContent);
         const policyData = rawData.countries;
         const allianceData = rawData.alliances;
         const MAX_COMPARE = 2;
+
 
         const countryNameMap = {
             "United States of America": "USA",
@@ -6143,6 +6287,7 @@
             "S. Africa": "South Africa"
         };
 
+
         // Alliance member countries (map names -> our keys, for highlighting)
         const allianceMembers = {
             "NATO": [
@@ -6156,6 +6301,7 @@
             "AUKUS": ["USA", "UK", "Australia"],
             "FVEY": ["USA", "UK", "Australia", "Canada", "New Zealand"]
         };
+
 
         // Map from TopoJSON names to alliance member names
         const allianceMemberMap = {
@@ -6235,6 +6381,7 @@
             "Dominion of Canada": "Canada"
         };
 
+
         const displayNames = {
             "USA": "United States of America",
             "China": "China",
@@ -6285,6 +6432,7 @@
             "S. Africa": "South Africa"
         };
 
+
         let currentView = "overview";
         let selectedCountry = null;
         let selectedAlliance = null;
@@ -6293,17 +6441,20 @@
         let mapZoom = null;
         const tooltip = document.getElementById("tooltip");
 
+
         function escapeHtml(text) {
             const div = document.createElement("div");
             div.textContent = text;
             return div.innerHTML;
         }
 
+
         function extractUrl(text) {
             var urlRegex = /(https?:\/\/[^\s\)]+)/g;
             var match = text.match(urlRegex);
             return match ? match[0].replace(/[.,;:]+$/, '') : null;
         }
+
 
         function extractDate(text) {
             // Match patterns like (Jan 2023), (December 2024), (2019), etc.
@@ -6313,15 +6464,18 @@
             return match ? match[1] : null;
         }
 
+
         function parseTitleWithoutDate(text) {
             var title = text.split("\n")[0].trim();
             // Remove the date in parentheses from the end
             return title.replace(/\s*\([A-Z][a-z]+ \d{4}\)\s*$/, '').replace(/\s*\(\d{4}\)\s*$/, '').trim();
         }
 
+
         function parseTitle(text) {
             return text.split("\n")[0].trim();
         }
+
 
         function parseDetails(text) {
             var lines = text.split("\n").slice(1).join("\n").trim();
@@ -6331,6 +6485,7 @@
                 return cleaned ? "<p>" + escapeHtml(cleaned) + "</p>" : "";
             }).filter(function(p) { return p; }).join("");
         }
+
 
         // ===== VIEW SWITCHING =====
         document.querySelectorAll(".view-tab").forEach(function(tab) {
@@ -6345,6 +6500,7 @@
             });
         });
 
+
         // ===== BUILD CHIPS =====
         function buildDropdowns() {
             var overviewDropdown = document.getElementById("overview-dropdown");
@@ -6358,8 +6514,10 @@
                 return nameA.localeCompare(nameB);
             });
 
+
             countries.forEach(function(country) {
                 var displayName = displayNames[country] || country;
+
 
                 var option1 = document.createElement("option");
                 option1.value = country;
@@ -6371,6 +6529,7 @@
                 option2.textContent = displayName;
                 compareDropdown.appendChild(option2);
             });
+
 
             // Add event listeners
             overviewDropdown.addEventListener("change", function() {
@@ -6386,6 +6545,7 @@
                 }
             });
 
+
             compareDropdown.addEventListener("change", function() {
                 if (this.value && !selectedCountries.has(this.value) && selectedCountries.size < MAX_COMPARE) {
                     toggleCompareCountry(this.value);
@@ -6393,6 +6553,7 @@
                 }
             });
         }
+
 
         
         // ===== COUNTRY SEARCH =====
@@ -6512,10 +6673,12 @@
             });
         }
 
+
         function updateCompareChipsState() {
             var atLimit = selectedCountries.size >= MAX_COMPARE;
             var dropdown = document.getElementById("compare-dropdown");
             dropdown.disabled = atLimit;
+
 
             // Update selected countries display
             var container = document.getElementById("selected-countries");
@@ -6534,6 +6697,7 @@
                 container.appendChild(tag);
             });
 
+
             var limitText = document.getElementById("selection-limit");
             if (selectedCountries.size > 0) {
                 limitText.textContent = "(" + selectedCountries.size + "/" + MAX_COMPARE + " selected)";
@@ -6541,6 +6705,7 @@
                 limitText.textContent = "(max " + MAX_COMPARE + ")";
             }
         }
+
 
         // ===== OVERVIEW FUNCTIONS =====
         function selectOverviewCountry(country) {
@@ -6550,6 +6715,7 @@
             renderOverview();
         }
 
+
         // ===== ALLIANCE FUNCTIONS =====
         function selectAlliance(alliance) {
             selectedAlliance = alliance;
@@ -6557,6 +6723,7 @@
             updateMapHighlights();
             renderAllianceOverview();
         }
+
 
         function switchToCountryOverview(countryKey) {
             // Switch to Country Overview tab
@@ -6578,6 +6745,7 @@
             selectOverviewCountry(countryKey);
         }
 
+
         function getAllianceFilters() {
             return {
                 legal: document.getElementById("alliance-filter-legal").checked,
@@ -6586,11 +6754,14 @@
             };
         }
 
+
         function renderAllianceOverview() {
             if (!selectedAlliance) return;
 
+
             var data = allianceData[selectedAlliance];
             if (!data) return;
+
 
             var allianceNames = {
                 "NATO": "North Atlantic Treaty Organization (NATO)",
@@ -6598,9 +6769,11 @@
                 "FVEY": "Five Eyes (FVEY)"
             };
 
+
             var displayName = allianceNames[selectedAlliance] || selectedAlliance;
             document.getElementById("alliance-header").style.display = "flex";
             document.getElementById("alliance-name").textContent = displayName;
+
 
             // Render member countries list
             var membersListContainer = document.getElementById("alliance-members-list");
@@ -6635,6 +6808,7 @@
             
             membersListContainer.appendChild(membersChips);
 
+
             var content = document.getElementById("alliance-content");
             content.innerHTML = "";
             
@@ -6654,9 +6828,11 @@
                 content.appendChild(summaryBox);
             }
 
+
             var filters = getAllianceFilters();
             var totalCount = 0;
             var areaCount = 0;
+
 
             var POLICY_AREAS = [
                 "Lethal Autonomous Weapons Systems (LAWS) Employment/Deployment",
@@ -6670,6 +6846,7 @@
             var AREA_KEYS = ["laws", "adoption", "acquisition", "ethical", "technical", "international"];
             var AREA_COLORS = ["#1a2744", "#d64045", "#6b3074", "#4a9d5b", "#e07020", "#0d7377"];
             var AREA_SHORT = ["LAWS", "Adoption", "Acq.", "Ethics", "Tech.", "Int'l"];
+
 
             // ===== CALCULATE MEMBER CONTRIBUTION DATA =====
             var memberContributions = [];
@@ -6717,6 +6894,7 @@
                     }
                 });
             });
+
 
             // ===== BUILD VISUALIZATIONS =====
             if (memberContributions.length > 0) {
@@ -6996,13 +7174,16 @@
                 content.appendChild(insightsRow);
             }
 
+
             // Build policy areas container (same structure as country overview)
             var areasContainer = document.createElement("div");
             areasContainer.className = "policy-areas";
 
+
             POLICY_AREAS.forEach(function(areaName) {
                 var entries = data[areaName];
                 if (!entries) return;
+
 
                 var filteredEntries = {
                     legal_directives: filters.legal ? (entries.legal_directives || []) : [],
@@ -7010,14 +7191,18 @@
                     public_statements: filters.statement ? (entries.public_statements || []) : []
                 };
 
+
                 var areaTotal = filteredEntries.legal_directives.length +
                                filteredEntries.policy_documents.length +
                                filteredEntries.public_statements.length;
 
+
                 if (areaTotal === 0) return;
+
 
                 areaCount++;
                 totalCount += areaTotal;
+
 
                 var policyArea = document.createElement("div");
                 policyArea.className = "policy-area";
@@ -7030,22 +7215,27 @@
                 else if (areaName.indexOf("Technical") !== -1) policyArea.setAttribute("data-area", "technical");
                 else if (areaName.indexOf("Ethical") !== -1) policyArea.setAttribute("data-area", "ethical");
 
+
                 var areaHeader = document.createElement("div");
                 areaHeader.className = "policy-area-header";
                 areaHeader.addEventListener("click", function() { policyArea.classList.toggle("expanded"); });
+
 
                 var areaTitle = document.createElement("span");
                 areaTitle.className = "policy-area-title";
                 areaTitle.textContent = areaName;
                 areaHeader.appendChild(areaTitle);
 
+
                 var areaMeta = document.createElement("div");
                 areaMeta.className = "policy-area-meta";
+
 
                 var sourceCount = document.createElement("span");
                 sourceCount.className = "source-count";
                 sourceCount.textContent = areaTotal + " entries";
                 areaMeta.appendChild(sourceCount);
+
 
                 var expandIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
                 expandIcon.setAttribute("class", "expand-icon");
@@ -7060,14 +7250,18 @@
                 expandIcon.appendChild(expandPath);
                 areaMeta.appendChild(expandIcon);
 
+
                 areaHeader.appendChild(areaMeta);
                 policyArea.appendChild(areaHeader);
+
 
                 var areaContent = document.createElement("div");
                 areaContent.className = "policy-area-content";
 
+
                 var legalSection = createSourceSection(filteredEntries.legal_directives, "legal", "Legal Directives");
                 if (legalSection) areaContent.appendChild(legalSection);
+
 
                 var policySection = createSourceSection(filteredEntries.policy_documents, "policy", "Policy Documents");
                 if (policySection) areaContent.appendChild(policySection);
@@ -7075,9 +7269,11 @@
                 var statementSection = createSourceSection(filteredEntries.public_statements, "statement", "Public Statements");
                 if (statementSection) areaContent.appendChild(statementSection);
 
+
                 policyArea.appendChild(areaContent);
                 areasContainer.appendChild(policyArea);
             });
+
 
             // Add section title for alliance-specific policies
             if (areasContainer.children.length > 0) {
@@ -7087,14 +7283,17 @@
                 content.appendChild(policySectionTitle);
             }
 
+
             document.getElementById("alliance-subtitle").textContent = totalCount + " alliance entries • " + memberContributions.length + " members with policy data";
             content.appendChild(areasContainer);
         }
+
 
         // Alliance filter event listeners
         ["alliance-filter-legal", "alliance-filter-policy", "alliance-filter-statement"].forEach(function(id) {
             document.getElementById(id).addEventListener("change", renderAllianceOverview);
         });
+
 
         // Alliance dropdown event listener
         document.getElementById("alliance-dropdown").addEventListener("change", function() {
@@ -7111,6 +7310,7 @@
             }
         });
 
+
         function getActiveFilters() {
             return {
                 legal: document.getElementById("filter-legal").checked,
@@ -7119,6 +7319,7 @@
             };
         }
 
+
         function createSourceItem(entry) {
             var text = entry.text || entry;
             var url = entry.url || null;
@@ -7126,16 +7327,20 @@
             var item = document.createElement("div");
             item.className = "source-item";
 
+
             var itemHeader = document.createElement("div");
             itemHeader.className = "source-item-header";
 
+
             var titleRow = document.createElement("div");
             titleRow.className = "source-item-title-row";
+
 
             var title = document.createElement("span");
             title.className = "source-item-title";
             title.textContent = parseTitleWithoutDate(text);
             titleRow.appendChild(title);
+
 
             var dateStr = extractDate(text);
             if (dateStr) {
@@ -7144,6 +7349,7 @@
                 dateBadge.textContent = dateStr;
                 titleRow.appendChild(dateBadge);
             }
+
 
             if (url) {
                 var link = document.createElement("button");
@@ -7161,7 +7367,9 @@
                 titleRow.appendChild(link);
             }
 
+
             itemHeader.appendChild(titleRow);
+
 
             var icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
             icon.setAttribute("class", "source-item-expand");
@@ -7176,54 +7384,67 @@
             icon.appendChild(path);
             itemHeader.appendChild(icon);
 
+
             itemHeader.addEventListener("click", function(e) { 
                 if (e.target.closest(".source-link")) return;
                 item.classList.toggle("expanded"); 
             });
             item.appendChild(itemHeader);
 
+
             var details = document.createElement("div");
             details.className = "source-item-details";
             details.innerHTML = parseDetails(text);
             item.appendChild(details);
 
+
             return item;
         }
+
 
         function createSourceSection(entries, type, label) {
             if (entries.length === 0) return null;
 
+
             var section = document.createElement("div");
             section.className = "source-section";
+
 
             var header = document.createElement("div");
             header.className = "source-type-header " + type;
             header.textContent = label + " (" + entries.length + ")";
             section.appendChild(header);
 
+
             var items = document.createElement("div");
             items.className = "source-items";
             entries.forEach(function(entry) { items.appendChild(createSourceItem(entry)); });
             section.appendChild(items);
 
+
             return section;
         }
 
+
         function renderOverview() {
             if (!selectedCountry) return;
+
 
             var data = policyData[selectedCountry];
             var filters = getActiveFilters();
             var displayName = displayNames[selectedCountry] || selectedCountry;
             var summary = rawData.summaries ? rawData.summaries[selectedCountry] : null;
 
+
             document.getElementById("overview-header").style.display = "flex";
             document.getElementById("overview-country-name").textContent = displayName;
+
 
             // Calculate totals and area distribution for pie chart
             var totalCount = 0;
             var areaDistribution = [];
             var legalCount = 0, policyCount = 0, statementCount = 0;
+
 
             var policyAreaNames = [
                 "Lethal Autonomous Weapons Systems (LAWS) Employment/Deployment",
@@ -7234,7 +7455,9 @@
                 "Ethical Guidelines & Restrictions"
             ];
 
+
             var pieColors = ["#1a2744", "#d64045", "#6b3074", "#0d7377", "#e07020", "#4a9d5b"];
+
 
             policyAreaNames.forEach(function(areaName, idx) {
                 var entries = data[areaName];
@@ -7258,9 +7481,11 @@
                 }
             });
 
+
             // Build policy areas container
             var areasContainer = document.createElement("div");
             areasContainer.className = "policy-areas";
+
 
             Object.keys(data).forEach(function(areaName) {
                 var entries = data[areaName];
@@ -7270,10 +7495,13 @@
                     public_statements: filters.statement ? entries.public_statements : []
                 };
 
+
                 var areaTotal = filtered.legal_directives.length + filtered.policy_documents.length +
                                 filtered.public_statements.length;
 
+
                 if (areaTotal === 0) return;
+
 
                 var policyArea = document.createElement("div");
                 policyArea.className = "policy-area";
@@ -7286,22 +7514,27 @@
                 else if (areaName.indexOf("Technical") !== -1) policyArea.setAttribute("data-area", "technical");
                 else if (areaName.indexOf("Ethical") !== -1) policyArea.setAttribute("data-area", "ethical");
 
+
                 var areaHeader = document.createElement("div");
                 areaHeader.className = "policy-area-header";
                 areaHeader.addEventListener("click", function() { policyArea.classList.toggle("expanded"); });
+
 
                 var areaTitle = document.createElement("span");
                 areaTitle.className = "policy-area-title";
                 areaTitle.textContent = areaName;
                 areaHeader.appendChild(areaTitle);
 
+
                 var areaMeta = document.createElement("div");
                 areaMeta.className = "policy-area-meta";
+
 
                 var sourceCount = document.createElement("span");
                 sourceCount.className = "source-count";
                 sourceCount.textContent = areaTotal + " entries";
                 areaMeta.appendChild(sourceCount);
+
 
                 var expandIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
                 expandIcon.setAttribute("class", "expand-icon");
@@ -7316,14 +7549,18 @@
                 expandIcon.appendChild(expandPath);
                 areaMeta.appendChild(expandIcon);
 
+
                 areaHeader.appendChild(areaMeta);
                 policyArea.appendChild(areaHeader);
+
 
                 var areaContent = document.createElement("div");
                 areaContent.className = "policy-area-content";
 
+
                 var legalSection = createSourceSection(filtered.legal_directives, "legal", "Legal Directives");
                 if (legalSection) areaContent.appendChild(legalSection);
+
 
                 var policySection = createSourceSection(filtered.policy_documents, "policy", "Policy Documents");
                 if (policySection) areaContent.appendChild(policySection);
@@ -7331,12 +7568,15 @@
                 var statementSection = createSourceSection(filtered.public_statements, "statement", "Public Statements");
                 if (statementSection) areaContent.appendChild(statementSection);
 
+
                 policyArea.appendChild(areaContent);
                 areasContainer.appendChild(policyArea);
             });
 
+
             var areaCount = areasContainer.children.length;
             document.getElementById("overview-subtitle").textContent = totalCount + " entries across " + areaCount + " policy areas";
+
 
             var content = document.getElementById("overview-content");
             content.innerHTML = "";
@@ -7346,6 +7586,7 @@
                 return;
             }
 
+
             // Add summary box
             if (summary) {
                 var summaryBox = document.createElement("div");
@@ -7354,10 +7595,12 @@
                 content.appendChild(summaryBox);
             }
 
+
             // Add insights row with pie chart and bar chart (Option A: Side by Side Layout)
             var insightsRow = document.createElement("div");
             insightsRow.className = "country-insights-row";
             insightsRow.id = "insights-container";
+
 
             // Define policy areas with keys for hover coordination
             var policyAreasConfig = [
@@ -7368,6 +7611,7 @@
                 { key: "laws", name: "Lethal Autonomous Weapons Systems (LAWS) Employment/Deployment", short: "LAWS\nDeployment", color: "#1a2744" },
                 { key: "international", name: "International Cooperation & Interoperability", short: "Int'l\nCooperation", color: "#0d7377" }
             ];
+
 
             // Build data object keyed by area key
             var chartData = {};
@@ -7383,17 +7627,21 @@
                 }
             });
 
+
             // ===== PIE CHART SECTION =====
             var pieSection = document.createElement("div");
             pieSection.className = "chart-section";
+
 
             var pieTitle = document.createElement("div");
             pieTitle.className = "pie-chart-title";
             pieTitle.textContent = "Policy Distribution";
             pieSection.appendChild(pieTitle);
 
+
             var pieWrapper = document.createElement("div");
             pieWrapper.className = "pie-chart-wrapper";
+
 
             // Create SVG pie chart (Option A: Enlarged dimensions)
             var pieSvgWidth = 500;
@@ -7402,30 +7650,37 @@
             var pieCenterX = pieSvgWidth / 2;
             var pieCenterY = pieSvgHeight / 2;
 
+
             var pieSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
             pieSvg.setAttribute("class", "pie-chart-svg");
             pieSvg.setAttribute("width", pieSvgWidth);
             pieSvg.setAttribute("height", pieSvgHeight);
             pieSvg.setAttribute("viewBox", "0 0 " + pieSvgWidth + " " + pieSvgHeight);
 
+
             // Draw pie slices
             var pieStartAngle = -Math.PI / 2;
             var pieSliceData = [];
+
 
             policyAreasConfig.forEach(function(areaConfig) {
                 var value = chartData[areaConfig.key];
                 if (value === 0) return;
 
+
                 var sliceAngle = (value / totalCount) * 2 * Math.PI;
                 var endAngle = pieStartAngle + sliceAngle;
+
 
                 var x1 = pieCenterX + pieRadius * Math.cos(pieStartAngle);
                 var y1 = pieCenterY + pieRadius * Math.sin(pieStartAngle);
                 var x2 = pieCenterX + pieRadius * Math.cos(endAngle);
                 var y2 = pieCenterY + pieRadius * Math.sin(endAngle);
 
+
                 var largeArc = sliceAngle > Math.PI ? 1 : 0;
                 var pathD = "M " + pieCenterX + " " + pieCenterY + " L " + x1 + " " + y1 + " A " + pieRadius + " " + pieRadius + " 0 " + largeArc + " 1 " + x2 + " " + y2 + " Z";
+
 
                 var slicePath = document.createElementNS("http://www.w3.org/2000/svg", "path");
                 slicePath.setAttribute("d", pathD);
@@ -7436,6 +7691,7 @@
                 slicePath.setAttribute("data-area", areaConfig.key);
                 slicePath.setAttribute("data-area-name", areaConfig.name);
                 pieSvg.appendChild(slicePath);
+
 
                 // Store for labels
                 var midAngle = pieStartAngle + sliceAngle / 2;
@@ -7448,12 +7704,15 @@
                     pct: Math.round((value / totalCount) * 100)
                 });
 
+
                 pieStartAngle = endAngle;
             });
+
 
             // Draw pie labels with leader lines
             var pieLabelRadius = pieRadius + 18;
             var pieTextOffset = 25;
+
 
             pieSliceData.forEach(function(slice) {
                 var midAngle = slice.midAngle;
@@ -7463,6 +7722,7 @@
                 var anchorY = pieCenterY + pieLabelRadius * Math.sin(midAngle);
                 var isRight = Math.cos(midAngle) >= 0;
                 var lineEndX = isRight ? anchorX + pieTextOffset : anchorX - pieTextOffset;
+
 
                 // Leader line
                 var leaderLine = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
@@ -7474,6 +7734,7 @@
                 leaderLine.setAttribute("data-area", slice.key);
                 pieSvg.appendChild(leaderLine);
 
+
                 // Dot at line end
                 var leaderDot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
                 leaderDot.setAttribute("cx", lineEndX);
@@ -7483,6 +7744,7 @@
                 leaderDot.setAttribute("class", "pie-leader-dot");
                 leaderDot.setAttribute("data-area", slice.key);
                 pieSvg.appendChild(leaderDot);
+
 
                 // Label text
                 var labelText = document.createElementNS("http://www.w3.org/2000/svg", "text");
@@ -7494,6 +7756,7 @@
                 labelText.setAttribute("fill", "#333");
                 labelText.setAttribute("class", "pie-label");
                 labelText.setAttribute("data-area", slice.key);
+
 
                 var lines = slice.short.split("\n");
                 lines.forEach(function(txt, idx) {
@@ -7508,24 +7771,30 @@
                     labelText.appendChild(tspan);
                 });
 
+
                 pieSvg.appendChild(labelText);
             });
+
 
             pieWrapper.appendChild(pieSvg);
             pieSection.appendChild(pieWrapper);
             insightsRow.appendChild(pieSection);
 
+
             // ===== BAR CHART SECTION =====
             var barSection = document.createElement("div");
             barSection.className = "chart-section";
+
 
             var barTitle = document.createElement("div");
             barTitle.className = "bar-chart-title";
             barTitle.textContent = "Number of Policies by Area";
             barSection.appendChild(barTitle);
 
+
             var barWrapper = document.createElement("div");
             barWrapper.className = "bar-chart-wrapper";
+
 
             // Create SVG bar chart
             var barSvgWidth = 520;
@@ -7534,11 +7803,13 @@
             var barWidth = barSvgWidth - barMargin.left - barMargin.right;
             var barHeight = barSvgHeight - barMargin.top - barMargin.bottom;
 
+
             var barSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
             barSvg.setAttribute("class", "bar-chart-svg");
             barSvg.setAttribute("width", barSvgWidth);
             barSvg.setAttribute("height", barSvgHeight);
             barSvg.setAttribute("viewBox", "0 0 " + barSvgWidth + " " + barSvgHeight);
+
 
             // Get max value for scale - round up to nearest even number
             var maxBarValue = Math.max.apply(null, Object.values(chartData).filter(function(v) { return v > 0; }));
@@ -7548,6 +7819,7 @@
             var yScale = barHeight / maxBarValue;
             var singleBarWidth = barWidth / policyAreasConfig.length * 0.7;
             var barGap = barWidth / policyAreasConfig.length * 0.3;
+
 
             // Y-axis line
             var yAxisLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
@@ -7559,6 +7831,7 @@
             yAxisLine.setAttribute("stroke-width", "1");
             barSvg.appendChild(yAxisLine);
 
+
             // X-axis line
             var xAxisLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
             xAxisLine.setAttribute("x1", barMargin.left);
@@ -7568,6 +7841,7 @@
             xAxisLine.setAttribute("stroke", "#ccc");
             xAxisLine.setAttribute("stroke-width", "1");
             barSvg.appendChild(xAxisLine);
+
 
             // Y-axis title
             var yAxisTitle = document.createElementNS("http://www.w3.org/2000/svg", "text");
@@ -7580,12 +7854,14 @@
             yAxisTitle.textContent = "Number of Policies";
             barSvg.appendChild(yAxisTitle);
 
+
             // Y-axis ticks and grid lines - every 2 numbers
             var tickStep = 2;
             var numTicks = maxBarValue / tickStep;
             for (var i = 0; i <= numTicks; i++) {
                 var tickValue = i * tickStep;
                 var yPos = barMargin.top + barHeight - (tickValue * yScale);
+
 
                 // Grid line
                 var gridLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
@@ -7596,6 +7872,7 @@
                 gridLine.setAttribute("stroke", "#eee");
                 gridLine.setAttribute("stroke-width", "1");
                 barSvg.appendChild(gridLine);
+
 
                 // Tick label
                 var tickLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
@@ -7608,12 +7885,14 @@
                 barSvg.appendChild(tickLabel);
             }
 
+
             // Draw bars
             policyAreasConfig.forEach(function(areaConfig, idx) {
                 var value = chartData[areaConfig.key];
                 var rectHeight = value * yScale;
                 var xPos = barMargin.left + idx * (singleBarWidth + barGap) + barGap / 2;
                 var yPos = barMargin.top + barHeight - rectHeight;
+
 
                 // Bar rectangle
                 var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
@@ -7628,6 +7907,7 @@
                 rect.setAttribute("data-area-name", areaConfig.name);
                 barSvg.appendChild(rect);
 
+
                 // Value label above bar (or at baseline for zero)
                 var valueLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
                 valueLabel.setAttribute("x", xPos + singleBarWidth / 2);
@@ -7640,6 +7920,7 @@
                 valueLabel.setAttribute("data-area", areaConfig.key);
                 valueLabel.textContent = value;
                 barSvg.appendChild(valueLabel);
+
 
                 // X-axis label (rotated)
                 var shortLabel = areaConfig.short.replace("\n", " ");
@@ -7656,9 +7937,11 @@
                 barSvg.appendChild(xLabel);
             });
 
+
             barWrapper.appendChild(barSvg);
             barSection.appendChild(barWrapper);
             insightsRow.appendChild(barSection);
+
 
             // ===== INTERACTION HINT =====
             var hintDiv = document.createElement("div");
@@ -7666,13 +7949,16 @@
             hintDiv.innerHTML = "<strong>Tip:</strong> Hover to highlight + Click to expand policies below";
             insightsRow.appendChild(hintDiv);
 
+
             // ===== ADD TO DOM =====
             content.appendChild(insightsRow);
+
 
             // ===== SETUP HOVER AND CLICK INTERACTIONS =====
             setTimeout(function() {
                 var container = document.getElementById("insights-container");
                 if (!container) return;
+
 
                 // Map from key to full policy area name
                 var keyToNameMap = {};
@@ -7680,8 +7966,10 @@
                     keyToNameMap[cfg.key] = cfg.name;
                 });
 
+
                 var clickableElements = container.querySelectorAll(".pie-slice, .bar-rect");
                 var allDataElements = container.querySelectorAll("[data-area]");
+
 
                 // Hover interactions
                 allDataElements.forEach(function(el) {
@@ -7689,12 +7977,14 @@
                         var area = this.getAttribute("data-area");
                         container.classList.add("has-hover");
 
+
                         allDataElements.forEach(function(other) {
                             if (other.getAttribute("data-area") === area) {
                                 other.classList.add("highlighted");
                             }
                         });
                     });
+
 
                     el.addEventListener("mouseleave", function() {
                         container.classList.remove("has-hover");
@@ -7704,6 +7994,7 @@
                     });
                 });
 
+
                 // Click interactions - expand corresponding policy area
                 clickableElements.forEach(function(el) {
                     el.addEventListener("click", function() {
@@ -7711,6 +8002,7 @@
                         var areaName = keyToNameMap[areaKey];
                         
                         if (!areaName) return;
+
 
                         // Find the policy area section with matching name
                         var policyAreas = document.querySelectorAll(".policy-area");
@@ -7730,13 +8022,16 @@
                 });
             }, 0);
 
+
             // Add policy areas
             content.appendChild(areasContainer);
         }
 
+
         document.querySelectorAll(".filter-checkbox input").forEach(function(cb) {
             cb.addEventListener("change", renderOverview);
         });
+
 
         // ===== COMPARE FUNCTIONS =====
         function toggleCompareCountry(country) {
@@ -7750,15 +8045,18 @@
             renderComparison();
         }
 
+
         function buildPolicyAreaDropdown() {
             var dropdown = document.getElementById("policy-area-dropdown");
             if (!dropdown) return; // Element removed in redesign
             
             var allAreas = new Set();
 
+
             Object.values(policyData).forEach(function(country) {
                 Object.keys(country).forEach(function(area) { allAreas.add(area); });
             });
+
 
             Array.from(allAreas).sort().forEach(function(area) {
                 var option = document.createElement("option");
@@ -7767,24 +8065,29 @@
                 dropdown.appendChild(option);
             });
 
+
             dropdown.addEventListener("change", function() {
                 selectedPolicyArea = this.value;
                 renderComparison();
             });
         }
 
+
         function renderComparison() {
             var content = document.getElementById("compare-content");
+
 
             if (selectedCountries.size === 0) {
                 content.innerHTML = '<div class="placeholder"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg><p>Select 2 countries to compare their<br>defense AI policy frameworks</p></div>';
                 return;
             }
 
+
             if (selectedCountries.size === 1) {
                 content.innerHTML = '<div class="placeholder"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4" /></svg><p>Select one more country to<br>compare policy frameworks</p></div>';
                 return;
             }
+
 
             // Get the two countries
             var countries = Array.from(selectedCountries);
@@ -7794,6 +8097,7 @@
             var name2 = displayNames[country2] || country2;
             var data1 = policyData[country1];
             var data2 = policyData[country2];
+
 
             // ISO Alpha-3 country codes
             var isoAlpha3 = {
@@ -7848,6 +8152,7 @@
                 return isoAlpha3[countryName] || countryName.substring(0, 3).toUpperCase();
             }
 
+
             // Calculate totals and area counts
             var policyAreas = [
                 "Lethal Autonomous Weapons Systems (LAWS) Employment/Deployment",
@@ -7859,6 +8164,7 @@
                 "Training & Human-AI Interaction"
             ];
 
+
             function countEntries(countryData, areaName) {
                 var area = countryData[areaName];
                 if (!area) return 0;
@@ -7867,6 +8173,7 @@
                        (area.public_statements || []).length;
             }
 
+
             function getTotalEntries(countryData) {
                 var total = 0;
                 Object.keys(countryData).forEach(function(area) {
@@ -7874,6 +8181,7 @@
                 });
                 return total;
             }
+
 
             function getTimelineEntries(countryData) {
                 var entries = [];
@@ -7902,16 +8210,20 @@
                 return entries;
             }
 
+
             var total1 = getTotalEntries(data1);
             var total2 = getTotalEntries(data2);
             var maxValue = Math.max(total1, total2);
             var timeline1 = getTimelineEntries(data1);
             var timeline2 = getTimelineEntries(data2);
 
+
             // Build HTML
             var html = '';
 
+
             // Header chips removed - country names now above bars
+
 
             // Bar Chart Section
             html += '<div class="compare-section-box">';
@@ -7925,6 +8237,7 @@
             html += '</div>';
             html += '<div class="diverging-chart">';
 
+
             // Total row
             var leftPct = maxValue > 0 ? (total1 / maxValue) * 100 : 0;
             var rightPct = maxValue > 0 ? (total2 / maxValue) * 100 : 0;
@@ -7936,15 +8249,18 @@
             html += '<div class="chart-value-right">' + total2 + '</div>';
             html += '</div>';
 
+
             // Policy area rows
             policyAreas.forEach(function(areaName, idx) {
                 var count1 = countEntries(data1, areaName);
                 var count2 = countEntries(data2, areaName);
                 if (count1 === 0 && count2 === 0) return;
 
+
                 var leftW = maxValue > 0 ? (count1 / maxValue) * 100 : 0;
                 var rightW = maxValue > 0 ? (count2 / maxValue) * 100 : 0;
                 var shortLabel = areaName.replace("Lethal Autonomous Weapons Systems (LAWS) ", "LAWS ").replace(" & Restrictions", "").replace(" & Interoperability", "").replace(" & Security Requirements", "").replace(" & Human-AI Interaction", "");
+
 
                 html += '<div class="chart-row clickable" data-area="' + escapeHtml(areaName) + '" data-section-id="detail-section-' + idx + '">';
                 html += '<div class="chart-value-left">' + count1 + '</div>';
@@ -7955,13 +8271,16 @@
                 html += '</div>';
             });
 
+
             html += '</div></div>';
+
 
             // Timeline Section
             var allYears = timeline1.concat(timeline2).map(function(e) { return e.year; });
             if (allYears.length > 0) {
                 var minYear = Math.min.apply(null, allYears) - 1; // One year before earliest
                 var maxYear = 2025; // Fixed at 2025
+
 
                 // Group entries by year for each country
                 function groupByYear(entries) {
@@ -7973,12 +8292,15 @@
                     return grouped;
                 }
 
+
                 var grouped1 = groupByYear(timeline1);
                 var grouped2 = groupByYear(timeline2);
+
 
                 html += '<div class="compare-section-box">';
                 html += '<h3 class="compare-section-title">Policy Development Timeline</h3>';
                 html += '<div class="compare-timeline-container">';
+
 
                 // Country 1 row
                 html += '<div class="timeline-row">';
@@ -8001,8 +8323,10 @@
                 });
                 html += '</div>';
 
+
                 // Axis
                 html += '<div class="timeline-axis"></div>';
+
 
                 // Country 2 row
                 html += '<div class="timeline-row">';
@@ -8024,6 +8348,7 @@
                 });
                 html += '</div>';
 
+
                 // Year labels
                 html += '<div class="timeline-year-labels">';
                 for (var y = minYear; y <= maxYear; y++) {
@@ -8031,14 +8356,17 @@
                 }
                 html += '</div>';
 
+
                 // Legend
                 html += '<div class="timeline-legend">';
                 html += '<div class="timeline-legend-item"><div class="timeline-legend-dot country-1"></div><span>' + escapeHtml(getAlpha3(country1)) + '</span></div>';
                 html += '<div class="timeline-legend-item"><div class="timeline-legend-dot country-2"></div><span>' + escapeHtml(getAlpha3(country2)) + '</span></div>';
                 html += '</div>';
 
+
                 html += '</div></div>';
             }
+
 
             // Detail List Section (Collapsible)
             html += '<div class="compare-section-box" style="padding:0;">';
@@ -8048,13 +8376,16 @@
             html += '</button>';
             html += '<div class="detail-content-wrapper" id="compare-detail-content" style="padding: 24px 30px; background: #fafbfc;">';
 
+
             policyAreas.forEach(function(areaName, idx) {
                 var count1 = countEntries(data1, areaName);
                 var count2 = countEntries(data2, areaName);
                 if (count1 === 0 && count2 === 0) return;
 
+
                 var area1 = data1[areaName] || {};
                 var area2 = data2[areaName] || {};
+
 
                 // Determine data-area for color coding
                 var dataArea = "";
@@ -8065,6 +8396,7 @@
                 else if (areaName.indexOf("Technical") !== -1) dataArea = "technical";
                 else if (areaName.indexOf("Ethical") !== -1) dataArea = "ethical";
 
+
                 html += '<div class="detail-policy-section" id="detail-section-' + idx + '" data-area="' + dataArea + '">';
                 html += '<div class="detail-policy-header">';
                 html += '<span>' + escapeHtml(areaName) + '<span class="toggle-icon">▼</span></span>';
@@ -8073,8 +8405,10 @@
                 html += '<span class="count-2">' + escapeHtml(getAlpha3(country2)) + ': ' + count2 + '</span>';
                 html += '</div></div>';
 
+
                 html += '<div class="detail-policy-content">';
                 html += '<div class="detail-entries-grid">';
+
 
                 // Country 1 entries
                 html += '<div class="detail-country-entries country-1">';
@@ -8113,6 +8447,7 @@
                 }
                 html += '</div>';
 
+
                 // Country 2 entries
                 html += '<div class="detail-country-entries country-2">';
                 html += '<h4>' + escapeHtml(getAlpha3(country2)) + '</h4>';
@@ -8150,12 +8485,16 @@
                 }
                 html += '</div>';
 
+
                 html += '</div></div></div>';
             });
 
+
             html += '</div></div>';
 
+
             content.innerHTML = html;
+
 
             // Add event listeners
             // Toggle detail list
@@ -8168,12 +8507,14 @@
                 });
             }
 
+
             // Policy section header clicks (collapse/expand)
             content.querySelectorAll(".detail-policy-header").forEach(function(header) {
                 header.addEventListener("click", function() {
                     header.parentElement.classList.toggle("expanded");
                 });
             });
+
 
             // Detail entry item clicks (expand/collapse description)
             content.querySelectorAll(".detail-entry-header").forEach(function(header) {
@@ -8182,6 +8523,7 @@
                     header.parentElement.classList.toggle("expanded");
                 });
             });
+
 
             // Chart row clicks
             content.querySelectorAll(".chart-row.clickable").forEach(function(row) {
@@ -8206,6 +8548,7 @@
                 });
             });
 
+
             // Timeline tooltip
             var tooltip = document.getElementById("compare-timeline-tooltip");
             if (!tooltip) {
@@ -8214,6 +8557,7 @@
                 tooltip.className = "compare-tooltip";
                 document.body.appendChild(tooltip);
             }
+
 
             content.querySelectorAll(".timeline-dot").forEach(function(dot) {
                 dot.addEventListener("mouseenter", function() {
@@ -8230,6 +8574,7 @@
             });
         }
 
+
         // ===== MAP =====
         function updateMapHighlights() {
             var paths = document.querySelectorAll(".country-path");
@@ -8240,6 +8585,7 @@
                 var isSelected = false;
                 var isDisabled = false;
                 var isAllianceMember = false;
+
 
                 if (currentView === "overview") {
                     isSelected = country === selectedCountry;
@@ -8263,6 +8609,7 @@
                     isDisabled = selectedCountries.size >= MAX_COMPARE && !isSelected && policyData[country];
                 }
 
+
                 path.classList.remove("selected", "disabled", "alliance-member");
                 if (isSelected) path.classList.add("selected");
                 if (isDisabled) path.classList.add("disabled");
@@ -8270,9 +8617,11 @@
             });
         }
 
+
         function showTooltip(event, countryName) {
             var displayName = displayNames[countryName] || countryName;
             tooltip.querySelector(".tooltip-title").textContent = displayName;
+
 
             var msg = "Click to select";
             if (currentView === "compare" && selectedCountries.size >= MAX_COMPARE && !selectedCountries.has(countryName)) {
@@ -8282,12 +8631,15 @@
             }
             tooltip.querySelector(".tooltip-subtitle").textContent = msg;
 
+
             tooltip.style.left = (event.clientX + 15) + "px";
             tooltip.style.top = (event.clientY - 10) + "px";
             tooltip.classList.add("visible");
         }
 
+
         function hideTooltip() { tooltip.classList.remove("visible"); }
+
 
         function showAllianceMemberTooltip(event, mapName, memberName) {
             var allianceFullNames = {
@@ -8302,9 +8654,11 @@
             tooltip.classList.add("visible");
         }
 
+
         async function initMap() {
             var width = 960;
             var height = 480;
+
 
             var svg = d3.select("#map-svg")
                 .attr("width", "100%")
@@ -8312,14 +8666,18 @@
                 .attr("viewBox", "0 0 " + width + " " + height)
                 .attr("preserveAspectRatio", "xMidYMid meet");
 
+
             // Create a group for zoomable content
             var g = svg.append("g").attr("id", "map-group");
+
 
             var projection = d3.geoNaturalEarth1()
                 .scale(180)
                 .translate([width / 2, height / 2 + 25]);
 
+
             var path = d3.geoPath().projection(projection);
+
 
             // Add ocean background
             g.append("rect")
@@ -8327,9 +8685,11 @@
                 .attr("width", width)
                 .attr("height", height);
 
+
             // Add graticule
             var graticule = d3.geoGraticule();
             g.append("path").datum(graticule).attr("class", "graticule").attr("d", path);
+
 
             // Setup zoom behavior
             mapZoom = d3.zoom()
@@ -8338,29 +8698,36 @@
                     g.attr("transform", event.transform);
                 });
 
+
             svg.call(mapZoom);
+
 
             // Zoom controls
             document.getElementById("zoom-in").addEventListener("click", function() {
                 svg.transition().duration(300).call(mapZoom.scaleBy, 1.5);
             });
 
+
             document.getElementById("zoom-out").addEventListener("click", function() {
                 svg.transition().duration(300).call(mapZoom.scaleBy, 0.67);
             });
+
 
             document.getElementById("zoom-reset").addEventListener("click", function() {
                 svg.transition().duration(300).call(mapZoom.transform, d3.zoomIdentity);
             });
 
+
             try {
                 var world = await d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json");
                 var countries = topojson.feature(world, world.objects.countries);
+
 
                 var countryNames = {};
                 world.objects.countries.geometries.forEach(function(geo) {
                     countryNames[geo.id] = geo.properties.name;
                 });
+
 
                 g.selectAll(".country-path")
                     .data(countries.features)
@@ -8411,16 +8778,20 @@
                     })
                     .on("mouseout", hideTooltip);
 
+
                 document.getElementById("map-loading").style.display = "none";
                 document.getElementById("map-svg").style.display = "block";
 
+
                 // Auto-select removed
+
 
             } catch (error) {
                 console.error("Error loading map:", error);
                 document.getElementById("map-loading").innerHTML = '<span style="color: #d64045;">Error loading map. Please refresh.</span>';
             }
         }
+
 
         buildDropdowns();
             initCountrySearch();
@@ -8442,5 +8813,3 @@
     </script>
 </body>
 </html>
-
-
