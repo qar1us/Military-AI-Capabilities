@@ -60,7 +60,7 @@
 
         body {
             font-family: 'Montserrat', -apple-system, sans-serif;
-            background: var(--cream);
+            background: #f0f2f5;
             color: var(--text-dark);
             min-height: 100vh;
             line-height: 1.7;
@@ -75,15 +75,32 @@
         .container {
             max-width: 1800px;
             margin: 0 auto;
-            padding: 60px 50px;
+            padding: 0;
         }
 
 
         header {
-            text-align: center;
+            text-align: left;
             margin-bottom: 40px;
-            padding-bottom: 0;
-            border-bottom: none;
+            padding: 50px 50px 40px 50px;
+            background: var(--navy);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .header-content {
+            flex: 1;
+        }
+        
+        .header-logo {
+            flex-shrink: 0;
+            margin-left: 40px;
+        }
+        
+        .header-logo img {
+            height: 50px;
+            width: auto;
         }
 
 
@@ -93,7 +110,7 @@
             font-weight: 700;
             letter-spacing: 4px;
             text-transform: uppercase;
-            color: var(--teal);
+            color: var(--teal-light);
             margin-bottom: 20px;
         }
 
@@ -101,7 +118,7 @@
         h1 {
             font-size: clamp(2.2rem, 4vw, 3.2rem);
             font-weight: 800;
-            color: var(--navy);
+            color: #ffffff;
             margin-bottom: 16px;
             letter-spacing: -0.5px;
             line-height: 1.2;
@@ -110,25 +127,32 @@
 
         .subtitle {
             font-size: 1.1rem;
-            color: var(--text-muted);
+            color: #a8b5c7;
             font-weight: 400;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 0;
             line-height: 1.6;
         }
 
 
         .line-decoration {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            margin-top: 32px;
+            margin-top: 24px;
         }
 
-
-        .line-decoration .line { width: 80px; height: 2px; background: var(--coral); }
-        .line-decoration .dot { width: 8px; height: 8px; background: var(--coral); border-radius: 50%; }
+        .line-decoration .line { 
+            width: 120px; 
+            height: 3px; 
+            background: var(--coral); 
+        }
+        
+        .line-decoration .dot { 
+            display: none;
+        }
+        
+        
+        .main-content {
+            padding: 40px 50px 60px 50px;
+        }
 
 
         /* ===== MAP ===== */
@@ -395,7 +419,7 @@
 
 
         .search-result-item:hover {
-            background: var(--cream);
+            background: #e8ebef;
         }
 
 
@@ -651,7 +675,7 @@
             padding: 12px 40px 12px 20px;
             border: 2px solid var(--cream-dark);
             border-radius: 10px;
-            background: var(--cream) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%231a2744' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center;
+            background: #e8ebef url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%231a2744' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center;
             color: var(--navy);
             cursor: pointer;
             appearance: none;
@@ -686,7 +710,7 @@
             font-size: 0.8rem;
             padding: 8px 14px;
             border-radius: 6px;
-            background: var(--cream);
+            background: #e8ebef;
             transition: all 0.2s;
             font-weight: 500;
             color: var(--navy);
@@ -694,7 +718,7 @@
         }
 
 
-        .filter-checkbox:hover { background: var(--cream-dark); }
+        .filter-checkbox:hover { background: #dde1e6; }
         .filter-checkbox input { accent-color: var(--teal); width: 15px; height: 15px; }
         .filter-checkbox.legal { border-left-color: var(--navy); }
         .filter-checkbox.policy { border-left-color: var(--teal); }
@@ -779,7 +803,7 @@
             font-size: 0.8rem;
             font-weight: 500;
             padding: 6px 14px;
-            background: var(--cream);
+            background: #e8ebef;
             color: var(--text-muted);
             border-radius: 20px;
             transition: all 0.2s;
@@ -854,7 +878,7 @@
         .member-bar-track {
             flex: 1;
             height: 22px;
-            background: var(--cream);
+            background: #e8ebef;
             border-radius: 4px;
             overflow: hidden;
         }
@@ -984,7 +1008,7 @@
         }
         
         .expand-more-toggle:hover {
-            background: var(--cream);
+            background: #e8ebef;
         }
         
         .expand-more-icon {
@@ -1016,7 +1040,7 @@
         }
         
         .alliance-info-note:hover {
-            background: var(--cream);
+            background: #e8ebef;
             color: var(--navy);
         }
         
@@ -1068,7 +1092,7 @@
         }
 
 
-        .policy-area { background: var(--cream); border-radius: 12px; overflow: hidden; }
+        .policy-area { background: #e8ebef; border-radius: 12px; overflow: hidden; }
 
 
         .policy-area-header {
@@ -1081,7 +1105,7 @@
         }
 
 
-        .policy-area-header:hover { background: var(--cream-dark); }
+        .policy-area-header:hover { background: #dde1e6; }
 
 
         .policy-area-title {
@@ -1283,7 +1307,7 @@
         }
         
         .chart-row.clickable:hover {
-            background: var(--cream);
+            background: #e8ebef;
         }
         
         .chart-value-left {
@@ -1521,8 +1545,8 @@
         .detail-toggle-btn {
             width: 100%;
             padding: 14px 20px;
-            background: var(--cream);
-            border: 1px solid var(--cream-dark);
+            background: #e8ebef;
+            border: 1px solid #dde1e6;
             border-radius: 8px;
             cursor: pointer;
             display: flex;
@@ -1537,7 +1561,7 @@
         }
         
         .detail-toggle-btn:hover {
-            background: var(--cream-dark);
+            background: #dde1e6;
         }
         
         .detail-toggle-icon {
@@ -1562,7 +1586,7 @@
             margin-bottom: 16px;
             border-radius: 12px;
             overflow: hidden;
-            background: var(--cream);
+            background: #e8ebef;
         }
         
         .detail-policy-header {
@@ -1570,7 +1594,7 @@
             font-weight: 700;
             color: var(--navy);
             padding: 18px 20px;
-            background: var(--cream);
+            background: #e8ebef;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -1603,7 +1627,7 @@
         .detail-policy-section[data-area="ethical"] .detail-policy-header::before { background: #4a9d5b; }
         
         .detail-policy-header:hover {
-            background: var(--cream-dark);
+            background: #dde1e6;
         }
         
         .detail-policy-header .toggle-icon {
@@ -1666,7 +1690,7 @@
         .detail-entry-item {
             padding: 12px 14px;
             margin-bottom: 10px;
-            background: var(--cream);
+            background: #e8ebef;
             border-radius: 8px;
             font-size: 0.85rem;
             border: none;
@@ -1769,7 +1793,7 @@
         }
         
         .country-summary-box {
-            background: linear-gradient(135deg, var(--cream) 0%, rgba(245, 234, 214, 0.5) 100%);
+            background: linear-gradient(135deg, #e8ebef 0%, rgba(224, 228, 233, 0.5) 100%);
             border-left: 4px solid var(--teal);
             padding: 20px 24px;
             margin-bottom: 24px;
@@ -1870,7 +1894,7 @@
         
         .insights-hint {
             grid-column: 1 / -1;
-            background: var(--cream);
+            background: #e8ebef;
             padding: 10px 14px;
             border-radius: 8px;
             font-size: 0.75rem;
@@ -1983,7 +2007,7 @@
         }
 
 
-        .source-item-header:hover { background: var(--cream); }
+        .source-item-header:hover { background: #e8ebef; }
 
 
         .source-item-title-row { display: flex; align-items: center; gap: 8px; flex: 1; position: relative; }
@@ -2062,7 +2086,7 @@
             font-size: 0.85rem;
             color: #5a6a7a;
             line-height: 1.7;
-            border-top: 1px solid var(--cream);
+            border-top: 1px solid #dde1e6;
         }
 
 
@@ -2103,38 +2127,33 @@
 
 
         footer {
-            text-align: center;
-            margin-top: 60px;
-            padding-top: 32px;
-            border-top: 1px solid var(--cream-dark);
-            color: var(--text-muted);
+            text-align: left;
+            margin-top: 0;
+            padding: 32px 50px;
+            background: var(--navy);
+            border-top: 3px solid var(--coral);
+            color: #a8b5c7;
             font-size: 0.85rem;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
         }
 
 
         footer p:first-child {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-        
-        footer p:first-child::before, footer p:first-child::after { 
-            content: ''; 
-            width: 50px; 
-            height: 2px; 
-            background: var(--coral); 
+            flex: 1;
+            max-width: 600px;
+            line-height: 1.6;
         }
         
         footer .data-disclaimer {
             font-size: 0.8rem;
-            margin-top: 4px;
-            color: var(--text-muted);
+            color: #a8b5c7;
             font-style: italic;
+            white-space: nowrap;
         }
 
 
@@ -2166,20 +2185,23 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo-placeholder" id="ari-logo-container">
-                <!-- ARI Logo will be added here -->
+            <div class="header-content">
+                <p class="overline">Research Data Visualization</p>
+                <h1>Global Defense AI Policy Landscape</h1>
+                <p class="subtitle">Mapping military and defense AI governance frameworks across select states</p>
+                <div class="line-decoration">
+                    <span class="dot"></span>
+                    <span class="line"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
-            <p class="overline">Research Data Visualization</p>
-            <h1>Global Defense AI Policy Landscape</h1>
-            <p class="subtitle">Mapping military and defense AI governance frameworks across select states</p>
-            <div class="line-decoration">
-                <span class="dot"></span>
-                <span class="line"></span>
-                <span class="dot"></span>
+            <div class="header-logo">
+                <img src="./ari-logo.svg" alt="Americans for Responsible Innovation">
             </div>
         </header>
 
 
+        <div class="main-content">
         <div class="map-container">
             <div class="map-controls">
                 <button class="map-control-btn" id="zoom-in" title="Zoom in">+</button>
@@ -2343,6 +2365,7 @@
         </div>
 
 
+        </div>
         <footer>
             <p>Data compiled from official government documents, national document submissions, public statements, press releases, and secondary sources where primary information is not publicly available</p>
             <p class="data-disclaimer">Data current as of November 2025</p>
@@ -6495,6 +6518,15 @@
                 this.classList.add("active");
                 document.querySelectorAll(".view-content").forEach(function(v) { v.classList.remove("active"); });
                 document.getElementById("view-" + currentView).classList.add("active");
+                
+                // Clear alliance highlighting and selection when leaving alliance view
+                if (currentView !== "alliance") {
+                    selectedAlliance = null;
+                    document.querySelectorAll(".country-path").forEach(function(p) {
+                        p.classList.remove("alliance-member");
+                    });
+                }
+                
                 updateMapHighlights();
                 updateCompareChipsState();
             });
