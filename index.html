@@ -99,8 +99,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1800px;
-            margin: 0 auto;
             transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
                         opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
                         padding 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -133,7 +131,6 @@
         /* Compact state */
         .header-compact {
             display: flex; align-items: center;
-            max-width: 1800px; margin: 0 auto;
             max-height: 0; opacity: 0; overflow: hidden;
             transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
                         opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1585,24 +1582,68 @@
 
         /* ===== ALLIANCE MEMBERS LIST ===== */
         .alliance-members-list {
-            padding: 16px 24px 20px;
-            margin-bottom: 8px;
+            padding: 8px 24px 0;
+        }
+        
+        .alliance-members-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            padding: 6px 0;
+            user-select: none;
+        }
+        
+        .alliance-members-header:hover .alliance-members-label {
+            color: var(--teal);
+        }
+        
+        .alliance-members-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
         
         .alliance-members-label {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 0.7rem;
-            font-weight: 600;
+            font-size: 0.95rem;
+            font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 0.5px;
+            color: var(--navy);
+            transition: color 0.2s;
+        }
+        
+        .alliance-members-hint {
+            font-size: 0.7rem;
+            font-weight: 400;
             color: var(--text-muted);
-            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .alliance-members-toggle {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            transition: transform 0.3s;
+        }
+        
+        .alliance-members-toggle.expanded {
+            transform: rotate(180deg);
         }
         
         .alliance-members-chips {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            padding-top: 0;
+        }
+        
+        .alliance-members-chips.expanded {
+            max-height: 500px;
+            padding-top: 12px;
         }
         
         .alliance-member-chip {
@@ -1631,7 +1672,7 @@
         /* ===== ALLIANCE VISUALIZATIONS ===== */
         .alliance-insights-row {
             display: grid;
-            grid-template-columns: 1fr 1.4fr;
+            grid-template-columns: 1fr;
             gap: 24px;
             margin-bottom: 28px;
         }
@@ -1661,55 +1702,6 @@
             font-size: 0.78rem;
             color: var(--text-muted);
             margin-bottom: 18px;
-        }
-        
-        /* Member Contribution Bar Chart */
-        .member-bar-row {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 6px;
-        }
-        
-        .member-bar-name {
-            width: 90px;
-            font-size: 0.78rem;
-            font-weight: 600;
-            color: var(--navy);
-            text-align: right;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        
-        .member-bar-track {
-            flex: 1;
-            height: 22px;
-            background: #e8ebef;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        
-        .member-bar-fill {
-            height: 100%;
-            border-radius: 4px;
-            transition: width 0.4s ease;
-        }
-        
-        .member-bar-fill.rank-1 { background: var(--navy); }
-        .member-bar-fill.rank-2 { background: #3d5a80; }
-        .member-bar-fill.rank-3 { background: #6b8299; }
-        
-        .member-bar-value {
-            width: 28px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: var(--navy);
-            text-align: left;
-        }
-        
-        .member-bar-value.muted {
-            color: var(--text-muted);
         }
         
         /* Heatmap */
@@ -3517,7 +3509,7 @@
             background: white;
             border-radius: 16px;
             padding: 28px;
-            margin: 24px 0;
+            margin: 0 0 24px 0;
             box-shadow: 0 4px 20px rgba(26, 39, 68, 0.06);
         }
         
@@ -3531,6 +3523,65 @@
             font-weight: 700;
             color: var(--navy);
             margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .convergence-info-icon {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            background: var(--text-muted);
+            color: white;
+            border-radius: 50%;
+            font-size: 0.7rem;
+            font-weight: 700;
+            cursor: help;
+            flex-shrink: 0;
+        }
+        
+        .convergence-info-icon:hover {
+            background: var(--teal);
+        }
+        
+        .convergence-info-tooltip {
+            position: absolute;
+            bottom: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 280px;
+            padding: 12px 14px;
+            background: var(--navy);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 400;
+            line-height: 1.5;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s, visibility 0.2s;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        
+        .convergence-info-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: var(--navy);
+        }
+        
+        .convergence-info-icon:hover .convergence-info-tooltip {
+            opacity: 1;
+            visibility: visible;
         }
         
         .convergence-subtitle {
@@ -3710,19 +3761,6 @@
             color: var(--navy);
         }
         
-        .convergence-legend-change {
-            font-size: 0.8rem;
-            font-weight: 700;
-        }
-        
-        .convergence-legend-change.positive {
-            color: #4a9d5b;
-        }
-        
-        .convergence-legend-change.negative {
-            color: #d64045;
-        }
-        
         .convergence-similarity-section {
             margin-top: 20px;
             padding-top: 20px;
@@ -3777,76 +3815,6 @@
             font-size: 0.85rem;
             font-weight: 700;
             color: var(--navy);
-        }
-        
-        .convergence-events-section {
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid var(--cream-dark);
-        }
-        
-        .convergence-events-title {
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 12px;
-        }
-        
-        .convergence-events-list {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        
-        .convergence-event-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            font-size: 0.8rem;
-        }
-        
-        .convergence-event-year {
-            font-weight: 700;
-            color: var(--teal);
-            min-width: 40px;
-        }
-        
-        .convergence-event-text {
-            color: var(--text-muted);
-        }
-        
-        /* Download Button */
-        .download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 12px;
-            background: #e8ebef;
-            border: none;
-            border-radius: 6px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: var(--navy);
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        
-        .download-btn:hover {
-            background: var(--teal);
-            color: white;
-        }
-        
-        .download-btn svg {
-            width: 14px;
-            height: 14px;
-        }
-        
-        .download-btn-group {
-            display: flex;
-            gap: 8px;
         }
 
         /* ===== BREADTH/DEPTH SCATTER ===== */
@@ -4271,6 +4239,7 @@
     </style>
 </head>
 <body>
+    <div class="container">
         <header class="site-header" id="siteHeader">
             <!-- FULL STATE -->
             <div class="header-full">
@@ -4400,7 +4369,6 @@
             </div>
             <div class="header-accent"></div>
         </header>
-    <div class="container">
 
 
         <div class="main-content">
@@ -4610,7 +4578,12 @@
                 <!-- Convergence Timeline -->
                 <div class="convergence-timeline-container" id="convergence-timeline-container" style="display: none;">
                     <div class="convergence-header">
-                        <div class="convergence-title">Convergence/Divergence Timeline</div>
+                        <div class="convergence-title">
+                            Convergence/Divergence Timeline
+                            <span class="convergence-info-icon">ⓘ
+                                <span class="convergence-info-tooltip">Convergence scores measure policy alignment across the 6 different policy areas, blending coverage (20%) with substantive stance similarity (80%). UN voting records on LAWS resolutions apply additional adjustments.</span>
+                            </span>
+                        </div>
                         <div class="convergence-subtitle">Are country groups becoming more or less aligned over time?</div>
                     </div>
                     <div class="convergence-groupings" id="convergence-groupings">
@@ -4626,10 +4599,6 @@
                     <div class="convergence-similarity-section" id="convergence-similarity-section">
                         <div class="convergence-similarity-title">Current Similarity (Latest Year)</div>
                         <div class="convergence-similarity-bars" id="convergence-similarity-bars"></div>
-                    </div>
-                    <div class="convergence-events-section">
-                        <div class="convergence-events-title">Key Events</div>
-                        <div class="convergence-events-list" id="convergence-events-list"></div>
                     </div>
                 </div>
                 <div class="section-content" id="alliance-content">
@@ -4698,12 +4667,6 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                 </svg>
                             </div>
-                            <button class="download-btn" onclick="downloadMomentumPNG()">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                                PNG
-                            </button>
                         </div>
                     </div>
                     <div class="analytics-card-content">
@@ -4733,14 +4696,6 @@
                             <div class="analytics-card-title">Global Policy Growth</div>
                             <div class="analytics-card-subtitle">Policy publications by quarter, segmented by policy area</div>
                         </div>
-                        <div class="download-btn-group">
-                            <button class="download-btn" onclick="downloadPolicyGrowthPNG()">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                                PNG
-                            </button>
-                        </div>
                     </div>
                     <div class="analytics-card-content">
                         <div class="policy-growth-wrapper">
@@ -4762,7 +4717,7 @@
 
         </div>
 
-    </div>
+        <!-- CSV Download Bar -->
         <div class="csv-download-bar">
             <div class="csv-download-info">
                 <div class="csv-download-title">Download Full Dataset</div>
@@ -4779,6 +4734,7 @@
             <p>Data compiled from official government documents, national document submissions, public statements, press releases, and secondary sources where primary information is not publicly available</p>
             <p class="data-disclaimer">Data current as of December 2025</p>
         </footer>
+    </div>
 
 
     <div class="tooltip" id="tooltip">
@@ -14352,6 +14308,69 @@
         const highPolicyConvergence = rawData.highPolicyConvergence || {};
         const MAX_COMPARE = 2;
 
+        // Voting stance data for key UN resolutions on LAWS/military AI
+        // Countries that voted AGAINST key resolutions - drastic divergence from consensus
+        const votedAgainstResolutions = {
+            'Russian Federation': { year: 2023, resolutions: ['A/RES/78/241', 'A/RES/79/239'] },
+            'Russia': { year: 2023, resolutions: ['A/RES/78/241', 'A/RES/79/239'] },
+            'North Korea': { year: 2024, resolutions: ['L.77'] },
+            'India': { year: 2023, resolutions: ['A/RES/78/241'] }
+        };
+        
+        // Countries that ABSTAINED - moderate divergence from consensus
+        const abstainedResolutions = {
+            'China': { year: 2023, resolutions: ['A/RES/78/241'] },
+            'Czech Republic': { year: 2024, resolutions: ['L.77'] },
+            'Czechia': { year: 2024, resolutions: ['L.77'] },
+            'Estonia': { year: 2024, resolutions: ['L.77'] },
+            'Iran': { year: 2023, resolutions: ['A/RES/78/241', 'L.77'] },
+            'Israel': { year: 2023, resolutions: ['A/RES/78/241', 'L.77'] },
+            'Latvia': { year: 2024, resolutions: ['L.77'] },
+            'Lithuania': { year: 2024, resolutions: ['L.77'] },
+            'Poland': { year: 2024, resolutions: ['L.77'] },
+            'Turkey': { year: 2023, resolutions: ['A/RES/78/241', 'L.77'] },
+            'Türkiye': { year: 2023, resolutions: ['A/RES/78/241', 'L.77'] },
+            'United Arab Emirates': { year: 2023, resolutions: ['A/RES/78/241'] },
+            'Ukraine': { year: 2024, resolutions: ['L.77'] }
+        };
+        
+        // Calculate voting stance divergence penalty (or bonus for agreement)
+        function calcVotingDivergencePenalty(country1, country2, year) {
+            var c1Against = votedAgainstResolutions[country1];
+            var c2Against = votedAgainstResolutions[country2];
+            var c1Abstain = abstainedResolutions[country1];
+            var c2Abstain = abstainedResolutions[country2];
+            
+            // Check if voting data applies to this year
+            var c1VotedAgainst = c1Against && year >= c1Against.year;
+            var c2VotedAgainst = c2Against && year >= c2Against.year;
+            var c1Abstained = c1Abstain && year >= c1Abstain.year;
+            var c2Abstained = c2Abstain && year >= c2Abstain.year;
+            
+            // Determine each country's stance: 'against', 'abstain', or 'for'
+            var stance1 = c1VotedAgainst ? 'against' : (c1Abstained ? 'abstain' : 'for');
+            var stance2 = c2VotedAgainst ? 'against' : (c2Abstained ? 'abstain' : 'for');
+            
+            // Same stance = convergence (negative penalty = bonus)
+            if (stance1 === stance2) {
+                if (stance1 === 'against') return -0.05; // Both against = strong agreement
+                if (stance1 === 'abstain') return -0.03; // Both abstain = agreement in hesitance
+                return 0; // Both for = baseline, no adjustment
+            }
+            
+            // Different stances = divergence
+            if (stance1 === 'against' || stance2 === 'against') {
+                // One voted against
+                if (stance1 === 'abstain' || stance2 === 'abstain') {
+                    return 0.20; // Against vs Abstain - moderate divergence (both skeptical, different degrees)
+                }
+                return 0.35; // Against vs For - major divergence
+            }
+            
+            // One abstained, one voted for
+            return 0.15; // Abstain vs For - moderate divergence
+        }
+
 
         const countryNameMap = {
             "United States of America": "USA",
@@ -14681,6 +14700,18 @@
                     // Hide convergence timeline
                     var convergenceContainer = document.getElementById("convergence-timeline-container");
                     if (convergenceContainer) convergenceContainer.style.display = "none";
+                }
+                
+                // Reset alliance view when switching to it
+                if (currentView === "alliance") {
+                    selectedAlliance = null;
+                    activeConvergenceGroups = [];
+                    document.getElementById("alliance-dropdown").value = "";
+                    document.getElementById("alliance-header").style.display = "none";
+                    document.getElementById("alliance-members-list").style.display = "none";
+                    document.getElementById("convergence-timeline-container").style.display = "none";
+                    document.getElementById("alliance-content").innerHTML = '<div class="placeholder"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg><p>Select an alliance to explore combined<br>defense AI policies of member states</p></div>';
+                    d3.selectAll(".country-path").classed("alliance-member", false);
                 }
                 
                 updateMapHighlights();
@@ -15023,10 +15054,31 @@
             membersListContainer.style.display = "block";
             membersListContainer.innerHTML = "";
             
+            // Create collapsible header
+            var membersHeader = document.createElement("div");
+            membersHeader.className = "alliance-members-header";
+            
+            var membersLeft = document.createElement("div");
+            membersLeft.className = "alliance-members-left";
+            
             var membersLabel = document.createElement("div");
             membersLabel.className = "alliance-members-label";
             membersLabel.textContent = "Member States";
-            membersListContainer.appendChild(membersLabel);
+            membersLeft.appendChild(membersLabel);
+            
+            var membersHint = document.createElement("span");
+            membersHint.className = "alliance-members-hint";
+            membersHint.textContent = "click to expand";
+            membersLeft.appendChild(membersHint);
+            
+            membersHeader.appendChild(membersLeft);
+            
+            var membersToggle = document.createElement("span");
+            membersToggle.className = "alliance-members-toggle";
+            membersToggle.textContent = "▼";
+            membersHeader.appendChild(membersToggle);
+            
+            membersListContainer.appendChild(membersHeader);
             
             var membersChips = document.createElement("div");
             membersChips.className = "alliance-members-chips";
@@ -15050,6 +15102,13 @@
             });
             
             membersListContainer.appendChild(membersChips);
+            
+            // Toggle expand/collapse
+            membersHeader.addEventListener("click", function() {
+                var isExpanded = membersChips.classList.toggle("expanded");
+                membersToggle.classList.toggle("expanded");
+                membersHint.textContent = isExpanded ? "click to collapse" : "click to expand";
+            });
 
             // Render Convergence Timeline
             renderConvergenceTimeline(selectedAlliance);
@@ -15128,7 +15187,6 @@
             
             // Sort by total descending
             memberContributions.sort(function(a, b) { return b.total - a.total; });
-            var maxMemberTotal = memberContributions.length > 0 ? memberContributions[0].total : 1;
             
             // Find max heat value for heatmap
             var maxHeatValue = 1;
@@ -15145,114 +15203,6 @@
             if (memberContributions.length > 0) {
                 var insightsRow = document.createElement("div");
                 insightsRow.className = "alliance-insights-row";
-                
-                // ----- Member Contribution Bar Chart -----
-                var barChartBox = document.createElement("div");
-                barChartBox.className = "alliance-chart-box";
-                
-                // Header row with title and info icon
-                var barHeader = document.createElement("div");
-                barHeader.className = "alliance-chart-header";
-                
-                var barTitle = document.createElement("div");
-                barTitle.className = "alliance-chart-title";
-                barTitle.textContent = "Member Contributions";
-                barHeader.appendChild(barTitle);
-                
-                var barInfoNote = document.createElement("div");
-                barInfoNote.className = "alliance-info-note";
-                barInfoNote.innerHTML = '<span class="info-icon">i</span><span>Info</span>' +
-                    '<div class="alliance-info-tooltip">Visualizations include only alliance members with individual country profiles in this database. Some member states may not yet be documented.</div>';
-                barHeader.appendChild(barInfoNote);
-                
-                barChartBox.appendChild(barHeader);
-                
-                var barSubtitle = document.createElement("div");
-                barSubtitle.className = "alliance-chart-subtitle";
-                barSubtitle.textContent = "Policy entries by member state";
-                barChartBox.appendChild(barSubtitle);
-                
-                var barsContainer = document.createElement("div");
-                barsContainer.style.cssText = "display: flex; flex-direction: column; gap: 2px;";
-                
-                // Show top 10 members initially
-                var initialMembers = memberContributions.slice(0, 10);
-                var extraMembers = memberContributions.slice(10);
-                
-                // Function to create a bar row
-                function createBarRow(member, idx) {
-                    var row = document.createElement("div");
-                    row.className = "member-bar-row";
-                    
-                    var nameSpan = document.createElement("div");
-                    nameSpan.className = "member-bar-name";
-                    nameSpan.textContent = member.name;
-                    nameSpan.title = member.name;
-                    row.appendChild(nameSpan);
-                    
-                    var track = document.createElement("div");
-                    track.className = "member-bar-track";
-                    
-                    var fill = document.createElement("div");
-                    fill.className = "member-bar-fill";
-                    if (idx < 3) fill.classList.add("rank-1");
-                    else if (idx < 6) fill.classList.add("rank-2");
-                    else fill.classList.add("rank-3");
-                    fill.style.width = ((member.total / maxMemberTotal) * 100) + "%";
-                    track.appendChild(fill);
-                    row.appendChild(track);
-                    
-                    var valueSpan = document.createElement("div");
-                    valueSpan.className = "member-bar-value";
-                    if (idx >= 3) valueSpan.classList.add("muted");
-                    valueSpan.textContent = member.total;
-                    row.appendChild(valueSpan);
-                    
-                    row.style.cursor = "pointer";
-                    (function(countryKey) {
-                        row.addEventListener("click", function() {
-                            switchToCountryOverview(countryKey);
-                        });
-                    })(member.key);
-                    
-                    return row;
-                }
-                
-                // Add initial members
-                initialMembers.forEach(function(member, idx) {
-                    barsContainer.appendChild(createBarRow(member, idx));
-                });
-                
-                barChartBox.appendChild(barsContainer);
-                
-                // Add expandable section for extra members
-                if (extraMembers.length > 0) {
-                    var extraBarsContainer = document.createElement("div");
-                    extraBarsContainer.style.cssText = "display: none; flex-direction: column; gap: 2px; margin-top: 2px;";
-                    extraBarsContainer.className = "extra-bars-container";
-                    
-                    extraMembers.forEach(function(member, idx) {
-                        extraBarsContainer.appendChild(createBarRow(member, idx + 10));
-                    });
-                    
-                    barChartBox.appendChild(extraBarsContainer);
-                    
-                    var expandToggle = document.createElement("div");
-                    expandToggle.className = "expand-more-toggle";
-                    expandToggle.innerHTML = '<span class="expand-more-text">+' + extraMembers.length + ' more members</span><svg class="expand-more-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>';
-                    
-                    var isExpanded = false;
-                    expandToggle.addEventListener("click", function() {
-                        isExpanded = !isExpanded;
-                        extraBarsContainer.style.display = isExpanded ? "flex" : "none";
-                        expandToggle.querySelector(".expand-more-text").textContent = isExpanded ? "Show less" : "+" + extraMembers.length + " more members";
-                        expandToggle.querySelector(".expand-more-icon").style.transform = isExpanded ? "rotate(180deg)" : "rotate(0)";
-                    });
-                    
-                    barChartBox.appendChild(expandToggle);
-                }
-                
-                insightsRow.appendChild(barChartBox);
                 
                 // ----- Policy Coverage Heatmap -----
                 var heatmapBox = document.createElement("div");
@@ -15549,9 +15499,12 @@
                 selectedAlliance = null;
                 document.getElementById("alliance-header").style.display = "none";
                 document.getElementById("alliance-members-list").style.display = "none";
+                document.getElementById("convergence-timeline-container").style.display = "none";
                 document.getElementById("alliance-content").innerHTML = '<div class="placeholder"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg><p>Select an alliance to explore combined<br>defense AI policies of member states</p></div>';
                 // Clear map highlighting
                 d3.selectAll(".country-path").classed("alliance-member", false);
+                // Reset active convergence groups
+                activeConvergenceGroups = [];
             }
         });
 
@@ -16346,6 +16299,20 @@
                 
                 if (!s1 || !s2) return null;
                 
+                // Count how many areas each country has data for
+                var country1Areas = 0;
+                var country2Areas = 0;
+                
+                dims.forEach(function(dim) {
+                    if (s1[dim] !== null && s1[dim] !== undefined) country1Areas++;
+                    if (s2[dim] !== null && s2[dim] !== undefined) country2Areas++;
+                });
+                
+                // If either country has NO policy data for this year, return null
+                if (country1Areas === 0 || country2Areas === 0) {
+                    return null;
+                }
+                
                 var presenceScore = 0;
                 var substanceScore = 0;
                 var activeAreas = 0;
@@ -16357,9 +16324,11 @@
                     var has1 = v1 !== null && v1 !== undefined;
                     var has2 = v2 !== null && v2 !== undefined;
                     
-                    // Presence similarity: both have or both don't have
-                    if (has1 === has2) {
-                        presenceScore += 1;
+                    // Presence similarity: only count areas where at least one country has data
+                    if (has1 || has2) {
+                        if (has1 === has2) {
+                            presenceScore += 1;
+                        }
                     }
                     
                     // Substance similarity: only for areas where both countries have data
@@ -16370,15 +16339,29 @@
                     }
                 });
                 
-                presenceScore = presenceScore / dims.length;
+                // Normalize presence score by areas where at least one has data
+                var relevantAreas = 0;
+                dims.forEach(function(dim) {
+                    if ((s1[dim] !== null && s1[dim] !== undefined) || 
+                        (s2[dim] !== null && s2[dim] !== undefined)) {
+                        relevantAreas++;
+                    }
+                });
+                
+                presenceScore = relevantAreas > 0 ? presenceScore / relevantAreas : 0;
                 substanceScore = activeAreas > 0 ? substanceScore / activeAreas : 0;
                 
-                // Blend: 20% presence + 80% substance
+                // Calculate base similarity
+                var baseSimilarity;
                 if (activeAreas === 0) {
-                    return presenceScore * 0.5;
+                    baseSimilarity = presenceScore * 0.3; // Lower weight when no substance overlap
+                } else {
+                    baseSimilarity = 0.2 * presenceScore + 0.8 * substanceScore;
                 }
                 
-                return 0.2 * presenceScore + 0.8 * substanceScore;
+                // Apply voting divergence penalty
+                var votingPenalty = calcVotingDivergencePenalty(country1, country2, year);
+                return Math.min(1, Math.max(0, baseSimilarity - votingPenalty));
             }
             
             var dataPoints = [];
@@ -16843,63 +16826,69 @@
             // Convergence/Divergence Timeline Section
             html += '<div class="compare-section-box convergence-similarity-section">';
             
-            // Calculate current similarity using the same blended approach as the chart
-            // This will be recalculated by the chart rendering, but we need it for display
+            // Calculate current similarity using the same data source as the chart (yearlyScores for 2025)
             var currentSim = 0;
             var dims = ['LAWS', 'Adoption', 'Procurement', 'Safety', 'Ethics', 'Interoperability'];
-            var areaNameMap = {
-                'LAWS': 'LAWS Employment/Deployment',
-                'Adoption': 'Adoption & Intent of Use',
-                'Procurement': 'Acquisition & Procurement',
-                'Safety': 'Technical Safety & Security Requirements',
-                'Ethics': 'Ethical Guidelines & Restrictions',
-                'Interoperability': "Int'l Cooperation & Interoperability"
-            };
             
-            var scores1 = directionalCoding[country1];
-            var scores2 = directionalCoding[country2];
+            var yearlyScores = rawData.yearlyScores || {};
+            var scores1 = yearlyScores[country1] ? yearlyScores[country1]['2025'] : null;
+            var scores2 = yearlyScores[country2] ? yearlyScores[country2]['2025'] : null;
             
             if (scores1 && scores2) {
-                var presenceScore = 0;
-                var substanceScore = 0;
-                var activeAreas = 0;
+                // Count how many areas each country has data for
+                var country1Areas = 0;
+                var country2Areas = 0;
                 
                 dims.forEach(function(dim) {
-                    var fullName = areaNameMap[dim];
-                    var hasArea1 = data1[fullName] && (
-                        (data1[fullName].legal_directives || []).length +
-                        (data1[fullName].policy_documents || []).length +
-                        (data1[fullName].public_statements || []).length
-                    ) > 0;
-                    var hasArea2 = data2[fullName] && (
-                        (data2[fullName].legal_directives || []).length +
-                        (data2[fullName].policy_documents || []).length +
-                        (data2[fullName].public_statements || []).length
-                    ) > 0;
-                    
-                    // Presence similarity
-                    if (hasArea1 === hasArea2) presenceScore += 1;
-                    
-                    // Substance similarity for areas where both have data
-                    if (hasArea1 && hasArea2) {
-                        var v1 = scores1[dim] || 0;
-                        var v2 = scores2[dim] || 0;
-                        var dimSim = 1 - Math.abs(v1 - v2) / 4;
-                        substanceScore += dimSim;
-                        activeAreas++;
-                    }
+                    if (scores1[dim] !== null && scores1[dim] !== undefined) country1Areas++;
+                    if (scores2[dim] !== null && scores2[dim] !== undefined) country2Areas++;
                 });
                 
-                presenceScore = presenceScore / dims.length;
-                substanceScore = activeAreas > 0 ? substanceScore / activeAreas : 0;
-                
-                // Blend: 20% presence + 80% substance
-                currentSim = activeAreas > 0 ? (0.2 * presenceScore + 0.8 * substanceScore) : presenceScore * 0.3;
+                // Only calculate if both have data
+                if (country1Areas > 0 && country2Areas > 0) {
+                    var presenceScore = 0;
+                    var substanceScore = 0;
+                    var activeAreas = 0;
+                    var relevantAreas = 0;
+                    
+                    dims.forEach(function(dim) {
+                        var v1 = scores1[dim];
+                        var v2 = scores2[dim];
+                        
+                        var has1 = v1 !== null && v1 !== undefined;
+                        var has2 = v2 !== null && v2 !== undefined;
+                        
+                        // Only count areas where at least one country has data
+                        if (has1 || has2) {
+                            relevantAreas++;
+                            if (has1 === has2) presenceScore += 1;
+                        }
+                        
+                        // Substance similarity for areas where both have data
+                        if (has1 && has2) {
+                            var dimSim = 1 - Math.abs(v1 - v2) / 4;
+                            substanceScore += dimSim;
+                            activeAreas++;
+                        }
+                    });
+                    
+                    presenceScore = relevantAreas > 0 ? presenceScore / relevantAreas : 0;
+                    substanceScore = activeAreas > 0 ? substanceScore / activeAreas : 0;
+                    
+                    // Blend: 20% presence + 80% substance
+                    var baseSim = activeAreas > 0 ? (0.2 * presenceScore + 0.8 * substanceScore) : presenceScore * 0.3;
+                    
+                    // Apply voting divergence penalty (current year = 2025)
+                    var votingPenalty = calcVotingDivergencePenalty(country1, country2, 2025);
+                    currentSim = Math.min(1, Math.max(0, baseSim - votingPenalty));
+                }
             }
             
             // Header with percentage
             html += '<h3 class="compare-section-title" style="display: flex; justify-content: space-between; align-items: center;">';
-            html += '<span>Policy Convergence Timeline</span>';
+            html += '<span style="display: flex; align-items: center; gap: 8px;">Policy Convergence Timeline';
+            html += '<span class="convergence-info-icon">ⓘ<span class="convergence-info-tooltip">Convergence scores measure policy alignment across the 6 different policy areas, blending coverage (20%) with substantive stance similarity (80%). UN voting records on LAWS resolutions apply additional adjustments.</span></span>';
+            html += '</span>';
             html += '<span style="font-size: 1.1rem; color: var(--teal); font-weight: 700;">' + Math.round(currentSim * 100) + '% Current Similarity</span>';
             html += '</h3>';
             
@@ -18694,27 +18683,6 @@
             container.appendChild(xAxis);
         }
         
-        // Download Policy Growth chart as PNG
-        function downloadPolicyGrowthPNG() {
-            var container = document.getElementById('policy-growth-chart');
-            if (!container) return;
-            
-            // Use html2canvas if available, otherwise alert
-            if (typeof html2canvas !== 'undefined') {
-                html2canvas(container.parentElement, { 
-                    backgroundColor: '#ffffff',
-                    scale: 2
-                }).then(function(canvas) {
-                    var link = document.createElement('a');
-                    link.download = 'policy_growth_timeline.png';
-                    link.href = canvas.toDataURL('image/png');
-                    link.click();
-                });
-            } else {
-                alert('PNG export requires html2canvas library. Please use browser screenshot instead.');
-            }
-        }
-        
         // ===== CONVERGENCE TIMELINE =====
         // Define country groupings for comparison
         var convergenceGroupings = {
@@ -18780,19 +18748,34 @@
             var scores1 = yearlyScores[country1];
             var scores2 = yearlyScores[country2];
             
-            if (!scores1 || !scores2) return 0.5;
+            if (!scores1 || !scores2) return null;
             
             var yearStr = year.toString();
             var s1 = scores1[yearStr];
             var s2 = scores2[yearStr];
             
-            if (!s1 || !s2) return 0.5;
+            if (!s1 || !s2) return null;
             
             var dims = ['LAWS', 'Adoption', 'Procurement', 'Safety', 'Ethics', 'Interoperability'];
+            
+            // Count how many areas each country has data for
+            var country1Areas = 0;
+            var country2Areas = 0;
+            
+            dims.forEach(function(dim) {
+                if (s1[dim] !== null && s1[dim] !== undefined) country1Areas++;
+                if (s2[dim] !== null && s2[dim] !== undefined) country2Areas++;
+            });
+            
+            // If either country has NO policy data for this year, return null
+            if (country1Areas === 0 || country2Areas === 0) {
+                return null;
+            }
             
             var presenceScore = 0;
             var substanceScore = 0;
             var activeAreas = 0;
+            var relevantAreas = 0;
             
             dims.forEach(function(dim) {
                 var v1 = s1[dim];
@@ -18801,9 +18784,12 @@
                 var has1 = v1 !== null && v1 !== undefined;
                 var has2 = v2 !== null && v2 !== undefined;
                 
-                // Presence similarity: both have or both don't have
-                if (has1 === has2) {
-                    presenceScore += 1;
+                // Only consider areas where at least one country has data
+                if (has1 || has2) {
+                    relevantAreas++;
+                    if (has1 === has2) {
+                        presenceScore += 1;
+                    }
                 }
                 
                 // Substance similarity: only for areas where both countries have data
@@ -18815,15 +18801,20 @@
             });
             
             // Normalize scores
-            presenceScore = presenceScore / dims.length;
+            presenceScore = relevantAreas > 0 ? presenceScore / relevantAreas : 0;
             substanceScore = activeAreas > 0 ? substanceScore / activeAreas : 0;
             
-            // Blend: 20% presence + 80% substance
+            // Calculate base similarity
+            var baseSimilarity;
             if (activeAreas === 0) {
-                return presenceScore * 0.3;
+                baseSimilarity = presenceScore * 0.3;
+            } else {
+                baseSimilarity = 0.2 * presenceScore + 0.8 * substanceScore;
             }
             
-            return 0.2 * presenceScore + 0.8 * substanceScore;
+            // Apply voting divergence penalty (or bonus for same stance)
+            var votingPenalty = calcVotingDivergencePenalty(country1, country2, year);
+            return Math.min(1, Math.max(0, baseSimilarity - votingPenalty));
         }
         
         // Helper function to count entries up to a given year
@@ -18892,7 +18883,6 @@
             var legendContainer = document.getElementById("convergence-legend");
             var groupingsContainer = document.getElementById("convergence-groupings");
             var similarityBars = document.getElementById("convergence-similarity-bars");
-            var eventsList = document.getElementById("convergence-events-list");
             
             if (!container || !svg) {
                 if (container) container.style.display = "none";
@@ -18902,20 +18892,24 @@
             // Show container
             container.style.display = "block";
             
-            // Initialize with the selected alliance if it has a matching grouping
-            if (alliance && activeConvergenceGroups.length === 0) {
-                // Map alliance names to grouping names
-                var allianceToGrouping = {
-                    "NATO": "NATO Members",
-                    "AUKUS": "AUKUS",
-                    "FVEY": "Five Eyes"
-                };
+            // Map alliance names to grouping names
+            var allianceToGrouping = {
+                "NATO": "NATO Members",
+                "AUKUS": "AUKUS",
+                "FVEY": "Five Eyes"
+            };
+            
+            // ALWAYS reset activeConvergenceGroups to the selected alliance
+            if (alliance) {
                 var matchedGrouping = allianceToGrouping[alliance];
                 if (matchedGrouping && convergenceGroupings[matchedGrouping]) {
                     activeConvergenceGroups = [matchedGrouping];
                 } else {
                     activeConvergenceGroups = ["NATO Members"];
                 }
+            } else if (activeConvergenceGroups.length === 0) {
+                // Default to NATO if no alliance and nothing selected
+                activeConvergenceGroups = ["NATO Members"];
             }
             
             // Render grouping buttons
@@ -19126,20 +19120,12 @@
                     var groupData = convergenceData[groupName];
                     var color = convergenceGroupings[groupName].color;
                     
-                    var validPoints = groupData.filter(function(d) { return d.similarity !== null; });
-                    var firstVal = validPoints.length > 0 ? validPoints[0].similarity : 0;
-                    var lastVal = validPoints.length > 0 ? validPoints[validPoints.length - 1].similarity : 0;
-                    var change = lastVal - firstVal;
-                    var changeStr = (change >= 0 ? "↑ +" : "↓ ") + change.toFixed(0) + "%";
-                    var changeClass = change >= 0 ? "positive" : "negative";
-                    
                     var item = document.createElement("div");
                     item.className = "convergence-legend-item";
                     item.innerHTML = '<div class="convergence-legend-left">' +
                         '<div class="convergence-legend-marker" style="background:' + color + '"></div>' +
                         '<span class="convergence-legend-name">' + groupName + '</span>' +
-                        '</div>' +
-                        '<span class="convergence-legend-change ' + changeClass + '">' + changeStr + '</span>';
+                        '</div>';
                     legendContainer.appendChild(item);
                 });
                 
@@ -19161,30 +19147,7 @@
                         '<div class="convergence-similarity-value">' + currentSim.toFixed(0) + '%</div>';
                     similarityBars.appendChild(row);
                 });
-                
-                // Render key events
-                var keyEvents = [
-                    { year: 2019, text: "Initial LAWS discussions at CCW" },
-                    { year: 2020, text: "COVID-19 policy slowdown" },
-                    { year: 2021, text: "NATO AI Strategy adopted" },
-                    { year: 2022, text: "Ukraine conflict accelerates policy" },
-                    { year: 2023, text: "EU AI Act negotiations" },
-                    { year: 2024, text: "Multiple national AI strategies released" }
-                ];
-                
-                eventsList.innerHTML = '';
-                keyEvents.forEach(function(event) {
-                    var item = document.createElement("div");
-                    item.className = "convergence-event-item";
-                    item.innerHTML = '<span class="convergence-event-year">' + event.year + '</span>' +
-                        '<span class="convergence-event-text">' + event.text + '</span>';
-                    eventsList.appendChild(item);
-                });
             }
-        }
-        
-        function downloadMomentumPNG() {
-            alert("PNG download would capture the momentum chart. In production, use html2canvas library.");
         }
         
         // ===== POLICY AREA FILTER =====
