@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6, .header-font {
   padding: 0;
   position: relative;
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
 }
