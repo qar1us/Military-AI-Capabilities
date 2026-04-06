@@ -43,7 +43,7 @@ function calculateMomentumData() {
 
     data.push({
       country, region, totalEntries, recent2, prev2,
-     momentum: Math.max(-100, Math.min(100, Math.round(momentum))), status,
+      momentum: Math.max(-100, Math.min(100, Math.round(momentum))), status,
       displayName: displayNames[country] || country
     });
   });
@@ -124,7 +124,7 @@ function renderMomentumChart() {
   xLabelEl.setAttribute("x", M.left + plotW / 2); xLabelEl.setAttribute("y", containerH - 8);
   xLabelEl.setAttribute("text-anchor", "middle"); xLabelEl.setAttribute("font-size", "10");
   xLabelEl.setAttribute("fill", "#666"); xLabelEl.setAttribute("font-weight", "600");
-  xLabelEl.textContent = "Number of Policies (2023-2025)";
+  xLabelEl.textContent = "Total Policy Entries";
   svg.appendChild(xLabelEl);
 
   // Quadrant labels
@@ -174,21 +174,21 @@ function renderMomentumChart() {
       this.setAttribute("r", parseFloat(this.getAttribute("r")) + 3);
       this.setAttribute("fill-opacity", "1");
       if (tipEl) {
-        tipEl.innerHTML = `<strong>${escapeHtml(d.displayName)}</strong>
-          Momentum: <span class="tooltip-status ${d.status}">${d.momentum > 0 ? '+' : ''}${d.momentum}%</span><br>
-          Total entries: ${d.totalEntries}<br>
-          Recent (2024–25): ${d.recent2} | Prior: ${d.prev2}<br>
-          Status: <span class="tooltip-status ${d.status}">${d.status.charAt(0).toUpperCase() + d.status.slice(1)}</span>`;
+        tipEl.innerHTML = "<strong>" + escapeHtml(d.displayName) + "</strong><br>" +
+          "Momentum: <span class=\"tooltip-status " + d.status + "\">" + (d.momentum > 0 ? '+' : '') + d.momentum + "%</span><br>" +
+          "Total entries: " + d.totalEntries + "<br>" +
+          "Recent (2024-25): " + d.recent2 + " | Prior: " + d.prev2 + "<br>" +
+          "Status: <span class=\"tooltip-status " + d.status + "\">" + d.status.charAt(0).toUpperCase() + d.status.slice(1) + "</span>";
         tipEl.classList.add("visible");
       }
     });
     circle.addEventListener("mousemove", function (e) {
-      if (tipEl) { tipEl.style.left = `${e.clientX + 14}px`; tipEl.style.top = `${e.clientY - 10}px`; }
+      if (tipEl) { tipEl.style.left = (e.clientX + 14) + "px"; tipEl.style.top = (e.clientY - 10) + "px"; }
     });
     circle.addEventListener("mouseleave", function () {
       this.setAttribute("r", r);
       this.setAttribute("fill-opacity", "0.75");
-      tipEl?.classList.remove("visible");
+      if (tipEl) tipEl.classList.remove("visible");
     });
     circle.addEventListener("click", () => {
       const tab = document.querySelector('.explore-tab[data-view="overview"]');
@@ -213,50 +213,58 @@ function renderMomentumChart() {
     svg.appendChild(mkLine(x, M.top + plotH, x, M.top + plotH + 4, "#999", "1", ""));
   });
 
-   // Zoom/pan
-let scale = 1, panX = 0, panY = 0, isDragging = false, dragStart = {};
-const plotGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
-while (svg.firstChild) plotGroup.appendChild(svg.firstChild);
-svg.appendChild(plotGroup);
+  // Zoom/pan
+  let scale = 1, panX = 0, panY = 0, isDragging = false, dragStart = {};
+  const plotGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+  while (svg.firstChild) plotGroup.appendChild(svg.firstChild);
+  svg.appendChild(plotGroup);
 
-function applyTransform() {
-  plotGroup.setAttribute("transform", `translate(${panX},${panY}) scale(${scale})`);
-}
+  function applyTransform() {
+    plotGroup.setAttribute("transform", "translate(" + panX + "," + panY + ") scale(" + scale + ")");
+  }
 
-svg.addEventListener("wheel", e => {
-  e.preventDefault();
-  const delta = e.deltaY > 0 ? 0.85 : 1.15;
-  scale = Math.max(0.5, Math.min(8, scale * delta));
-  applyTransform();
-}, { passive: false });
+  svg.addEventListener("wheel", function(e) {
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? 0.85 : 1.15;
+    scale = Math.max(0.5, Math.min(8, scale * delta));
+    applyTransform();
+  }, { passive: false });
 
-svg.addEventListener("mousedown", e => {
-  isDragging = true;
-  dragStart = { x: e.clientX - panX, y: e.clientY - panY };
-  svg.style.cursor = "grabbing";
-});
-svg.addEventListener("mousemove", e => {
-  if (!isDragging) return;
-  panX = e.clientX - dragStart.x;
-  panY = e.clientY - dragStart.y;
-  applyTransform();
-});
-svg.addEventListener("mouseup", () => { isDragging = false; svg.style.cursor = "grab"; });
-svg.addEventListener("mouseleave", () => { isDragging = false; svg.style.cursor = "grab"; });
-svg.style.cursor = "grab";
+  svg.addEventListener("mousedown", function(e) {
+    isDragging = true;
+    dragStart = { x: e.clientX - panX, y: e.clientY - panY };
+    svg.style.cursor = "grabbing";
+  });
+  svg.addEventListener("mousemove", function(e) {
+    if (!isDragging) return;
+    panX = e.clientX - dragStart.x;
+    panY = e.clientY - dragStart.y;
+    applyTransform();
+  });
+  svg.addEventListener("mouseup", function() { isDragging = false; svg.style.cursor = "grab"; });
+  svg.addEventListener("mouseleave", function() { isDragging = false; svg.style.cursor = "grab"; });
+  svg.style.cursor = "grab";
 
-// Zoom buttons
-const zoomBtns = document.createElement("div");
-zoomBtns.className = "momentum-zoom-controls";
-zoomBtns.innerHTML = `
-  <button class="momentum-zoom-btn" id="mz-in">+</button>
-  <button class="momentum-zoom-btn" id="mz-out">−</button>
-  <button class="momentum-zoom-btn" id="mz-reset">⟳</button>`;
-container.style.position = "relative";
-container.appendChild(zoomBtns);
-zoomBtns.querySelector("#mz-in").addEventListener("click", () => { scale = Math.min(8, scale * 1.25); applyTransform(); });
-zoomBtns.querySelector("#mz-out").addEventListener("click", () => { sc
   container.appendChild(svg);
+
+  // Zoom buttons
+  const zoomBtns = document.createElement("div");
+  zoomBtns.className = "momentum-zoom-controls";
+  const btnIn = document.createElement("button");
+  btnIn.className = "momentum-zoom-btn"; btnIn.textContent = "+";
+  const btnOut = document.createElement("button");
+  btnOut.className = "momentum-zoom-btn"; btnOut.textContent = "\u2212";
+  const btnReset = document.createElement("button");
+  btnReset.className = "momentum-zoom-btn"; btnReset.textContent = "\u27f3";
+  zoomBtns.appendChild(btnIn);
+  zoomBtns.appendChild(btnOut);
+  zoomBtns.appendChild(btnReset);
+  container.style.position = "relative";
+  container.appendChild(zoomBtns);
+
+  btnIn.addEventListener("click", function() { scale = Math.min(8, scale * 1.25); applyTransform(); });
+  btnOut.addEventListener("click", function() { scale = Math.max(0.5, scale * 0.8); applyTransform(); });
+  btnReset.addEventListener("click", function() { scale = 1; panX = 0; panY = 0; applyTransform(); });
 
   // Search highlight
   const searchInput = document.getElementById("momentum-search");
@@ -297,7 +305,6 @@ function renderPolicyGrowthChart() {
   if (!container) return;
   if (!Object.keys(policyData).length) return;
 
-  // Clear previous
   container.innerHTML = "";
 
   const years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
@@ -313,7 +320,6 @@ function renderPolicyGrowthChart() {
   const areaNameToKey = {};
   areaKeys.forEach(a => { areaNameToKey[a.name] = a.key; });
 
-  // Count entries per year per area
   const yearAreaCounts = {};
   years.forEach(y => {
     yearAreaCounts[y] = {};
@@ -334,9 +340,6 @@ function renderPolicyGrowthChart() {
             const yr = parseInt(dt.match(/\d{4}/)?.[0]);
             if (yr && years.includes(yr)) yearAreaCounts[yr][areaKey]++;
           }
-          // NOTE: Undated entries are intentionally excluded from the growth chart.
-          // In the time slider choropleth they default to Q4, but here the chart
-          // only shows dated entries to accurately reflect year-by-year growth.
         });
       });
     });
@@ -346,11 +349,9 @@ function renderPolicyGrowthChart() {
     Object.values(yearAreaCounts[y]).reduce((s, v) => s + v, 0)
   ));
 
-  // Build chart
   const wrapper = document.createElement("div");
   wrapper.className = "policy-growth-chart";
 
-  // Y axis
   const yAxis = document.createElement("div");
   yAxis.className = "policy-growth-y-axis";
 
@@ -368,13 +369,12 @@ function renderPolicyGrowthChart() {
 
     const gridLine = document.createElement("div");
     gridLine.className = "policy-growth-grid-line";
-    gridLine.style.bottom = `${pct}%`;
+    gridLine.style.bottom = pct + "%";
     gridContainer.appendChild(gridLine);
   }
   wrapper.appendChild(yAxis);
   wrapper.appendChild(gridContainer);
 
-  // X axis
   const xAxis = document.createElement("div");
   xAxis.className = "policy-growth-x-axis";
   years.forEach(y => {
@@ -384,7 +384,6 @@ function renderPolicyGrowthChart() {
     xAxis.appendChild(lbl);
   });
 
-  // Bars
   const barsContainer = document.createElement("div");
   barsContainer.className = "policy-growth-bars";
 
@@ -402,7 +401,7 @@ function renderPolicyGrowthChart() {
 
     const stack = document.createElement("div");
     stack.className = "policy-growth-bar-stack";
-    stack.style.height = yearTotal > 0 ? `${(yearTotal / maxYearTotal) * 100}%` : "0";
+    stack.style.height = yearTotal > 0 ? ((yearTotal / maxYearTotal) * 100) + "%" : "0";
 
     areaKeys.forEach(area => {
       const count = yearAreaCounts[year][area.key];
@@ -410,34 +409,29 @@ function renderPolicyGrowthChart() {
       const pct = (count / yearTotal) * 100;
       const seg = document.createElement("div");
       seg.className = "policy-growth-bar-segment";
-      seg.style.cssText = `flex:${pct};background:${area.color};`;
+      seg.style.cssText = "flex:" + pct + ";background:" + area.color + ";";
       stack.appendChild(seg);
     });
     barGroup.appendChild(stack);
 
-    barGroup.addEventListener("mouseenter", e => {
+    barGroup.addEventListener("mouseenter", function(e) {
       if (yearTotal === 0) return;
-      hoverPanel.innerHTML = `
-        <div class="policy-growth-hover-title">
-          <span>${year}</span>
-          <span class="policy-growth-hover-total">${yearTotal} entries</span>
-        </div>
-        <div class="policy-growth-hover-rows">
-          ${areaKeys.map(area => {
-            const cnt = yearAreaCounts[year][area.key];
-            const pct = yearTotal > 0 ? Math.round((cnt / yearTotal) * 100) : 0;
-            return `<div class="policy-growth-hover-row">
-              <div class="policy-growth-hover-row-label" style="color:${area.color};font-weight:600">${getShortAreaName(area.name)}</div>
-              <div class="policy-growth-hover-row-bar"><div class="policy-growth-hover-row-fill" style="width:${pct}%;background:${area.color}"></div></div>
-              <div class="policy-growth-hover-row-pct">${pct}%</div>
-              <div class="policy-growth-hover-row-count">${cnt}</div>
-            </div>`;
-          }).join('')}
-        </div>`;
+      let rows = "";
+      areaKeys.forEach(function(area) {
+        const cnt = yearAreaCounts[year][area.key];
+        const pct = yearTotal > 0 ? Math.round((cnt / yearTotal) * 100) : 0;
+        rows += "<div class=\"policy-growth-hover-row\">" +
+          "<div class=\"policy-growth-hover-row-label\" style=\"color:" + area.color + ";font-weight:600\">" + getShortAreaName(area.name) + "</div>" +
+          "<div class=\"policy-growth-hover-row-bar\"><div class=\"policy-growth-hover-row-fill\" style=\"width:" + pct + "%;background:" + area.color + "\"></div></div>" +
+          "<div class=\"policy-growth-hover-row-pct\">" + pct + "%</div>" +
+          "<div class=\"policy-growth-hover-row-count\">" + cnt + "</div>" +
+          "</div>";
+      });
+      hoverPanel.innerHTML = "<div class=\"policy-growth-hover-title\"><span>" + year + "</span><span class=\"policy-growth-hover-total\">" + yearTotal + " entries</span></div><div class=\"policy-growth-hover-rows\">" + rows + "</div>";
       hoverPanel.classList.add("visible");
     });
 
-    barGroup.addEventListener("mousemove", e => {
+    barGroup.addEventListener("mousemove", function(e) {
       const panelW = hoverPanel.offsetWidth;
       const panelH = hoverPanel.offsetHeight;
       const left = Math.min(e.clientX + 16, window.innerWidth - panelW - 8);
@@ -446,7 +440,7 @@ function renderPolicyGrowthChart() {
       hoverPanel.style.top = top + "px";
     });
 
-    barGroup.addEventListener("mouseleave", () => hoverPanel.classList.remove("visible"));
+    barGroup.addEventListener("mouseleave", function() { hoverPanel.classList.remove("visible"); });
 
     yearGroup.appendChild(barGroup);
     barsContainer.appendChild(yearGroup);
@@ -456,14 +450,12 @@ function renderPolicyGrowthChart() {
   wrapper.appendChild(xAxis);
   container.appendChild(wrapper);
 
-  // Legend
   const legend = document.createElement("div");
   legend.style.cssText = "display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;font-size:0.75rem;";
   areaKeys.forEach(area => {
     const item = document.createElement("div");
     item.style.cssText = "display:flex;align-items:center;gap:6px;";
-    item.innerHTML = `<div style="width:12px;height:12px;border-radius:2px;background:${area.color};flex-shrink:0;"></div>
-      <span style="color:#666;">${getShortAreaName(area.name)}</span>`;
+    item.innerHTML = "<div style=\"width:12px;height:12px;border-radius:2px;background:" + area.color + ";flex-shrink:0;\"></div><span style=\"color:#666;\">" + getShortAreaName(area.name) + "</span>";
     legend.appendChild(item);
   });
   container.appendChild(legend);
@@ -489,20 +481,9 @@ function renderConvergenceTimeline(alliance) {
 
   const header = document.createElement("div");
   header.className = "convergence-header";
-  header.innerHTML = `
-    <div class="convergence-title">
-      Policy Convergence Over Time
-      <div class="convergence-info-icon">i
-        <div class="convergence-info-tooltip">
-          Convergence scores measure how similarly member states approach AI governance.
-          Higher scores indicate greater policy alignment. Calculated using Jaccard similarity across shared policy areas.
-        </div>
-      </div>
-    </div>
-    <div class="convergence-subtitle">Tracking policy alignment trends within ${alliance}</div>`;
+  header.innerHTML = "<div class=\"convergence-title\">Policy Convergence Over Time<div class=\"convergence-info-icon\">i<div class=\"convergence-info-tooltip\">Convergence scores measure how similarly member states approach AI governance. Higher scores indicate greater policy alignment. Calculated using Jaccard similarity across shared policy areas.</div></div></div><div class=\"convergence-subtitle\">Tracking policy alignment trends within " + alliance + "</div>";
   wrapper.appendChild(header);
 
-  // Group toggle buttons
   const groupingButtons = document.createElement("div");
   groupingButtons.className = "convergence-groupings";
   const groupLabel = document.createElement("div");
@@ -526,7 +507,6 @@ function renderConvergenceTimeline(alliance) {
   });
   wrapper.appendChild(groupingButtons);
 
-  // Chart area
   const chartArea = document.createElement("div");
   chartArea.className = "convergence-chart-area";
   chartArea.id = "convergence-chart-area";
@@ -542,13 +522,11 @@ function renderConvergenceTimeline(alliance) {
   chartArea.appendChild(lowLabel);
   wrapper.appendChild(chartArea);
 
-  // Legend
   const legendEl = document.createElement("div");
   legendEl.className = "convergence-legend";
   legendEl.id = "convergence-legend";
   wrapper.appendChild(legendEl);
 
-  // Similarity bars section
   const simSection = document.createElement("div");
   simSection.className = "convergence-similarity-section";
   simSection.id = "convergence-similarity-section";
@@ -556,7 +534,6 @@ function renderConvergenceTimeline(alliance) {
 
   container.appendChild(wrapper);
 
-  // Auto-activate first group
   if (activeConvergenceGroups.length === 0 && Object.keys(allianceGroupings).length > 0) {
     activeConvergenceGroups = [Object.keys(allianceGroupings)[0]];
   }
@@ -621,13 +598,11 @@ function renderConvergenceChart(allianceGroupings, parentContainer) {
 
   if (!chartArea) return;
 
-  // Update button states
   parentContainer.querySelectorAll(".convergence-group-btn").forEach(btn => {
-    const gName = btn.textContent.replace("✓ ", "");
+    const gName = btn.textContent.replace("\u2713 ", "");
     btn.classList.toggle("active", activeConvergenceGroups.includes(gName));
   });
 
-  // Build SVG
   const W = chartArea.clientWidth || 700;
   const H = 300;
   const M = { top: 20, right: 30, bottom: 40, left: 50 };
@@ -636,10 +611,9 @@ function renderConvergenceChart(allianceGroupings, parentContainer) {
 
   const svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svgEl.setAttribute("class", "convergence-chart-svg");
-  svgEl.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svgEl.setAttribute("viewBox", "0 0 " + W + " " + H);
   chartArea.innerHTML = "";
 
-  // Re-add zone labels
   const highZ = document.createElement("div");
   highZ.className = "convergence-zone-label high";
   highZ.textContent = "HIGH ALIGNMENT";
@@ -659,11 +633,9 @@ function renderConvergenceChart(allianceGroupings, parentContainer) {
     return l;
   };
 
-  // Axes
   svgEl.appendChild(mkLine(M.left, M.top, M.left, M.top + plotH, "#ddd", "1", ""));
   svgEl.appendChild(mkLine(M.left, M.top + plotH, M.left + plotW, M.top + plotH, "#ddd", "1", ""));
 
-  // Y grid
   [0, 25, 50, 75, 100].forEach(pct => {
     const y = M.top + plotH - (pct / 100) * plotH;
     if (pct > 0 && pct < 100) svgEl.appendChild(mkLine(M.left, y, M.left + plotW, y, "#f0f0f0", "1", ""));
@@ -674,7 +646,6 @@ function renderConvergenceChart(allianceGroupings, parentContainer) {
     svgEl.appendChild(lbl);
   });
 
-  // X axis labels
   years.forEach((year, idx) => {
     if (idx % 2 !== 0) return;
     const x = M.left + (idx / (years.length - 1)) * plotW;
@@ -687,7 +658,7 @@ function renderConvergenceChart(allianceGroupings, parentContainer) {
 
   const groupColors = ["#0d7377", "#e07020", "#1a2744", "#6b3074", "#d64045"];
   const legData = [];
-  const convTip = document.querySelector(".convergence-tooltip") || (() => {
+  const convTip = document.querySelector(".convergence-tooltip") || (function() {
     const el = document.createElement("div"); el.className = "convergence-tooltip"; document.body.appendChild(el); return el;
   })();
 
@@ -707,7 +678,7 @@ function renderConvergenceChart(allianceGroupings, parentContainer) {
     });
 
     if (validPoints.length >= 2) {
-      const pathD = validPoints.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`).join(' ');
+      const pathD = validPoints.map((p, i) => (i === 0 ? 'M' : 'L') + " " + p.x + " " + p.y).join(' ');
       const linePath = document.createElementNS("http://www.w3.org/2000/svg", "path");
       linePath.setAttribute("d", pathD);
       linePath.setAttribute("fill", "none"); linePath.setAttribute("stroke", color);
@@ -723,15 +694,15 @@ function renderConvergenceChart(allianceGroupings, parentContainer) {
       dot.setAttribute("class", "convergence-dot");
       dot.style.cursor = "pointer";
 
-      dot.addEventListener("mouseenter", function (e) {
-        convTip.innerHTML = `<strong>${gName} — ${pt.year}</strong><br>Similarity: ${Math.round(pt.score * 100)}%`;
+      dot.addEventListener("mouseenter", function() {
+        convTip.innerHTML = "<strong>" + gName + " \u2014 " + pt.year + "</strong><br>Similarity: " + Math.round(pt.score * 100) + "%";
         convTip.classList.add("visible");
       });
-      dot.addEventListener("mousemove", e => {
-        convTip.style.left = `${e.clientX + 14}px`;
-        convTip.style.top = `${e.clientY - 10}px`;
+      dot.addEventListener("mousemove", function(e) {
+        convTip.style.left = (e.clientX + 14) + "px";
+        convTip.style.top = (e.clientY - 10) + "px";
       });
-      dot.addEventListener("mouseleave", () => convTip.classList.remove("visible"));
+      dot.addEventListener("mouseleave", function() { convTip.classList.remove("visible"); });
       svgEl.appendChild(dot);
     });
 
@@ -741,39 +712,25 @@ function renderConvergenceChart(allianceGroupings, parentContainer) {
 
   chartArea.appendChild(svgEl);
 
-  // Legend
   if (legendEl) {
     legendEl.innerHTML = "";
     legData.forEach(item => {
       const legItem = document.createElement("div");
       legItem.className = "convergence-legend-item";
-      legItem.innerHTML = `
-        <div class="convergence-legend-left">
-          <div class="convergence-legend-marker" style="background:${item.color}"></div>
-          <div class="convergence-legend-name">${item.name}</div>
-        </div>
-        ${item.currentSimilarity !== null
-          ? `<div style="font-weight:700;color:${item.color};font-size:0.9rem">${item.currentSimilarity}%</div>`
-          : ''}`;
+      legItem.innerHTML = "<div class=\"convergence-legend-left\"><div class=\"convergence-legend-marker\" style=\"background:" + item.color + "\"></div><div class=\"convergence-legend-name\">" + item.name + "</div></div>" +
+        (item.currentSimilarity !== null ? "<div style=\"font-weight:700;color:" + item.color + ";font-size:0.9rem\">" + item.currentSimilarity + "%</div>" : "");
       legendEl.appendChild(legItem);
     });
   }
 
-  // Similarity bars
   if (simSection) {
-    simSection.innerHTML = `<div class="convergence-similarity-title">Current Similarity by Group</div>
-      <div class="convergence-similarity-bars" id="convergence-sim-bars"></div>`;
+    simSection.innerHTML = "<div class=\"convergence-similarity-title\">Current Similarity by Group</div><div class=\"convergence-similarity-bars\" id=\"convergence-sim-bars\"></div>";
     const barsEl = simSection.querySelector("#convergence-sim-bars");
     legData.forEach(item => {
       if (item.currentSimilarity === null) return;
       const row = document.createElement("div");
       row.className = "convergence-similarity-row";
-      row.innerHTML = `
-        <div class="convergence-similarity-name">${item.name}</div>
-        <div class="convergence-similarity-bar-bg">
-          <div class="convergence-similarity-bar-fill" style="width:${item.currentSimilarity}%;background:${item.color}"></div>
-        </div>
-        <div class="convergence-similarity-value">${item.currentSimilarity}%</div>`;
+      row.innerHTML = "<div class=\"convergence-similarity-name\">" + item.name + "</div><div class=\"convergence-similarity-bar-bg\"><div class=\"convergence-similarity-bar-fill\" style=\"width:" + item.currentSimilarity + "%;background:" + item.color + "\"></div></div><div class=\"convergence-similarity-value\">" + item.currentSimilarity + "%</div>";
       barsEl.appendChild(row);
     });
   }
