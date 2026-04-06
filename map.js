@@ -269,13 +269,22 @@ async function initMap() {
   mapZoom = d3.zoom()
     .scaleExtent([1, 8])
     .filter(event => {
-      // Require Ctrl or Meta key for wheel zoom so normal page scroll works
-      if (event.type === 'wheel') return event.ctrlKey || event.metaKey;
+      // Wheel: only zoom with Ctrl/Cmd held — lets normal scroll pass through
+      if (event.type === 'wheel') return !!event.ctrlKey || !!event.metaKey;
+      // Touch: require 2+ fingers for map interaction — 1 finger scrolls the page
+      if (event.type === 'touchstart' || event.type === 'touchmove') {
+        return event.touches.length >= 2;
+      }
+      // Mouse: allow left-click drag for panning, block right-click
       return !event.button;
     })
     .on("zoom", event => g.attr("transform", event.transform));
 
   svg.call(mapZoom);
+
+  // D3 sets touch-action:none on the SVG — override it so single-finger
+  // touch scrolls the page on mobile instead of panning the map
+  document.getElementById("map-svg").style.touchAction = "pan-y";
 
   // Controls
   document.getElementById("zoom-in").addEventListener("click", () =>
