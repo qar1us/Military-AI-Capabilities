@@ -173,7 +173,14 @@ function updateMapChoropleth(quarterIndex) {
 
   document.getElementById('map-stat-countries').textContent = countriesWithData;
   document.getElementById('map-stat-entries').textContent = totalEntries;
-}
+
+  // Explicitly reset fills for countries not in dataset so no color bleeds through
+  document.querySelectorAll('.country-path').forEach(path => {
+    const country = path.getAttribute('data-country');
+    if (!country || !dataSource[country]) {
+      path.style.fill = '';
+    }
+  });
 
 // ===== TIME SLIDER =====
 
@@ -260,6 +267,11 @@ async function initMap() {
 
   mapZoom = d3.zoom()
     .scaleExtent([1, 8])
+    .filter(event => {
+      // Require Ctrl or Meta key for wheel zoom so normal page scroll works
+      if (event.type === 'wheel') return event.ctrlKey || event.metaKey;
+      return !event.button;
+    })
     .on("zoom", event => g.attr("transform", event.transform));
 
   svg.call(mapZoom);
