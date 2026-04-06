@@ -393,7 +393,7 @@ function initStickyHeader() {
         isCompact = true;
         transitionLock = true;
         setTimeout(() => { transitionLock = false; }, 400);
-      } else if (isCompact && y <= 10) {
+      } else if (isCompact && y === 0) {
         header.classList.remove('compact');
         isCompact = false;
         transitionLock = true;
