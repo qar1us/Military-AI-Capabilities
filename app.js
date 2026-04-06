@@ -378,15 +378,8 @@ function initStickyHeader() {
   let ticking = false;
   let transitionLock = false;
 
-  function getThreshold() {
-    const mapContainer = document.querySelector('.map-container');
-    if (mapContainer) return mapContainer.offsetTop + mapContainer.offsetHeight;
-    return header.offsetHeight || 160;
-  }
-
   function updateHeader() {
     const y = window.scrollY || window.pageYOffset;
-    const threshold = getThreshold();
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     const progress = docHeight > 0 ? y / docHeight : 0;
 
@@ -395,12 +388,12 @@ function initStickyHeader() {
     }
 
     if (!transitionLock) {
-      if (!isCompact && y > threshold) {
+      if (!isCompact && y > 10) {
         header.classList.add('compact');
         isCompact = true;
         transitionLock = true;
         setTimeout(() => { transitionLock = false; }, 400);
-      } else if (isCompact && y <= threshold - 60) {
+      } else if (isCompact && y <= 10) {
         header.classList.remove('compact');
         isCompact = false;
         transitionLock = true;
