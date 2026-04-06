@@ -213,6 +213,49 @@ function renderMomentumChart() {
     svg.appendChild(mkLine(x, M.top + plotH, x, M.top + plotH + 4, "#999", "1", ""));
   });
 
+   // Zoom/pan
+let scale = 1, panX = 0, panY = 0, isDragging = false, dragStart = {};
+const plotGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+while (svg.firstChild) plotGroup.appendChild(svg.firstChild);
+svg.appendChild(plotGroup);
+
+function applyTransform() {
+  plotGroup.setAttribute("transform", `translate(${panX},${panY}) scale(${scale})`);
+}
+
+svg.addEventListener("wheel", e => {
+  e.preventDefault();
+  const delta = e.deltaY > 0 ? 0.85 : 1.15;
+  scale = Math.max(0.5, Math.min(8, scale * delta));
+  applyTransform();
+}, { passive: false });
+
+svg.addEventListener("mousedown", e => {
+  isDragging = true;
+  dragStart = { x: e.clientX - panX, y: e.clientY - panY };
+  svg.style.cursor = "grabbing";
+});
+svg.addEventListener("mousemove", e => {
+  if (!isDragging) return;
+  panX = e.clientX - dragStart.x;
+  panY = e.clientY - dragStart.y;
+  applyTransform();
+});
+svg.addEventListener("mouseup", () => { isDragging = false; svg.style.cursor = "grab"; });
+svg.addEventListener("mouseleave", () => { isDragging = false; svg.style.cursor = "grab"; });
+svg.style.cursor = "grab";
+
+// Zoom buttons
+const zoomBtns = document.createElement("div");
+zoomBtns.className = "momentum-zoom-controls";
+zoomBtns.innerHTML = `
+  <button class="momentum-zoom-btn" id="mz-in">+</button>
+  <button class="momentum-zoom-btn" id="mz-out">−</button>
+  <button class="momentum-zoom-btn" id="mz-reset">⟳</button>`;
+container.style.position = "relative";
+container.appendChild(zoomBtns);
+zoomBtns.querySelector("#mz-in").addEventListener("click", () => { scale = Math.min(8, scale * 1.25); applyTransform(); });
+zoomBtns.querySelector("#mz-out").addEventListener("click", () => { sc
   container.appendChild(svg);
 
   // Search highlight
