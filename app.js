@@ -321,6 +321,11 @@ function initTabs() {
       updateMapHighlights();
       updateCompareChipsState();
 
+      // Refresh choropleth fills on every tab switch to prevent color bleed
+      if (typeof updateMapChoropleth === 'function' && typeof mapTimeSliderValue !== 'undefined') {
+        updateMapChoropleth(mapTimeSliderValue);
+      }
+
       if (currentView === "analytics") {
         renderMomentumChart();
         renderPolicyGrowthChart();
@@ -389,7 +394,7 @@ function initStickyHeader() {
         isCompact = true;
         transitionLock = true;
         setTimeout(() => { transitionLock = false; }, 400);
-      } else if (isCompact && y <= 5) {
+      } else if (isCompact && y <= 50) {
         header.classList.remove('compact');
         isCompact = false;
         transitionLock = true;
