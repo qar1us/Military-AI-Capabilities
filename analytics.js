@@ -1,759 +1,1935 @@
 /* =============================================================
    analytics.js — Momentum, policy growth, convergence charts
    ============================================================= */
-
-// ===== MOMENTUM CHART =====
-
 function calculateMomentumData() {
-  const data = [];
-  const years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
-
-  Object.keys(policyData).forEach(country => {
-    const region = regionMap[country] || "Other";
-    const yearCounts = {};
-    let totalEntries = 0;
-
-    years.forEach(y => { yearCounts[y] = 0; });
-
-    POLICY_AREAS.forEach(area => {
-      const areaData = policyData[country][area];
-      if (!areaData) return;
-      ['legal_directives', 'policy_documents', 'public_statements'].forEach(type => {
-        (areaData[type] || []).forEach(entry => {
-          const dt = extractDate(entry.text || "");
-          if (dt) {
-            const yr = parseInt(dt.match(/\d{4}/)?.[0]);
-            if (yr && years.includes(yr)) { yearCounts[yr]++; totalEntries++; }
-          }
+    var momentumStats = [];
+    var POLICY_AREAS = [
+        "LAWS Employment/Deployment",
+        "Adoption & Intent of Use",
+        "Acquisition & Procurement",
+        "Ethical Guidelines & Restrictions",
+        "Technical Safety & Security Requirements",
+        "Int'l Cooperation & Interoperability"
+    ];
+    
+    // Region mapping for tooltip display
+    var regionMap = {
+        "USA": "Americas", "Canada": "Americas", "Brazil": "Americas", "Colombia": "Americas",
+        "UK": "Europe", "France": "Europe", "Germany": "Europe", "Italy": "Europe", "Spain": "Europe",
+        "Netherlands": "Europe", "Belgium": "Europe", "Poland": "Europe", "Norway": "Europe",
+        "Sweden": "Europe", "Finland": "Europe", "Denmark": "Europe", "Estonia": "Europe",
+        "Latvia": "Europe", "Lithuania": "Europe", "Greece": "Europe", "Hungary": "Europe",
+        "Croatia": "Europe", "Bulgaria": "Europe", "Czechia": "Europe",
+        "Russia": "Europe", "Ukraine": "Europe", "Turkey": "Europe",
+        "China": "Asia-Pacific", "Japan": "Asia-Pacific", "South Korea": "Asia-Pacific",
+        "Singapore": "Asia-Pacific", "India": "Asia-Pacific", "Pakistan": "Asia-Pacific",
+        "Australia": "Asia-Pacific", "North Korea": "Asia-Pacific",
+        "Israel": "Middle East", "UAE": "Middle East", "Iran": "Middle East",
+        "Iraq": "Middle East", "Egypt": "Middle East", "Morocco": "Middle East",
+        "Algeria": "Africa", "South Africa": "Africa",
+        "Armenia": "Europe", "Azerbaijan": "Europe"
+    };
+    
+    var regionColors = {
+        "Americas": "#d64045",
+        "Europe": "#1a2744",
+        "Asia-Pacific": "#0d7377",
+        "Middle East": "#e07020",
+        "Africa": "#6b3074"
+    };
+    
+    Object.keys(policyData).forEach(function(country) {
+        var countryData = policyData[country];
+        var recentEntries = 0; // 2023-2025
+        var historicalEntries = 0; // before 2023
+        var totalEntries = 0;
+        
+        POLICY_AREAS.forEach(function(area) {
+            var areaData = countryData[area];
+            if (areaData) {
+                ['legal_directives', 'policy_documents', 'public_statements'].forEach(function(type) {
+                    if (areaData[type]) {
+                        areaData[type].forEach(function(entry) {
+                            var text = entry.text || '';
+                            var yearMatch = text.match(/\(([A-Z][a-z]+ )?(\d{4})\)/);
+                            totalEntries++;
+                            if (yearMatch) {
+                                var year = parseInt(yearMatch[2]);
+                                if (year >= 2023) {
+                                    recentEntries++;
+                                } else {
+                                    historicalEntries++;
+                                }
+                            } else {
+                                historicalEntries++; // Assume older if no date
+                            }
+                        });
+                    }
+                });
+            }
         });
-      });
+        
+        if (totalEntries > 0) {
+            var recentRate = recentEntries / Math.max(1, totalEntries);
+            var momentum;
+            var color;
+            
+            if (recentEntries >= 5 && recentRate > 0.5) {
+                momentum = "accelerating";
+                color = "#4a9d5b";
+            } else if (totalEntries >= 5 && recentRate >= 0.3) {
+                momentum = "steady";
+                color = "#0d7377";
+            } else if (recentEntries >= 2 && totalEntries < 8) {
+                momentum = "emerging";
+                color = "#e07020";
+            } else {
+                momentum = "dormant";
+                color = "#7a8a9a";
+            }
+            
+            var region = regionMap[country] || "Other";
+            var regionColor = regionColors[region] || "#888888";
+            
+            momentumStats.push({
+                country: country,
+                displayName: displayNames[country] || country,
+                total: totalEntries,
+                recent: recentEntries,
+                historical: historicalEntries,
+                recentRate: recentRate,
+                momentum: momentum,
+                color: color,
+                region: region,
+                regionColor: regionColor
+            });
+        }
     });
-
-    if (totalEntries === 0) return;
-
-    const recent2 = (yearCounts[2024] || 0) + (yearCounts[2025] || 0);
-    const prev2 = (yearCounts[2022] || 0) + (yearCounts[2023] || 0);
-    const momentum = prev2 > 0 ? ((recent2 - prev2) / prev2) * 100 : (recent2 > 0 ? 100 : 0);
-
-    let status;
-    if (momentum > 50) status = "accelerating";
-    else if (momentum > 0) status = "steady";
-    else if (totalEntries > 3) status = "emerging";
-    else status = "dormant";
-
-    data.push({
-      country, region, totalEntries, recent2, prev2,
-      momentum: Math.max(-100, Math.min(100, Math.round(momentum))), status,
-      displayName: displayNames[country] || country
-    });
-  });
-
-  return data.sort((a, b) => b.totalEntries - a.totalEntries);
+    
+    return momentumStats;
 }
-
-window.momentumChartData = null;
-window.momentumReapplyHighlight = null;
 
 function renderMomentumChart() {
-  const container = document.getElementById("momentum-chart");
-  if (!container) return;
-  if (!Object.keys(policyData).length) return;
-
-  const data = calculateMomentumData();
-  window.momentumChartData = data;
-
-  const containerW = container.clientWidth || 800;
-  const containerH = 320;
-  const M = { top: 30, right: 20, bottom: 60, left: 50 };
-  const plotW = containerW - M.left - M.right;
-  const plotH = containerH - M.top - M.bottom;
-
-  const maxEntries = Math.max(1, ...data.map(d => d.totalEntries));
-  const maxMomentum = 100;
-
-  const statusColors = {
-    accelerating: "#4a9d5b",
-    steady: "#0d7377",
-    emerging: "#e07020",
-    dormant: "#999"
-  };
-
-  container.innerHTML = "";
-  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  svg.setAttribute("width", containerW);
-  svg.setAttribute("height", containerH);
-  svg.style.display = "block";
-
-  // Grid lines
-  const mkLine = (x1, y1, x2, y2, s, sw, dash) => {
-    const l = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    l.setAttribute("x1", x1); l.setAttribute("y1", y1);
-    l.setAttribute("x2", x2); l.setAttribute("y2", y2);
-    l.setAttribute("stroke", s); l.setAttribute("stroke-width", sw);
-    if (dash) l.setAttribute("stroke-dasharray", dash);
-    return l;
-  };
-
-  // Zero line
-  const zeroY = M.top + plotH * 0.5;
-  svg.appendChild(mkLine(M.left, zeroY, M.left + plotW, zeroY, "#ccc", "1", "4,4"));
-
-  // Y axis labels
-  const yTicks = [-100, -50, 0, 50, 100];
-  yTicks.forEach(tick => {
-    const y = M.top + plotH * (1 - (tick + maxMomentum) / (2 * maxMomentum));
-    const lbl = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    lbl.setAttribute("x", M.left - 8); lbl.setAttribute("y", y + 4);
-    lbl.setAttribute("text-anchor", "end"); lbl.setAttribute("font-size", "10"); lbl.setAttribute("fill", "#999");
-    lbl.textContent = tick + "%";
-    svg.appendChild(lbl);
-    if (tick !== 0) svg.appendChild(mkLine(M.left, y, M.left + plotW, y, "#eee", "1", ""));
-  });
-
-  // Y axis label
-  const yLabelEl = document.createElementNS("http://www.w3.org/2000/svg", "text");
-  yLabelEl.setAttribute("x", 14); yLabelEl.setAttribute("y", M.top + plotH / 2);
-  yLabelEl.setAttribute("text-anchor", "middle"); yLabelEl.setAttribute("font-size", "10");
-  yLabelEl.setAttribute("fill", "#666"); yLabelEl.setAttribute("font-weight", "600");
-  yLabelEl.setAttribute("transform", `rotate(-90, 14, ${M.top + plotH / 2})`);
-  yLabelEl.textContent = "Momentum (%)";
-  svg.appendChild(yLabelEl);
-
-  // X axis label
-  const xLabelEl = document.createElementNS("http://www.w3.org/2000/svg", "text");
-  xLabelEl.setAttribute("x", M.left + plotW / 2); xLabelEl.setAttribute("y", containerH - 8);
-  xLabelEl.setAttribute("text-anchor", "middle"); xLabelEl.setAttribute("font-size", "10");
-  xLabelEl.setAttribute("fill", "#666"); xLabelEl.setAttribute("font-weight", "600");
-  xLabelEl.textContent = "Total Policy Entries";
-  svg.appendChild(xLabelEl);
-
-  // Quadrant labels
-  const quadrantLabels = [
-    { x: M.left + plotW * 0.85, y: M.top + 14, text: "HIGH VOLUME + GROWING" },
-    { x: M.left + plotW * 0.85, y: M.top + plotH - 8, text: "HIGH VOLUME + SLOWING" },
-    { x: M.left + 10, y: M.top + 14, text: "EMERGING" },
-    { x: M.left + 10, y: M.top + plotH - 8, text: "DECLINING" }
-  ];
-  quadrantLabels.forEach(({ x, y, text }) => {
-    const lbl = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    lbl.setAttribute("x", x); lbl.setAttribute("y", y);
-    lbl.setAttribute("text-anchor", x < M.left + plotW / 2 ? "start" : "end");
-    lbl.setAttribute("font-size", "8"); lbl.setAttribute("fill", "rgba(26,39,68,0.25)");
-    lbl.setAttribute("font-weight", "700"); lbl.setAttribute("letter-spacing", "1");
-    lbl.textContent = text;
-    svg.appendChild(lbl);
-  });
-
-  // Dots
-  const dotsGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
-  data.forEach(d => {
-    const x = M.left + (d.totalEntries / maxEntries) * plotW;
-    const jitter = (Math.random() - 0.5) * 50;
-    const isCapped = d.momentum === 100 || d.momentum === -100;
-    const baseY = M.top + plotH * (1 - (d.momentum + maxMomentum) / (2 * maxMomentum));
-    const y = isCapped ? Math.max(M.top + 8, Math.min(M.top + plotH - 8, baseY + jitter)) : baseY;
-    const r = 4 + Math.sqrt(d.totalEntries) * 0.8;
-
-    const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-    circle.setAttribute("cx", x); circle.setAttribute("cy", y); circle.setAttribute("r", r);
-    circle.setAttribute("fill", regionColors[d.region] || "#999");
-    circle.setAttribute("fill-opacity", "0.75");
-    circle.setAttribute("stroke", statusColors[d.status]); circle.setAttribute("stroke-width", "2");
-    circle.setAttribute("data-country", d.country);
-    circle.style.cursor = "pointer";
-    circle.style.transition = "r 0.15s, fill-opacity 0.15s";
-
-    const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    label.setAttribute("x", x); label.setAttribute("y", y - r - 3);
-    label.setAttribute("text-anchor", "middle"); label.setAttribute("font-size", "9");
-    label.setAttribute("fill", "#333"); label.setAttribute("font-weight", "600");
-    label.setAttribute("data-country-label", d.country);
-    label.style.pointerEvents = "none";
-    label.textContent = getAlpha3(d.country);
-
-    const tipEl = document.getElementById("momentum-tooltip");
-
-    circle.addEventListener("mouseenter", function () {
-      this.setAttribute("r", parseFloat(this.getAttribute("r")) + 3);
-      this.setAttribute("fill-opacity", "1");
-      if (tipEl) {
-        tipEl.innerHTML = "<strong>" + escapeHtml(d.displayName) + "</strong><br>" +
-          "Momentum: <span class=\"tooltip-status " + d.status + "\">" + (d.momentum > 0 ? '+' : '') + d.momentum + "%</span><br>" +
-          "Total entries: " + d.totalEntries + "<br>" +
-          "Recent (2024-25): " + d.recent2 + " | Prior: " + d.prev2 + "<br>" +
-          "Status: <span class=\"tooltip-status " + d.status + "\">" + d.status.charAt(0).toUpperCase() + d.status.slice(1) + "</span>";
-        tipEl.classList.add("visible");
-      }
-    });
-    circle.addEventListener("mousemove", function (e) {
-      if (tipEl) { tipEl.style.left = (e.clientX + 14) + "px"; tipEl.style.top = (e.clientY - 10) + "px"; }
-    });
-    circle.addEventListener("mouseleave", function () {
-      this.setAttribute("r", r);
-      this.setAttribute("fill-opacity", "0.75");
-      if (tipEl) tipEl.classList.remove("visible");
-    });
-    circle.addEventListener("click", () => {
-      const tab = document.querySelector('.explore-tab[data-view="overview"]');
-      if (tab) tab.click();
-      selectOverviewCountry(d.country);
-    });
-
-    dotsGroup.appendChild(circle);
-    dotsGroup.appendChild(label);
-  });
-  svg.appendChild(dotsGroup);
-
-  // X axis ticks
-  [0, 10, 20, 30, 40, 50].forEach(val => {
-    if (val > maxEntries + 5) return;
-    const x = M.left + (val / maxEntries) * plotW;
-    const lbl = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    lbl.setAttribute("x", x); lbl.setAttribute("y", M.top + plotH + 16);
-    lbl.setAttribute("text-anchor", "middle"); lbl.setAttribute("font-size", "9"); lbl.setAttribute("fill", "#999");
-    lbl.textContent = val;
-    svg.appendChild(lbl);
-    svg.appendChild(mkLine(x, M.top + plotH, x, M.top + plotH + 4, "#999", "1", ""));
-  });
-
-  svg.appendChild(dotsGroup);
-  svg.setAttribute("viewBox", "0 0 " + containerW + " " + containerH);
-  svg.style.overflow = "visible";
-
-  // ViewBox-based zoom/pan so axes and dots scale together
-  let vx = 0, vy = 0, vw = containerW, vh = containerH;
-  let isDragging = false, dragStart = {};
-
-  function applyViewBox() {
-    svg.setAttribute("viewBox", vx + " " + vy + " " + vw + " " + vh);
-  }
-
-  svg.addEventListener("wheel", function(e) {
-    e.preventDefault();
-    const factor = e.deltaY > 0 ? 1.15 : 0.87;
-    const rect = svg.getBoundingClientRect();
-    const mx = (e.clientX - rect.left) / rect.width * vw + vx;
-    const my = (e.clientY - rect.top) / rect.height * vh + vy;
-    vw = Math.min(containerW * 2, Math.max(containerW * 0.2, vw * factor));
-    vh = Math.min(containerH * 2, Math.max(containerH * 0.2, vh * factor));
-    vx = mx - (e.clientX - rect.left) / rect.width * vw;
-    vy = my - (e.clientY - rect.top) / rect.height * vh;
-    applyViewBox();
-  }, { passive: false });
-
-  svg.addEventListener("mousedown", function(e) {
-    isDragging = true;
-    dragStart = { x: e.clientX, y: e.clientY, vx: vx, vy: vy };
-    svg.style.cursor = "grabbing";
-  });
-  svg.addEventListener("mousemove", function(e) {
-    if (!isDragging) return;
-    const rect = svg.getBoundingClientRect();
-    vx = dragStart.vx - (e.clientX - dragStart.x) / rect.width * vw;
-    vy = dragStart.vy - (e.clientY - dragStart.y) / rect.height * vh;
-    applyViewBox();
-  });
-  svg.addEventListener("mouseup", function() { isDragging = false; svg.style.cursor = "grab"; });
-  svg.addEventListener("mouseleave", function() { isDragging = false; svg.style.cursor = "grab"; });
-  svg.style.cursor = "grab";
-
-  container.appendChild(svg);
-
-  // Zoom buttons
-  const zoomBtns = document.createElement("div");
-  zoomBtns.className = "momentum-zoom-controls";
-  const btnIn = document.createElement("button");
-  btnIn.className = "momentum-zoom-btn"; btnIn.textContent = "+";
-  const btnOut = document.createElement("button");
-  btnOut.className = "momentum-zoom-btn"; btnOut.textContent = "\u2212";
-  const btnReset = document.createElement("button");
-  btnReset.className = "momentum-zoom-btn"; btnReset.textContent = "\u27f3";
-  zoomBtns.appendChild(btnIn);
-  zoomBtns.appendChild(btnOut);
-  zoomBtns.appendChild(btnReset);
-  container.style.position = "relative";
-  container.appendChild(zoomBtns);
-
-  btnIn.addEventListener("click", function() {
-    const cx = vx + vw/2, cy = vy + vh/2;
-    vw *= 0.8; vh *= 0.8;
-    vx = cx - vw/2; vy = cy - vh/2;
-    applyViewBox();
-  });
-  btnOut.addEventListener("click", function() {
-    const cx = vx + vw/2, cy = vy + vh/2;
-    vw *= 1.25; vh *= 1.25;
-    vx = cx - vw/2; vy = cy - vh/2;
-    applyViewBox();
-  });
-  btnReset.addEventListener("click", function() { vx = 0; vy = 0; vw = containerW; vh = containerH; applyViewBox(); });
-
-  // Search highlight
-  const searchInput = document.getElementById("momentum-search");
-  window.momentumReapplyHighlight = function (query) {
-    if (!query) {
-      svg.querySelectorAll("circle[data-country]").forEach(c => {
-        c.setAttribute("fill-opacity", "0.75"); c.setAttribute("stroke-width", "2");
-      });
-      svg.querySelectorAll("text[data-country-label]").forEach(l => l.setAttribute("fill", "#333"));
-      return;
+    var data = calculateMomentumData();
+    var container = document.getElementById("momentum-chart");
+    if (!container) return;
+    
+    container.innerHTML = '';
+    
+    var width = container.offsetWidth || 300;
+    var height = 320;
+    var margin = { top: 20, right: 20, bottom: 45, left: 55 };
+    var plotWidth = width - margin.left - margin.right;
+    var plotHeight = height - margin.top - margin.bottom;
+    
+    // Calculate data extents with padding
+    var maxTotal = Math.max.apply(null, data.map(function(d) { return d.total; }));
+    var maxRecent = Math.max.apply(null, data.map(function(d) { return d.recent; }));
+    maxTotal = maxTotal * 1.15; // Add 15% padding
+    maxRecent = maxRecent * 1.15; // Add 15% padding
+    
+    // Zoom state
+    var zoomLevel = 1;
+    var panX = 0;
+    var panY = 0;
+    var isDragging = false;
+    var dragStartX = 0;
+    var dragStartY = 0;
+    var dragStartPanX = 0;
+    var dragStartPanY = 0;
+    
+    // Create SVG
+    var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("width", width);
+    svg.setAttribute("height", height);
+    svg.style.cursor = "grab";
+    container.appendChild(svg);
+    
+    // Create clip path for plot area
+    var defs = document.createElementNS("http://www.w3.org/2000/svg", "defs");
+    var clipPath = document.createElementNS("http://www.w3.org/2000/svg", "clipPath");
+    clipPath.setAttribute("id", "momentum-clip");
+    var clipRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    clipRect.setAttribute("x", margin.left);
+    clipRect.setAttribute("y", margin.top);
+    clipRect.setAttribute("width", plotWidth);
+    clipRect.setAttribute("height", plotHeight);
+    clipPath.appendChild(clipRect);
+    defs.appendChild(clipPath);
+    svg.appendChild(defs);
+    
+    // Background for plot area
+    var plotBg = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    plotBg.setAttribute("x", margin.left);
+    plotBg.setAttribute("y", margin.top);
+    plotBg.setAttribute("width", plotWidth);
+    plotBg.setAttribute("height", plotHeight);
+    plotBg.setAttribute("fill", "white");
+    svg.appendChild(plotBg);
+    
+    // Groups for layering
+    var gridGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    var axisGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    var dotsGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    dotsGroup.setAttribute("clip-path", "url(#momentum-clip)");
+    svg.appendChild(gridGroup);
+    svg.appendChild(axisGroup);
+    svg.appendChild(dotsGroup);
+    
+    // Calculate pan limits to prevent scrolling past 0
+    function getPanLimits() {
+        // At zoom level 1, pan should be 0
+        // At higher zoom, limit pan so that 0,0 origin stays visible
+        var maxPanX = (zoomLevel - 1) * plotWidth / 2;
+        var maxPanY = (zoomLevel - 1) * plotHeight / 2;
+        return {
+            minX: -maxPanX,
+            maxX: maxPanX,
+            minY: -maxPanY,
+            maxY: maxPanY
+        };
     }
-    const q = query.toLowerCase();
-    svg.querySelectorAll("circle[data-country]").forEach(c => {
-      const key = c.getAttribute("data-country");
-      const nm = (displayNames[key] || key).toLowerCase();
-      const match = nm.includes(q) || key.toLowerCase().includes(q);
-      c.setAttribute("fill-opacity", match ? "1" : "0.15");
-      c.setAttribute("stroke-width", match ? "3" : "1");
+    
+    function constrainPan() {
+        var limits = getPanLimits();
+        panX = Math.max(limits.minX, Math.min(limits.maxX, panX));
+        panY = Math.max(limits.minY, Math.min(limits.maxY, panY));
+    }
+    
+    function scaleX(recent) {
+        var baseX = margin.left + (recent / maxRecent) * plotWidth;
+        return margin.left + (baseX - margin.left - plotWidth/2) * zoomLevel + plotWidth/2 + panX;
+    }
+    function scaleY(total) {
+        var baseY = margin.top + plotHeight - (total / maxTotal) * plotHeight;
+        return margin.top + (baseY - margin.top - plotHeight/2) * zoomLevel + plotHeight/2 + panY;
+    }
+    
+    function renderChart() {
+        // Clear groups
+        gridGroup.innerHTML = '';
+        axisGroup.innerHTML = '';
+        dotsGroup.innerHTML = '';
+        
+        // Grid lines and tick labels
+        var yTicks = 5;
+        for (var i = 0; i <= yTicks; i++) {
+            var val = (maxTotal / yTicks) * (yTicks - i);
+            var y = scaleY(val);
+            
+            if (y >= margin.top && y <= margin.top + plotHeight) {
+                // Grid line
+                var line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+                line.setAttribute("x1", margin.left);
+                line.setAttribute("y1", y);
+                line.setAttribute("x2", margin.left + plotWidth);
+                line.setAttribute("y2", y);
+                line.setAttribute("stroke", "#e8ebef");
+                line.setAttribute("stroke-width", "1");
+                gridGroup.appendChild(line);
+                
+                // Y-axis tick label
+                var label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                label.setAttribute("x", margin.left - 8);
+                label.setAttribute("y", y + 3);
+                label.setAttribute("text-anchor", "end");
+                label.setAttribute("font-size", "9");
+                label.setAttribute("fill", "#7a8a9a");
+                label.textContent = Math.round(val);
+                axisGroup.appendChild(label);
+            }
+        }
+        
+        var xTicks = 5;
+        for (var j = 0; j <= xTicks; j++) {
+            var xVal = (maxRecent / xTicks) * j;
+            var x = scaleX(xVal);
+            
+            if (x >= margin.left && x <= margin.left + plotWidth) {
+                // Grid line
+                var vline = document.createElementNS("http://www.w3.org/2000/svg", "line");
+                vline.setAttribute("x1", x);
+                vline.setAttribute("y1", margin.top);
+                vline.setAttribute("x2", x);
+                vline.setAttribute("y2", margin.top + plotHeight);
+                vline.setAttribute("stroke", "#e8ebef");
+                vline.setAttribute("stroke-width", "1");
+                gridGroup.appendChild(vline);
+                
+                // X-axis tick label
+                var xLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                xLabel.setAttribute("x", x);
+                xLabel.setAttribute("y", margin.top + plotHeight + 15);
+                xLabel.setAttribute("text-anchor", "middle");
+                xLabel.setAttribute("font-size", "9");
+                xLabel.setAttribute("fill", "#7a8a9a");
+                xLabel.textContent = Math.round(xVal);
+                axisGroup.appendChild(xLabel);
+            }
+        }
+        
+        // Axis labels
+        var xAxisLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        xAxisLabel.setAttribute("x", margin.left + plotWidth / 2);
+        xAxisLabel.setAttribute("y", height - 8);
+        xAxisLabel.setAttribute("text-anchor", "middle");
+        xAxisLabel.setAttribute("font-size", "10");
+        xAxisLabel.setAttribute("fill", "#1a2744");
+        xAxisLabel.setAttribute("font-weight", "600");
+        xAxisLabel.textContent = "Recent Entries (2023-2025)";
+        axisGroup.appendChild(xAxisLabel);
+        
+        var yAxisLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        yAxisLabel.setAttribute("x", 14);
+        yAxisLabel.setAttribute("y", margin.top + plotHeight / 2);
+        yAxisLabel.setAttribute("text-anchor", "middle");
+        yAxisLabel.setAttribute("font-size", "10");
+        yAxisLabel.setAttribute("fill", "#1a2744");
+        yAxisLabel.setAttribute("font-weight", "600");
+        yAxisLabel.setAttribute("transform", "rotate(-90, 14, " + (margin.top + plotHeight / 2) + ")");
+        yAxisLabel.textContent = "Total Entries";
+        axisGroup.appendChild(yAxisLabel);
+        
+        // Axis lines
+        var xAxis = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        xAxis.setAttribute("x1", margin.left);
+        xAxis.setAttribute("y1", margin.top + plotHeight);
+        xAxis.setAttribute("x2", margin.left + plotWidth);
+        xAxis.setAttribute("y2", margin.top + plotHeight);
+        xAxis.setAttribute("stroke", "#1a2744");
+        xAxis.setAttribute("stroke-width", "1.5");
+        axisGroup.appendChild(xAxis);
+        
+        var yAxis = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        yAxis.setAttribute("x1", margin.left);
+        yAxis.setAttribute("y1", margin.top);
+        yAxis.setAttribute("x2", margin.left);
+        yAxis.setAttribute("y2", margin.top + plotHeight);
+        yAxis.setAttribute("stroke", "#1a2744");
+        yAxis.setAttribute("stroke-width", "1.5");
+        axisGroup.appendChild(yAxis);
+        
+        // Plot dots - sort by total so high-value countries render on top
+        var sortedData = data.slice().sort(function(a, b) {
+            return a.total - b.total;
+        });
+        
+        sortedData.forEach(function(item) {
+            var cx = scaleX(item.recent);
+            var cy = scaleY(item.total);
+            var r = 4 * Math.sqrt(zoomLevel);
+            
+            // Only render if in visible area
+            if (cx < margin.left - r || cx > margin.left + plotWidth + r ||
+                cy < margin.top - r || cy > margin.top + plotHeight + r) {
+                return;
+            }
+            
+            var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            circle.setAttribute("cx", cx);
+            circle.setAttribute("cy", cy);
+            circle.setAttribute("r", r);
+            circle.setAttribute("fill", item.color);
+            circle.setAttribute("fill-opacity", "0.85");
+            circle.setAttribute("stroke", "white");
+            circle.setAttribute("stroke-width", "1");
+            circle.setAttribute("cursor", "pointer");
+            circle.style.transition = "r 0.15s, fill-opacity 0.15s";
+            
+            // Tooltip events
+            circle.addEventListener("mouseenter", function(e) {
+                this.setAttribute("r", r * 1.5);
+                this.setAttribute("fill-opacity", "1");
+                
+                var tooltip = document.getElementById("momentum-tooltip");
+                var statusLabel = item.momentum.charAt(0).toUpperCase() + item.momentum.slice(1);
+                tooltip.innerHTML = '<strong>' + item.displayName + '</strong><br>' +
+                    'Total: ' + item.total + ' entries<br>' +
+                    'Recent (2023+): ' + item.recent + '<br>' +
+                    'Status: <span class="tooltip-status ' + item.momentum + '">' + statusLabel + '</span>';
+                tooltip.classList.add("visible");
+            });
+            
+            circle.addEventListener("mousemove", function(e) {
+                var tooltip = document.getElementById("momentum-tooltip");
+                var tooltipRect = tooltip.getBoundingClientRect();
+                var viewportWidth = window.innerWidth;
+                var viewportHeight = window.innerHeight;
+                
+                var left = e.clientX + 15;
+                var top = e.clientY - 10;
+                
+                // Keep tooltip in viewport
+                if (left + tooltipRect.width > viewportWidth - 10) {
+                    left = e.clientX - tooltipRect.width - 15;
+                }
+                if (top + tooltipRect.height > viewportHeight - 10) {
+                    top = e.clientY - tooltipRect.height - 10;
+                }
+                if (top < 10) top = 10;
+                
+                tooltip.style.left = left + "px";
+                tooltip.style.top = top + "px";
+            });
+            
+            circle.addEventListener("mouseleave", function() {
+                this.setAttribute("r", r);
+                this.setAttribute("fill-opacity", "0.85");
+                document.getElementById("momentum-tooltip").classList.remove("visible");
+            });
+            
+            circle.addEventListener("click", function(e) {
+                e.stopPropagation();
+                selectOverviewCountry(item.country);
+            });
+            
+            dotsGroup.appendChild(circle);
+        });
+    }
+    
+    // Initial render
+    renderChart();
+    
+    // Zoom controls
+    var zoomInBtn = document.getElementById("momentum-zoom-in");
+    var zoomOutBtn = document.getElementById("momentum-zoom-out");
+    var zoomResetBtn = document.getElementById("momentum-zoom-reset");
+    
+    if (zoomInBtn) {
+        zoomInBtn.addEventListener("click", function() {
+            zoomLevel = Math.min(zoomLevel * 1.5, 10);
+            constrainPan();
+            renderChart();
+            if (window.momentumReapplyHighlight) setTimeout(window.momentumReapplyHighlight, 20);
+        });
+    }
+    
+    if (zoomOutBtn) {
+        zoomOutBtn.addEventListener("click", function() {
+            zoomLevel = Math.max(zoomLevel / 1.5, 1);
+            constrainPan();
+            renderChart();
+            if (window.momentumReapplyHighlight) setTimeout(window.momentumReapplyHighlight, 20);
+        });
+    }
+    
+    if (zoomResetBtn) {
+        zoomResetBtn.addEventListener("click", function() {
+            zoomLevel = 1;
+            panX = 0;
+            panY = 0;
+            renderChart();
+            if (window.momentumReapplyHighlight) setTimeout(window.momentumReapplyHighlight, 20);
+        });
+    }
+    
+    // Mouse wheel zoom - zooms toward mouse position
+    container.addEventListener("wheel", function(e) {
+        e.preventDefault();
+        var delta = e.deltaY > 0 ? 0.9 : 1.1;
+        var newZoom = Math.max(1, Math.min(10, zoomLevel * delta));
+        
+        if (newZoom !== zoomLevel) {
+            // Get mouse position relative to plot area center
+            var rect = container.getBoundingClientRect();
+            var mouseX = e.clientX - rect.left;
+            var mouseY = e.clientY - rect.top;
+            
+            // Calculate offset from plot center
+            var plotCenterX = margin.left + plotWidth / 2;
+            var plotCenterY = margin.top + plotHeight / 2;
+            var offsetX = mouseX - plotCenterX;
+            var offsetY = mouseY - plotCenterY;
+            
+            // Adjust pan so the point under mouse stays fixed
+            var zoomRatio = newZoom / zoomLevel;
+            panX = panX * zoomRatio - offsetX * (zoomRatio - 1);
+            panY = panY * zoomRatio - offsetY * (zoomRatio - 1);
+            
+            zoomLevel = newZoom;
+            constrainPan();
+            renderChart();
+            if (window.momentumReapplyHighlight) setTimeout(window.momentumReapplyHighlight, 20);
+        }
+    }, { passive: false });
+    
+    // Pan with mouse drag
+    container.addEventListener("mousedown", function(e) {
+        if (e.target.tagName === "circle") return;
+        isDragging = true;
+        dragStartX = e.clientX;
+        dragStartY = e.clientY;
+        dragStartPanX = panX;
+        dragStartPanY = panY;
+        svg.style.cursor = "grabbing";
     });
-    svg.querySelectorAll("text[data-country-label]").forEach(l => {
-      const key = l.getAttribute("data-country-label");
-      const nm = (displayNames[key] || key).toLowerCase();
-      l.setAttribute("fill", nm.includes(q) || key.toLowerCase().includes(q) ? "#1a2744" : "#ddd");
+    
+    document.addEventListener("mousemove", function(e) {
+        if (!isDragging) return;
+        var dx = e.clientX - dragStartX;
+        var dy = e.clientY - dragStartY;
+        panX = dragStartPanX + dx;
+        panY = dragStartPanY + dy;
+        constrainPan();
+        renderChart();
     });
-  };
-
-  if (searchInput) {
-    searchInput.addEventListener("input", function () {
-      window.momentumReapplyHighlight(this.value.trim());
+    
+    document.addEventListener("mouseup", function() {
+        if (isDragging) {
+            isDragging = false;
+            svg.style.cursor = "grab";
+            if (window.momentumReapplyHighlight) setTimeout(window.momentumReapplyHighlight, 20);
+        }
     });
-  }
+    
+    // Store data and elements for search functionality
+    window.momentumChartData = {
+        data: data,
+        dotsGroup: dotsGroup,
+        scaleX: scaleX,
+        scaleY: scaleY,
+        margin: margin,
+        plotWidth: plotWidth,
+        plotHeight: plotHeight,
+        zoomLevel: function() { return zoomLevel; },
+        activeSearch: null
+    };
 }
+
+// ===== MOMENTUM CHART SEARCH =====
+(function() {
+    // Country aliases for common names
+    var countryAliases = {
+        'russia': 'Russian Federation',
+        'uk': 'United Kingdom',
+        'britain': 'United Kingdom',
+        'great britain': 'United Kingdom',
+        'england': 'United Kingdom',
+        'usa': 'United States',
+        'us': 'United States',
+        'america': 'United States',
+        'uae': 'United Arab Emirates',
+        'emirates': 'United Arab Emirates',
+        'south korea': 'Korea, Republic of',
+        'korea': 'Korea, Republic of',
+        'rok': 'Korea, Republic of',
+        'czech': 'Czech Republic',
+        'czechia': 'Czech Republic',
+        'netherlands': 'The Netherlands',
+        'holland': 'The Netherlands',
+        'ksa': 'Saudi Arabia',
+        'prc': 'China',
+        'roc': 'Taiwan'
+    };
+    
+    function findCountry(searchTerm) {
+        if (!window.momentumChartData) return null;
+        var data = window.momentumChartData.data;
+        var term = searchTerm.toLowerCase().trim();
+        
+        // Check aliases first
+        if (countryAliases[term]) {
+            var aliasTarget = countryAliases[term];
+            for (var i = 0; i < data.length; i++) {
+                if (data[i].displayName === aliasTarget || data[i].country === aliasTarget) {
+                    return data[i];
+                }
+            }
+        }
+        
+        // Partial match on country name
+        for (var i = 0; i < data.length; i++) {
+            var name = data[i].displayName.toLowerCase();
+            var countryId = data[i].country.toLowerCase();
+            if (name.indexOf(term) !== -1 || countryId.indexOf(term) !== -1) {
+                return data[i];
+            }
+        }
+        
+        return null;
+    }
+    
+    function highlightCountry(item) {
+        if (!window.momentumChartData) return;
+        
+        // Store active search for re-apply after zoom/pan
+        window.momentumChartData.activeSearch = item;
+        
+        var chartData = window.momentumChartData;
+        var dotsGroup = chartData.dotsGroup;
+        var scaleX = chartData.scaleX;
+        var scaleY = chartData.scaleY;
+        var zoomLevel = chartData.zoomLevel();
+        
+        // Remove any existing highlight
+        var existingHighlight = document.getElementById('momentum-highlight-group');
+        if (existingHighlight) existingHighlight.remove();
+        
+        // Get position
+        var cx = scaleX(item.recent);
+        var cy = scaleY(item.total);
+        var r = 4 * Math.sqrt(zoomLevel);
+        
+        // Create highlight group
+        var highlightGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        highlightGroup.setAttribute("id", "momentum-highlight-group");
+        
+        // Pulsing ring
+        var ring = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        ring.setAttribute("cx", cx);
+        ring.setAttribute("cy", cy);
+        ring.setAttribute("r", r * 2.5);
+        ring.setAttribute("fill", "none");
+        ring.setAttribute("stroke", item.color);
+        ring.setAttribute("stroke-width", "2");
+        ring.setAttribute("stroke-opacity", "0.6");
+        
+        // Add pulse animation
+        var animR = document.createElementNS("http://www.w3.org/2000/svg", "animate");
+        animR.setAttribute("attributeName", "r");
+        animR.setAttribute("from", r * 1.5);
+        animR.setAttribute("to", r * 3);
+        animR.setAttribute("dur", "1s");
+        animR.setAttribute("repeatCount", "indefinite");
+        ring.appendChild(animR);
+        
+        var animOpacity = document.createElementNS("http://www.w3.org/2000/svg", "animate");
+        animOpacity.setAttribute("attributeName", "stroke-opacity");
+        animOpacity.setAttribute("from", "0.8");
+        animOpacity.setAttribute("to", "0");
+        animOpacity.setAttribute("dur", "1s");
+        animOpacity.setAttribute("repeatCount", "indefinite");
+        ring.appendChild(animOpacity);
+        
+        highlightGroup.appendChild(ring);
+        
+        // Highlighted dot
+        var dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        dot.setAttribute("cx", cx);
+        dot.setAttribute("cy", cy);
+        dot.setAttribute("r", r * 1.8);
+        dot.setAttribute("fill", item.color);
+        dot.setAttribute("stroke", "white");
+        dot.setAttribute("stroke-width", "2");
+        highlightGroup.appendChild(dot);
+        
+        // Label background
+        var labelText = item.displayName;
+        var labelWidth = labelText.length * 6.5 + 16;
+        var labelHeight = 20;
+        var labelX = cx + r * 2 + 8;
+        var labelY = cy - labelHeight / 2;
+        
+        // Adjust if label would go off right edge
+        var container = document.getElementById("momentum-chart");
+        if (container && labelX + labelWidth > container.offsetWidth - 20) {
+            labelX = cx - r * 2 - labelWidth - 8;
+        }
+        
+        var labelBg = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        labelBg.setAttribute("x", labelX);
+        labelBg.setAttribute("y", labelY);
+        labelBg.setAttribute("width", labelWidth);
+        labelBg.setAttribute("height", labelHeight);
+        labelBg.setAttribute("rx", "4");
+        labelBg.setAttribute("fill", "white");
+        labelBg.setAttribute("stroke", item.color);
+        labelBg.setAttribute("stroke-width", "1.5");
+        labelBg.setAttribute("filter", "drop-shadow(0 1px 3px rgba(0,0,0,0.15))");
+        highlightGroup.appendChild(labelBg);
+        
+        // Label text
+        var label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        label.setAttribute("x", labelX + 8);
+        label.setAttribute("y", labelY + 14);
+        label.setAttribute("font-family", "Inter, sans-serif");
+        label.setAttribute("font-size", "11");
+        label.setAttribute("font-weight", "600");
+        label.setAttribute("fill", "#1a2744");
+        label.textContent = labelText;
+        highlightGroup.appendChild(label);
+        
+        dotsGroup.appendChild(highlightGroup);
+        
+        // Show the hover tooltip
+        var tooltip = document.getElementById("momentum-tooltip");
+        if (tooltip && container) {
+            var statusLabel = item.momentum.charAt(0).toUpperCase() + item.momentum.slice(1);
+            tooltip.innerHTML = '<strong>' + item.displayName + '</strong><br>' +
+                'Total: ' + item.total + ' entries<br>' +
+                'Recent (2023+): ' + item.recent + '<br>' +
+                'Status: <span class="tooltip-status ' + item.momentum + '">' + statusLabel + '</span>';
+            tooltip.classList.add("visible");
+            
+            // Position tooltip near the highlighted dot
+            var containerRect = container.getBoundingClientRect();
+            var tooltipLeft = containerRect.left + cx + 20;
+            var tooltipTop = containerRect.top + cy - 30 + window.scrollY;
+            
+            // Keep tooltip in viewport
+            if (tooltipLeft + 150 > window.innerWidth - 10) {
+                tooltipLeft = containerRect.left + cx - 170;
+            }
+            
+            tooltip.style.left = tooltipLeft + "px";
+            tooltip.style.top = tooltipTop + "px";
+        }
+    }
+    
+    function clearHighlight() {
+        var existingHighlight = document.getElementById('momentum-highlight-group');
+        if (existingHighlight) existingHighlight.remove();
+        
+        var tooltip = document.getElementById("momentum-tooltip");
+        if (tooltip) tooltip.classList.remove("visible");
+        
+        // Clear active search
+        if (window.momentumChartData) {
+            window.momentumChartData.activeSearch = null;
+        }
+    }
+    
+    // Function to re-apply highlight after zoom/pan
+    window.momentumReapplyHighlight = function() {
+        if (window.momentumChartData && window.momentumChartData.activeSearch) {
+            highlightCountry(window.momentumChartData.activeSearch);
+        }
+    };
+    
+    // Set up search input handler
+    document.addEventListener('DOMContentLoaded', function() {
+        var searchInput = document.getElementById('momentum-country-search');
+        if (!searchInput) return;
+        
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                var term = this.value.trim();
+                if (!term) {
+                    clearHighlight();
+                    return;
+                }
+                
+                var found = findCountry(term);
+                if (found) {
+                    highlightCountry(found);
+                    this.style.borderColor = '';
+                } else {
+                    clearHighlight();
+                    this.style.borderColor = '#e63946';
+                    setTimeout(function() {
+                        searchInput.style.borderColor = '';
+                    }, 1500);
+                }
+            }
+        });
+        
+        // Clear highlight when input is cleared
+        searchInput.addEventListener('input', function() {
+            if (!this.value.trim()) {
+                clearHighlight();
+            }
+        });
+        
+        // Clear search and highlight when clicking on chart
+        var chartContainer = document.getElementById('momentum-chart');
+        if (chartContainer) {
+            chartContainer.addEventListener('click', function(e) {
+                // Don't clear if clicking on a country dot (let that handler work)
+                if (e.target.tagName === 'circle') return;
+                
+                searchInput.value = '';
+                searchInput.style.borderColor = '';
+                clearHighlight();
+            });
+        }
+    });
+})();
 
 // ===== POLICY GROWTH CHART =====
-
 function renderPolicyGrowthChart() {
-  const container = document.getElementById("policy-growth-container");
-  if (!container) return;
-  if (!Object.keys(policyData).length) return;
-
-  container.innerHTML = "";
-
-  const years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
-  const areaKeys = [
-    { key: "laws", name: "LAWS Employment/Deployment", color: "#1a2744" },
-    { key: "adoption", name: "Adoption & Intent of Use", color: "#d64045" },
-    { key: "acquisition", name: "Acquisition & Procurement", color: "#6b3074" },
-    { key: "ethical", name: "Ethical Guidelines & Restrictions", color: "#4a9d5b" },
-    { key: "technical", name: "Technical Safety & Security Requirements", color: "#e07020" },
-    { key: "international", name: "Int'l Cooperation & Interoperability", color: "#0d7377" }
-  ];
-
-  const areaNameToKey = {};
-  areaKeys.forEach(a => { areaNameToKey[a.name] = a.key; });
-
-  const yearAreaCounts = {};
-  years.forEach(y => {
-    yearAreaCounts[y] = {};
-    areaKeys.forEach(a => { yearAreaCounts[y][a.key] = 0; });
-  });
-
-  Object.keys(policyData).forEach(country => {
-    POLICY_AREAS.forEach(area => {
-      const areaData = policyData[country][area];
-      if (!areaData) return;
-      const areaKey = areaNameToKey[area];
-      if (!areaKey) return;
-
-      ['legal_directives', 'policy_documents', 'public_statements'].forEach(type => {
-        (areaData[type] || []).forEach(entry => {
-          const dt = extractDate(entry.text || "");
-          if (dt) {
-            const yr = parseInt(dt.match(/\d{4}/)?.[0]);
-            if (yr && years.includes(yr)) yearAreaCounts[yr][areaKey]++;
-          }
+    var container = document.getElementById("policy-growth-chart");
+    if (!container) return;
+    
+    container.innerHTML = '';
+    
+    // Calculate policy counts by year, quarter, and dimension
+    var quarterlyData = {};
+    var years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+    var quarters = [1, 2, 3, 4];
+    var dims = ['LAWS', 'Adoption', 'Procurement', 'Safety', 'Ethics', 'Interoperability'];
+    var dimLabels = {
+        'LAWS': 'LAWS Employment',
+        'Adoption': 'Adoption & Intent',
+        'Procurement': 'Procurement',
+        'Safety': 'Safety & Security',
+        'Ethics': 'Ethics',
+        'Interoperability': 'Interoperability'
+    };
+    var colors = {
+        'LAWS': '#e63946',
+        'Adoption': '#457b9d',
+        'Procurement': '#2a9d8f',
+        'Safety': '#e9c46a',
+        'Ethics': '#a855f7',
+        'Interoperability': '#14b8a6'
+    };
+    
+    // Map full area names to short names
+    var areaToShort = {
+        'LAWS Employment/Deployment': 'LAWS',
+        'Adoption & Intent of Use': 'Adoption',
+        'Acquisition & Procurement': 'Procurement',
+        'Technical Safety & Security Requirements': 'Safety',
+        'Ethical Guidelines & Restrictions': 'Ethics',
+        "Int'l Cooperation & Interoperability": 'Interoperability'
+    };
+    
+    // Month to quarter mapping
+    var monthToQuarter = {
+        'Jan': 1, 'January': 1,
+        'Feb': 1, 'February': 1,
+        'Mar': 1, 'March': 1,
+        'Apr': 2, 'April': 2,
+        'May': 2,
+        'Jun': 2, 'June': 2,
+        'Jul': 3, 'July': 3,
+        'Aug': 3, 'August': 3,
+        'Sep': 3, 'September': 3,
+        'Oct': 4, 'October': 4,
+        'Nov': 4, 'November': 4,
+        'Dec': 4, 'December': 4
+    };
+    
+    var POLICY_AREAS = [
+        "LAWS Employment/Deployment",
+        "Adoption & Intent of Use",
+        "Acquisition & Procurement",
+        "Technical Safety & Security Requirements",
+        "Ethical Guidelines & Restrictions",
+        "Int'l Cooperation & Interoperability"
+    ];
+    
+    // Initialize data structure
+    years.forEach(function(y) {
+        quarterlyData[y] = {};
+        quarters.forEach(function(q) {
+            quarterlyData[y][q] = {};
+            dims.forEach(function(d) { quarterlyData[y][q][d] = 0; });
         });
-      });
     });
-  });
-
-  const maxYearTotal = Math.max(1, ...years.map(y =>
-    Object.values(yearAreaCounts[y]).reduce((s, v) => s + v, 0)
-  ));
-
-  const wrapper = document.createElement("div");
-  wrapper.className = "policy-growth-chart";
-
-  const yAxis = document.createElement("div");
-  yAxis.className = "policy-growth-y-axis";
-
-  const gridContainer = document.createElement("div");
-  gridContainer.className = "policy-growth-grid";
-
-  const ySteps = 5;
-  for (let i = 0; i <= ySteps; i++) {
-    const val = Math.round((maxYearTotal / ySteps) * i);
-    const pct = (i / ySteps) * 100;
-
-    const label = document.createElement("div");
-    label.textContent = val;
-    yAxis.insertBefore(label, yAxis.firstChild);
-
-    const gridLine = document.createElement("div");
-    gridLine.className = "policy-growth-grid-line";
-    gridLine.style.bottom = pct + "%";
-    gridContainer.appendChild(gridLine);
-  }
-  wrapper.appendChild(yAxis);
-  wrapper.appendChild(gridContainer);
-
-  const xAxis = document.createElement("div");
-  xAxis.className = "policy-growth-x-axis";
-  years.forEach(y => {
-    const lbl = document.createElement("div");
-    lbl.className = "policy-growth-x-label";
-    lbl.textContent = y;
-    xAxis.appendChild(lbl);
-  });
-
-  const barsContainer = document.createElement("div");
-  barsContainer.className = "policy-growth-bars";
-
-  const hoverPanel = document.createElement("div");
-  hoverPanel.className = "policy-growth-hover-panel";
-  document.body.appendChild(hoverPanel);
-
-  years.forEach(year => {
-    const yearTotal = Object.values(yearAreaCounts[year]).reduce((s, v) => s + v, 0);
-    const yearGroup = document.createElement("div");
-    yearGroup.className = "policy-growth-year-group";
-
-    const barGroup = document.createElement("div");
-    barGroup.className = "policy-growth-bar-group";
-
-    const stack = document.createElement("div");
-    stack.className = "policy-growth-bar-stack";
-    stack.style.height = yearTotal > 0 ? ((yearTotal / maxYearTotal) * 100) + "%" : "0";
-
-    areaKeys.forEach(area => {
-      const count = yearAreaCounts[year][area.key];
-      if (count === 0) return;
-      const pct = (count / yearTotal) * 100;
-      const seg = document.createElement("div");
-      seg.className = "policy-growth-bar-segment";
-      seg.style.cssText = "flex:" + pct + ";background:" + area.color + ";";
-      stack.appendChild(seg);
+    
+    // Count policies from policyData structure
+    Object.keys(policyData).forEach(function(country) {
+        var countryData = policyData[country];
+        
+        POLICY_AREAS.forEach(function(area) {
+            var areaData = countryData[area];
+            var shortName = areaToShort[area];
+            
+            if (areaData) {
+                ['legal_directives', 'policy_documents', 'public_statements'].forEach(function(type) {
+                    if (areaData[type]) {
+                        areaData[type].forEach(function(entry) {
+                            var text = entry.text || '';
+                            // Extract month and year from pattern like "(Month YYYY)" or "(YYYY)"
+                            var dateMatch = text.match(/\(([A-Z][a-z]+)?\s*(\d{4})\)/);
+                            if (dateMatch) {
+                                var monthStr = dateMatch[1] || '';
+                                var year = parseInt(dateMatch[2]);
+                                
+                                if (year >= 2016 && year <= 2025) {
+                                    // Determine quarter (default to Q4 if no month)
+                                    var quarter = 4;
+                                    if (monthStr && monthToQuarter[monthStr]) {
+                                        quarter = monthToQuarter[monthStr];
+                                    }
+                                    quarterlyData[year][quarter][shortName]++;
+                                }
+                            }
+                        });
+                    }
+                });
+            }
+        });
     });
-    barGroup.appendChild(stack);
-
-    barGroup.addEventListener("mouseenter", function(e) {
-      if (yearTotal === 0) return;
-      let rows = "";
-      areaKeys.forEach(function(area) {
-        const cnt = yearAreaCounts[year][area.key];
-        const pct = yearTotal > 0 ? Math.round((cnt / yearTotal) * 100) : 0;
-        rows += "<div class=\"policy-growth-hover-row\">" +
-          "<div class=\"policy-growth-hover-row-label\" style=\"color:" + area.color + ";font-weight:600\">" + getShortAreaName(area.name) + "</div>" +
-          "<div class=\"policy-growth-hover-row-bar\"><div class=\"policy-growth-hover-row-fill\" style=\"width:" + pct + "%;background:" + area.color + "\"></div></div>" +
-          "<div class=\"policy-growth-hover-row-pct\">" + pct + "%</div>" +
-          "<div class=\"policy-growth-hover-row-count\">" + cnt + "</div>" +
-          "</div>";
-      });
-      hoverPanel.innerHTML = "<div class=\"policy-growth-hover-title\"><span>" + year + "</span><span class=\"policy-growth-hover-total\">" + yearTotal + " entries</span></div><div class=\"policy-growth-hover-rows\">" + rows + "</div>";
-      hoverPanel.classList.add("visible");
+    
+    // Calculate max for scaling (max of any single quarter)
+    var maxQuarterTotal = 0;
+    years.forEach(function(y) {
+        quarters.forEach(function(q) {
+            var total = 0;
+            dims.forEach(function(d) { total += quarterlyData[y][q][d]; });
+            if (total > maxQuarterTotal) maxQuarterTotal = total;
+        });
     });
-
-    barGroup.addEventListener("mousemove", function(e) {
-      const panelW = hoverPanel.offsetWidth;
-      const panelH = hoverPanel.offsetHeight;
-      const left = Math.min(e.clientX + 16, window.innerWidth - panelW - 8);
-      const top = Math.max(8, e.clientY - panelH / 2);
-      hoverPanel.style.left = left + "px";
-      hoverPanel.style.top = top + "px";
+    
+    var chartHeight = 360;
+    var scale = maxQuarterTotal > 0 ? chartHeight / maxQuarterTotal : 1;
+    
+    // Create grid lines
+    var gridContainer = document.createElement('div');
+    gridContainer.className = 'policy-growth-grid';
+    var gridSteps = [0, 20, 40, 60, 80, 100];
+    if (maxQuarterTotal > 100) gridSteps = [0, 25, 50, 75, 100, 125];
+    if (maxQuarterTotal > 125) gridSteps = [0, 30, 60, 90, 120, 150];
+    gridSteps.forEach(function(val) {
+        if (val <= maxQuarterTotal * 1.1) {
+            var line = document.createElement('div');
+            line.className = 'policy-growth-grid-line';
+            line.style.bottom = ((val / maxQuarterTotal) * 100) + '%';
+            gridContainer.appendChild(line);
+        }
     });
-
-    barGroup.addEventListener("mouseleave", function() { hoverPanel.classList.remove("visible"); });
-
-    yearGroup.appendChild(barGroup);
-    barsContainer.appendChild(yearGroup);
-  });
-
-  wrapper.appendChild(barsContainer);
-  wrapper.appendChild(xAxis);
-  container.appendChild(wrapper);
-
-  const legend = document.createElement("div");
-  legend.style.cssText = "display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;font-size:0.75rem;";
-  areaKeys.forEach(area => {
-    const item = document.createElement("div");
-    item.style.cssText = "display:flex;align-items:center;gap:6px;";
-    item.innerHTML = "<div style=\"width:12px;height:12px;border-radius:2px;background:" + area.color + ";flex-shrink:0;\"></div><span style=\"color:#666;\">" + getShortAreaName(area.name) + "</span>";
-    legend.appendChild(item);
-  });
-  container.appendChild(legend);
+    container.appendChild(gridContainer);
+    
+    // Create Y-axis
+    var yAxis = document.createElement('div');
+    yAxis.className = 'policy-growth-y-axis';
+    var yAxisSteps = gridSteps.slice().reverse();
+    yAxisSteps.forEach(function(val) {
+        if (val <= maxQuarterTotal * 1.1) {
+            var label = document.createElement('span');
+            label.textContent = val;
+            yAxis.appendChild(label);
+        }
+    });
+    container.appendChild(yAxis);
+    
+    // Create tooltip element
+    var tooltip = document.getElementById('policy-growth-tooltip');
+    if (!tooltip) {
+        tooltip = document.createElement('div');
+        tooltip.id = 'policy-growth-tooltip';
+        tooltip.className = 'policy-growth-hover-panel';
+        document.body.appendChild(tooltip);
+    }
+    
+    // Create bars container
+    var barsContainer = document.createElement('div');
+    barsContainer.className = 'policy-growth-bars';
+    
+    years.forEach(function(year) {
+        var yearGroup = document.createElement('div');
+        yearGroup.className = 'policy-growth-year-group';
+        
+        quarters.forEach(function(quarter) {
+            var counts = quarterlyData[year][quarter];
+            var total = 0;
+            dims.forEach(function(d) { total += counts[d]; });
+            
+            var group = document.createElement('div');
+            group.className = 'policy-growth-bar-group';
+            
+            // Store data for tooltip
+            group.dataset.year = year;
+            group.dataset.quarter = quarter;
+            group.dataset.total = total;
+            group.dataset.counts = JSON.stringify(counts);
+            
+            // Create stacked bar
+            var stack = document.createElement('div');
+            stack.className = 'policy-growth-bar-stack';
+            
+            dims.forEach(function(dim) {
+                if (counts[dim] > 0) {
+                    var segment = document.createElement('div');
+                    segment.className = 'policy-growth-bar-segment';
+                    segment.style.height = (counts[dim] * scale) + 'px';
+                    segment.style.background = colors[dim];
+                    stack.appendChild(segment);
+                }
+            });
+            
+            // Mouse events for tooltip
+            group.addEventListener('mouseenter', function(e) {
+                var year = this.dataset.year;
+                var quarter = this.dataset.quarter;
+                var total = parseInt(this.dataset.total);
+                var counts = JSON.parse(this.dataset.counts);
+                
+                var quarterLabel = 'Q' + quarter + ' ' + year;
+                var html = '<div class="policy-growth-hover-title">' +
+                    '<span>' + quarterLabel + '</span>' +
+                    '<span class="policy-growth-hover-total">' + total + ' policies</span>' +
+                    '</div><div class="policy-growth-hover-rows">';
+                
+                dims.forEach(function(dim) {
+                    var count = counts[dim];
+                    var pct = total > 0 ? (count / total) * 100 : 0;
+                    html += '<div class="policy-growth-hover-row">' +
+                        '<div class="policy-growth-hover-row-label">' + dimLabels[dim] + '</div>' +
+                        '<div class="policy-growth-hover-row-bar">' +
+                            '<div class="policy-growth-hover-row-fill" style="width:' + pct + '%;background:' + colors[dim] + '"></div>' +
+                        '</div>' +
+                        '<div class="policy-growth-hover-row-pct">' + pct.toFixed(0) + '%</div>' +
+                        '<div class="policy-growth-hover-row-count">' + count + '</div>' +
+                    '</div>';
+                });
+                html += '</div>';
+                
+                tooltip.innerHTML = html;
+                tooltip.classList.add('visible');
+            });
+            
+            group.addEventListener('mousemove', function(e) {
+                var tooltipRect = tooltip.getBoundingClientRect();
+                var chartRect = container.getBoundingClientRect();
+                
+                var left = e.clientX - tooltipRect.width / 2;
+                var top = chartRect.top + 15;
+                
+                if (left < chartRect.left + 10) {
+                    left = chartRect.left + 10;
+                }
+                if (left + tooltipRect.width > chartRect.right - 10) {
+                    left = chartRect.right - tooltipRect.width - 10;
+                }
+                
+                tooltip.style.left = left + 'px';
+                tooltip.style.top = top + 'px';
+            });
+            
+            group.addEventListener('mouseleave', function() {
+                tooltip.classList.remove('visible');
+            });
+            
+            group.appendChild(stack);
+            yearGroup.appendChild(group);
+        });
+        
+        barsContainer.appendChild(yearGroup);
+    });
+    
+    container.appendChild(barsContainer);
+    
+    // Create X-axis ticks (4 per year)
+    var xTicks = document.createElement('div');
+    xTicks.className = 'policy-growth-x-ticks';
+    years.forEach(function(year) {
+        var tickGroup = document.createElement('div');
+        tickGroup.className = 'policy-growth-x-tick-group';
+        quarters.forEach(function(q) {
+            var tick = document.createElement('div');
+            tick.className = 'policy-growth-x-tick';
+            tickGroup.appendChild(tick);
+        });
+        xTicks.appendChild(tickGroup);
+    });
+    container.appendChild(xTicks);
+    
+    // Create X-axis labels (years only)
+    var xAxis = document.createElement('div');
+    xAxis.className = 'policy-growth-x-axis';
+    years.forEach(function(year) {
+        var label = document.createElement('div');
+        label.className = 'policy-growth-x-label';
+        label.textContent = year;
+        xAxis.appendChild(label);
+    });
+    container.appendChild(xAxis);
 }
 
-// ===== CONVERGENCE TIMELINE (alliance view) =====
+// ===== CONVERGENCE TIMELINE =====
+// Define country groupings for comparison
+var convergenceGroupings = {
+    "NATO Members": {
+        members: ["USA", "UK", "France", "Germany", "Italy", "Canada", "Spain", "Netherlands", "Belgium", "Poland", "Norway", "Denmark", "Turkey", "Greece", "Hungary", "Czechia", "Estonia", "Latvia", "Lithuania", "Croatia", "Bulgaria"],
+        color: "#0d7377",
+        description: "NATO alliance members"
+    },
+    "AUKUS": {
+        members: ["USA", "UK", "Australia"],
+        color: "#e07020",
+        description: "AUKUS security partnership"
+    },
+    "Five Eyes": {
+        members: ["USA", "UK", "Canada", "Australia", "New Zealand"],
+        color: "#1a2744",
+        description: "Five Eyes intelligence alliance"
+    }
+};
+
+var activeConvergenceGroups = [];
+var convergenceData = {};
+
+// Helper to get area emergence year for a country
+function getAreaEmergenceYear(country, areaShortName) {
+    var areaNameMap = {
+        'LAWS': 'LAWS Employment/Deployment',
+        'Adoption': 'Adoption & Intent of Use',
+        'Procurement': 'Acquisition & Procurement',
+        'Safety': 'Technical Safety & Security Requirements',
+        'Ethics': 'Ethical Guidelines & Restrictions',
+        'Interoperability': "Int'l Cooperation & Interoperability"
+    };
+    
+    var data = policyData[country];
+    if (!data) return null;
+    
+    var fullName = areaNameMap[areaShortName];
+    var area = data[fullName];
+    if (!area) return null;
+    
+    var entries = (area.legal_directives || [])
+        .concat(area.policy_documents || [])
+        .concat(area.public_statements || []);
+    
+    var minYear = 2030;
+    entries.forEach(function(entry) {
+        var text = entry.text || entry;
+        var match = text.match(/\(([A-Za-z]{3,4}\s+)?(\d{4})\)/);
+        if (match) {
+            var yr = parseInt(match[2]);
+            if (yr < minYear && yr >= 2010) minYear = yr;
+        }
+    });
+    
+    return minYear < 2030 ? minYear : null;
+}
+
+// Calculate blended similarity (20% presence + 80% substance) with temporal evolution
+function calculateCountrySimilarity(country1, country2, year) {
+    // Use pre-calculated yearly scores
+    var yearlyScores = rawData.yearlyScores || {};
+    var scores1 = yearlyScores[country1];
+    var scores2 = yearlyScores[country2];
+    
+    if (!scores1 || !scores2) return null;
+    
+    var yearStr = year.toString();
+    var s1 = scores1[yearStr];
+    var s2 = scores2[yearStr];
+    
+    if (!s1 || !s2) return null;
+    
+    var dims = ['LAWS', 'Adoption', 'Procurement', 'Safety', 'Ethics', 'Interoperability'];
+    
+    // Count how many areas each country has data for
+    var country1Areas = 0;
+    var country2Areas = 0;
+    
+    dims.forEach(function(dim) {
+        if (s1[dim] !== null && s1[dim] !== undefined) country1Areas++;
+        if (s2[dim] !== null && s2[dim] !== undefined) country2Areas++;
+    });
+    
+    // If either country has NO policy data for this year, return null
+    if (country1Areas === 0 || country2Areas === 0) {
+        return null;
+    }
+    
+    var presenceScore = 0;
+    var substanceScore = 0;
+    var activeAreas = 0;
+    var relevantAreas = 0;
+    
+    dims.forEach(function(dim) {
+        var v1 = s1[dim];
+        var v2 = s2[dim];
+        
+        var has1 = v1 !== null && v1 !== undefined;
+        var has2 = v2 !== null && v2 !== undefined;
+        
+        // Only consider areas where at least one country has data
+        if (has1 || has2) {
+            relevantAreas++;
+            if (has1 === has2) {
+                presenceScore += 1;
+            }
+        }
+        
+        // Substance similarity: only for areas where both countries have data
+        if (has1 && has2) {
+            var dimSim = 1 - Math.abs(v1 - v2) / 4;
+            substanceScore += dimSim;
+            activeAreas++;
+        }
+    });
+    
+    // Normalize scores
+    presenceScore = relevantAreas > 0 ? presenceScore / relevantAreas : 0;
+    substanceScore = activeAreas > 0 ? substanceScore / activeAreas : 0;
+    
+    // Calculate base similarity
+    var baseSimilarity;
+    if (activeAreas === 0) {
+        baseSimilarity = presenceScore * 0.3;
+    } else {
+        baseSimilarity = 0.2 * presenceScore + 0.8 * substanceScore;
+    }
+    
+    // Apply voting divergence penalty (or bonus for same stance)
+    var votingPenalty = calcVotingDivergencePenalty(country1, country2, year);
+    return Math.min(1, Math.max(0, baseSimilarity - votingPenalty));
+}
+
+// Helper function to count entries up to a given year
+function getEntryCountUpToYear(country, year) {
+    var data = policyData[country];
+    if (!data) return 0;
+    
+    var count = 0;
+    var POLICY_AREAS = [
+        "LAWS Employment/Deployment",
+        "Adoption & Intent of Use",
+        "Acquisition & Procurement",
+        "Ethical Guidelines & Restrictions",
+        "Technical Safety & Security Requirements",
+        "Int'l Cooperation & Interoperability"
+    ];
+    
+    POLICY_AREAS.forEach(function(area) {
+        var areaData = data[area];
+        if (!areaData) return;
+        
+        ['legal_directives', 'policy_documents', 'public_statements'].forEach(function(type) {
+            if (areaData[type]) {
+                areaData[type].forEach(function(entry) {
+                    var text = entry.text || '';
+                    var yearMatch = text.match(/\(([A-Z][a-z]+ )?(\d{4})\)/);
+                    var entryYear = yearMatch ? parseInt(yearMatch[2]) : 2020;
+                    if (entryYear <= year) {
+                        count++;
+                    }
+                });
+            }
+        });
+    });
+    
+    return count;
+}
+
+// Calculate group similarity for a year using blended approach
+function calculateGroupSimilarity(groupName, year) {
+    var group = convergenceGroupings[groupName];
+    if (!group) return null;
+    
+    var membersWithData = group.members.filter(function(m) { return policyData[m]; });
+    if (membersWithData.length < 2) return null;
+    
+    var similarities = [];
+    for (var i = 0; i < membersWithData.length; i++) {
+        for (var j = i + 1; j < membersWithData.length; j++) {
+            var sim = calculateCountrySimilarity(membersWithData[i], membersWithData[j], year);
+            if (sim !== null && !isNaN(sim)) {
+                similarities.push(sim);
+            }
+        }
+    }
+    
+    if (similarities.length === 0) return null;
+    
+    var avg = similarities.reduce(function(a, b) { return a + b; }, 0) / similarities.length;
+    return avg;
+}
 
 function renderConvergenceTimeline(alliance) {
-  const container = document.getElementById("convergence-timeline-container");
-  if (!container) return;
-
-  container.style.display = "block";
-  container.innerHTML = "";
-
-  const groupings = convergenceGroupings;
-  const allianceGroupings = {};
-  if (alliance === "NATO") allianceGroupings["NATO Members"] = groupings["NATO Members"];
-  if (alliance === "AUKUS") allianceGroupings["AUKUS"] = groupings["AUKUS"];
-  if (alliance === "FVEY") allianceGroupings["Five Eyes"] = groupings["Five Eyes"];
-
-  const wrapper = document.createElement("div");
-  wrapper.className = "convergence-timeline-container";
-
-  const header = document.createElement("div");
-  header.className = "convergence-header";
-  header.innerHTML = "<div class=\"convergence-title\">Policy Convergence Over Time<div class=\"convergence-info-icon\">i<div class=\"convergence-info-tooltip\">Convergence scores measure how similarly member states approach AI governance. Higher scores indicate greater policy alignment. Calculated using Jaccard similarity across shared policy areas.</div></div></div><div class=\"convergence-subtitle\">Tracking policy alignment trends within " + alliance + "</div>";
-  wrapper.appendChild(header);
-
-  const groupingButtons = document.createElement("div");
-  groupingButtons.className = "convergence-groupings";
-  const groupLabel = document.createElement("div");
-  groupLabel.className = "convergence-groupings-label";
-  groupLabel.textContent = "Select groups to compare:";
-  groupingButtons.appendChild(groupLabel);
-
-  Object.keys(allianceGroupings).forEach(gName => {
-    const btn = document.createElement("button");
-    btn.className = "convergence-group-btn" + (activeConvergenceGroups.includes(gName) ? " active" : "");
-    btn.textContent = gName;
-    btn.addEventListener("click", function () {
-      if (activeConvergenceGroups.includes(gName)) {
-        activeConvergenceGroups = activeConvergenceGroups.filter(g => g !== gName);
-      } else {
-        activeConvergenceGroups.push(gName);
-      }
-      renderConvergenceChart(allianceGroupings, container);
-    });
-    groupingButtons.appendChild(btn);
-  });
-  wrapper.appendChild(groupingButtons);
-
-  const chartArea = document.createElement("div");
-  chartArea.className = "convergence-chart-area";
-  chartArea.id = "convergence-chart-area";
-
-  const highLabel = document.createElement("div");
-  highLabel.className = "convergence-zone-label high";
-  highLabel.textContent = "HIGH ALIGNMENT";
-  const lowLabel = document.createElement("div");
-  lowLabel.className = "convergence-zone-label low";
-  lowLabel.textContent = "LOW ALIGNMENT";
-
-  chartArea.appendChild(highLabel);
-  chartArea.appendChild(lowLabel);
-  wrapper.appendChild(chartArea);
-
-  const legendEl = document.createElement("div");
-  legendEl.className = "convergence-legend";
-  legendEl.id = "convergence-legend";
-  wrapper.appendChild(legendEl);
-
-  const simSection = document.createElement("div");
-  simSection.className = "convergence-similarity-section";
-  simSection.id = "convergence-similarity-section";
-  wrapper.appendChild(simSection);
-
-  container.appendChild(wrapper);
-
-  if (activeConvergenceGroups.length === 0 && Object.keys(allianceGroupings).length > 0) {
-    activeConvergenceGroups = [Object.keys(allianceGroupings)[0]];
-  }
-
-  renderConvergenceChart(allianceGroupings, container);
-}
-
-function calculateGroupSimilarity(members, year) {
-  const membersWithData = members.filter(m => policyData[m]);
-  if (membersWithData.length < 2) return null;
-
-  let totalSimilarity = 0, pairs = 0;
-  for (let i = 0; i < membersWithData.length; i++) {
-    for (let j = i + 1; j < membersWithData.length; j++) {
-      const sim = calculateCountrySimilarity(membersWithData[i], membersWithData[j], year);
-      if (sim !== null) { totalSimilarity += sim; pairs++; }
+    var container = document.getElementById("convergence-timeline-container");
+    var svg = document.getElementById("convergence-chart-svg");
+    var legendContainer = document.getElementById("convergence-legend");
+    var groupingsContainer = document.getElementById("convergence-groupings");
+    var similarityBars = document.getElementById("convergence-similarity-bars");
+    
+    if (!container || !svg) {
+        if (container) container.style.display = "none";
+        return;
     }
-  }
-  return pairs > 0 ? totalSimilarity / pairs : null;
-}
-
-function calculateCountrySimilarity(c1, c2, year) {
-  const data1 = policyData[c1], data2 = policyData[c2];
-  if (!data1 || !data2) return null;
-
-  function getAreasActive(data) {
-    const active = new Set();
-    POLICY_AREAS.forEach(area => {
-      const d = data[area];
-      if (!d) return;
-      ['legal_directives', 'policy_documents', 'public_statements'].forEach(type => {
-        (d[type] || []).forEach(entry => {
-          const dt = extractDate(entry.text || "");
-          if (dt) {
-            const yr = parseInt(dt.match(/\d{4}/)?.[0]);
-            if (yr && yr <= year) active.add(area);
-          }
+    
+    // Show container
+    container.style.display = "block";
+    
+    // Map alliance names to grouping names
+    var allianceToGrouping = {
+        "NATO": "NATO Members",
+        "AUKUS": "AUKUS",
+        "FVEY": "Five Eyes"
+    };
+    
+    // ALWAYS reset activeConvergenceGroups to the selected alliance
+    if (alliance) {
+        var matchedGrouping = allianceToGrouping[alliance];
+        if (matchedGrouping && convergenceGroupings[matchedGrouping]) {
+            activeConvergenceGroups = [matchedGrouping];
+        } else {
+            activeConvergenceGroups = ["NATO Members"];
+        }
+    } else if (activeConvergenceGroups.length === 0) {
+        // Default to NATO if no alliance and nothing selected
+        activeConvergenceGroups = ["NATO Members"];
+    }
+    
+    // Render grouping buttons
+    groupingsContainer.innerHTML = '<div class="convergence-groupings-label">Select Country Groupings</div>';
+    
+    Object.keys(convergenceGroupings).forEach(function(groupName) {
+        var btn = document.createElement("button");
+        btn.className = "convergence-group-btn";
+        if (activeConvergenceGroups.indexOf(groupName) !== -1) {
+            btn.classList.add("active");
+        }
+        btn.textContent = groupName;
+        btn.addEventListener("click", function() {
+            var idx = activeConvergenceGroups.indexOf(groupName);
+            if (idx === -1) {
+                activeConvergenceGroups.push(groupName);
+            } else {
+                activeConvergenceGroups.splice(idx, 1);
+            }
+            renderConvergenceChart();
         });
-      });
+        groupingsContainer.appendChild(btn);
     });
-    return active;
-  }
-
-  const areas1 = getAreasActive(data1);
-  const areas2 = getAreasActive(data2);
-  if (areas1.size === 0 && areas2.size === 0) return null;
-
-  const union = new Set([...areas1, ...areas2]);
-  const intersection = new Set([...areas1].filter(a => areas2.has(a)));
-  const jaccardBase = union.size > 0 ? intersection.size / union.size : 0;
-  const penalty = calcVotingDivergencePenalty(c1, c2, year);
-  return Math.max(0, Math.min(1, jaccardBase - penalty));
+    
+    renderConvergenceChart();
+    
+    function renderConvergenceChart() {
+        // Update button states
+        var btns = groupingsContainer.querySelectorAll(".convergence-group-btn");
+        btns.forEach(function(btn) {
+            if (activeConvergenceGroups.indexOf(btn.textContent) !== -1) {
+                btn.classList.add("active");
+            } else {
+                btn.classList.remove("active");
+            }
+        });
+        
+        // Calculate data for all active groups
+        var years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+        convergenceData = {};
+        
+        activeConvergenceGroups.forEach(function(groupName) {
+            convergenceData[groupName] = [];
+            years.forEach(function(year) {
+                var sim = calculateGroupSimilarity(groupName, year);
+                convergenceData[groupName].push({
+                    year: year,
+                    similarity: sim !== null ? sim * 100 : null
+                });
+            });
+        });
+        
+        // Render SVG chart
+        var chartArea = document.getElementById("convergence-chart-area");
+        var width = chartArea.offsetWidth || 600;
+        var height = 300;
+        var margin = { top: 30, right: 30, bottom: 45, left: 60 };
+        var plotWidth = width - margin.left - margin.right;
+        var plotHeight = height - margin.top - margin.bottom;
+        
+        svg.innerHTML = '';
+        svg.setAttribute("width", width);
+        svg.setAttribute("height", height);
+        svg.setAttribute("viewBox", "0 0 " + width + " " + height);
+        
+        // Y-axis (0-100%)
+        var yTicks = [0, 25, 50, 75, 100];
+        yTicks.forEach(function(val) {
+            var y = margin.top + plotHeight - (val / 100) * plotHeight;
+            
+            // Grid line
+            var line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            line.setAttribute("x1", margin.left);
+            line.setAttribute("y1", y);
+            line.setAttribute("x2", width - margin.right);
+            line.setAttribute("y2", y);
+            line.setAttribute("stroke", "#e8ebef");
+            line.setAttribute("stroke-width", "1");
+            if (val === 75) line.setAttribute("stroke-dasharray", "4,4");
+            if (val === 25) line.setAttribute("stroke-dasharray", "4,4");
+            svg.appendChild(line);
+            
+            // Label
+            var label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            label.setAttribute("x", margin.left - 10);
+            label.setAttribute("y", y + 4);
+            label.setAttribute("text-anchor", "end");
+            label.setAttribute("font-size", "11");
+            label.setAttribute("fill", "#7a8a9a");
+            label.textContent = val + "%";
+            svg.appendChild(label);
+        });
+        
+        // Y-axis label
+        var yAxisLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        yAxisLabel.setAttribute("x", 15);
+        yAxisLabel.setAttribute("y", margin.top + plotHeight / 2);
+        yAxisLabel.setAttribute("text-anchor", "middle");
+        yAxisLabel.setAttribute("font-size", "11");
+        yAxisLabel.setAttribute("fill", "#1a2744");
+        yAxisLabel.setAttribute("font-weight", "600");
+        yAxisLabel.setAttribute("transform", "rotate(-90, 15, " + (margin.top + plotHeight / 2) + ")");
+        yAxisLabel.textContent = "Policy Similarity Index";
+        svg.appendChild(yAxisLabel);
+        
+        // X-axis (years)
+        years.forEach(function(year, idx) {
+            var x = margin.left + (idx / (years.length - 1)) * plotWidth;
+            
+            // Tick line
+            var tick = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            tick.setAttribute("x1", x);
+            tick.setAttribute("y1", margin.top + plotHeight);
+            tick.setAttribute("x2", x);
+            tick.setAttribute("y2", margin.top + plotHeight + 5);
+            tick.setAttribute("stroke", "#7a8a9a");
+            tick.setAttribute("stroke-width", "1");
+            svg.appendChild(tick);
+            
+            // Label
+            var label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            label.setAttribute("x", x);
+            label.setAttribute("y", margin.top + plotHeight + 20);
+            label.setAttribute("text-anchor", "middle");
+            label.setAttribute("font-size", "11");
+            label.setAttribute("fill", "#7a8a9a");
+            label.setAttribute("font-weight", "600");
+            label.textContent = year;
+            svg.appendChild(label);
+        });
+        
+        // X-axis label
+        var xAxisLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        xAxisLabel.setAttribute("x", margin.left + plotWidth / 2);
+        xAxisLabel.setAttribute("y", height - 8);
+        xAxisLabel.setAttribute("text-anchor", "middle");
+        xAxisLabel.setAttribute("font-size", "11");
+        xAxisLabel.setAttribute("fill", "#1a2744");
+        xAxisLabel.setAttribute("font-weight", "600");
+        xAxisLabel.textContent = "Year";
+        svg.appendChild(xAxisLabel);
+        
+        // Draw lines and dots for each group
+        activeConvergenceGroups.forEach(function(groupName) {
+            var groupData = convergenceData[groupName];
+            var color = convergenceGroupings[groupName].color;
+            
+            // Filter valid data points
+            var validPoints = groupData.filter(function(d) { return d.similarity !== null; });
+            if (validPoints.length < 2) return;
+            
+            // Create path
+            var pathD = "";
+            validPoints.forEach(function(d, idx) {
+                var x = margin.left + ((d.year - 2019) / (2025 - 2019)) * plotWidth;
+                var y = margin.top + plotHeight - (d.similarity / 100) * plotHeight;
+                
+                if (idx === 0) {
+                    pathD += "M " + x + " " + y;
+                } else {
+                    pathD += " L " + x + " " + y;
+                }
+            });
+            
+            var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            path.setAttribute("d", pathD);
+            path.setAttribute("class", "convergence-line");
+            path.setAttribute("stroke", color);
+            svg.appendChild(path);
+            
+            // Add dots
+            validPoints.forEach(function(d) {
+                var x = margin.left + ((d.year - 2019) / (2025 - 2019)) * plotWidth;
+                var y = margin.top + plotHeight - (d.similarity / 100) * plotHeight;
+                
+                var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                circle.setAttribute("cx", x);
+                circle.setAttribute("cy", y);
+                circle.setAttribute("r", 6);
+                circle.setAttribute("fill", color);
+                circle.setAttribute("class", "convergence-dot");
+                
+                circle.addEventListener("mouseenter", function(e) {
+                    var tooltip = document.getElementById("convergence-tooltip");
+                    tooltip.innerHTML = '<strong>' + groupName + '</strong><br>' +
+                        'Year: ' + d.year + '<br>' +
+                        'Similarity: ' + d.similarity.toFixed(1) + '%';
+                    tooltip.classList.add("visible");
+                });
+                
+                circle.addEventListener("mousemove", function(e) {
+                    var tooltip = document.getElementById("convergence-tooltip");
+                    tooltip.style.left = (e.clientX + 15) + "px";
+                    tooltip.style.top = (e.clientY - 10) + "px";
+                });
+                
+                circle.addEventListener("mouseleave", function() {
+                    document.getElementById("convergence-tooltip").classList.remove("visible");
+                });
+                
+                svg.appendChild(circle);
+            });
+        });
+        
+        // Render legend with trend indicators
+        legendContainer.innerHTML = '';
+        activeConvergenceGroups.forEach(function(groupName) {
+            var groupData = convergenceData[groupName];
+            var color = convergenceGroupings[groupName].color;
+            
+            var item = document.createElement("div");
+            item.className = "convergence-legend-item";
+            item.innerHTML = '<div class="convergence-legend-left">' +
+                '<div class="convergence-legend-marker" style="background:' + color + '"></div>' +
+                '<span class="convergence-legend-name">' + groupName + '</span>' +
+                '</div>';
+            legendContainer.appendChild(item);
+        });
+        
+        // Render similarity bars (current year)
+        similarityBars.innerHTML = '';
+        activeConvergenceGroups.forEach(function(groupName) {
+            var groupData = convergenceData[groupName];
+            var color = convergenceGroupings[groupName].color;
+            
+            var lastPoint = groupData.filter(function(d) { return d.similarity !== null; }).slice(-1)[0];
+            var currentSim = lastPoint ? lastPoint.similarity : 0;
+            
+            var row = document.createElement("div");
+            row.className = "convergence-similarity-row";
+            row.innerHTML = '<div class="convergence-similarity-name" style="color:' + color + '">' + groupName + '</div>' +
+                '<div class="convergence-similarity-bar-bg">' +
+                '<div class="convergence-similarity-bar-fill" style="width:' + currentSim + '%; background:' + color + '"></div>' +
+                '</div>' +
+                '<div class="convergence-similarity-value">' + currentSim.toFixed(0) + '%</div>';
+            similarityBars.appendChild(row);
+        });
+    }
 }
 
-function renderConvergenceChart(allianceGroupings, parentContainer) {
-  const chartArea = parentContainer.querySelector("#convergence-chart-area") ||
-    document.getElementById("convergence-chart-area");
-  const legendEl = parentContainer.querySelector("#convergence-legend") ||
-    document.getElementById("convergence-legend");
-  const simSection = parentContainer.querySelector("#convergence-similarity-section") ||
-    document.getElementById("convergence-similarity-section");
-
-  if (!chartArea) return;
-
-  parentContainer.querySelectorAll(".convergence-group-btn").forEach(btn => {
-    const gName = btn.textContent.replace("\u2713 ", "");
-    btn.classList.toggle("active", activeConvergenceGroups.includes(gName));
-  });
-
-  const W = chartArea.clientWidth || 700;
-  const H = 300;
-  const M = { top: 20, right: 30, bottom: 40, left: 50 };
-  const plotW = W - M.left - M.right;
-  const plotH = H - M.top - M.bottom;
-
-  const svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  svgEl.setAttribute("class", "convergence-chart-svg");
-  svgEl.setAttribute("viewBox", "0 0 " + W + " " + H);
-  chartArea.innerHTML = "";
-
-  const highZ = document.createElement("div");
-  highZ.className = "convergence-zone-label high";
-  highZ.textContent = "HIGH ALIGNMENT";
-  chartArea.appendChild(highZ);
-  const lowZ = document.createElement("div");
-  lowZ.className = "convergence-zone-label low";
-  lowZ.textContent = "LOW ALIGNMENT";
-  chartArea.appendChild(lowZ);
-
-  const years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
-  const mkLine = (x1, y1, x2, y2, stroke, sw, dash) => {
-    const l = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    l.setAttribute("x1", x1); l.setAttribute("y1", y1);
-    l.setAttribute("x2", x2); l.setAttribute("y2", y2);
-    l.setAttribute("stroke", stroke); l.setAttribute("stroke-width", sw);
-    if (dash) l.setAttribute("stroke-dasharray", dash);
-    return l;
-  };
-
-  svgEl.appendChild(mkLine(M.left, M.top, M.left, M.top + plotH, "#ddd", "1", ""));
-  svgEl.appendChild(mkLine(M.left, M.top + plotH, M.left + plotW, M.top + plotH, "#ddd", "1", ""));
-
-  [0, 25, 50, 75, 100].forEach(pct => {
-    const y = M.top + plotH - (pct / 100) * plotH;
-    if (pct > 0 && pct < 100) svgEl.appendChild(mkLine(M.left, y, M.left + plotW, y, "#f0f0f0", "1", ""));
-    const lbl = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    lbl.setAttribute("x", M.left - 6); lbl.setAttribute("y", y + 4);
-    lbl.setAttribute("text-anchor", "end"); lbl.setAttribute("font-size", "9"); lbl.setAttribute("fill", "#999");
-    lbl.textContent = pct + "%";
-    svgEl.appendChild(lbl);
-  });
-
-  years.forEach((year, idx) => {
-    if (idx % 2 !== 0) return;
-    const x = M.left + (idx / (years.length - 1)) * plotW;
-    const lbl = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    lbl.setAttribute("x", x); lbl.setAttribute("y", M.top + plotH + 20);
-    lbl.setAttribute("text-anchor", "middle"); lbl.setAttribute("font-size", "9"); lbl.setAttribute("fill", "#999");
-    lbl.textContent = year;
-    svgEl.appendChild(lbl);
-  });
-
-  const groupColors = ["#0d7377", "#e07020", "#1a2744", "#6b3074", "#d64045"];
-  const legData = [];
-  const convTip = document.querySelector(".convergence-tooltip") || (function() {
-    const el = document.createElement("div"); el.className = "convergence-tooltip"; document.body.appendChild(el); return el;
-  })();
-
-  activeConvergenceGroups.forEach((gName, gIdx) => {
-    const group = allianceGroupings[gName];
-    if (!group) return;
-    const color = groupColors[gIdx % groupColors.length];
-
-    const scores = years.map(year => calculateGroupSimilarity(group.members, year));
-    const validPoints = [];
-
-    scores.forEach((score, idx) => {
-      if (score === null) return;
-      const x = M.left + (idx / (years.length - 1)) * plotW;
-      const y = M.top + plotH - score * plotH;
-      validPoints.push({ x, y, score, year: years[idx] });
+// ===== POLICY AREA FILTER =====
+function initPolicyAreaFilter() {
+    var dropdown = document.getElementById("policy-area-filter");
+    if (!dropdown) return;
+    
+    dropdown.addEventListener("change", function() {
+        var selectedArea = this.value;
+        
+        if (!selectedArea) {
+            // If deselected and no other content showing, reset to placeholder
+            if (currentContentType === "policyArea") {
+                resetToPlaceholder();
+            }
+            return;
+        }
+        
+        // Clear other selections
+        document.getElementById("overview-dropdown").value = "";
+        document.getElementById("keyword-search").value = "";
+        selectedCountry = null;
+        currentContentType = "policyArea";
+        
+        // Calculate countries with entries in this area
+        var countriesWithArea = [];
+        Object.keys(policyData).forEach(function(country) {
+            var countryData = policyData[country];
+            var areaData = countryData[selectedArea];
+            if (areaData) {
+                var total = (areaData.legal_directives || []).length +
+                           (areaData.policy_documents || []).length +
+                           (areaData.public_statements || []).length;
+                if (total > 0) {
+                    countriesWithArea.push({
+                        country: country,
+                        displayName: displayNames[country] || country,
+                        count: total
+                    });
+                }
+            }
+        });
+        
+        // Sort by count descending
+        countriesWithArea.sort(function(a, b) { return b.count - a.count; });
+        
+        // Set header
+        var totalEntries = countriesWithArea.reduce(function(a, b) { return a + b.count; }, 0);
+        setContentHeader(selectedArea, countriesWithArea.length + " countries • " + totalEntries + " entries", false, true);
+        
+        // Render country cards in main content area
+        var content = document.getElementById("overview-content");
+        var grid = document.createElement("div");
+        grid.className = "content-country-grid";
+        
+        countriesWithArea.forEach(function(item) {
+            var card = document.createElement("div");
+            card.className = "content-country-card";
+            card.innerHTML = '<div class="content-country-name">' + escapeHtml(item.displayName) + '</div>' +
+                '<div class="content-country-meta">' +
+                '<span class="content-count-badge">' + item.count + '</span>' +
+                '<span class="content-arrow">→</span>' +
+                '</div>';
+            
+            card.addEventListener("click", function() {
+                openPolicyAreaSidePanel(item.country, selectedArea, item.count);
+            });
+            
+            grid.appendChild(card);
+        });
+        
+        content.innerHTML = "";
+        content.appendChild(grid);
+        
+        // Clear map selection
+        if (typeof d3 !== 'undefined') {
+            d3.selectAll(".country-path").classed("selected", false);
+        }
     });
+}
 
-    if (validPoints.length >= 2) {
-      const pathD = validPoints.map((p, i) => (i === 0 ? 'M' : 'L') + " " + p.x + " " + p.y).join(' ');
-      const linePath = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      linePath.setAttribute("d", pathD);
-      linePath.setAttribute("fill", "none"); linePath.setAttribute("stroke", color);
-      linePath.setAttribute("stroke-width", "2.5"); linePath.setAttribute("stroke-linecap", "round");
-      svgEl.appendChild(linePath);
+// ===== SIDE PANEL =====
+function openPolicyAreaSidePanel(country, policyArea, entryCount) {
+    var overlay = document.getElementById("side-panel-overlay");
+    var panel = document.getElementById("side-panel");
+    var content = document.getElementById("side-panel-content");
+    var title = document.getElementById("side-panel-title");
+    var subtitle = document.getElementById("side-panel-subtitle");
+    var viewCountryLink = document.getElementById("side-panel-view-country");
+    
+    // Set header info
+    title.textContent = displayNames[country] || country;
+    subtitle.textContent = getShortAreaName(policyArea) + " • " + entryCount + " entries";
+    
+    // Set up "View full country profile" link
+    viewCountryLink.onclick = function() {
+        closeSidePanel();
+        document.getElementById("policy-area-filter").value = "";
+        selectOverviewCountry(country);
+    };
+    
+    // Populate entries
+    content.innerHTML = "";
+    var countryData = policyData[country];
+    var areaData = countryData[policyArea];
+    
+    if (!areaData) {
+        content.innerHTML = '<div class="side-panel-empty">No entries found.</div>';
+        return;
     }
-
-    validPoints.forEach(pt => {
-      const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-      dot.setAttribute("cx", pt.x); dot.setAttribute("cy", pt.y);
-      dot.setAttribute("r", "5"); dot.setAttribute("fill", color);
-      dot.setAttribute("stroke", "white"); dot.setAttribute("stroke-width", "2");
-      dot.setAttribute("class", "convergence-dot");
-      dot.style.cursor = "pointer";
-
-      dot.addEventListener("mouseenter", function() {
-        convTip.innerHTML = "<strong>" + gName + " \u2014 " + pt.year + "</strong><br>Similarity: " + Math.round(pt.score * 100) + "%";
-        convTip.classList.add("visible");
-      });
-      dot.addEventListener("mousemove", function(e) {
-        convTip.style.left = (e.clientX + 14) + "px";
-        convTip.style.top = (e.clientY - 10) + "px";
-      });
-      dot.addEventListener("mouseleave", function() { convTip.classList.remove("visible"); });
-      svgEl.appendChild(dot);
+    
+    var sourceTypes = [
+        { key: "legal_directives", label: "Legal" },
+        { key: "policy_documents", label: "Policy" },
+        { key: "public_statements", label: "Statement" }
+    ];
+    
+    sourceTypes.forEach(function(source) {
+        var entries = areaData[source.key] || [];
+        entries.forEach(function(entry) {
+            var text = entry.text || "";
+            var entryTitle = parseTitleWithoutDate(text);
+            var url = extractUrl(text);
+            var date = extractDate(text);
+            
+            var entryEl = document.createElement("div");
+            entryEl.className = "side-panel-entry";
+            
+            var header = document.createElement("div");
+            header.className = "side-panel-entry-header";
+            header.innerHTML = 
+                '<div class="side-panel-entry-expand"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 18l6-6-6-6"/></svg></div>' +
+                '<div class="side-panel-entry-info">' +
+                    '<div class="side-panel-entry-title">' + escapeHtml(entryTitle) + '</div>' +
+                    '<div class="side-panel-entry-meta">' +
+                        '<span class="side-panel-entry-type ' + source.label.toLowerCase() + '">' + source.label + '</span>' +
+                        (date ? '<span>' + date + '</span>' : '') +
+                    '</div>' +
+                '</div>';
+            
+            header.addEventListener("click", function() {
+                entryEl.classList.toggle("expanded");
+            });
+            
+            entryEl.appendChild(header);
+            
+            // Description
+            var desc = document.createElement("div");
+            desc.className = "side-panel-entry-description";
+            desc.textContent = text;
+            if (url) {
+                desc.innerHTML = escapeHtml(text) + '<div class="side-panel-entry-link"><a href="' + url + '" target="_blank">View source →</a></div>';
+            }
+            entryEl.appendChild(desc);
+            
+            content.appendChild(entryEl);
+        });
     });
+    
+    // Show panel
+    overlay.classList.add("active");
+    panel.classList.add("active");
+    document.body.style.overflow = "hidden";
+}
 
-    const lastValid = validPoints.filter(p => p.score !== null).pop();
-    legData.push({ name: gName, color, currentSimilarity: lastValid ? Math.round(lastValid.score * 100) : null });
-  });
+function closeSidePanel() {
+    var overlay = document.getElementById("side-panel-overlay");
+    var panel = document.getElementById("side-panel");
+    overlay.classList.remove("active");
+    panel.classList.remove("active");
+    document.body.style.overflow = "";
+}
 
-  chartArea.appendChild(svgEl);
-
-  if (legendEl) {
-    legendEl.innerHTML = "";
-    legData.forEach(item => {
-      const legItem = document.createElement("div");
-      legItem.className = "convergence-legend-item";
-      legItem.innerHTML = "<div class=\"convergence-legend-left\"><div class=\"convergence-legend-marker\" style=\"background:" + item.color + "\"></div><div class=\"convergence-legend-name\">" + item.name + "</div></div>" +
-        (item.currentSimilarity !== null ? "<div style=\"font-weight:700;color:" + item.color + ";font-size:0.9rem\">" + item.currentSimilarity + "%</div>" : "");
-      legendEl.appendChild(legItem);
+function initSidePanel() {
+    var overlay = document.getElementById("side-panel-overlay");
+    var closeBtn = document.getElementById("side-panel-close");
+    
+    if (overlay) {
+        overlay.addEventListener("click", closeSidePanel);
+    }
+    
+    if (closeBtn) {
+        closeBtn.addEventListener("click", closeSidePanel);
+    }
+    
+    // Close on Escape key
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape") {
+            closeSidePanel();
+        }
     });
-  }
+}
 
-  if (simSection) {
-    simSection.innerHTML = "<div class=\"convergence-similarity-title\">Current Similarity by Group</div><div class=\"convergence-similarity-bars\" id=\"convergence-sim-bars\"></div>";
-    const barsEl = simSection.querySelector("#convergence-sim-bars");
-    legData.forEach(item => {
-      if (item.currentSimilarity === null) return;
-      const row = document.createElement("div");
-      row.className = "convergence-similarity-row";
-      row.innerHTML = "<div class=\"convergence-similarity-name\">" + item.name + "</div><div class=\"convergence-similarity-bar-bg\"><div class=\"convergence-similarity-bar-fill\" style=\"width:" + item.currentSimilarity + "%;background:" + item.color + "\"></div></div><div class=\"convergence-similarity-value\">" + item.currentSimilarity + "%</div>";
-      barsEl.appendChild(row);
+// ===== KEYWORD SEARCH =====
+function initKeywordSearch() {
+    var searchInput = document.getElementById("keyword-search");
+    var searchBtn = document.getElementById("keyword-search-btn");
+    
+    if (!searchInput || !searchBtn) return;
+    
+    function performSearch() {
+        var keyword = searchInput.value.trim().toLowerCase();
+        if (keyword.length < 2) {
+            alert("Please enter at least 2 characters to search.");
+            return;
+        }
+        
+        // Clear other selections
+        document.getElementById("overview-dropdown").value = "";
+        document.getElementById("policy-area-filter").value = "";
+        selectedCountry = null;
+        currentContentType = "keyword";
+        
+        // Search through all entries
+        var results = {};
+        var totalCount = 0;
+        
+        var POLICY_AREAS = [
+            "LAWS Employment/Deployment",
+            "Adoption & Intent of Use",
+            "Acquisition & Procurement",
+            "Ethical Guidelines & Restrictions",
+            "Technical Safety & Security Requirements",
+            "Int'l Cooperation & Interoperability"
+        ];
+        
+        Object.keys(policyData).forEach(function(country) {
+            var countryData = policyData[country];
+            var countryMatches = [];
+            
+            POLICY_AREAS.forEach(function(area) {
+                var areaData = countryData[area];
+                if (!areaData) return;
+                
+                var sourceTypes = [
+                    { key: "legal_directives", label: "Legal" },
+                    { key: "policy_documents", label: "Policy" },
+                    { key: "public_statements", label: "Statement" }
+                ];
+                
+                sourceTypes.forEach(function(source) {
+                    var entries = areaData[source.key] || [];
+                    entries.forEach(function(entry) {
+                        var text = entry.text || "";
+                        if (text.toLowerCase().indexOf(keyword) !== -1) {
+                            countryMatches.push({
+                                area: area,
+                                type: source.label,
+                                text: text,
+                                url: extractUrl(text)
+                            });
+                            totalCount++;
+                        }
+                    });
+                });
+            });
+            
+            if (countryMatches.length > 0) {
+                results[country] = countryMatches;
+            }
+        });
+        
+        // Render results
+        renderKeywordResults(keyword, results, totalCount);
+        
+        // Clear map selection
+        if (typeof d3 !== 'undefined') {
+            d3.selectAll(".country-path").classed("selected", false);
+        }
+    }
+    
+    searchBtn.addEventListener("click", performSearch);
+    searchInput.addEventListener("keypress", function(e) {
+        if (e.key === "Enter") performSearch();
     });
-  }
+}
+
+function renderKeywordResults(keyword, results, totalCount) {
+    var content = document.getElementById("overview-content");
+    var countryCount = Object.keys(results).length;
+    
+    // Set header
+    setContentHeader(
+        'Results for "' + keyword + '"',
+        totalCount + " entries across " + countryCount + " countries",
+        false,
+        true
+    );
+    
+    content.innerHTML = "";
+    
+    if (countryCount === 0) {
+        content.innerHTML = '<div class="placeholder"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg><p>No entries found matching "' + escapeHtml(keyword) + '"</p></div>';
+        return;
+    }
+    
+    var resultsContainer = document.createElement("div");
+    resultsContainer.className = "content-keyword-results";
+    
+    // Sort countries by match count
+    var sortedCountries = Object.keys(results).sort(function(a, b) {
+        return results[b].length - results[a].length;
+    });
+    
+    sortedCountries.forEach(function(country) {
+        var matches = results[country];
+        var countryName = displayNames[country] || country;
+        
+        var group = document.createElement("div");
+        group.className = "keyword-country-group";
+        
+        // Country header
+        var header = document.createElement("div");
+        header.className = "keyword-country-header";
+        header.innerHTML = '<span class="keyword-country-name">' + escapeHtml(countryName) + '</span>' +
+            '<span class="keyword-country-count">' + matches.length + ' match' + (matches.length > 1 ? 'es' : '') + '</span>';
+        header.addEventListener("click", function() {
+            document.getElementById("keyword-search").value = "";
+            selectOverviewCountry(country);
+        });
+        group.appendChild(header);
+        
+        // Entry list
+        var entryList = document.createElement("div");
+        entryList.className = "keyword-entry-list";
+        
+        matches.forEach(function(match, idx) {
+            var entry = document.createElement("div");
+            entry.className = "keyword-entry";
+            
+            // Parse title from text
+            var title = parseTitleWithoutDate(match.text);
+            var highlightedTitle = highlightKeyword(title, keyword);
+            var highlightedDesc = highlightKeyword(match.text, keyword);
+            
+            // Entry header (clickable to expand)
+            var entryHeader = document.createElement("div");
+            entryHeader.className = "keyword-entry-header";
+            entryHeader.innerHTML = 
+                '<div class="keyword-entry-expand"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 18l6-6-6-6"/></svg></div>' +
+                '<div class="keyword-entry-info">' +
+                    '<div class="keyword-entry-title">' + highlightedTitle + '</div>' +
+                    '<div class="keyword-entry-meta">' +
+                        '<span class="keyword-entry-type ' + match.type.toLowerCase() + '">' + match.type + '</span>' +
+                        '<span>' + getShortAreaName(match.area) + '</span>' +
+                    '</div>' +
+                '</div>';
+            
+            entryHeader.addEventListener("click", function(e) {
+                entry.classList.toggle("expanded");
+            });
+            
+            entry.appendChild(entryHeader);
+            
+            // Description (hidden by default)
+            var desc = document.createElement("div");
+            desc.className = "keyword-entry-description";
+            desc.innerHTML = highlightedDesc;
+            if (match.url) {
+                desc.innerHTML += '<div class="keyword-entry-link"><a href="' + match.url + '" target="_blank">View source →</a></div>';
+            }
+            entry.appendChild(desc);
+            
+            entryList.appendChild(entry);
+        });
+        
+        group.appendChild(entryList);
+        resultsContainer.appendChild(group);
+    });
+    
+    content.appendChild(resultsContainer);
+}
+
+function highlightKeyword(text, keyword) {
+    var regex = new RegExp("(" + keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ")", "gi");
+    return escapeHtml(text).replace(regex, "<mark>$1</mark>");
+}
+
+function getShortAreaName(area) {
+    var shortNames = {
+        "LAWS Employment/Deployment": "LAWS",
+        "Adoption & Intent of Use": "Adoption",
+        "Ethical Guidelines & Restrictions": "Ethics",
+        "Technical Safety & Security Requirements": "Tech Safety",
+        "Acquisition & Procurement": "Acquisition",
+        "Int'l Cooperation & Interoperability": "Int'l Coop"
+    };
+    return shortNames[area] || area;
+}
+
+// ===== DOWNLOAD FUNCTIONS =====
+function downloadFullCSV() {
+    var csvRows = [];
+    var headers = ["Country", "Policy Area", "Source Type", "Title", "Date", "Description", "URL"];
+    csvRows.push(headers.join(","));
+    
+    Object.keys(policyData).forEach(function(country) {
+        var countryData = policyData[country];
+        Object.keys(countryData).forEach(function(area) {
+            var areaData = countryData[area];
+            
+            var sourceTypes = [
+                { key: "legal_directives", label: "Legal Directive" },
+                { key: "policy_documents", label: "Policy Document" },
+                { key: "public_statements", label: "Public Statement" }
+            ];
+            
+            sourceTypes.forEach(function(st) {
+                if (areaData[st.key]) {
+                    areaData[st.key].forEach(function(entry) {
+                        var text = entry.text || "";
+                        var url = entry.url || extractUrl(text) || "";
+                        var title = parseTitleWithoutDate(text);
+                        var date = extractDate(text) || "";
+                        var description = text.split("\n").slice(1).join(" ").trim().substring(0, 500);
+                        
+                        var row = [
+                            '"' + (displayNames[country] || country).replace(/"/g, '""') + '"',
+                            '"' + area.replace(/"/g, '""') + '"',
+                            '"' + st.label + '"',
+                            '"' + title.replace(/"/g, '""') + '"',
+                            '"' + date + '"',
+                            '"' + description.replace(/"/g, '""') + '"',
+                            '"' + url + '"'
+                        ];
+                        csvRows.push(row.join(","));
+                    });
+                }
+            });
+        });
+    });
+    
+    var csvContent = csvRows.join("\n");
+    var blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+    var link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "global_defense_ai_policy_database.csv";
+    link.click();
 }
