@@ -266,11 +266,11 @@ function renderComparison() {
     sectionHeader.className = "detail-policy-header";
     sectionHeader.innerHTML = `
       <span>${area.name}</span>
-      <div class="detail-policy-counts">
+      <div class="detail-policy-counts" style="margin-left:auto;">
         <span class="count-1">${displayNames[c1] || c1}: ${v1}</span>
         <span class="count-2">${displayNames[c2] || c2}: ${v2}</span>
       </div>
-      <span class="toggle-icon">▼</span>`;
+      <span class="toggle-icon" style="margin-left:12px;">▼</span>`;
     sectionHeader.addEventListener("click", () => section.classList.toggle("expanded"));
     section.appendChild(sectionHeader);
 
@@ -374,17 +374,18 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
   // SVG chart
   const chartContainer = document.createElement("div");
   chartContainer.className = "convergence-similarity-chart";
-  chartContainer.style.height = "300px";
+  chartContainer.style.cssText = "height:auto;width:100%;";
 
   const W = 700, H = 300;
-  const M = { top: 20, right: 30, bottom: 40, left: 50 };
+  const M = { top: 20, right: 40, bottom: 40, left: 50 };
   const plotW = W - M.left - M.right;
   const plotH = H - M.top - M.bottom;
 
   const svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svgEl.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svgEl.setAttribute("preserveAspectRatio", "xMidYMid meet");
   svgEl.style.width = "100%";
-  svgEl.style.height = "100%";
+  svgEl.style.display = "block";
 
   // Threshold line
   const threshY = M.top + plotH - 0.5 * plotH;
