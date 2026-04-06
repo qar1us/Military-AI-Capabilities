@@ -124,7 +124,7 @@ function renderMomentumChart() {
   xLabelEl.setAttribute("x", M.left + plotW / 2); xLabelEl.setAttribute("y", containerH - 8);
   xLabelEl.setAttribute("text-anchor", "middle"); xLabelEl.setAttribute("font-size", "10");
   xLabelEl.setAttribute("fill", "#666"); xLabelEl.setAttribute("font-weight", "600");
-  xLabelEl.textContent = "Total Policy Entries";
+  xLabelEl.textContent = "Number of Policies (2023-2025)";
   svg.appendChild(xLabelEl);
 
   // Quadrant labels
