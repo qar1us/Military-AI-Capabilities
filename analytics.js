@@ -1030,27 +1030,6 @@ function renderPolicyGrowthChart() {
 }
 
 // ===== CONVERGENCE TIMELINE =====
-// Define country groupings for comparison
-var convergenceGroupings = {
-    "NATO Members": {
-        members: ["USA", "UK", "France", "Germany", "Italy", "Canada", "Spain", "Netherlands", "Belgium", "Poland", "Norway", "Denmark", "Turkey", "Greece", "Hungary", "Czechia", "Estonia", "Latvia", "Lithuania", "Croatia", "Bulgaria"],
-        color: "#0d7377",
-        description: "NATO alliance members"
-    },
-    "AUKUS": {
-        members: ["USA", "UK", "Australia"],
-        color: "#e07020",
-        description: "AUKUS security partnership"
-    },
-    "Five Eyes": {
-        members: ["USA", "UK", "Canada", "Australia", "New Zealand"],
-        color: "#1a2744",
-        description: "Five Eyes intelligence alliance"
-    }
-};
-
-var activeConvergenceGroups = [];
-var convergenceData = {};
 
 // Helper to get area emergence year for a country
 function getAreaEmergenceYear(country, areaShortName) {
