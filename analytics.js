@@ -30,6 +30,7 @@ function calculateMomentumData() {
     });
 
     if (totalEntries === 0) return;
+    if (prev2 === 0 && recent2 === 0) return;
 
     const recent2 = (yearCounts[2024] || 0) + (yearCounts[2025] || 0);
     const prev2 = (yearCounts[2022] || 0) + (yearCounts[2023] || 0);
