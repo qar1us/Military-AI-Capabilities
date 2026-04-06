@@ -69,7 +69,7 @@ function renderMomentumChart() {
   const plotH = containerH - M.top - M.bottom;
 
   const maxEntries = Math.max(1, ...data.map(d => d.totalEntries));
-  const maxMomentum = Math.max(1, ...data.map(d => Math.abs(d.momentum)));
+  const maxMomentum = 100;
 
   const statusColors = {
     accelerating: "#4a9d5b",
