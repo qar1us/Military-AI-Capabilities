@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6, .header-font {
 /* ===== MAP ===== */
 .map-container {
   background: var(--ocean);
-  border-radius: 16px;
+  border-radius: 0px;
   padding: 0;
   position: relative;
   overflow: hidden;
