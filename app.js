@@ -476,14 +476,14 @@ function downloadFullCSV() {
 // ===== INIT =====
 
 async function init() {
-  // Load policy data from JSON file
-  try {
-    const res = await fetch('./data/policy-data.json');
-    rawData = await res.json();
-  } catch (e) {
-    console.error("Failed to load policy-data.json:", e);
+  // Load policy data from inline JS global (set by data/policy-data.js)
+  if (typeof RAW_POLICY_DATA === "undefined") {
+    console.error("RAW_POLICY_DATA not found. Run extract-data.py to generate data/policy-data.js");
+    document.getElementById("map-loading").innerHTML =
+      '<span style="color:rgba(255,255,255,0.8)">Data file missing.<br>Run extract-data.py then reload.</span>';
     return;
   }
+  rawData = RAW_POLICY_DATA;
 
   policyData = rawData.countries || {};
   allianceData = rawData.alliances || {};
