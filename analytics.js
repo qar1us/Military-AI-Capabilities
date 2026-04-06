@@ -148,8 +148,10 @@ function renderMomentumChart() {
   const dotsGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
   data.forEach(d => {
     const x = M.left + (d.totalEntries / maxEntries) * plotW;
-    const jitter = (Math.random() - 0.5) * 12;
-    const y = M.top + plotH * (1 - (d.momentum + maxMomentum) / (2 * maxMomentum)) + (d.momentum === 100 ? jitter : 0);
+    const jitter = (Math.random() - 0.5) * 50;
+    const isCapped = d.momentum === 100 || d.momentum === -100;
+    const baseY = M.top + plotH * (1 - (d.momentum + maxMomentum) / (2 * maxMomentum));
+    const y = isCapped ? Math.max(M.top + 8, Math.min(M.top + plotH - 8, baseY + jitter)) : baseY;
     const r = 4 + Math.sqrt(d.totalEntries) * 0.8;
 
     const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
@@ -214,33 +216,42 @@ function renderMomentumChart() {
     svg.appendChild(mkLine(x, M.top + plotH, x, M.top + plotH + 4, "#999", "1", ""));
   });
 
-  // Zoom/pan — only wrap dots, keep axes fixed
-  let scale = 1, panX = 0, panY = 0, isDragging = false, dragStart = {};
-  const plotGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
-  plotGroup.appendChild(dotsGroup);
-  svg.appendChild(plotGroup);
+  svg.appendChild(dotsGroup);
+  svg.setAttribute("viewBox", "0 0 " + containerW + " " + containerH);
+  svg.style.overflow = "visible";
 
-  function applyTransform() {
-    plotGroup.setAttribute("transform", "translate(" + panX + "," + panY + ") scale(" + scale + ")");
+  // ViewBox-based zoom/pan so axes and dots scale together
+  let vx = 0, vy = 0, vw = containerW, vh = containerH;
+  let isDragging = false, dragStart = {};
+
+  function applyViewBox() {
+    svg.setAttribute("viewBox", vx + " " + vy + " " + vw + " " + vh);
   }
 
   svg.addEventListener("wheel", function(e) {
     e.preventDefault();
-    const delta = e.deltaY > 0 ? 0.85 : 1.15;
-    scale = Math.max(0.5, Math.min(8, scale * delta));
-    applyTransform();
+    const factor = e.deltaY > 0 ? 1.15 : 0.87;
+    const rect = svg.getBoundingClientRect();
+    const mx = (e.clientX - rect.left) / rect.width * vw + vx;
+    const my = (e.clientY - rect.top) / rect.height * vh + vy;
+    vw = Math.min(containerW * 2, Math.max(containerW * 0.2, vw * factor));
+    vh = Math.min(containerH * 2, Math.max(containerH * 0.2, vh * factor));
+    vx = mx - (e.clientX - rect.left) / rect.width * vw;
+    vy = my - (e.clientY - rect.top) / rect.height * vh;
+    applyViewBox();
   }, { passive: false });
 
   svg.addEventListener("mousedown", function(e) {
     isDragging = true;
-    dragStart = { x: e.clientX - panX, y: e.clientY - panY };
+    dragStart = { x: e.clientX, y: e.clientY, vx: vx, vy: vy };
     svg.style.cursor = "grabbing";
   });
   svg.addEventListener("mousemove", function(e) {
     if (!isDragging) return;
-    panX = e.clientX - dragStart.x;
-    panY = e.clientY - dragStart.y;
-    applyTransform();
+    const rect = svg.getBoundingClientRect();
+    vx = dragStart.vx - (e.clientX - dragStart.x) / rect.width * vw;
+    vy = dragStart.vy - (e.clientY - dragStart.y) / rect.height * vh;
+    applyViewBox();
   });
   svg.addEventListener("mouseup", function() { isDragging = false; svg.style.cursor = "grab"; });
   svg.addEventListener("mouseleave", function() { isDragging = false; svg.style.cursor = "grab"; });
@@ -263,9 +274,19 @@ function renderMomentumChart() {
   container.style.position = "relative";
   container.appendChild(zoomBtns);
 
-  btnIn.addEventListener("click", function() { scale = Math.min(8, scale * 1.25); applyTransform(); });
-  btnOut.addEventListener("click", function() { scale = Math.max(0.5, scale * 0.8); applyTransform(); });
-  btnReset.addEventListener("click", function() { scale = 1; panX = 0; panY = 0; applyTransform(); });
+  btnIn.addEventListener("click", function() {
+    const cx = vx + vw/2, cy = vy + vh/2;
+    vw *= 0.8; vh *= 0.8;
+    vx = cx - vw/2; vy = cy - vh/2;
+    applyViewBox();
+  });
+  btnOut.addEventListener("click", function() {
+    const cx = vx + vw/2, cy = vy + vh/2;
+    vw *= 1.25; vh *= 1.25;
+    vx = cx - vw/2; vy = cy - vh/2;
+    applyViewBox();
+  });
+  btnReset.addEventListener("click", function() { vx = 0; vy = 0; vw = containerW; vh = containerH; applyViewBox(); });
 
   // Search highlight
   const searchInput = document.getElementById("momentum-search");
