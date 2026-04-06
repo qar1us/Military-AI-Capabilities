@@ -374,14 +374,19 @@ function initStickyHeader() {
   const accentBar = document.querySelector('.header-accent');
   if (!header) return;
 
-  // Collapse only after scrolling past the full header height
-  const COMPACT_THRESHOLD = header.offsetHeight || 160;
   let isCompact = false;
   let ticking = false;
   let transitionLock = false;
 
+  function getThreshold() {
+    const mapContainer = document.querySelector('.map-container');
+    if (mapContainer) return mapContainer.offsetTop + mapContainer.offsetHeight;
+    return header.offsetHeight || 160;
+  }
+
   function updateHeader() {
     const y = window.scrollY || window.pageYOffset;
+    const threshold = getThreshold();
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     const progress = docHeight > 0 ? y / docHeight : 0;
 
@@ -390,12 +395,12 @@ function initStickyHeader() {
     }
 
     if (!transitionLock) {
-      if (!isCompact && y > COMPACT_THRESHOLD) {
+      if (!isCompact && y > threshold) {
         header.classList.add('compact');
         isCompact = true;
         transitionLock = true;
         setTimeout(() => { transitionLock = false; }, 400);
-      } else if (isCompact && y <= 20) {
+      } else if (isCompact && y <= threshold - 60) {
         header.classList.remove('compact');
         isCompact = false;
         transitionLock = true;
