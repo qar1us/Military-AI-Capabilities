@@ -165,26 +165,30 @@ function renderComparison() {
   }
 
   function buildTimelineRow(country, rowClass) {
-    const row = document.createElement("div");
-    row.className = "timeline-row";
+    const row_el = document.createElement("div");
+    row_el.className = "timeline-row";
     const label = document.createElement("div");
     label.className = `timeline-row-label ${rowClass}`;
     label.textContent = getAlpha3(country);
-    row.appendChild(label);
+    row_el.appendChild(label);
 
+    const MAX_DOTS_PER_YEAR = 5;
     const data = policyData[country] || {};
     years.forEach((year, idx) => {
-      const entries = getYearEntries(data, year);
+      const entries = getYearEntries(data, year).slice(0, MAX_DOTS_PER_YEAR);
       const pct = (idx / (years.length - 1)) * 100;
+      const colWidth = 18;
       entries.forEach((_, eIdx) => {
+        const col = Math.floor(eIdx / MAX_DOTS_PER_YEAR);
+        const row = eIdx % MAX_DOTS_PER_YEAR;
         const dot = document.createElement("div");
         dot.className = `timeline-dot ${rowClass}`;
-        dot.style.cssText = `left:${pct}%;top:${20 + eIdx * 14}px;`;
+        dot.style.cssText = `left:calc(${pct}% + ${col * colWidth}px);top:${8 + row * 14}px;`;
         dot.title = year.toString();
-        row.appendChild(dot);
+        row_el.appendChild(dot);
       });
     });
-    return row;
+    return row_el;
   }
 
   timelineContainer.appendChild(buildTimelineRow(c1, "country-1"));
@@ -370,8 +374,9 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
   // SVG chart
   const chartContainer = document.createElement("div");
   chartContainer.className = "convergence-similarity-chart";
+  chartContainer.style.height = "300px";
 
-  const W = 500, H = 200;
+  const W = 700, H = 300;
   const M = { top: 20, right: 30, bottom: 40, left: 50 };
   const plotW = W - M.left - M.right;
   const plotH = H - M.top - M.bottom;
