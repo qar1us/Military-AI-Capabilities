@@ -374,7 +374,9 @@ function initStickyHeader() {
   const accentBar = document.querySelector('.header-accent');
   if (!header) return;
 
-const COMPACT_THRESHOLD = document.getElementById('siteHeader').offsetHeight;  let isCompact = false;
+  // Collapse only after scrolling past the full header height
+  const COMPACT_THRESHOLD = header.offsetHeight || 160;
+  let isCompact = false;
   let ticking = false;
   let transitionLock = false;
 
