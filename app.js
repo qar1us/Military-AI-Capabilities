@@ -374,8 +374,7 @@ function initStickyHeader() {
   const accentBar = document.querySelector('.header-accent');
   if (!header) return;
 
-  const COMPACT_THRESHOLD = 120;
-  let isCompact = false;
+const COMPACT_THRESHOLD = document.getElementById('siteHeader').offsetHeight;  let isCompact = false;
   let ticking = false;
   let transitionLock = false;
 
@@ -394,7 +393,7 @@ function initStickyHeader() {
         isCompact = true;
         transitionLock = true;
         setTimeout(() => { transitionLock = false; }, 400);
-      } else if (isCompact && y <= 50) {
+      } else if (isCompact && y <= 20) {
         header.classList.remove('compact');
         isCompact = false;
         transitionLock = true;
