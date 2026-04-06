@@ -101,7 +101,8 @@ function renderMomentumChart() {
   // Y axis labels
   const yTicks = [-100, -50, 0, 50, 100];
   yTicks.forEach(tick => {
-    const y = M.top + plotH * (1 - (tick + maxMomentum) / (2 * maxMomentum));
+    const jitter = (Math.random() - 0.5) * 12;
+    const y = M.top + plotH * (1 - (d.momentum + maxMomentum) / (2 * maxMomentum)) + (d.momentum === 100 ? jitter : 0);
     const lbl = document.createElementNS("http://www.w3.org/2000/svg", "text");
     lbl.setAttribute("x", M.left - 8); lbl.setAttribute("y", y + 4);
     lbl.setAttribute("text-anchor", "end"); lbl.setAttribute("font-size", "10"); lbl.setAttribute("fill", "#999");
@@ -213,10 +214,10 @@ function renderMomentumChart() {
     svg.appendChild(mkLine(x, M.top + plotH, x, M.top + plotH + 4, "#999", "1", ""));
   });
 
-  // Zoom/pan
+// Zoom/pan — only wrap dots, keep axes fixed
   let scale = 1, panX = 0, panY = 0, isDragging = false, dragStart = {};
   const plotGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
-  while (svg.firstChild) plotGroup.appendChild(svg.firstChild);
+  plotGroup.appendChild(dotsGroup);
   svg.appendChild(plotGroup);
 
   function applyTransform() {
