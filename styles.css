@@ -1170,3 +1170,81 @@ footer .data-disclaimer { font-size: 0.8rem; color: #8a9baf; font-style: normal;
   .map-footer-legend { margin-left: auto; }
   .csv-download-bar { padding: 20px 24px; }
 }
+
+/* ===== MOBILE (≤480px) ===== */
+@media (max-width: 480px) {
+
+  /* --- Full header: hide logo, tighten layout --- */
+  .header-full { padding: 16px 20px 14px; }
+  .hf-logo { display: none; }
+  .hf-title { font-size: 1.5rem; line-height: 1.2; margin-bottom: 6px; }
+  .hf-subtitle { font-size: 0.82rem; max-width: 100%; }
+  .hf-overline { margin-bottom: 6px; letter-spacing: 2px; }
+  .hf-date-range { margin-top: 6px; font-size: 0.78rem; }
+
+  /* --- Compact header: tighten, hide stats --- */
+  .hc-brand { padding: 10px 14px; gap: 10px; }
+  .hc-title { font-size: 0.88rem; }
+  .hc-label { display: none; }
+  .site-header.compact .hc-center { display: none; }
+  .site-header.compact .hc-right { display: none; }
+
+  /* --- Explore tabs: 2×2 grid instead of horizontal scroll --- */
+  .explore-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: visible;
+    border-bottom: none;
+    gap: 6px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .explore-tab {
+    flex: unset;
+    border: 1.5px solid #e2e6ea;
+    border-radius: 8px;
+    padding: 12px 8px;
+    font-size: 0.78rem;
+    white-space: normal;
+    text-align: center;
+  }
+  .explore-tab.active {
+    background: var(--navy);
+    color: white;
+    border-color: var(--navy);
+  }
+  .explore-tab.active::after { display: none; }
+
+  /* --- Main content: tighter padding --- */
+  .main-content { padding: 20px 16px 20px; }
+  .section-content { padding: 16px; }
+  .section-header { padding: 16px; }
+  .main-section { min-height: 200px; }
+
+  /* --- Footer: no extra space --- */
+  footer {
+    padding: 20px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  footer .data-disclaimer { text-align: left; }
+
+  /* --- Remove extra space below footer --- */
+  body { min-height: unset; }
+
+  /* --- CSV bar --- */
+  .csv-download-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 20px;
+  }
+
+  /* --- Map hint: shorter text on mobile --- */
+  .map-hint { font-size: 0.7rem; }
+
+  /* --- Analytics: prevent overflow --- */
+  .analytics-card-content { padding: 12px; }
+  .momentum-chart { height: 260px; }
+}
