@@ -181,6 +181,7 @@ function updateMapChoropleth(quarterIndex) {
       path.style.fill = '';
     }
   });
+}
 
 // ===== TIME SLIDER =====
 
