@@ -829,6 +829,7 @@ function renderPolicyGrowthChart() {
 
   var barsContainer = document.createElement("div");
   barsContainer.className = "policy-growth-bars";
+  barsContainer.style.height = "280px";
 
   var hoverPanel = document.createElement("div");
   hoverPanel.className = "policy-growth-hover-panel";
@@ -842,7 +843,7 @@ function renderPolicyGrowthChart() {
     barGroup.className = "policy-growth-bar-group";
     var stack = document.createElement("div");
     stack.className = "policy-growth-bar-stack";
-    stack.style.height = yearTotal > 0 ? ((yearTotal / maxYearTotal) * 100) + "%" : "0";
+    stack.style.height = yearTotal > 0 ? Math.round((yearTotal / maxYearTotal) * 280) + "px" : "0";
 
     areaKeys.forEach(function(area) {
       var count = yearAreaCounts[year][area.key];
