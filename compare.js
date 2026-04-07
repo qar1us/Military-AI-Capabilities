@@ -178,13 +178,15 @@ function renderComparison() {
       const entries = getYearEntries(data, year).slice(0, MAX_DOTS_PER_YEAR);
       const pct = (idx / (years.length - 1)) * 100;
       const colWidth = 18;
-      entries.forEach((_, eIdx) => {
+      entries.forEach((entry, eIdx) => {
         const col = Math.floor(eIdx / MAX_DOTS_PER_YEAR);
         const row = eIdx % MAX_DOTS_PER_YEAR;
         const dot = document.createElement("div");
         dot.className = `timeline-dot ${rowClass}`;
         dot.style.cssText = `left:calc(${pct}% + ${col * colWidth}px);top:${8 + row * 14}px;`;
-        dot.title = year.toString();
+        dot.dataset.title = parseTitleWithoutDate(entry.text || "");
+        dot.dataset.year = year;
+        dot.dataset.country = displayNames[country] || country;
         row_el.appendChild(dot);
       });
     });
@@ -223,6 +225,28 @@ function renderComparison() {
   timelineContainer.appendChild(legend);
   timelineBox.appendChild(timelineContainer);
   content.appendChild(timelineBox);
+
+  // Timeline tooltip
+  let tooltip = document.getElementById("compare-timeline-tooltip");
+  if (!tooltip) {
+    tooltip = document.createElement("div");
+    tooltip.id = "compare-timeline-tooltip";
+    tooltip.className = "compare-tooltip";
+    document.body.appendChild(tooltip);
+  }
+  content.querySelectorAll(".timeline-dot").forEach(dot => {
+    dot.addEventListener("mouseenter", () => {
+      tooltip.innerHTML = `<strong>${dot.dataset.country}</strong><br>${dot.dataset.title}`;
+      tooltip.classList.add("visible");
+    });
+    dot.addEventListener("mousemove", e => {
+      tooltip.style.left = (e.clientX + 12) + "px";
+      tooltip.style.top = (e.clientY - 50) + "px";
+    });
+    dot.addEventListener("mouseleave", () => {
+      tooltip.classList.remove("visible");
+    });
+  });
 
   // ---- PAIRWISE CONVERGENCE CHART ----
   const convergenceBox = document.createElement("div");
@@ -290,7 +314,7 @@ function renderComparison() {
         ['legal_directives', 'policy_documents', 'public_statements'].forEach(type => {
           (areaData[type] || []).forEach(entry => {
             const text = entry.text || "";
-            const url = extractUrl(text);
+            const url = entry.url || extractUrl(text);
             const itemEl = document.createElement("div");
             itemEl.className = "detail-entry-item";
             const headerEl = document.createElement("div");

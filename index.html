@@ -262,7 +262,31 @@
       </div>
     </div>
 
-    <div id="convergence-timeline-container" style="display:none;" role="region" aria-label="Convergence timeline chart"></div>
+    <div class="convergence-timeline-container" id="convergence-timeline-container" style="display: none;">
+      <div class="convergence-header">
+        <div class="convergence-title">
+          Convergence/Divergence Timeline
+          <span class="convergence-info-icon">ⓘ
+            <span class="convergence-info-tooltip">Convergence scores measure policy alignment across the 6 different policy areas, blending coverage (20%) with substantive stance similarity (80%). UN voting records on LAWS resolutions apply additional adjustments.</span>
+          </span>
+        </div>
+        <div class="convergence-subtitle">Are country groups becoming more or less aligned over time?</div>
+      </div>
+      <div class="convergence-groupings" id="convergence-groupings">
+        <div class="convergence-groupings-label">Select Country Groupings</div>
+      </div>
+      <div class="convergence-chart-area" id="convergence-chart-area">
+        <div class="convergence-zone-label high">High Convergence</div>
+        <div class="convergence-zone-label low">Low Convergence</div>
+        <svg class="convergence-chart-svg" id="convergence-chart-svg"></svg>
+      </div>
+      <div class="convergence-tooltip" id="convergence-tooltip"></div>
+      <div class="convergence-legend" id="convergence-legend"></div>
+      <div class="convergence-similarity-section" id="convergence-similarity-section">
+        <div class="convergence-similarity-title">Current Similarity (Latest Year)</div>
+        <div class="convergence-similarity-bars" id="convergence-similarity-bars"></div>
+      </div>
+    </div>
 
     <div class="main-section">
       <div class="section-header" id="alliance-header" style="display:none;">
