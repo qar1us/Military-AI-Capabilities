@@ -174,16 +174,22 @@ function renderComparison() {
 
     const MAX_DOTS_PER_COL = 5;
     const data = policyData[country] || {};
+    const isTop = rowClass === "country-1"; // country-1 grows upward (bottom), country-2 grows downward (top)
     years.forEach((year, idx) => {
       const entries = getYearEntries(data, year);
       const pct = (idx / (years.length - 1)) * 100;
-      const colWidth = 18;
+      const numCols = Math.ceil(entries.length / MAX_DOTS_PER_COL);
       entries.forEach((entry, eIdx) => {
         const col = Math.floor(eIdx / MAX_DOTS_PER_COL);
         const row = eIdx % MAX_DOTS_PER_COL;
+        const offsetX = (col - (numCols - 1) / 2) * 14;
         const dot = document.createElement("div");
         dot.className = `timeline-dot ${rowClass}`;
-        dot.style.cssText = `left:calc(${pct}% + ${col * colWidth}px);top:${8 + row * 14}px;`;
+        if (isTop) {
+          dot.style.cssText = `left:calc(${pct}% + ${offsetX}px);bottom:${5 + row * 13}px;`;
+        } else {
+          dot.style.cssText = `left:calc(${pct}% + ${offsetX}px);top:${5 + row * 13}px;`;
+        }
         dot.dataset.title = parseTitleWithoutDate(entry.text || "");
         dot.dataset.year = year;
         dot.dataset.country = displayNames[country] || country;

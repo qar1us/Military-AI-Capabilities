@@ -338,6 +338,14 @@ function initTabs() {
         if (typeof d3 !== 'undefined') d3.selectAll(".country-path").classed("alliance-member", false);
       }
 
+      // Reset all map path styles before re-applying highlights and choropleth
+      document.querySelectorAll(".country-path").forEach(function(p) {
+        p.classList.remove("selected", "disabled", "alliance-member");
+        p.style.fill = '';
+        p.style.stroke = '';
+        p.style.strokeWidth = '';
+      });
+
       updateMapHighlights();
       updateCompareChipsState();
 

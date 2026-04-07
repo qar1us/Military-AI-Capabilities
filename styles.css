@@ -798,8 +798,8 @@ h1, h2, h3, h4, h5, h6, .header-font {
 .chart-row.clickable:hover .chart-row-label { text-decoration: underline; }
 
 /* Timeline */
-.compare-timeline-container { position: relative; padding: 20px 0; }
-.timeline-row { position: relative; height: 80px; margin: 0 50px; overflow: hidden; }
+.compare-timeline-container { position: relative; padding: 20px 0; overflow-x: auto; }
+.timeline-row { position: relative; height: 80px; margin: 0 50px; }
 .timeline-row-label { position: absolute; left: -50px; top: 50%; transform: translateY(-50%); font-size: 0.75rem; font-weight: 600; width: 45px; text-align: right; }
 .timeline-row-label.country-1 { color: var(--navy); }
 .timeline-row-label.country-2 { color: var(--purple); }
