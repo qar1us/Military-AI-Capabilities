@@ -325,7 +325,7 @@ function renderComparison() {
                 ${extractDate(text) ? `<div class="detail-entry-date">${extractDate(text)}</div>` : ''}
               </div>
               <svg class="detail-entry-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>`;
-            headerEl.addEventListener("click", () => itemEl.classList.toggle("expanded"));
+            headerEl.addEventListener("click", (e) => { if (e.target.closest("a")) return; itemEl.classList.toggle("expanded"); });
             itemEl.appendChild(headerEl);
 
             const desc = document.createElement("div");

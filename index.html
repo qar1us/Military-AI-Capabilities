@@ -372,13 +372,21 @@
             <svg class="momentum-search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
-            <input class="momentum-search-input" type="search" id="momentum-search"
+            <input class="momentum-search-input" type="search" id="momentum-country-search"
               placeholder="Highlight country…" aria-label="Highlight country in momentum chart"/>
           </div>
         </div>
         <div class="analytics-card-content">
-          <div class="momentum-chart" id="momentum-chart" role="img" aria-label="Policy momentum scatter plot"></div>
-          <div class="momentum-hint" aria-hidden="true">Click a bubble to view that country's full profile</div>
+          <div class="momentum-chart-wrapper" style="position:relative;">
+            <div class="momentum-chart" id="momentum-chart" role="img" aria-label="Policy momentum scatter plot"></div>
+            <div class="momentum-zoom-controls">
+              <button class="momentum-zoom-btn" id="momentum-zoom-in" title="Zoom in">+</button>
+              <button class="momentum-zoom-btn" id="momentum-zoom-out" title="Zoom out">&minus;</button>
+              <button class="momentum-zoom-btn" id="momentum-zoom-reset" title="Reset">&#x27F2;</button>
+            </div>
+            <div class="momentum-tooltip" id="momentum-tooltip"></div>
+          </div>
+          <div class="momentum-hint" aria-hidden="true">Scroll to zoom &bull; Drag to pan &bull; Click country to view profile</div>
           <div class="momentum-legend" role="list" aria-label="Status legend">
             <div class="momentum-legend-item" role="listitem"><div class="momentum-legend-dot" style="background:#4a9d5b;border:2px solid #4a9d5b"></div>Accelerating</div>
             <div class="momentum-legend-item" role="listitem"><div class="momentum-legend-dot" style="background:#0d7377;border:2px solid #0d7377"></div>Steady</div>
