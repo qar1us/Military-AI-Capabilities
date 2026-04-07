@@ -713,6 +713,9 @@ function renderMomentumChart() {
 })();
 
 // ===== POLICY GROWTH CHART =====
+
+var policyGrowthMode = 'quarterly'; // 'quarterly' or 'yearly'
+
 function renderPolicyGrowthChart() {
     var container = document.getElementById("policy-growth-chart");
     if (!container) return;
@@ -724,31 +727,19 @@ function renderPolicyGrowthChart() {
     var quarters = [1, 2, 3, 4];
     var dims = ['LAWS', 'Adoption', 'Procurement', 'Safety', 'Ethics', 'Interoperability'];
     var dimLabels = {
-        'LAWS': 'LAWS Employment',
-        'Adoption': 'Adoption & Intent',
-        'Procurement': 'Procurement',
-        'Safety': 'Safety & Security',
-        'Ethics': 'Ethics',
-        'Interoperability': 'Interoperability'
+        'LAWS': 'LAWS Employment', 'Adoption': 'Adoption & Intent',
+        'Procurement': 'Procurement', 'Safety': 'Safety & Security',
+        'Ethics': 'Ethics', 'Interoperability': 'Interoperability'
     };
     var colors = {
-        'LAWS': '#e63946',
-        'Adoption': '#457b9d',
-        'Procurement': '#2a9d8f',
-        'Safety': '#e9c46a',
-        'Ethics': '#a855f7',
-        'Interoperability': '#14b8a6'
+        'LAWS': '#e63946', 'Adoption': '#457b9d', 'Procurement': '#2a9d8f',
+        'Safety': '#e9c46a', 'Ethics': '#a855f7', 'Interoperability': '#14b8a6'
     };
-
     var areaToShort = {
-        'LAWS Employment/Deployment': 'LAWS',
-        'Adoption & Intent of Use': 'Adoption',
-        'Acquisition & Procurement': 'Procurement',
-        'Technical Safety & Security Requirements': 'Safety',
-        'Ethical Guidelines & Restrictions': 'Ethics',
-        "Int'l Cooperation & Interoperability": 'Interoperability'
+        'LAWS Employment/Deployment': 'LAWS', 'Adoption & Intent of Use': 'Adoption',
+        'Acquisition & Procurement': 'Procurement', 'Technical Safety & Security Requirements': 'Safety',
+        'Ethical Guidelines & Restrictions': 'Ethics', "Int'l Cooperation & Interoperability": 'Interoperability'
     };
-
     var monthToQuarter = {
         'Jan': 1, 'January': 1, 'Feb': 1, 'February': 1, 'Mar': 1, 'March': 1,
         'Apr': 2, 'April': 2, 'May': 2, 'Jun': 2, 'June': 2,
@@ -756,7 +747,7 @@ function renderPolicyGrowthChart() {
         'Oct': 4, 'October': 4, 'Nov': 4, 'November': 4, 'Dec': 4, 'December': 4
     };
 
-    // Initialize quarterly data
+    // Collect quarterly data
     var quarterlyData = {};
     years.forEach(function(y) {
         quarterlyData[y] = {};
@@ -766,7 +757,6 @@ function renderPolicyGrowthChart() {
         });
     });
 
-    // Count policies per quarter
     Object.keys(policyData).forEach(function(country) {
         POLICY_AREAS.forEach(function(area) {
             var areaData = policyData[country][area];
@@ -782,9 +772,7 @@ function renderPolicyGrowthChart() {
                                 var year = parseInt(dateMatch[2]);
                                 if (year >= 2016 && year <= 2025) {
                                     var quarter = 4;
-                                    if (monthStr && monthToQuarter[monthStr]) {
-                                        quarter = monthToQuarter[monthStr];
-                                    }
+                                    if (monthStr && monthToQuarter[monthStr]) quarter = monthToQuarter[monthStr];
                                     quarterlyData[year][quarter][shortName]++;
                                 }
                             }
@@ -795,36 +783,80 @@ function renderPolicyGrowthChart() {
         });
     });
 
-    // Calculate max for scaling
-    var maxQuarterTotal = 0;
-    years.forEach(function(y) {
-        quarters.forEach(function(q) {
-            var total = 0;
-            dims.forEach(function(d) { total += quarterlyData[y][q][d]; });
-            if (total > maxQuarterTotal) maxQuarterTotal = total;
+    // Build display buckets based on mode
+    var isQuarterly = policyGrowthMode === 'quarterly';
+    var buckets = []; // { label, counts: {dim: n}, total }
+
+    if (isQuarterly) {
+        years.forEach(function(y) {
+            quarters.forEach(function(q) {
+                var counts = quarterlyData[y][q];
+                var total = 0;
+                dims.forEach(function(d) { total += counts[d]; });
+                buckets.push({ label: 'Q' + q + ' ' + y, year: y, counts: counts, total: total });
+            });
         });
+    } else {
+        years.forEach(function(y) {
+            var merged = {};
+            dims.forEach(function(d) { merged[d] = 0; });
+            quarters.forEach(function(q) {
+                dims.forEach(function(d) { merged[d] += quarterlyData[y][q][d]; });
+            });
+            var total = 0;
+            dims.forEach(function(d) { total += merged[d]; });
+            buckets.push({ label: '' + y, year: y, counts: merged, total: total });
+        });
+    }
+
+    var maxTotal = Math.max.apply(null, [1].concat(buckets.map(function(b) { return b.total; })));
+
+    // Toggle controls
+    var toggleRow = document.createElement('div');
+    toggleRow.style.cssText = 'display:flex;gap:8px;margin-bottom:12px;align-items:center;';
+    var toggleLabel = document.createElement('span');
+    toggleLabel.style.cssText = 'font-size:0.75rem;font-weight:600;color:var(--text-muted);margin-right:4px;';
+    toggleLabel.textContent = 'Group by:';
+    toggleRow.appendChild(toggleLabel);
+
+    ['quarterly', 'yearly'].forEach(function(mode) {
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = mode === 'quarterly' ? 'Quarter' : 'Year';
+        btn.style.cssText = 'padding:5px 14px;border-radius:6px;font-size:0.75rem;font-weight:600;cursor:pointer;transition:all 0.2s;font-family:inherit;';
+        if (mode === policyGrowthMode) {
+            btn.style.background = 'var(--navy)';
+            btn.style.color = 'white';
+            btn.style.border = '1px solid var(--navy)';
+        } else {
+            btn.style.background = 'white';
+            btn.style.color = 'var(--navy)';
+            btn.style.border = '1px solid var(--cream-dark)';
+        }
+        btn.addEventListener('click', function() {
+            policyGrowthMode = mode;
+            renderPolicyGrowthChart();
+        });
+        toggleRow.appendChild(btn);
     });
+    container.appendChild(toggleRow);
 
-    var chartHeight = 360;
-    var scale = maxQuarterTotal > 0 ? chartHeight / maxQuarterTotal : 1;
-
-    // Wrapper with position:relative so absolutely-positioned children stay inside
+    // Wrapper
     var wrapper = document.createElement('div');
     wrapper.className = 'policy-growth-chart';
 
-    // Grid lines
+    // Grid lines — use nice round steps that stay within chart
     var gridContainer = document.createElement('div');
     gridContainer.className = 'policy-growth-grid';
-    var gridSteps = [0, 20, 40, 60, 80, 100];
-    if (maxQuarterTotal > 100) gridSteps = [0, 25, 50, 75, 100, 125];
-    if (maxQuarterTotal > 125) gridSteps = [0, 30, 60, 90, 120, 150];
+    var step = maxTotal <= 30 ? 5 : maxTotal <= 60 ? 10 : maxTotal <= 150 ? 25 : 50;
+    var gridSteps = [];
+    for (var g = 0; g <= maxTotal; g += step) gridSteps.push(g);
+
     gridSteps.forEach(function(val) {
-        if (val <= maxQuarterTotal * 1.1) {
-            var line = document.createElement('div');
-            line.className = 'policy-growth-grid-line';
-            line.style.bottom = ((val / maxQuarterTotal) * 100) + '%';
-            gridContainer.appendChild(line);
-        }
+        var line = document.createElement('div');
+        line.className = 'policy-growth-grid-line';
+        line.style.bottom = ((val / maxTotal) * 100) + '%';
+        gridContainer.appendChild(line);
     });
     wrapper.appendChild(gridContainer);
 
@@ -832,11 +864,9 @@ function renderPolicyGrowthChart() {
     var yAxis = document.createElement('div');
     yAxis.className = 'policy-growth-y-axis';
     gridSteps.slice().reverse().forEach(function(val) {
-        if (val <= maxQuarterTotal * 1.1) {
-            var label = document.createElement('span');
-            label.textContent = val;
-            yAxis.appendChild(label);
-        }
+        var label = document.createElement('span');
+        label.textContent = val;
+        yAxis.appendChild(label);
     });
     wrapper.appendChild(yAxis);
 
@@ -849,103 +879,49 @@ function renderPolicyGrowthChart() {
         document.body.appendChild(tooltip);
     }
 
-    // Bars
+    // Bars — use percentage heights so they align with grid
     var barsContainer = document.createElement('div');
     barsContainer.className = 'policy-growth-bars';
 
-    years.forEach(function(year) {
-        var yearGroup = document.createElement('div');
-        yearGroup.className = 'policy-growth-year-group';
-
-        quarters.forEach(function(quarter) {
-            var counts = quarterlyData[year][quarter];
-            var total = 0;
-            dims.forEach(function(d) { total += counts[d]; });
-
-            var group = document.createElement('div');
-            group.className = 'policy-growth-bar-group';
-            group.dataset.year = year;
-            group.dataset.quarter = quarter;
-            group.dataset.total = total;
-            group.dataset.counts = JSON.stringify(counts);
-
-            var stack = document.createElement('div');
-            stack.className = 'policy-growth-bar-stack';
-
-            dims.forEach(function(dim) {
-                if (counts[dim] > 0) {
-                    var segment = document.createElement('div');
-                    segment.className = 'policy-growth-bar-segment';
-                    segment.style.height = (counts[dim] * scale) + 'px';
-                    segment.style.background = colors[dim];
-                    stack.appendChild(segment);
-                }
+    if (isQuarterly) {
+        // Group buckets by year
+        years.forEach(function(year) {
+            var yearGroup = document.createElement('div');
+            yearGroup.className = 'policy-growth-year-group';
+            quarters.forEach(function(q) {
+                var bucket = buckets[(year - 2016) * 4 + (q - 1)];
+                yearGroup.appendChild(buildBarGroup(bucket, maxTotal, dims, colors, dimLabels, tooltip, container));
             });
-
-            group.addEventListener('mouseenter', function(e) {
-                var total = parseInt(this.dataset.total);
-                var counts = JSON.parse(this.dataset.counts);
-                var quarterLabel = 'Q' + this.dataset.quarter + ' ' + this.dataset.year;
-                var html = '<div class="policy-growth-hover-title">' +
-                    '<span>' + quarterLabel + '</span>' +
-                    '<span class="policy-growth-hover-total">' + total + ' policies</span>' +
-                    '</div><div class="policy-growth-hover-rows">';
-                dims.forEach(function(dim) {
-                    var count = counts[dim];
-                    var pct = total > 0 ? (count / total) * 100 : 0;
-                    html += '<div class="policy-growth-hover-row">' +
-                        '<div class="policy-growth-hover-row-label">' + dimLabels[dim] + '</div>' +
-                        '<div class="policy-growth-hover-row-bar">' +
-                            '<div class="policy-growth-hover-row-fill" style="width:' + pct + '%;background:' + colors[dim] + '"></div>' +
-                        '</div>' +
-                        '<div class="policy-growth-hover-row-pct">' + pct.toFixed(0) + '%</div>' +
-                        '<div class="policy-growth-hover-row-count">' + count + '</div>' +
-                    '</div>';
-                });
-                html += '</div>';
-                tooltip.innerHTML = html;
-                tooltip.classList.add('visible');
-            });
-
-            group.addEventListener('mousemove', function(e) {
-                var tooltipRect = tooltip.getBoundingClientRect();
-                var chartRect = container.getBoundingClientRect();
-                var left = e.clientX - tooltipRect.width / 2;
-                var top = chartRect.top + 15;
-                if (left < chartRect.left + 10) left = chartRect.left + 10;
-                if (left + tooltipRect.width > chartRect.right - 10) left = chartRect.right - tooltipRect.width - 10;
-                tooltip.style.left = left + 'px';
-                tooltip.style.top = top + 'px';
-            });
-
-            group.addEventListener('mouseleave', function() {
-                tooltip.classList.remove('visible');
-            });
-
-            group.appendChild(stack);
-            yearGroup.appendChild(group);
+            barsContainer.appendChild(yearGroup);
         });
-
-        barsContainer.appendChild(yearGroup);
-    });
+    } else {
+        years.forEach(function(year, idx) {
+            var yearGroup = document.createElement('div');
+            yearGroup.className = 'policy-growth-year-group';
+            yearGroup.appendChild(buildBarGroup(buckets[idx], maxTotal, dims, colors, dimLabels, tooltip, container));
+            barsContainer.appendChild(yearGroup);
+        });
+    }
     wrapper.appendChild(barsContainer);
 
-    // X-axis ticks (4 per year)
-    var xTicks = document.createElement('div');
-    xTicks.className = 'policy-growth-x-ticks';
-    years.forEach(function(year) {
-        var tickGroup = document.createElement('div');
-        tickGroup.className = 'policy-growth-x-tick-group';
-        quarters.forEach(function(q) {
-            var tick = document.createElement('div');
-            tick.className = 'policy-growth-x-tick';
-            tickGroup.appendChild(tick);
+    // X-axis ticks
+    if (isQuarterly) {
+        var xTicks = document.createElement('div');
+        xTicks.className = 'policy-growth-x-ticks';
+        years.forEach(function() {
+            var tickGroup = document.createElement('div');
+            tickGroup.className = 'policy-growth-x-tick-group';
+            quarters.forEach(function() {
+                var tick = document.createElement('div');
+                tick.className = 'policy-growth-x-tick';
+                tickGroup.appendChild(tick);
+            });
+            xTicks.appendChild(tickGroup);
         });
-        xTicks.appendChild(tickGroup);
-    });
-    wrapper.appendChild(xTicks);
+        wrapper.appendChild(xTicks);
+    }
 
-    // X-axis labels (years)
+    // X-axis labels
     var xAxis = document.createElement('div');
     xAxis.className = 'policy-growth-x-axis';
     years.forEach(function(year) {
@@ -956,6 +932,77 @@ function renderPolicyGrowthChart() {
     });
     wrapper.appendChild(xAxis);
     container.appendChild(wrapper);
+
+    // Legend
+    var legend = document.createElement('div');
+    legend.style.cssText = 'display:flex;flex-wrap:wrap;gap:12px;margin-top:14px;font-size:0.75rem;';
+    dims.forEach(function(dim) {
+        var item = document.createElement('div');
+        item.style.cssText = 'display:flex;align-items:center;gap:6px;';
+        item.innerHTML = '<div style="width:12px;height:12px;border-radius:2px;background:' + colors[dim] + ';flex-shrink:0;"></div><span style="color:#666;">' + dimLabels[dim] + '</span>';
+        legend.appendChild(item);
+    });
+    container.appendChild(legend);
+}
+
+function buildBarGroup(bucket, maxTotal, dims, colors, dimLabels, tooltip, container) {
+    var group = document.createElement('div');
+    group.className = 'policy-growth-bar-group';
+    group.dataset.label = bucket.label;
+    group.dataset.total = bucket.total;
+    group.dataset.counts = JSON.stringify(bucket.counts);
+
+    var stack = document.createElement('div');
+    stack.className = 'policy-growth-bar-stack';
+    // Use percentage of container height so bars align with grid
+    var totalPct = maxTotal > 0 ? (bucket.total / maxTotal) * 100 : 0;
+    stack.style.height = totalPct + '%';
+
+    dims.forEach(function(dim) {
+        if (bucket.counts[dim] > 0) {
+            var segment = document.createElement('div');
+            segment.className = 'policy-growth-bar-segment';
+            var segPct = bucket.total > 0 ? (bucket.counts[dim] / bucket.total) * 100 : 0;
+            segment.style.cssText = 'flex:' + segPct + ';background:' + colors[dim] + ';';
+            stack.appendChild(segment);
+        }
+    });
+
+    group.addEventListener('mouseenter', function() {
+        var total = parseInt(this.dataset.total);
+        var counts = JSON.parse(this.dataset.counts);
+        var html = '<div class="policy-growth-hover-title"><span>' + this.dataset.label + '</span>' +
+            '<span class="policy-growth-hover-total">' + total + ' policies</span></div>' +
+            '<div class="policy-growth-hover-rows">';
+        dims.forEach(function(dim) {
+            var count = counts[dim];
+            var pct = total > 0 ? (count / total) * 100 : 0;
+            html += '<div class="policy-growth-hover-row">' +
+                '<div class="policy-growth-hover-row-label">' + dimLabels[dim] + '</div>' +
+                '<div class="policy-growth-hover-row-bar"><div class="policy-growth-hover-row-fill" style="width:' + pct + '%;background:' + colors[dim] + '"></div></div>' +
+                '<div class="policy-growth-hover-row-pct">' + pct.toFixed(0) + '%</div>' +
+                '<div class="policy-growth-hover-row-count">' + count + '</div></div>';
+        });
+        html += '</div>';
+        tooltip.innerHTML = html;
+        tooltip.classList.add('visible');
+    });
+
+    group.addEventListener('mousemove', function(e) {
+        var tooltipRect = tooltip.getBoundingClientRect();
+        var chartRect = container.getBoundingClientRect();
+        var left = e.clientX - tooltipRect.width / 2;
+        var top = chartRect.top + 15;
+        if (left < chartRect.left + 10) left = chartRect.left + 10;
+        if (left + tooltipRect.width > chartRect.right - 10) left = chartRect.right - tooltipRect.width - 10;
+        tooltip.style.left = left + 'px';
+        tooltip.style.top = top + 'px';
+    });
+
+    group.addEventListener('mouseleave', function() { tooltip.classList.remove('visible'); });
+
+    group.appendChild(stack);
+    return group;
 }
 
 

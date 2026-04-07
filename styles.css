@@ -1002,6 +1002,7 @@ h1, h2, h3, h4, h5, h6, .header-font {
   position: relative; height: 360px; border: 1px solid var(--cream-dark);
   border-radius: 8px; background: #fafbfc; display: flex;
   align-items: flex-end; padding: 20px 20px 40px 50px;
+  overflow: hidden;
 }
 .policy-growth-y-axis { position: absolute; left: 0; top: 20px; bottom: 40px; width: 45px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end; padding-right: 8px; font-size: 0.65rem; color: var(--text-muted); }
 .policy-growth-grid { position: absolute; left: 50px; right: 20px; top: 20px; bottom: 40px; pointer-events: none; }
