@@ -3,40 +3,7 @@
    ============================================================= */
 function calculateMomentumData() {
     var momentumStats = [];
-    var POLICY_AREAS = [
-        "LAWS Employment/Deployment",
-        "Adoption & Intent of Use",
-        "Acquisition & Procurement",
-        "Ethical Guidelines & Restrictions",
-        "Technical Safety & Security Requirements",
-        "Int'l Cooperation & Interoperability"
-    ];
-    
-    // Region mapping for tooltip display
-    var regionMap = {
-        "USA": "Americas", "Canada": "Americas", "Brazil": "Americas", "Colombia": "Americas",
-        "UK": "Europe", "France": "Europe", "Germany": "Europe", "Italy": "Europe", "Spain": "Europe",
-        "Netherlands": "Europe", "Belgium": "Europe", "Poland": "Europe", "Norway": "Europe",
-        "Sweden": "Europe", "Finland": "Europe", "Denmark": "Europe", "Estonia": "Europe",
-        "Latvia": "Europe", "Lithuania": "Europe", "Greece": "Europe", "Hungary": "Europe",
-        "Croatia": "Europe", "Bulgaria": "Europe", "Czechia": "Europe",
-        "Russia": "Europe", "Ukraine": "Europe", "Turkey": "Europe",
-        "China": "Asia-Pacific", "Japan": "Asia-Pacific", "South Korea": "Asia-Pacific",
-        "Singapore": "Asia-Pacific", "India": "Asia-Pacific", "Pakistan": "Asia-Pacific",
-        "Australia": "Asia-Pacific", "North Korea": "Asia-Pacific",
-        "Israel": "Middle East", "UAE": "Middle East", "Iran": "Middle East",
-        "Iraq": "Middle East", "Egypt": "Middle East", "Morocco": "Middle East",
-        "Algeria": "Africa", "South Africa": "Africa",
-        "Armenia": "Europe", "Azerbaijan": "Europe"
-    };
-    
-    var regionColors = {
-        "Americas": "#d64045",
-        "Europe": "#1a2744",
-        "Asia-Pacific": "#0d7377",
-        "Middle East": "#e07020",
-        "Africa": "#6b3074"
-    };
+    // Use POLICY_AREAS, regionMap, and regionColors from config.js
     
     Object.keys(policyData).forEach(function(country) {
         var countryData = policyData[country];

@@ -2,6 +2,22 @@
    app.js — Application state, utilities, init, tabs
    ============================================================= */
 
+// ===== HELPERS =====
+
+function showToast(message, duration) {
+  duration = duration || 2500;
+  var toast = document.getElementById("toast");
+  if (!toast) return;
+  toast.textContent = message;
+  toast.classList.add("visible");
+  setTimeout(function() { toast.classList.remove("visible"); }, duration);
+}
+
+function announceToScreenReader(message) {
+  var region = document.getElementById("aria-live-region");
+  if (region) region.textContent = message;
+}
+
 // ===== RUNTIME STATE =====
 let policyData = {};
 let allianceData = {};
@@ -293,6 +309,10 @@ function initTabs() {
       document.querySelectorAll(".view-content").forEach(v => v.classList.remove("active"));
       document.getElementById("view-" + currentView).classList.add("active");
 
+      // Announce view change to screen readers
+      var viewNames = { overview: "Country Overview", alliance: "Alliance View", compare: "Compare Countries", analytics: "Analytics" };
+      announceToScreenReader((viewNames[currentView] || currentView) + " view loaded");
+
       if (currentView !== "alliance") {
         selectedAlliance = null;
         document.querySelectorAll(".country-path").forEach(p => p.classList.remove("alliance-member"));
@@ -475,6 +495,7 @@ function downloadFullCSV() {
   link.href = URL.createObjectURL(blob);
   link.download = "global_defense_ai_policy_database.csv";
   link.click();
+  showToast("CSV downloaded successfully");
 }
 
 // ===== INIT =====
@@ -502,6 +523,10 @@ async function init() {
   initSidePanel();
   initStickyHeader();
   initTimelineTicks();
+
+  // CSV export buttons (replace inline onclick handlers)
+  document.getElementById("hc-export-csv")?.addEventListener("click", downloadFullCSV);
+  document.getElementById("csv-download-btn")?.addEventListener("click", downloadFullCSV);
 
   // Init alliance dropdown
   document.getElementById("alliance-dropdown").addEventListener("change", function () {
