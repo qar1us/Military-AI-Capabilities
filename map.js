@@ -154,6 +154,15 @@ function updateMapChoropleth(quarterIndex) {
   let countriesWithData = 0, totalEntries = 0;
   const dataSource = mapViewMode === 'cumulative' ? countryEntriesCumulative : countryEntriesYearly;
 
+  // First pass: reset ALL paths to base state
+  document.querySelectorAll('.country-path').forEach(path => {
+    path.style.fill = '';
+    path.style.stroke = '';
+    path.style.strokeWidth = '';
+    path.classList.remove('has-data');
+  });
+
+  // Second pass: apply choropleth colors for countries with data
   document.querySelectorAll('.country-path').forEach(path => {
     const country = path.getAttribute('data-country');
     if (country && dataSource[country]) {
@@ -163,28 +172,17 @@ function updateMapChoropleth(quarterIndex) {
         path.classList.add('has-data');
         countriesWithData++;
         totalEntries += count;
-      } else {
-        path.style.fill = '';
-        path.classList.remove('has-data');
       }
     }
   });
 
-  // Update label based on mode
+  // Update stats
   const entriesLabel = mapViewMode === 'cumulative' ? 'Total Entries' : 'Entries This Year';
   const labelEl = document.querySelector('#map-stat-entries + .map-stat-label');
   if (labelEl) labelEl.textContent = entriesLabel;
 
   document.getElementById('map-stat-countries').textContent = countriesWithData;
   document.getElementById('map-stat-entries').textContent = totalEntries;
-
-  // Explicitly reset fills for countries not in dataset so no color bleeds through
-  document.querySelectorAll('.country-path').forEach(path => {
-    const country = path.getAttribute('data-country');
-    if (!country || !dataSource[country]) {
-      path.style.fill = '';
-    }
-  });
 }
 
 // ===== TIME SLIDER =====
