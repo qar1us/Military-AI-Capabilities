@@ -747,155 +747,243 @@ function renderMomentumChart() {
 
 // ===== POLICY GROWTH CHART =====
 function renderPolicyGrowthChart() {
-  var container = document.getElementById("policy-growth-chart");
-  if (!container) return;
-  if (!Object.keys(policyData).length) return;
+    var container = document.getElementById("policy-growth-chart");
+    if (!container) return;
+    if (!Object.keys(policyData).length) return;
 
-  container.innerHTML = "";
+    container.innerHTML = '';
 
-  var years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
-  var areaKeys = [
-    { key: "laws", name: "LAWS Employment/Deployment", color: "#1a2744" },
-    { key: "adoption", name: "Adoption & Intent of Use", color: "#d64045" },
-    { key: "acquisition", name: "Acquisition & Procurement", color: "#6b3074" },
-    { key: "ethical", name: "Ethical Guidelines & Restrictions", color: "#4a9d5b" },
-    { key: "technical", name: "Technical Safety & Security Requirements", color: "#e07020" },
-    { key: "international", name: "Int'l Cooperation & Interoperability", color: "#0d7377" }
-  ];
+    var years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+    var quarters = [1, 2, 3, 4];
+    var dims = ['LAWS', 'Adoption', 'Procurement', 'Safety', 'Ethics', 'Interoperability'];
+    var dimLabels = {
+        'LAWS': 'LAWS Employment',
+        'Adoption': 'Adoption & Intent',
+        'Procurement': 'Procurement',
+        'Safety': 'Safety & Security',
+        'Ethics': 'Ethics',
+        'Interoperability': 'Interoperability'
+    };
+    var colors = {
+        'LAWS': '#e63946',
+        'Adoption': '#457b9d',
+        'Procurement': '#2a9d8f',
+        'Safety': '#e9c46a',
+        'Ethics': '#a855f7',
+        'Interoperability': '#14b8a6'
+    };
 
-  var areaNameToKey = {};
-  areaKeys.forEach(function(a) { areaNameToKey[a.name] = a.key; });
+    var areaToShort = {
+        'LAWS Employment/Deployment': 'LAWS',
+        'Adoption & Intent of Use': 'Adoption',
+        'Acquisition & Procurement': 'Procurement',
+        'Technical Safety & Security Requirements': 'Safety',
+        'Ethical Guidelines & Restrictions': 'Ethics',
+        "Int'l Cooperation & Interoperability": 'Interoperability'
+    };
 
-  var yearAreaCounts = {};
-  years.forEach(function(y) {
-    yearAreaCounts[y] = {};
-    areaKeys.forEach(function(a) { yearAreaCounts[y][a.key] = 0; });
-  });
+    var monthToQuarter = {
+        'Jan': 1, 'January': 1, 'Feb': 1, 'February': 1, 'Mar': 1, 'March': 1,
+        'Apr': 2, 'April': 2, 'May': 2, 'Jun': 2, 'June': 2,
+        'Jul': 3, 'July': 3, 'Aug': 3, 'August': 3, 'Sep': 3, 'September': 3,
+        'Oct': 4, 'October': 4, 'Nov': 4, 'November': 4, 'Dec': 4, 'December': 4
+    };
 
-  Object.keys(policyData).forEach(function(country) {
-    POLICY_AREAS.forEach(function(area) {
-      var areaData = policyData[country][area];
-      if (!areaData) return;
-      var areaKey = areaNameToKey[area];
-      if (!areaKey) return;
-      ['legal_directives', 'policy_documents', 'public_statements'].forEach(function(type) {
-        (areaData[type] || []).forEach(function(entry) {
-          var dt = extractDate(entry.text || "");
-          if (dt) {
-            var yr = parseInt((dt.match(/\d{4}/) || [])[0]);
-            if (yr && years.indexOf(yr) !== -1) yearAreaCounts[yr][areaKey]++;
-          }
+    // Initialize quarterly data
+    var quarterlyData = {};
+    years.forEach(function(y) {
+        quarterlyData[y] = {};
+        quarters.forEach(function(q) {
+            quarterlyData[y][q] = {};
+            dims.forEach(function(d) { quarterlyData[y][q][d] = 0; });
         });
-      });
     });
-  });
 
-  var maxYearTotal = Math.max.apply(null, [1].concat(years.map(function(y) {
-    return Object.values(yearAreaCounts[y]).reduce(function(s, v) { return s + v; }, 0);
-  })));
-
-  var wrapper = document.createElement("div");
-  wrapper.className = "policy-growth-chart";
-
-  var yAxis = document.createElement("div");
-  yAxis.className = "policy-growth-y-axis";
-
-  var gridContainer = document.createElement("div");
-  gridContainer.className = "policy-growth-grid";
-
-  var ySteps = 5;
-  for (var i = 0; i <= ySteps; i++) {
-    var val = Math.round((maxYearTotal / ySteps) * i);
-    var pct = (i / ySteps) * 100;
-    var label = document.createElement("div");
-    label.textContent = val;
-    yAxis.insertBefore(label, yAxis.firstChild);
-    var gridLine = document.createElement("div");
-    gridLine.className = "policy-growth-grid-line";
-    gridLine.style.bottom = pct + "%";
-    gridContainer.appendChild(gridLine);
-  }
-  wrapper.appendChild(yAxis);
-  wrapper.appendChild(gridContainer);
-
-  var xAxis = document.createElement("div");
-  xAxis.className = "policy-growth-x-axis";
-  years.forEach(function(y) {
-    var lbl = document.createElement("div");
-    lbl.className = "policy-growth-x-label";
-    lbl.textContent = y;
-    xAxis.appendChild(lbl);
-  });
-
-  var barsContainer = document.createElement("div");
-  barsContainer.className = "policy-growth-bars";
-  barsContainer.style.height = "280px";
-
-  var hoverPanel = document.createElement("div");
-  hoverPanel.className = "policy-growth-hover-panel";
-  document.body.appendChild(hoverPanel);
-
-  years.forEach(function(year) {
-    var yearTotal = Object.values(yearAreaCounts[year]).reduce(function(s, v) { return s + v; }, 0);
-    var yearGroup = document.createElement("div");
-    yearGroup.className = "policy-growth-year-group";
-    var barGroup = document.createElement("div");
-    barGroup.className = "policy-growth-bar-group";
-    var stack = document.createElement("div");
-    stack.className = "policy-growth-bar-stack";
-    stack.style.height = yearTotal > 0 ? Math.round((yearTotal / maxYearTotal) * 280) + "px" : "0";
-
-    areaKeys.forEach(function(area) {
-      var count = yearAreaCounts[year][area.key];
-      if (count === 0) return;
-      var segPct = (count / yearTotal) * 100;
-      var seg = document.createElement("div");
-      seg.className = "policy-growth-bar-segment";
-      seg.style.cssText = "flex:" + segPct + ";background:" + area.color + ";";
-      stack.appendChild(seg);
+    // Count policies per quarter
+    Object.keys(policyData).forEach(function(country) {
+        POLICY_AREAS.forEach(function(area) {
+            var areaData = policyData[country][area];
+            var shortName = areaToShort[area];
+            if (areaData) {
+                ['legal_directives', 'policy_documents', 'public_statements'].forEach(function(type) {
+                    if (areaData[type]) {
+                        areaData[type].forEach(function(entry) {
+                            var text = entry.text || '';
+                            var dateMatch = text.match(/\(([A-Z][a-z]+)?\s*(\d{4})\)/);
+                            if (dateMatch) {
+                                var monthStr = dateMatch[1] || '';
+                                var year = parseInt(dateMatch[2]);
+                                if (year >= 2016 && year <= 2025) {
+                                    var quarter = 4;
+                                    if (monthStr && monthToQuarter[monthStr]) {
+                                        quarter = monthToQuarter[monthStr];
+                                    }
+                                    quarterlyData[year][quarter][shortName]++;
+                                }
+                            }
+                        });
+                    }
+                });
+            }
+        });
     });
-    barGroup.appendChild(stack);
 
-    barGroup.addEventListener("mouseenter", function(e) {
-      if (yearTotal === 0) return;
-      var rows = "";
-      areaKeys.forEach(function(area) {
-        var cnt = yearAreaCounts[year][area.key];
-        var p = yearTotal > 0 ? Math.round((cnt / yearTotal) * 100) : 0;
-        rows += "<div class=\"policy-growth-hover-row\">" +
-          "<div class=\"policy-growth-hover-row-label\" style=\"color:" + area.color + ";font-weight:600\">" + getShortAreaName(area.name) + "</div>" +
-          "<div class=\"policy-growth-hover-row-bar\"><div class=\"policy-growth-hover-row-fill\" style=\"width:" + p + "%;background:" + area.color + "\"></div></div>" +
-          "<div class=\"policy-growth-hover-row-pct\">" + p + "%</div>" +
-          "<div class=\"policy-growth-hover-row-count\">" + cnt + "</div></div>";
-      });
-      hoverPanel.innerHTML = "<div class=\"policy-growth-hover-title\"><span>" + year + "</span><span class=\"policy-growth-hover-total\">" + yearTotal + " entries</span></div><div class=\"policy-growth-hover-rows\">" + rows + "</div>";
-      hoverPanel.classList.add("visible");
+    // Calculate max for scaling
+    var maxQuarterTotal = 0;
+    years.forEach(function(y) {
+        quarters.forEach(function(q) {
+            var total = 0;
+            dims.forEach(function(d) { total += quarterlyData[y][q][d]; });
+            if (total > maxQuarterTotal) maxQuarterTotal = total;
+        });
     });
-    barGroup.addEventListener("mousemove", function(e) {
-      var left = Math.min(e.clientX + 16, window.innerWidth - hoverPanel.offsetWidth - 8);
-      var top = Math.max(8, e.clientY - hoverPanel.offsetHeight / 2);
-      hoverPanel.style.left = left + "px";
-      hoverPanel.style.top = top + "px";
+
+    var chartHeight = 360;
+    var scale = maxQuarterTotal > 0 ? chartHeight / maxQuarterTotal : 1;
+
+    // Grid lines
+    var gridContainer = document.createElement('div');
+    gridContainer.className = 'policy-growth-grid';
+    var gridSteps = [0, 20, 40, 60, 80, 100];
+    if (maxQuarterTotal > 100) gridSteps = [0, 25, 50, 75, 100, 125];
+    if (maxQuarterTotal > 125) gridSteps = [0, 30, 60, 90, 120, 150];
+    gridSteps.forEach(function(val) {
+        if (val <= maxQuarterTotal * 1.1) {
+            var line = document.createElement('div');
+            line.className = 'policy-growth-grid-line';
+            line.style.bottom = ((val / maxQuarterTotal) * 100) + '%';
+            gridContainer.appendChild(line);
+        }
     });
-    barGroup.addEventListener("mouseleave", function() { hoverPanel.classList.remove("visible"); });
+    container.appendChild(gridContainer);
 
-    yearGroup.appendChild(barGroup);
-    barsContainer.appendChild(yearGroup);
-  });
+    // Y-axis
+    var yAxis = document.createElement('div');
+    yAxis.className = 'policy-growth-y-axis';
+    gridSteps.slice().reverse().forEach(function(val) {
+        if (val <= maxQuarterTotal * 1.1) {
+            var label = document.createElement('span');
+            label.textContent = val;
+            yAxis.appendChild(label);
+        }
+    });
+    container.appendChild(yAxis);
 
-  wrapper.appendChild(barsContainer);
-  wrapper.appendChild(xAxis);
-  container.appendChild(wrapper);
+    // Tooltip
+    var tooltip = document.getElementById('policy-growth-tooltip');
+    if (!tooltip) {
+        tooltip = document.createElement('div');
+        tooltip.id = 'policy-growth-tooltip';
+        tooltip.className = 'policy-growth-hover-panel';
+        document.body.appendChild(tooltip);
+    }
 
-  var legend = document.createElement("div");
-  legend.style.cssText = "display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;font-size:0.75rem;";
-  areaKeys.forEach(function(area) {
-    var item = document.createElement("div");
-    item.style.cssText = "display:flex;align-items:center;gap:6px;";
-    item.innerHTML = "<div style=\"width:12px;height:12px;border-radius:2px;background:" + area.color + ";flex-shrink:0;\"></div><span style=\"color:#666;\">" + getShortAreaName(area.name) + "</span>";
-    legend.appendChild(item);
-  });
-  container.appendChild(legend);
+    // Bars
+    var barsContainer = document.createElement('div');
+    barsContainer.className = 'policy-growth-bars';
+
+    years.forEach(function(year) {
+        var yearGroup = document.createElement('div');
+        yearGroup.className = 'policy-growth-year-group';
+
+        quarters.forEach(function(quarter) {
+            var counts = quarterlyData[year][quarter];
+            var total = 0;
+            dims.forEach(function(d) { total += counts[d]; });
+
+            var group = document.createElement('div');
+            group.className = 'policy-growth-bar-group';
+            group.dataset.year = year;
+            group.dataset.quarter = quarter;
+            group.dataset.total = total;
+            group.dataset.counts = JSON.stringify(counts);
+
+            var stack = document.createElement('div');
+            stack.className = 'policy-growth-bar-stack';
+
+            dims.forEach(function(dim) {
+                if (counts[dim] > 0) {
+                    var segment = document.createElement('div');
+                    segment.className = 'policy-growth-bar-segment';
+                    segment.style.height = (counts[dim] * scale) + 'px';
+                    segment.style.background = colors[dim];
+                    stack.appendChild(segment);
+                }
+            });
+
+            group.addEventListener('mouseenter', function(e) {
+                var total = parseInt(this.dataset.total);
+                var counts = JSON.parse(this.dataset.counts);
+                var quarterLabel = 'Q' + this.dataset.quarter + ' ' + this.dataset.year;
+                var html = '<div class="policy-growth-hover-title">' +
+                    '<span>' + quarterLabel + '</span>' +
+                    '<span class="policy-growth-hover-total">' + total + ' policies</span>' +
+                    '</div><div class="policy-growth-hover-rows">';
+                dims.forEach(function(dim) {
+                    var count = counts[dim];
+                    var pct = total > 0 ? (count / total) * 100 : 0;
+                    html += '<div class="policy-growth-hover-row">' +
+                        '<div class="policy-growth-hover-row-label">' + dimLabels[dim] + '</div>' +
+                        '<div class="policy-growth-hover-row-bar">' +
+                            '<div class="policy-growth-hover-row-fill" style="width:' + pct + '%;background:' + colors[dim] + '"></div>' +
+                        '</div>' +
+                        '<div class="policy-growth-hover-row-pct">' + pct.toFixed(0) + '%</div>' +
+                        '<div class="policy-growth-hover-row-count">' + count + '</div>' +
+                    '</div>';
+                });
+                html += '</div>';
+                tooltip.innerHTML = html;
+                tooltip.classList.add('visible');
+            });
+
+            group.addEventListener('mousemove', function(e) {
+                var tooltipRect = tooltip.getBoundingClientRect();
+                var chartRect = container.getBoundingClientRect();
+                var left = e.clientX - tooltipRect.width / 2;
+                var top = chartRect.top + 15;
+                if (left < chartRect.left + 10) left = chartRect.left + 10;
+                if (left + tooltipRect.width > chartRect.right - 10) left = chartRect.right - tooltipRect.width - 10;
+                tooltip.style.left = left + 'px';
+                tooltip.style.top = top + 'px';
+            });
+
+            group.addEventListener('mouseleave', function() {
+                tooltip.classList.remove('visible');
+            });
+
+            group.appendChild(stack);
+            yearGroup.appendChild(group);
+        });
+
+        barsContainer.appendChild(yearGroup);
+    });
+    container.appendChild(barsContainer);
+
+    // X-axis ticks (4 per year)
+    var xTicks = document.createElement('div');
+    xTicks.className = 'policy-growth-x-ticks';
+    years.forEach(function(year) {
+        var tickGroup = document.createElement('div');
+        tickGroup.className = 'policy-growth-x-tick-group';
+        quarters.forEach(function(q) {
+            var tick = document.createElement('div');
+            tick.className = 'policy-growth-x-tick';
+            tickGroup.appendChild(tick);
+        });
+        xTicks.appendChild(tickGroup);
+    });
+    container.appendChild(xTicks);
+
+    // X-axis labels (years)
+    var xAxis = document.createElement('div');
+    xAxis.className = 'policy-growth-x-axis';
+    years.forEach(function(year) {
+        var label = document.createElement('div');
+        label.className = 'policy-growth-x-label';
+        label.textContent = year;
+        xAxis.appendChild(label);
+    });
+    container.appendChild(xAxis);
 }
 
 
