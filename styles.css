@@ -864,8 +864,8 @@ h1, h2, h3, h4, h5, h6, .header-font {
 .detail-entry-header:hover .detail-entry-title { color: var(--teal); }
 .detail-entry-info { flex: 1; }
 .detail-entry-title-row { display: flex; align-items: center; gap: 8px; flex: 1; position: relative; }
-.detail-entry-title { font-weight: 600; color: var(--text-dark); line-height: 1.4; transition: color 0.2s; }
-.detail-entry-date { font-size: 0.75rem; color: var(--text-muted); margin-top: 3px; }
+.detail-entry-title { font-weight: 600; color: var(--text-dark); line-height: 1.4; transition: color 0.2s; flex: 1; }
+.detail-entry-date { font-size: 0.75rem; color: var(--text-muted); flex-shrink: 0; white-space: nowrap; }
 .detail-entry-expand { width: 16px; height: 16px; color: var(--text-muted); transition: transform 0.2s; flex-shrink: 0; margin-top: 2px; }
 .detail-entry-item.expanded .detail-entry-expand { transform: rotate(180deg); }
 .detail-entry-description { display: none; margin-top: 10px; padding: 12px; background: white; border-radius: 6px; font-size: 0.82rem; line-height: 1.5; color: var(--text-dark); border: 1px solid var(--cream-dark); }
