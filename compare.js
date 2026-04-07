@@ -321,11 +321,17 @@ function renderComparison() {
             headerEl.className = "detail-entry-header";
             headerEl.innerHTML = `
               <div class="detail-entry-info">
-                <div class="detail-entry-title">${url ? `<a href="${url}" target="_blank">${escapeHtml(parseTitleWithoutDate(text))}</a>` : escapeHtml(parseTitleWithoutDate(text))}</div>
-                ${extractDate(text) ? `<div class="detail-entry-date">${extractDate(text)}</div>` : ''}
+                <div class="detail-entry-title-row">
+                  <span class="detail-entry-title">${escapeHtml(parseTitleWithoutDate(text))}</span>
+                  ${extractDate(text) ? `<span class="detail-entry-date">${extractDate(text)}</span>` : ''}
+                  ${url ? `<button class="source-link" type="button" title="Open source document"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></button>` : ''}
+                </div>
               </div>
               <svg class="detail-entry-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>`;
-            headerEl.addEventListener("click", (e) => { if (e.target.closest("a")) return; itemEl.classList.toggle("expanded"); });
+            if (url) {
+              headerEl.querySelector(".source-link").addEventListener("click", e => { e.stopPropagation(); e.preventDefault(); window.open(url, "_blank"); });
+            }
+            headerEl.addEventListener("click", (e) => { if (e.target.closest(".source-link")) return; itemEl.classList.toggle("expanded"); });
             itemEl.appendChild(headerEl);
 
             const desc = document.createElement("div");
