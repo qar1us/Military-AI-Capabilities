@@ -841,6 +841,10 @@ function renderPolicyGrowthChart() {
     var chartHeight = 360;
     var scale = maxQuarterTotal > 0 ? chartHeight / maxQuarterTotal : 1;
 
+    // Wrapper with position:relative so absolutely-positioned children stay inside
+    var wrapper = document.createElement('div');
+    wrapper.className = 'policy-growth-chart';
+
     // Grid lines
     var gridContainer = document.createElement('div');
     gridContainer.className = 'policy-growth-grid';
@@ -855,7 +859,7 @@ function renderPolicyGrowthChart() {
             gridContainer.appendChild(line);
         }
     });
-    container.appendChild(gridContainer);
+    wrapper.appendChild(gridContainer);
 
     // Y-axis
     var yAxis = document.createElement('div');
@@ -867,7 +871,7 @@ function renderPolicyGrowthChart() {
             yAxis.appendChild(label);
         }
     });
-    container.appendChild(yAxis);
+    wrapper.appendChild(yAxis);
 
     // Tooltip
     var tooltip = document.getElementById('policy-growth-tooltip');
@@ -957,7 +961,7 @@ function renderPolicyGrowthChart() {
 
         barsContainer.appendChild(yearGroup);
     });
-    container.appendChild(barsContainer);
+    wrapper.appendChild(barsContainer);
 
     // X-axis ticks (4 per year)
     var xTicks = document.createElement('div');
@@ -972,7 +976,7 @@ function renderPolicyGrowthChart() {
         });
         xTicks.appendChild(tickGroup);
     });
-    container.appendChild(xTicks);
+    wrapper.appendChild(xTicks);
 
     // X-axis labels (years)
     var xAxis = document.createElement('div');
@@ -983,7 +987,8 @@ function renderPolicyGrowthChart() {
         label.textContent = year;
         xAxis.appendChild(label);
     });
-    container.appendChild(xAxis);
+    wrapper.appendChild(xAxis);
+    container.appendChild(wrapper);
 }
 
 
