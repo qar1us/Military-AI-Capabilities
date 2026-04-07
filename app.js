@@ -388,12 +388,12 @@ function initStickyHeader() {
     }
 
     if (!transitionLock) {
-      if (!isCompact && y > 10) {
+      if (!isCompact && y > 80) {
         header.classList.add('compact');
         isCompact = true;
         transitionLock = true;
         setTimeout(() => { transitionLock = false; }, 400);
-      } else if (isCompact && y === 0) {
+      } else if (isCompact && y < 30) {
         header.classList.remove('compact');
         isCompact = false;
         transitionLock = true;

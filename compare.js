@@ -172,15 +172,15 @@ function renderComparison() {
     label.textContent = getAlpha3(country);
     row_el.appendChild(label);
 
-    const MAX_DOTS_PER_YEAR = 5;
+    const MAX_DOTS_PER_COL = 5;
     const data = policyData[country] || {};
     years.forEach((year, idx) => {
-      const entries = getYearEntries(data, year).slice(0, MAX_DOTS_PER_YEAR);
+      const entries = getYearEntries(data, year);
       const pct = (idx / (years.length - 1)) * 100;
       const colWidth = 18;
       entries.forEach((entry, eIdx) => {
-        const col = Math.floor(eIdx / MAX_DOTS_PER_YEAR);
-        const row = eIdx % MAX_DOTS_PER_YEAR;
+        const col = Math.floor(eIdx / MAX_DOTS_PER_COL);
+        const row = eIdx % MAX_DOTS_PER_COL;
         const dot = document.createElement("div");
         dot.className = `timeline-dot ${rowClass}`;
         dot.style.cssText = `left:calc(${pct}% + ${col * colWidth}px);top:${8 + row * 14}px;`;

@@ -64,6 +64,10 @@ function updateMapHighlights() {
     }
 
     path.classList.remove("selected", "disabled", "alliance-member");
+    // Clear inline fill so CSS takes over cleanly on view switches
+    if (!isSelected && !isAllianceMember) {
+      path.style.fill = '';
+    }
     if (isSelected) path.classList.add("selected");
     if (isDisabled) path.classList.add("disabled");
     if (isAllianceMember) path.classList.add("alliance-member");
@@ -268,9 +272,40 @@ async function initMap() {
 
   mapZoom = d3.zoom()
     .scaleExtent([1, 8])
+    .filter(event => {
+      // Wheel: only zoom with Ctrl/Cmd held — lets normal scroll pass through
+      if (event.type === 'wheel') return !!event.ctrlKey || !!event.metaKey;
+      // Touch: require 2+ fingers for map interaction — 1 finger scrolls the page
+      if (event.type === 'touchstart' || event.type === 'touchmove') {
+        return event.touches.length >= 2;
+      }
+      // Mouse: allow left-click drag for panning, block right-click
+      return !event.button;
+    })
     .on("zoom", event => g.attr("transform", event.transform));
 
   svg.call(mapZoom);
+
+  // Show hint overlay when user tries to scroll on the map without Ctrl/Cmd
+  const mapContainer = document.getElementById("map-container") || svg.node().parentElement;
+  let hintTimeout;
+  svg.node().addEventListener("wheel", e => {
+    if (!e.ctrlKey && !e.metaKey) {
+      let hint = document.getElementById("map-zoom-hint");
+      if (!hint) {
+        hint = document.createElement("div");
+        hint.id = "map-zoom-hint";
+        hint.style.cssText = "position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(26,39,68,0.85);color:white;padding:10px 20px;border-radius:8px;font-size:0.85rem;font-family:'Plus Jakarta Sans',sans-serif;pointer-events:none;z-index:100;transition:opacity 0.3s;";
+        const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+        hint.textContent = isMac ? "⌘ + scroll to zoom" : "Ctrl + scroll to zoom";
+        mapContainer.style.position = mapContainer.style.position || "relative";
+        mapContainer.appendChild(hint);
+      }
+      hint.style.opacity = "1";
+      clearTimeout(hintTimeout);
+      hintTimeout = setTimeout(() => { hint.style.opacity = "0"; }, 1500);
+    }
+  }, { passive: true });
 
   // Allow touch scrolling on mobile
   document.getElementById("map-svg").style.touchAction = "pan-y";
