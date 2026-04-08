@@ -402,15 +402,19 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
   var svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svgEl.className = "convergence-chart-svg";
 
-  var width = chartArea.offsetWidth || 700;
   var height = 300;
   var margin = { top: 30, right: 20, bottom: 45, left: 50 };
+
+  // Use 100% width and let viewBox scale to fill container
+  svgEl.setAttribute("width", "100%");
+  svgEl.setAttribute("height", height);
+  // Defer viewBox to after SVG is in the DOM so we get actual width
+  chartArea.appendChild(svgEl);
+  var width = svgEl.getBoundingClientRect().width || 700;
+  svgEl.setAttribute("viewBox", "0 0 " + width + " " + height);
+
   var plotWidth = width - margin.left - margin.right;
   var plotHeight = height - margin.top - margin.bottom;
-
-  svgEl.setAttribute("width", width);
-  svgEl.setAttribute("height", height);
-  svgEl.setAttribute("viewBox", "0 0 " + width + " " + height);
 
   // Y-axis grid lines and labels
   [0, 25, 50, 75, 100].forEach(function(val) {
@@ -532,8 +536,6 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
     });
     svgEl.appendChild(circle);
   });
-
-  chartArea.appendChild(svgEl);
 
   // Legend
   var legend = document.createElement("div");
