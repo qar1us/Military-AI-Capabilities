@@ -20,7 +20,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nAlgeria voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nAlgeria voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -30,7 +30,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nAlgeria voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nAlgeria voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           }
         ]
@@ -51,7 +51,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nArmenia voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nArmenia voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -75,11 +75,11 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nArmenia voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nArmenia voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nArmenia signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nArmenia signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -90,7 +90,7 @@ window.RAW_POLICY_DATA =
         "legal_directives": [],
         "policy_documents": [
           {
-            "text": "Australia National Statement at the Vienna Conference \u201cHumanity at the Crossroads: Lethal Autonomous Weapon Systems\u201d (Apr 2024)\n\nAustralia states that the CCW GGE is the most appropriate avenue to discuss LAWS, and believes that humans are the responsible entity for \"effecting international humanitarian law (IHL) obligations - not machines.\" Australia also encourages other states to join initiatives that advance discussion on LAWS, including the REAIM  Summit and the Political Declaration on Responsible Use of Military AI and Autonomy.",
+            "text": "Australia National Statement at the Vienna Conference “Humanity at the Crossroads: Lethal Autonomous Weapon Systems” (Apr 2024)\n\nAustralia states that the CCW GGE is the most appropriate avenue to discuss LAWS, and believes that humans are the responsible entity for \"effecting international humanitarian law (IHL) obligations - not machines.\" Australia also encourages other states to join initiatives that advance discussion on LAWS, including the REAIM  Summit and the Political Declaration on Responsible Use of Military AI and Autonomy.",
             "url": "https://www.bmeia.gv.at/fileadmin/user_upload/Zentrale/Aussenpolitik/Abruestung/AWS_2024/Statements/Australia_National_Statement.pdf"
           },
           {
@@ -108,7 +108,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.defence.gov.au/news-events/releases/2021-03-02/first-flight-loyal-wingman"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nAustralia voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nAustralia voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -125,7 +125,7 @@ window.RAW_POLICY_DATA =
             "url": "https://researchcentre.army.gov.au/sites/default/files/Robotic%20and%20Autonomous%20Systems%20Strategy%20V2.0.pdf"
           },
           {
-            "text": "Royal Australian Navy \u2014 RAS-AI Campaign Plan 2025 (Feb 2024)\n\nThis plan outlines the Australian Navy's plan to operationalize the use of robotics, autonomous systems, and AI.\n\nThis document positions the following capabilities as mission-critical: undersea warfare, maritime ISR, mine countermeasures, fleet protection, and distributed lethality.\n\nThe Campaign Plan states that AI will support decisions, not replace human command authority, and the decision to use lethal force remains with the human.\n\nAs a whole, the document provides a step-by-step roadmap to integrating and establishing AI within the Navy.",
+            "text": "Royal Australian Navy — RAS-AI Campaign Plan 2025 (Feb 2024)\n\nThis plan outlines the Australian Navy's plan to operationalize the use of robotics, autonomous systems, and AI.\n\nThis document positions the following capabilities as mission-critical: undersea warfare, maritime ISR, mine countermeasures, fleet protection, and distributed lethality.\n\nThe Campaign Plan states that AI will support decisions, not replace human command authority, and the decision to use lethal force remains with the human.\n\nAs a whole, the document provides a step-by-step roadmap to integrating and establishing AI within the Navy.",
             "url": "https://www.navy.gov.au/sites/default/files/2024-02/RAS-AI-Campaign-Plan-2025.pdf"
           },
           {
@@ -172,11 +172,11 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nAustralia voted in support of this resolution, which  calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nAustralia voted in support of this resolution, which  calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nAustralia signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nAustralia signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           },
           {
@@ -202,7 +202,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nAzerbaijan voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nAzerbaijan voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           }
         ]
@@ -238,7 +238,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nBelgium voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nBelgium voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -253,7 +253,7 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nBelgium signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians.\n\nEndorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nBelgium signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians.\n\nEndorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -263,7 +263,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nBelgium voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nBelgium voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           }
         ]
@@ -288,11 +288,11 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nBrazil voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nBrazil voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
-            "text": "Bel\u00e9n Communiqu\u00e9 (Feb 2023)\n\nBrazil adopted this joint communiqu\u00e9 along with 32 other Latin American and Caribbean countries, which calls for the urgent negotiation of a binding international treaty to prohibit and regulate LAWS. The document is grounded in the concept of meaningful human control and international humanitarian law (IHL).",
+            "text": "Belén Communiqué (Feb 2023)\n\nBrazil adopted this joint communiqué along with 32 other Latin American and Caribbean countries, which calls for the urgent negotiation of a binding international treaty to prohibit and regulate LAWS. The document is grounded in the concept of meaningful human control and international humanitarian law (IHL).",
             "url": "https://www.rree.go.cr/files/includes/files.php?id=2261&tipo=documentos"
           }
         ]
@@ -312,7 +312,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nBrazil voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nBrazil voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           }
         ]
@@ -333,7 +333,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nBulgaria voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nBulgaria voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -357,11 +357,11 @@ window.RAW_POLICY_DATA =
             "url": "https://www.elysee.fr/emmanuel-macron/2025/02/11/paris-declaration-on-maintaining-human-control-in-ai-enabled-weapon-systems"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nBulgaria signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nBulgaria signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           },
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nBulgaria voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nBulgaria voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           }
         ]
@@ -433,7 +433,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.asiapacific.ca/publication/us-china-competition-looms-large-seoul-summit-use-ai?utm_source=chatgpt.com"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Use of Artificial Intelligence and Autonomy (Nov 2024)\n\nCanada signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy-2/.",
+            "text": "US DoS Political Declaration on Responsible Use of Artificial Intelligence and Autonomy (Nov 2024)\n\nCanada signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy-2/.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -478,7 +478,7 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nChina abstained from voting on this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nChina abstained from voting on this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -503,7 +503,7 @@ window.RAW_POLICY_DATA =
             "url": "https://english.www.gov.cn/archive/whitepaper/201907/24/content_WS5d3941ddc6d08408f502283d.html"
           },
           {
-            "text": "Document Submitted by China in Accordance With UNGA Resolution 79/239 on the Opportunities and Challenges of Military Applications of AI (Mar 2024)\n\nThis document reiterates China's stance on avoiding military superiority by using AI and preventing an AI arms race.\n\nChina maintains that relevant weapons should remain under human control and respect human dignity and human rights, while emphasizing that military applications of artificial intelligence must be guided in the \u201cright direction\u201d and constrained to prevent unchecked growth.",
+            "text": "Document Submitted by China in Accordance With UNGA Resolution 79/239 on the Opportunities and Challenges of Military Applications of AI (Mar 2024)\n\nThis document reiterates China's stance on avoiding military superiority by using AI and preventing an AI arms race.\n\nChina maintains that relevant weapons should remain under human control and respect human dignity and human rights, while emphasizing that military applications of artificial intelligence must be guided in the “right direction” and constrained to prevent unchecked growth.",
             "url": "https://www.mfa.gov.cn/web/wjb_673085/zzjg_673183/jks_674633/fywj_674643/202504/t20250421_11598980.shtml"
           }
         ],
@@ -533,7 +533,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.reaim2024.kr/home/reaimeng/board/bbsDetail.do?encMenuId=4e57325766362f626e5179454e6d6e4d4a4d33507a773d3d&encBbsMngNo=366e794c7a644d756342425668444f393053755142673d3d&encBbsNo=6f784e4542386f7735767465766a6531556f4b6149413d3d&ctlPageNow=1&schKind=bbsTtlCn&schWord=%23this"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Use of Artificial Intelligence and Autonomy (Nov 2024)\n\nChina was a non-participant in this declaration.\n\nSignatory states must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Use of Artificial Intelligence and Autonomy (Nov 2024)\n\nChina was a non-participant in this declaration.\n\nSignatory states must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -577,11 +577,11 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nColombia voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nColombia voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
-            "text": "Bel\u00e9n Communiqu\u00e9 (Feb 2023)\n\nColombia adopted this joint communiqu\u00e9 along with 32 other Latin American and Caribbean countries, which calls for the urgent negotiation of a binding international treaty to prohibit and regulate LAWS. The document is grounded in the concept of meaningful human control and international humanitarian law (IHL).",
+            "text": "Belén Communiqué (Feb 2023)\n\nColombia adopted this joint communiqué along with 32 other Latin American and Caribbean countries, which calls for the urgent negotiation of a binding international treaty to prohibit and regulate LAWS. The document is grounded in the concept of meaningful human control and international humanitarian law (IHL).",
             "url": "https://www.rree.go.cr/files/includes/files.php?id=2261&tipo=documentos"
           }
         ]
@@ -625,7 +625,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nCroatia voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nCroatia voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -649,7 +649,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.elysee.fr/emmanuel-macron/2025/02/11/paris-declaration-on-maintaining-human-control-in-ai-enabled-weapon-systems"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nCroatia signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nCroatia signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -665,7 +665,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nCzechia voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nCzechia voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -698,7 +698,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nCzechia signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nCzechia signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -719,7 +719,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nDenmark voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nDenmark voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -756,7 +756,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.elysee.fr/emmanuel-macron/2025/02/11/paris-declaration-on-maintaining-human-control-in-ai-enabled-weapon-systems"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nDenmark signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nDenmark signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -781,7 +781,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nEgypt voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nEgypt voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -845,7 +845,7 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "US DoD Political Declaration on Responsible Use of Artificial Intelligence and Autonomy (Nov 2024)\n\nEstonia signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoD Political Declaration on Responsible Use of Artificial Intelligence and Autonomy (Nov 2024)\n\nEstonia signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           },
           {
@@ -875,7 +875,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nFinland voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nFinland voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -917,7 +917,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.elysee.fr/emmanuel-macron/2025/02/11/paris-declaration-on-maintaining-human-control-in-ai-enabled-weapon-systems"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nFinland signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nFinland signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -950,7 +950,7 @@ window.RAW_POLICY_DATA =
             "url": "https://cd-geneve.delegfrance.org/General-statement-of-France-to-the-Group-of-Governmental-Experts-GGE-on-lethal"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nFrance voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nFrance voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -986,7 +986,7 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nFrance voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle. It encourages global efforts to pursue action, participate in multilateral dialogue and knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nFrance voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle. It encourages global efforts to pursue action, participate in multilateral dialogue and knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           }
         ]
@@ -995,13 +995,13 @@ window.RAW_POLICY_DATA =
         "legal_directives": [],
         "policy_documents": [
           {
-            "text": "Artificial Intelligence in Support of Defence (Sep 2019)\n\nSection 2.5.1 aims to set up key partnerships between the Armed Forces Ministry and academic research organizations that have significant AI skills.\n\nSection 2.5.3 dedicates \u20ac430 million to upstream AI-related studies from 2019-2025.",
+            "text": "Artificial Intelligence in Support of Defence (Sep 2019)\n\nSection 2.5.1 aims to set up key partnerships between the Armed Forces Ministry and academic research organizations that have significant AI skills.\n\nSection 2.5.3 dedicates €430 million to upstream AI-related studies from 2019-2025.",
             "url": "https://www.defense.gouv.fr/sites/default/files/aid/Report%20of%20the%20AI%20Task%20Force%20September%202019.pdf"
           }
         ],
         "public_statements": [
           {
-            "text": "French Defence Procurement Agency (DGA) Contract with Airbus (Dec 2025)\n\nThe French Defence Procurement Agency awarded Airbus Defence and Space a contract of \u20ac50 million to integrate AI components into weapons, information, communications, and cybersecurity systems used by the French armed forces. The first stage aims to increase France's maritime surveillance system with AI elements, with future collaboration expected in real-time assistance in managing and optimizing military telecommunications networks.",
+            "text": "French Defence Procurement Agency (DGA) Contract with Airbus (Dec 2025)\n\nThe French Defence Procurement Agency awarded Airbus Defence and Space a contract of €50 million to integrate AI components into weapons, information, communications, and cybersecurity systems used by the French armed forces. The first stage aims to increase France's maritime surveillance system with AI elements, with future collaboration expected in real-time assistance in managing and optimizing military telecommunications networks.",
             "url": "https://www.airbus.com/en/newsroom/press-releases/2025-12-airbus-to-onboard-artificial-intelligence-in-french-armed-forces"
           }
         ]
@@ -1032,7 +1032,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.carnegiecouncil.org/media/article/principles-action-military-ai-governance"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Use of Artificial Intelligence and Autonomy (Nov 2024)\n\nFrance signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Use of Artificial Intelligence and Autonomy (Nov 2024)\n\nFrance signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -1085,7 +1085,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.auswaertiges-amt.de/en/newsroom/news/maas-autonomous-weapons-systems-2277194"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nGermany voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nGermany voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -1113,7 +1113,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nGermany signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nGermany signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -1138,7 +1138,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nGreece voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nGreece voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -1181,7 +1181,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.elysee.fr/emmanuel-macron/2025/02/11/paris-declaration-on-maintaining-human-control-in-ai-enabled-weapon-systems"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nGreece signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nGreece signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -1197,7 +1197,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nHungary voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nHungary voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -1222,7 +1222,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nHungary signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nHungary signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -1239,7 +1239,7 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nIndia voted against this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nIndia voted against this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -1296,7 +1296,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nIndia voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and to submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nIndia voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and to submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           }
         ]
@@ -1317,7 +1317,7 @@ window.RAW_POLICY_DATA =
             "url": "https://press.un.org/en/2023/gadis3731.doc.htm"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nIran abstained from voting on this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nIran abstained from voting on this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -1347,7 +1347,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nIraq voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nIraq voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -1377,7 +1377,7 @@ window.RAW_POLICY_DATA =
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
-            "text": "Israel's Vote on UN Draft Resolution L.77 on Lethal Autonomous Weapons Systems (Oct 2024)\n\nIsrael abstained from voting on this draft resolution.\n\nThe resolution raises concerns about the \u2018negative consequences and impact of autonomous weapon systems on global security and regional and international stability\u2019 and stresses \u2018the importance of the role of humans in the use of force to ensure responsibility and accountability and for States to comply with international law\u2019.",
+            "text": "Israel's Vote on UN Draft Resolution L.77 on Lethal Autonomous Weapons Systems (Oct 2024)\n\nIsrael abstained from voting on this draft resolution.\n\nThe resolution raises concerns about the ‘negative consequences and impact of autonomous weapon systems on global security and regional and international stability’ and stresses ‘the importance of the role of humans in the use of force to ensure responsibility and accountability and for States to comply with international law’.",
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
@@ -1418,7 +1418,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.idf.il/en/mini-sites/idf-press-releases-israel-at-war/june-24-pr/the-idfs-use-of-data-technologies-in-intelligence-processing-published-june-18-2024/"
           },
           {
-            "text": "US DoS Political Declaration on Responsible MIlitary Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nIsrael signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible MIlitary Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nIsrael signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -1443,7 +1443,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nItaly voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nItaly voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -1480,11 +1480,11 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nItaly voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nItaly voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nItaly signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nItaly signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -1509,7 +1509,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nJapan voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nJapan voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -1571,11 +1571,11 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nJapan signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians.\n\nEndorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nJapan signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians.\n\nEndorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           },
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nJapan voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nJapan voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           }
         ]
@@ -1615,7 +1615,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nLatvia voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nLatvia voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -1643,7 +1643,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nLatvia signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nLatvia signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           },
           {
@@ -1663,7 +1663,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nLithuania voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nLithuania voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -1702,7 +1702,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nMorocco voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nMorocco voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -1722,7 +1722,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nMorocco signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nMorocco signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -1734,7 +1734,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nNorth Korea abstained from voting on this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nNorth Korea abstained from voting on this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -1764,7 +1764,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nThe Netherlands voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nThe Netherlands voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -1785,7 +1785,7 @@ window.RAW_POLICY_DATA =
             "url": "https://zoek.officielebekendmakingen.nl/kst-33694-68.html?utm_source=chatgpt.com"
           },
           {
-            "text": "Defence White Paper 2022 (Jul 2022)\n\nThis document states the Dutch Army's plan to commit joint investments with commercial partners to develop \"autonomous systems, robots and other forms of advanced combat technology in order to ensure that\u2026automation is optimised\".",
+            "text": "Defence White Paper 2022 (Jul 2022)\n\nThis document states the Dutch Army's plan to commit joint investments with commercial partners to develop \"autonomous systems, robots and other forms of advanced combat technology in order to ensure that…automation is optimised\".",
             "url": "https://english.defensie.nl/downloads/publications/2022/07/19/defence-white-paper-2022"
           }
         ],
@@ -1805,11 +1805,11 @@ window.RAW_POLICY_DATA =
             "url": "https://www.reaim2024.kr/home/reaimeng/board/bbsDetail.do?encMenuId=4e57325766362f626e5179454e6d6e4d4a4d33507a773d3d&encBbsMngNo=366e794c7a644d756342425668444f393053755142673d3d&encBbsNo=6f784e4542386f7735767465766a6531556f4b6149413d3d&ctlPageNow=1&schKind=bbsTtlCn&schWord=%23this"
           },
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nThe Netherlands voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nThe Netherlands voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nThe Netherlands signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nThe Netherlands signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -1848,7 +1848,7 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nNew Zealand voted in support of this resolution, which it also co-sponsored. The resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nNew Zealand voted in support of this resolution, which it also co-sponsored. The resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -1872,7 +1872,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nNew Zealand voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nNew Zealand voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           }
         ]
@@ -1893,7 +1893,7 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nNorway supports this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nNorway supports this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -1931,7 +1931,7 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nNorway voted in support of this resoluton, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nNorway voted in support of this resoluton, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           }
         ]
@@ -1961,7 +1961,7 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nPakistan voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nPakistan voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -1969,7 +1969,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nPakistan voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nPakistan voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           }
         ]
@@ -2014,7 +2014,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nPoland voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nPoland voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -2055,11 +2055,11 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nPoland voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nPoland voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nPoland signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nPoland signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -2084,7 +2084,7 @@ window.RAW_POLICY_DATA =
             "url": "https://conf.unog.ch/digitalrecordings/en/clients/61.0500/sessions/AE782C82-C5CF-4D53-AC4F-A3D162685B62"
           },
           {
-            "text": "Russia's Vote on UNGA Resolution A/RES/78/241 \"Lethal Autonomous Weapons Systems\" (Dec 2023)\n\nRussia voted against this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.\n\nExplaining it\u2019s vote, Russia said that it \"opposes the development  of any internationally legally binding instrument with regard to lethal autonomous weapons systems, and the introduction of a moratorium on development and the use of systems and the technology used to create them\".",
+            "text": "Russia's Vote on UNGA Resolution A/RES/78/241 \"Lethal Autonomous Weapons Systems\" (Dec 2023)\n\nRussia voted against this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.\n\nExplaining it’s vote, Russia said that it \"opposes the development  of any internationally legally binding instrument with regard to lethal autonomous weapons systems, and the introduction of a moratorium on development and the use of systems and the technology used to create them\".",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -2178,7 +2178,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nSouth Africa voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nSouth Africa voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -2200,7 +2200,7 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "The Republic of Korea\u2019s Contribution to the Resolution on \u201cLethal Autonomous Weapons Systems\u201d A/RES/78/241 (May 2024)\n\nThis position paper defines LAWS as systems that, once activated, can identify, select and engage targets without further human intervention. South Korea reaffirms CCW GGE as \u201ccentral and unique forum\u201d and endorses a two-tier approach: (1) prohibition of LAWS inherently incompatible with IHL, and (2) regulation and risk-mitigation measures for other LAWS.",
+            "text": "The Republic of Korea’s Contribution to the Resolution on “Lethal Autonomous Weapons Systems” A/RES/78/241 (May 2024)\n\nThis position paper defines LAWS as systems that, once activated, can identify, select and engage targets without further human intervention. South Korea reaffirms CCW GGE as “central and unique forum” and endorses a two-tier approach: (1) prohibition of LAWS inherently incompatible with IHL, and (2) regulation and risk-mitigation measures for other LAWS.",
             "url": "https://docs-library.unoda.org/General_Assembly_First_Committee_-Seventy-Ninth_session_(2024)/78-241-ROK-EN.pdf"
           },
           {
@@ -2272,7 +2272,7 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nSingapore voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nSingapore voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -2309,7 +2309,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "Deputy Prime Minister at Singapore Defence Technology Summit 2025 (Mar 2025)\n\nDeputy PM Swee Keat states that Singapore has committed funds to \"develop innovative AI solutions in self-driving vehicles\u2026for military and commecial applications\".\n\nThe Defense Science and Technology Agency (DSTA) is working with technology start-up companies to enhance the defense ecosystem by way of autonomous vehicles and underwater autonomous capabilities.",
+            "text": "Deputy Prime Minister at Singapore Defence Technology Summit 2025 (Mar 2025)\n\nDeputy PM Swee Keat states that Singapore has committed funds to \"develop innovative AI solutions in self-driving vehicles…for military and commecial applications\".\n\nThe Defense Science and Technology Agency (DSTA) is working with technology start-up companies to enhance the defense ecosystem by way of autonomous vehicles and underwater autonomous capabilities.",
             "url": "https://www.pmo.gov.sg/newsroom/dpm-heng-swee-keat-at-the-singapore-defence-technology-summit-2025/?utm_source=chatgpt.com"
           }
         ]
@@ -2323,11 +2323,11 @@ window.RAW_POLICY_DATA =
             "url": "https://www.war.gov/News/News-Stories/Article/Article/3839335/us-singapore-cooperate-on-data-analytics-artificial-intelligence/"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nSingapore signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nSingapore signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           },
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nSingapore voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nSingapore voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           },
           {
@@ -2352,7 +2352,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nSpain voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nSpain voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -2393,7 +2393,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.reaim2024.kr/home/reaimeng/board/bbsDetail.do?encMenuId=4e57325766362f626e5179454e6d6e4d4a4d33507a773d3d&encBbsMngNo=366e794c7a644d756342425668444f393053755142673d3d&encBbsNo=6f784e4542386f7735767465766a6531556f4b6149413d3d&ctlPageNow=1&schKind=bbsTtlCn&schWord=%23this"
           },
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nSpain voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nSpain voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           }
         ]
@@ -2403,7 +2403,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nSpain signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nSpain signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -2424,7 +2424,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.stopkillerrobots.org/news/161-states-vote-against-the-machine-at-the-un-general-assembly/"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nSweden voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nSweden voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           }
         ]
@@ -2448,7 +2448,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.elysee.fr/emmanuel-macron/2025/02/11/paris-declaration-on-maintaining-human-control-in-ai-enabled-weapon-systems"
           },
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nSweden signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nSweden signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           },
           {
@@ -2477,7 +2477,7 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nTurkiye abstained from the vote on this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nTurkiye abstained from the vote on this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -2513,7 +2513,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nTurkiye signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nTurkiye signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -2525,7 +2525,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nThe UAE abstained from voting on this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nThe UAE abstained from voting on this resolution.\n\nThe resolution supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -2560,7 +2560,7 @@ window.RAW_POLICY_DATA =
         "legal_directives": [],
         "policy_documents": [
           {
-            "text": "Ambitious, Safe, Responsible: Our Approach to the Delivery of AI-Enabled Capability in Defence (Jun 2022)\n\nAnnex C: The British government defines fully lethal autonomous weapons systems as those that \u201cidentify, select, and engage targets without context-appropriate human involvement.\u201d It deems such systems unacceptable and has stated that the UK will not develop them. For other autonomous systems, the UK will establish clear human responsibility and accountability.",
+            "text": "Ambitious, Safe, Responsible: Our Approach to the Delivery of AI-Enabled Capability in Defence (Jun 2022)\n\nAnnex C: The British government defines fully lethal autonomous weapons systems as those that “identify, select, and engage targets without context-appropriate human involvement.” It deems such systems unacceptable and has stated that the UK will not develop them. For other autonomous systems, the UK will establish clear human responsibility and accountability.",
             "url": "https://assets.publishing.service.gov.uk/media/62a9b1d1e90e07039e31b8cb/20220614-Ambitious_Safe_and_Responsible.pdf"
           },
           {
@@ -2582,7 +2582,7 @@ window.RAW_POLICY_DATA =
             "url": "https://docs-library.unoda.org/Convention_on_Certain_Conventional_Weapons_-Group_of_Governmental_Experts_on_Lethal_Autonomous_Weapons_Systems_(2021)/GGE_LAWS_-_June_2021_-_United_Kingdom_-_written_contribution.pdf"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nThe UK voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nThe UK voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -2629,7 +2629,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.carnegiecouncil.org/media/article/principles-action-military-ai-governance"
           },
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nThe UK voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nThe UK voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           }
         ]
@@ -2684,7 +2684,7 @@ window.RAW_POLICY_DATA =
         ],
         "public_statements": [
           {
-            "text": "US DoS Political Declaration on Responsible Use of Artificial Intelligence and Autonomy (Nov 2024)\n\nThe United Kingdom signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Use of Artificial Intelligence and Autonomy (Nov 2024)\n\nThe United Kingdom signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -2727,7 +2727,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodd/300009p.pdf"
           },
           {
-            "text": "H.R.5009 - Servicemember Quality of Life Improvement and National Defense Authorization Act for Fiscal Year 2025 (Dec 2024)\n\nSection 1066 \u2013 requires the Secretary of Defense to submit annual comprehensive reports to congressional defense committees on the approval and deployment of lethal autonomous weapon systems by the United States through December 31, 2029.",
+            "text": "H.R.5009 - Servicemember Quality of Life Improvement and National Defense Authorization Act for Fiscal Year 2025 (Dec 2024)\n\nSection 1066 – requires the Secretary of Defense to submit annual comprehensive reports to congressional defense committees on the approval and deployment of lethal autonomous weapon systems by the United States through December 31, 2029.",
             "url": "https://www.congress.gov/bill/118th-congress/house-bill/5009/text"
           }
         ],
@@ -2755,7 +2755,7 @@ window.RAW_POLICY_DATA =
             "url": "https://geneva.usmission.gov/2023/05/15/second-session-in-2023-of-the-gge-on-emerging-technologies-in-the-area-of-laws/?utm_source=chatgpt.com"
           },
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nThe US voted in support of this Resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nThe US voted in support of this Resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -2767,11 +2767,11 @@ window.RAW_POLICY_DATA =
       "Adoption & Intent of Use": {
         "legal_directives": [
           {
-            "text": "John S. McCain National Defense Authorization Act for Fiscal Year 2019 (Dec 2018)\n\nSection 238 \u2013 Joint Artificial Intelligence Research, Development, and Transition Activities; directs the DoD to establish activities for joint AI R&D . This requires a strategic plan, identification of priority AI missions, coordination with components, and a statutory definition for artificial intelligence.",
+            "text": "John S. McCain National Defense Authorization Act for Fiscal Year 2019 (Dec 2018)\n\nSection 238 – Joint Artificial Intelligence Research, Development, and Transition Activities; directs the DoD to establish activities for joint AI R&D . This requires a strategic plan, identification of priority AI missions, coordination with components, and a statutory definition for artificial intelligence.",
             "url": "https://www.congress.gov/115/plaws/publ232/PLAW-115publ232.pdf"
           },
           {
-            "text": "National Defense Authorization Act for Fiscal Year 2020 (Dec 2019)\n\n-Section 256 \u2013 Artificial Intelligence Strategy; directs the DoD to develop an AI education strategy for military and civilian personnel, to include identifying required AI competencies, education programs, andopportunities for training.\n\nSection 260 \u2013 Biannual Reporting on the Joint Artificial Intelligence Center; requires the Secretary of Defense to submit a biannual report to Congress on JAIC activities, progress, resources, and integration into operations.",
+            "text": "National Defense Authorization Act for Fiscal Year 2020 (Dec 2019)\n\n-Section 256 – Artificial Intelligence Strategy; directs the DoD to develop an AI education strategy for military and civilian personnel, to include identifying required AI competencies, education programs, andopportunities for training.\n\nSection 260 – Biannual Reporting on the Joint Artificial Intelligence Center; requires the Secretary of Defense to submit a biannual report to Congress on JAIC activities, progress, resources, and integration into operations.",
             "url": "https://www.congress.gov/116/plaws/publ92/PLAW-116publ92.pdf"
           },
           {
@@ -2779,11 +2779,11 @@ window.RAW_POLICY_DATA =
             "url": "https://www.congress.gov/bill/117th-congress/house-bill/7776/text"
           },
           {
-            "text": "National Defense Authorization Act for Fiscal Year 2024 (Dec 2023)\n\nSection 346 \u2013 authorizes a pilot program to optimize aerial refueling and fuel management in contested environments through use of AI.",
+            "text": "National Defense Authorization Act for Fiscal Year 2024 (Dec 2023)\n\nSection 346 – authorizes a pilot program to optimize aerial refueling and fuel management in contested environments through use of AI.",
             "url": "https://www.congress.gov/bill/118th-congress/house-bill/2670/text"
           },
           {
-            "text": "NSM-25 Advancing the United States\u2019 Leadership in Artificial Intelligence; Harnessing Artificial Intelligence to Fulfill National Security Objectives; and Fostering the Safety, Security, and Trustworthiness of Artificial Intelligence (Oct 2024)\n\nWithin 270 days of the release of this document and yearly for the next 5 years, all departments, including the DoD, are mandated to provide a report of to the President that offers a detailed accounting of activities in response to the taskings in the memorandum.\n\nThe DoD is instructed to, when building computational infrastructure, design facilities capable of \"harnessing frontier AI for relevant scientific research domains and intelligence analysis\".",
+            "text": "NSM-25 Advancing the United States’ Leadership in Artificial Intelligence; Harnessing Artificial Intelligence to Fulfill National Security Objectives; and Fostering the Safety, Security, and Trustworthiness of Artificial Intelligence (Oct 2024)\n\nWithin 270 days of the release of this document and yearly for the next 5 years, all departments, including the DoD, are mandated to provide a report of to the President that offers a detailed accounting of activities in response to the taskings in the memorandum.\n\nThe DoD is instructed to, when building computational infrastructure, design facilities capable of \"harnessing frontier AI for relevant scientific research domains and intelligence analysis\".",
             "url": "https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2024/10/24/memorandum-on-advancing-the-united-states-leadership-in-artificial-intelligence-harnessing-artificial-intelligence-to-fulfill-national-security-objectives-and-fostering-the-safety-security/"
           },
           {
@@ -2791,11 +2791,11 @@ window.RAW_POLICY_DATA =
             "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodd/510589p.PDF?ver=Ikhn-60VR-GpxO78wiYQZA%3D%3D"
           },
           {
-            "text": "H.R.5009 - Servicemember Quality of Life Improvement and National Defense Authorization Act for Fiscal Year 2025 (Dec 2024)\n\nSection 221 \u2013 requires the appointment of a Chief Digital Engineering Recruitment and Management Officer to identify and clarify roles and responsibilities of the DoD AI workforce, including creating qualification programs for the force.\n\nSection 222 \u2013 develops educational courses on responsible and ethical AI development and use.\n\nSection 236 \u2013 establishes a five-year pilot program for developing AI for national security biotechnology applications through public-private partnerships.\n\nSection 225 \u2013 expands CDAO Governing Council duties to identify AI models that could pose national security risks if accessed by adversaries, develop strategies to prevent unauthorized access, and make recommendations to Congress for legislative action.\n\nSection 1534 \u2013 directs the evaluation of establishing centers of excellence to support the development and maturation of AI-enabled weapons systems with collaboration between DoD and foreign partners.",
+            "text": "H.R.5009 - Servicemember Quality of Life Improvement and National Defense Authorization Act for Fiscal Year 2025 (Dec 2024)\n\nSection 221 – requires the appointment of a Chief Digital Engineering Recruitment and Management Officer to identify and clarify roles and responsibilities of the DoD AI workforce, including creating qualification programs for the force.\n\nSection 222 – develops educational courses on responsible and ethical AI development and use.\n\nSection 236 – establishes a five-year pilot program for developing AI for national security biotechnology applications through public-private partnerships.\n\nSection 225 – expands CDAO Governing Council duties to identify AI models that could pose national security risks if accessed by adversaries, develop strategies to prevent unauthorized access, and make recommendations to Congress for legislative action.\n\nSection 1534 – directs the evaluation of establishing centers of excellence to support the development and maturation of AI-enabled weapons systems with collaboration between DoD and foreign partners.",
             "url": "https://www.congress.gov/bill/118th-congress/house-bill/5009/text"
           },
           {
-            "text": "National Defense Authorization Act for Fiscal Year 2026 (Dec 2025)\n\nSection 224 \u2013 authorizes the DoD to establish one or more National Security and Defense Artificial Intelligence Institutes to focus on AI research in national security and defense challenges.\n\nSection 547 \u2013 authorizes a pilot program for generative AI and spatial computing for performance training, with the goal of assessing the feasibility and effectiveness of the use of these training methods\n\nSection 1007 \u2013 directs the use of artificial intelligence to improve DoD financial auditing\n\nSection 1515 \u2013 updates cybersecurity trainng to include AI-specific threat vectors\n\nSection 1534 \u2013 requires the establishment of sandbox environments necessary to support AI experimentation, training, familiarization, and development across the DoD\n\nSection 1535 \u2013 mandates the creation of an AI Futures Steering Committee, whose responsibility is to formulate policy for the evaluation, adoption, governance, and risk mitigation of advanced AI systems, and analyze forecasted trajectories of advanced and emerging models",
+            "text": "National Defense Authorization Act for Fiscal Year 2026 (Dec 2025)\n\nSection 224 – authorizes the DoD to establish one or more National Security and Defense Artificial Intelligence Institutes to focus on AI research in national security and defense challenges.\n\nSection 547 – authorizes a pilot program for generative AI and spatial computing for performance training, with the goal of assessing the feasibility and effectiveness of the use of these training methods\n\nSection 1007 – directs the use of artificial intelligence to improve DoD financial auditing\n\nSection 1515 – updates cybersecurity trainng to include AI-specific threat vectors\n\nSection 1534 – requires the establishment of sandbox environments necessary to support AI experimentation, training, familiarization, and development across the DoD\n\nSection 1535 – mandates the creation of an AI Futures Steering Committee, whose responsibility is to formulate policy for the evaluation, adoption, governance, and risk mitigation of advanced AI systems, and analyze forecasted trajectories of advanced and emerging models",
             "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1071/text"
           }
         ],
@@ -2827,7 +2827,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.war.gov/News/Releases/Release/article/3963289/deputy-secretary-of-defense-kathleen-hicks-announces-additional-replicator-all/"
           },
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nThe US voted in support of this Resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nThe US voted in support of this Resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           },
           {
@@ -2847,15 +2847,15 @@ window.RAW_POLICY_DATA =
       "Acquisition & Procurement": {
         "legal_directives": [
           {
-            "text": "National Defense Authorization Act for Fiscal Year 2022 (Dec 2021)\n\nSection 227 \u2013 Modification of the Joint Common Program; mandates that the DoD modify the Joint Common Foundation program to ensure that the department's components can more easily contract with leading commercial AI companies.\n\nSection 232 \u2013 Pilot Program on Data Repositoriesto Facilitate the Development of AI Capabilities for the DoD; authorizes the DoD to create data repositories to support AI/ML development and includes requirements for categorization, annotation, and use in a common evaluation framework for AI models.",
+            "text": "National Defense Authorization Act for Fiscal Year 2022 (Dec 2021)\n\nSection 227 – Modification of the Joint Common Program; mandates that the DoD modify the Joint Common Foundation program to ensure that the department's components can more easily contract with leading commercial AI companies.\n\nSection 232 – Pilot Program on Data Repositoriesto Facilitate the Development of AI Capabilities for the DoD; authorizes the DoD to create data repositories to support AI/ML development and includes requirements for categorization, annotation, and use in a common evaluation framework for AI models.",
             "url": "https://www.congress.gov/bill/117th-congress/senate-bill/1605"
           },
           {
-            "text": "H.R.5009 - Servicemember Quality of Life Improvement and National Defense Authorization Act for Fiscal Year 2025 (Dec 2024)\n\nSection 125 \u2013 requires the Secretary of the Navy to designate an official responsible for developing and acquiring advanced autonomous vehicles with a dedicated program element in Navy budgets.\n\nSection 235 \u2013 requires the CDAO to develop venue and testing processes for comparing automated target recognition algorithms by June 1, 2025.\n\nSection 1620 \u2013 develops a plan to streamline the budgeting process for necessary data acquisition with annual evaluations and reporting to Armed Services Committees.",
+            "text": "H.R.5009 - Servicemember Quality of Life Improvement and National Defense Authorization Act for Fiscal Year 2025 (Dec 2024)\n\nSection 125 – requires the Secretary of the Navy to designate an official responsible for developing and acquiring advanced autonomous vehicles with a dedicated program element in Navy budgets.\n\nSection 235 – requires the CDAO to develop venue and testing processes for comparing automated target recognition algorithms by June 1, 2025.\n\nSection 1620 – develops a plan to streamline the budgeting process for necessary data acquisition with annual evaluations and reporting to Armed Services Committees.",
             "url": "https://www.congress.gov/bill/118th-congress/house-bill/5009/text"
           },
           {
-            "text": "National Defense Authorization Act for Fiscal Year 2026 (Dec 2025)\n\nSection 347 \u2013 forces the DoD to integrate suitable commercial AI into military logistics to assist with logistics tracking, planning, operations, and analytics into 2 DoD exercises to be conducted in 2026.\n\nSection 6602 \u2013 requires the intelligence community (IC) to share reusable AI components, standardize AI contract terms, track performance and safety metrics, and reduce vendor lock-in.",
+            "text": "National Defense Authorization Act for Fiscal Year 2026 (Dec 2025)\n\nSection 347 – forces the DoD to integrate suitable commercial AI into military logistics to assist with logistics tracking, planning, operations, and analytics into 2 DoD exercises to be conducted in 2026.\n\nSection 6602 – requires the intelligence community (IC) to share reusable AI components, standardize AI contract terms, track performance and safety metrics, and reduce vendor lock-in.",
             "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1071/text"
           }
         ],
@@ -2878,7 +2878,7 @@ window.RAW_POLICY_DATA =
             "url": "https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2024/10/24/memorandum-on-advancing-the-united-states-leadership-in-artificial-intelligence-harnessing-artificial-intelligence-to-fulfill-national-security-objectives-and-fostering-the-safety-security/"
           },
           {
-            "text": "National Defense Authorization Act for Fiscal Year 2026 (Dec 2025)\n\nSection 1532 \u2013 explicitly limits and prohibits certain uses of covered AI inside the DoD, which includes models developed or operated by entities listed under the subsection of this NDAA section",
+            "text": "National Defense Authorization Act for Fiscal Year 2026 (Dec 2025)\n\nSection 1532 – explicitly limits and prohibits certain uses of covered AI inside the DoD, which includes models developed or operated by entities listed under the subsection of this NDAA section",
             "url": null
           }
         ],
@@ -2910,7 +2910,7 @@ window.RAW_POLICY_DATA =
       "Int'l Cooperation & Interoperability": {
         "legal_directives": [
           {
-            "text": "H.R.5009 - Servicemember Quality of Life Improvement and National Defense Authorization Act for Fiscal Year 2025 (Dec 2024)\n\nSection 1087 \u2013 establishes a DoD working group for multilateral AI coordination to accelerate interoperability of systems used for intelligence sharing and battlespace awareness with several allies and partners.",
+            "text": "H.R.5009 - Servicemember Quality of Life Improvement and National Defense Authorization Act for Fiscal Year 2025 (Dec 2024)\n\nSection 1087 – establishes a DoD working group for multilateral AI coordination to accelerate interoperability of systems used for intelligence sharing and battlespace awareness with several allies and partners.",
             "url": "https://www.congress.gov/bill/118th-congress/house-bill/5009/text"
           }
         ],
@@ -2921,7 +2921,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.war.gov/News/Releases/Release/Article/3839100/united-states-and-singapore-sign-soi-to-strengthen-data-analytics-and-artificia/"
           },
           {
-            "text": "US DoD Political Declaration on Responsible Use of Artificial Intelligence and Autonomy (Nov 2024)\n\nThe United States spearheaded the effort and signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoD Political Declaration on Responsible Use of Artificial Intelligence and Autonomy (Nov 2024)\n\nThe United States spearheaded the effort and signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           }
         ]
@@ -2933,15 +2933,15 @@ window.RAW_POLICY_DATA =
             "url": "https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodd/300009p.pdf"
           },
           {
-            "text": "NSM-25 Advancing the United States\u2019 Leadership in Artificial Intelligence; Harnessing Artificial Intelligence to Fulfill National Security Objectives; and Fostering the Safety, Security, and Trustworthiness of Artificial Intelligence (Oct 2024)\n\nThe AI Safety Institute (AISI) must issue guidance for AI developers, including the DoD, on testing, evaluating, and managing risks of dual-use foundation models, addressing how to measure capabilities relevant to biological and chemical weapons or automated offensive cyber operations and develop mitigation measures.\n\nThe Framework prohibits using AI to \"remove a human in the loop for actions critical to informing and executing decisions by the President to initiate or terminate nuclear weapons employment.\".",
+            "text": "NSM-25 Advancing the United States’ Leadership in Artificial Intelligence; Harnessing Artificial Intelligence to Fulfill National Security Objectives; and Fostering the Safety, Security, and Trustworthiness of Artificial Intelligence (Oct 2024)\n\nThe AI Safety Institute (AISI) must issue guidance for AI developers, including the DoD, on testing, evaluating, and managing risks of dual-use foundation models, addressing how to measure capabilities relevant to biological and chemical weapons or automated offensive cyber operations and develop mitigation measures.\n\nThe Framework prohibits using AI to \"remove a human in the loop for actions critical to informing and executing decisions by the President to initiate or terminate nuclear weapons employment.\".",
             "url": "https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2024/10/24/memorandum-on-advancing-the-united-states-leadership-in-artificial-intelligence-harnessing-artificial-intelligence-to-fulfill-national-security-objectives-and-fostering-the-safety-security/?utm_source=chatgpt.com"
           },
           {
-            "text": "H.R.5009 - Servicemember Quality of Life Improvement and National Defense Authorization Act for Fiscal Year 2025 (Dec 2024)\n\nSection 1638 \u2013 establishes a Statement of Policy regarding use of AI in nuclear weaponry systems requiring positive human action in executing decisions by the president to use such weapons.",
+            "text": "H.R.5009 - Servicemember Quality of Life Improvement and National Defense Authorization Act for Fiscal Year 2025 (Dec 2024)\n\nSection 1638 – establishes a Statement of Policy regarding use of AI in nuclear weaponry systems requiring positive human action in executing decisions by the president to use such weapons.",
             "url": "https://www.congress.gov/bill/118th-congress/house-bill/5009/text"
           },
           {
-            "text": "National Defense Authorization Act for Fiscal Year 2026 (Dec 2025)\n\nSection 1512 \u2013 mandates a DoD-wide policy to address AI and machine learning cybersecurity threats, to include adverserial attacks, tampering, data poisoning, and extraction, as well as reporting and mitigation plans for these threats\n\nSection 1513 \u2013 mandates the creation of a cybersecurity and physical security framework for the procurement AI systems\n\nSection 1533 \u2013 establishes a DoD-wide AI model testing and validation framework through a cross-functional team whose responsibility is to facilitate the \"evaluation of, collaboration on, and enablement of\" rapid development or procurement of AI models used by the DoD\n\nSection 6601/6603 \u2013 extends AI security policies to commercial and open models used in classified systems and make the intelligence community security controls follow the deployment environment",
+            "text": "National Defense Authorization Act for Fiscal Year 2026 (Dec 2025)\n\nSection 1512 – mandates a DoD-wide policy to address AI and machine learning cybersecurity threats, to include adverserial attacks, tampering, data poisoning, and extraction, as well as reporting and mitigation plans for these threats\n\nSection 1513 – mandates the creation of a cybersecurity and physical security framework for the procurement AI systems\n\nSection 1533 – establishes a DoD-wide AI model testing and validation framework through a cross-functional team whose responsibility is to facilitate the \"evaluation of, collaboration on, and enablement of\" rapid development or procurement of AI models used by the DoD\n\nSection 6601/6603 – extends AI security policies to commercial and open models used in classified systems and make the intelligence community security controls follow the deployment environment",
             "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1071/text"
           }
         ],
@@ -2960,7 +2960,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "UNGA Resolution A/RES/78/241 \u201cLethal Autonomous Weapons Systems\u201d (Dec 2023)\n\nUkraine voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
+            "text": "UNGA Resolution A/RES/78/241 “Lethal Autonomous Weapons Systems” (Dec 2023)\n\nUkraine voted in support of this resolution, which supports multilateral efforts to address humanitarian, legal, and ethical challenges posed by LAWS. It also stresses the urgent need to address the challenges and concerns raised by autonomous weapons systems.",
             "url": "https://digitallibrary.un.org/record/4031004?ln=en"
           },
           {
@@ -2983,7 +2983,7 @@ window.RAW_POLICY_DATA =
             "url": "https://www.wired.com/story/fast-forward-ukraines-quest-for-homegrown-ai-drones-to-take-on-russia/?utm_source=chatgpt.com"
           },
           {
-            "text": "UNGA Resolution A/RES/79/239 \u201cArtificial Intelligence in the Military Domain and its Implications for International Peace and Security\u201d (Dec 2024)\n\nUkraine voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
+            "text": "UNGA Resolution A/RES/79/239 “Artificial Intelligence in the Military Domain and its Implications for International Peace and Security” (Dec 2024)\n\nUkraine voted in support of this resolution, which calls for the application of IHL across all stages of the AI lifecycle, encourages global efforts to pursue action and participate in multilateral dialogue, knowledge-sharing, and submit views on military AI.",
             "url": "https://digitallibrary.un.org/record/4070018?ln=en"
           },
           {
@@ -3011,7 +3011,7 @@ window.RAW_POLICY_DATA =
         "policy_documents": [],
         "public_statements": [
           {
-            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nUkraine signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems\u2014through legal reviews, bias mitigation, testing, safeguards, and proper training\u2014to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
+            "text": "US DoS Political Declaration on Responsible Military Use of Artificial Intelligence & Autonomy (Nov 2024)\n\nUkraine signed as an endorsing state to promote the development, deployment, and use of responsible military AI.\n\nStates must ensure responsible, lawful, and transparent development, deployment, and oversight of military AI systems—through legal reviews, bias mitigation, testing, safeguards, and proper training—to align with international humanitarian law and protect civilians. Endorsing states commit to implementing, publicizing, refining, and promoting these measures globally to ensure responsible and accountable military AI use.",
             "url": "https://www.state.gov/bureau-of-arms-control-deterrence-and-stability/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy?utm_source=chatgpt.com"
           },
           {
@@ -9524,6 +9524,12720 @@ window.RAW_POLICY_DATA =
         "Interoperability": null
       }
     }
+  },
+  "yearly_scores": {
+    "Algeria": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 0
+      }
+    },
+    "Armenia": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": 4,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 1
+      }
+    },
+    "Australia": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 2
+      },
+      "2022": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 3
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 3
+      },
+      "2024": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 4
+      },
+      "2025": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 2,
+        "Ethics": 2,
+        "Interoperability": 4
+      }
+    },
+    "Azerbaijan": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 1,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": 1,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      }
+    },
+    "Belgium": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 4,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 4,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 2
+      }
+    },
+    "Brazil": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 1
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 1
+      }
+    },
+    "Bulgaria": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 2
+      }
+    },
+    "Canada": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 3
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 3
+      }
+    },
+    "China": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 4,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 4,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 4,
+        "Procurement": 2,
+        "Safety": 1,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 2,
+        "Adoption": 4,
+        "Procurement": 2,
+        "Safety": 1,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 1,
+        "Adoption": 4,
+        "Procurement": 2,
+        "Safety": 1,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 1,
+        "Adoption": 4,
+        "Procurement": 2,
+        "Safety": 1,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": 1,
+        "Adoption": 4,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 1,
+        "Interoperability": 0
+      }
+    },
+    "Colombia": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      }
+    },
+    "Croatia": {
+      "2016": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 2
+      }
+    },
+    "Czechia": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 2
+      }
+    },
+    "Denmark": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 2
+      }
+    },
+    "Egypt": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      }
+    },
+    "Estonia": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 3
+      },
+      "2025": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 3
+      }
+    },
+    "Finland": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 3,
+        "Procurement": 1,
+        "Safety": 1,
+        "Ethics": 3,
+        "Interoperability": 3
+      }
+    },
+    "France": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 2,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 2,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 2,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 3
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 3,
+        "Ethics": 3,
+        "Interoperability": 3
+      }
+    },
+    "Germany": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 3,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 3
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 3
+      }
+    },
+    "Greece": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 2,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 2,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 2,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 2,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 2
+      }
+    },
+    "Hungary": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 2
+      }
+    },
+    "India": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 1,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 1,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": -1,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": -1,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 1,
+        "Interoperability": 1
+      },
+      "2025": {
+        "LAWS": -1,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 1,
+        "Interoperability": 1
+      }
+    },
+    "Iran": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 1,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 1,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": 1,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      }
+    },
+    "Iraq": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      }
+    },
+    "Israel": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 2,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 2,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 1,
+        "Adoption": 4,
+        "Procurement": 3,
+        "Safety": 2,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 1,
+        "Adoption": 4,
+        "Procurement": 3,
+        "Safety": 2,
+        "Ethics": 2,
+        "Interoperability": 2
+      }
+    },
+    "Italy": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 3,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 3,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 3,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 3,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 1,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 2
+      }
+    },
+    "Japan": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 3,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 2
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 3
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 3,
+        "Ethics": 4,
+        "Interoperability": 3
+      }
+    },
+    "Latvia": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 2
+      }
+    },
+    "Lithuania": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 2,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 0
+      }
+    },
+    "Morocco": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 1
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 1
+      }
+    },
+    "Netherlands": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2023": {
+        "LAWS": 3,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 2
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 3
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 3
+      }
+    },
+    "New Zealand": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 4,
+        "Adoption": 1,
+        "Procurement": 1,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 4,
+        "Adoption": 1,
+        "Procurement": 1,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 2
+      }
+    },
+    "North Korea": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 1,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": -1,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": -1,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": -1,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": -1,
+        "Interoperability": 0
+      }
+    },
+    "Norway": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 3
+      }
+    },
+    "Pakistan": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 0
+      }
+    },
+    "Poland": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 3
+      }
+    },
+    "Russia": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": -1,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 1,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": -1,
+        "Adoption": 4,
+        "Procurement": 3,
+        "Safety": 1,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": -1,
+        "Adoption": 4,
+        "Procurement": 3,
+        "Safety": 1,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": -1,
+        "Adoption": 4,
+        "Procurement": 3,
+        "Safety": 1,
+        "Ethics": -1,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": -1,
+        "Adoption": 4,
+        "Procurement": 3,
+        "Safety": 1,
+        "Ethics": -1,
+        "Interoperability": 0
+      }
+    },
+    "Singapore": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 3
+      },
+      "2025": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 3
+      }
+    },
+    "South Africa": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": 4,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      }
+    },
+    "South Korea": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 3
+      },
+      "2025": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 2,
+        "Ethics": 3,
+        "Interoperability": 3
+      }
+    },
+    "Spain": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 2,
+        "Interoperability": 3
+      }
+    },
+    "Sweden": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 1,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 3
+      }
+    },
+    "Turkey": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 1,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 1
+      },
+      "2025": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 1
+      }
+    },
+    "UAE": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 1,
+        "Adoption": 0,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 1,
+        "Adoption": 0,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 1,
+        "Adoption": 0,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 1,
+        "Adoption": 1,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 2,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      },
+      "2025": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 3,
+        "Safety": 0,
+        "Ethics": 1,
+        "Interoperability": 0
+      }
+    },
+    "UK": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 2,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 3,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 3,
+        "Adoption": 3,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 2
+      },
+      "2022": {
+        "LAWS": 3,
+        "Adoption": 4,
+        "Procurement": 3,
+        "Safety": 3,
+        "Ethics": 4,
+        "Interoperability": 2
+      },
+      "2023": {
+        "LAWS": 3,
+        "Adoption": 4,
+        "Procurement": 3,
+        "Safety": 3,
+        "Ethics": 4,
+        "Interoperability": 3
+      },
+      "2024": {
+        "LAWS": 3,
+        "Adoption": 4,
+        "Procurement": 3,
+        "Safety": 4,
+        "Ethics": 4,
+        "Interoperability": 4
+      },
+      "2025": {
+        "LAWS": 3,
+        "Adoption": 4,
+        "Procurement": 3,
+        "Safety": 4,
+        "Ethics": 4,
+        "Interoperability": 4
+      }
+    },
+    "USA": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 1,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 3,
+        "Ethics": 3,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 1,
+        "Adoption": 3,
+        "Procurement": 3,
+        "Safety": 3,
+        "Ethics": 3,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 1,
+        "Adoption": 4,
+        "Procurement": 3,
+        "Safety": 3,
+        "Ethics": 3,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 1,
+        "Adoption": 4,
+        "Procurement": 4,
+        "Safety": 4,
+        "Ethics": 3,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 1,
+        "Adoption": 4,
+        "Procurement": 4,
+        "Safety": 4,
+        "Ethics": 3,
+        "Interoperability": 3
+      },
+      "2025": {
+        "LAWS": 1,
+        "Adoption": 4,
+        "Procurement": 4,
+        "Safety": 4,
+        "Ethics": 3,
+        "Interoperability": 3
+      }
+    },
+    "Ukraine": {
+      "2016": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2017": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2018": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2019": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2020": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2021": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2022": {
+        "LAWS": 0,
+        "Adoption": 0,
+        "Procurement": 0,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2023": {
+        "LAWS": 2,
+        "Adoption": 2,
+        "Procurement": 1,
+        "Safety": 0,
+        "Ethics": 0,
+        "Interoperability": 0
+      },
+      "2024": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 2
+      },
+      "2025": {
+        "LAWS": 2,
+        "Adoption": 3,
+        "Procurement": 2,
+        "Safety": 1,
+        "Ethics": 2,
+        "Interoperability": 2
+      }
+    }
+  },
+  "pairwise_similarity": {
+    "Algeria|Armenia": {
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.933,
+      "2025": 0.933
+    },
+    "Algeria|Australia": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Algeria|Azerbaijan": {
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Algeria|Belgium": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.933,
+      "2025": 0.933
+    },
+    "Algeria|Brazil": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Algeria|Bulgaria": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Algeria|Canada": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Algeria|China": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.377,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Algeria|Colombia": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Algeria|Croatia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Algeria|Czechia": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Algeria|Denmark": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Algeria|Egypt": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Algeria|Estonia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.573
+    },
+    "Algeria|Finland": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.753
+    },
+    "Algeria|France": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Algeria|Germany": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Algeria|Greece": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Algeria|Hungary": {
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Algeria|India": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.377,
+      "2023": 0.017,
+      "2024": 0.393,
+      "2025": 0.393
+    },
+    "Algeria|Iran": {
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Algeria|Iraq": {
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Algeria|Israel": {
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Algeria|Italy": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Algeria|Japan": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.663
+    },
+    "Algeria|Latvia": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Algeria|Lithuania": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.753
+    },
+    "Algeria|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Algeria|Netherlands": {
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Algeria|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.933,
+      "2025": 0.933
+    },
+    "Algeria|North Korea": {
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.213,
+      "2025": 0.213
+    },
+    "Algeria|Norway": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Algeria|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.933,
+      "2025": 0.933
+    },
+    "Algeria|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Algeria|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.017,
+      "2023": 0.017,
+      "2024": 0.213,
+      "2025": 0.213
+    },
+    "Algeria|Singapore": {
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Algeria|South Africa": {
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Algeria|South Korea": {
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Algeria|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Algeria|Sweden": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Algeria|Turkey": {
+      "2021": 0.0,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Algeria|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Algeria|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Algeria|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Algeria|Ukraine": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Armenia|Australia": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.652
+    },
+    "Armenia|Azerbaijan": {
+      "2023": 0.0,
+      "2024": 0.573,
+      "2025": 0.65
+    },
+    "Armenia|Belgium": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.933,
+      "2025": 0.922
+    },
+    "Armenia|Brazil": {
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.877
+    },
+    "Armenia|Bulgaria": {
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.877
+    },
+    "Armenia|Canada": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.697
+    },
+    "Armenia|China": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.573,
+      "2025": 0.53
+    },
+    "Armenia|Colombia": {
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.77
+    },
+    "Armenia|Croatia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.877
+    },
+    "Armenia|Czechia": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.787
+    },
+    "Armenia|Denmark": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.832
+    },
+    "Armenia|Egypt": {
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Armenia|Estonia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.607
+    },
+    "Armenia|Finland": {
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.697
+    },
+    "Armenia|France": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.697
+    },
+    "Armenia|Germany": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.787
+    },
+    "Armenia|Greece": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.832
+    },
+    "Armenia|Hungary": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.832
+    },
+    "Armenia|India": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.017,
+      "2024": 0.393,
+      "2025": 0.607
+    },
+    "Armenia|Iran": {
+      "2023": 0.377,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Armenia|Iraq": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Armenia|Israel": {
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.663,
+      "2025": 0.652
+    },
+    "Armenia|Italy": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.832
+    },
+    "Armenia|Japan": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.652
+    },
+    "Armenia|Latvia": {
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.787
+    },
+    "Armenia|Lithuania": {
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.83
+    },
+    "Armenia|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.922
+    },
+    "Armenia|Netherlands": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.697
+    },
+    "Armenia|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.933,
+      "2025": 0.922
+    },
+    "Armenia|North Korea": {
+      "2023": 0.377,
+      "2024": 0.213,
+      "2025": 0.213
+    },
+    "Armenia|Norway": {
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.742
+    },
+    "Armenia|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.933,
+      "2025": 0.933
+    },
+    "Armenia|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.697
+    },
+    "Armenia|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.017,
+      "2024": 0.213,
+      "2025": 0.29
+    },
+    "Armenia|Singapore": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.652
+    },
+    "Armenia|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Armenia|South Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.652
+    },
+    "Armenia|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.787
+    },
+    "Armenia|Sweden": {
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.787
+    },
+    "Armenia|Turkey": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.663,
+      "2025": 0.742
+    },
+    "Armenia|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.663,
+      "2025": 0.71
+    },
+    "Armenia|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.562
+    },
+    "Armenia|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.573,
+      "2025": 0.562
+    },
+    "Armenia|Ukraine": {
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.742
+    },
+    "Australia|Azerbaijan": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.787,
+      "2025": 0.787
+    },
+    "Australia|Belgium": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.697,
+      "2025": 0.697
+    },
+    "Australia|Brazil": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.731,
+      "2025": 0.731
+    },
+    "Australia|Bulgaria": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.77,
+      "2025": 0.742
+    },
+    "Australia|Canada": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.843,
+      "2024": 0.85,
+      "2025": 0.88
+    },
+    "Australia|China": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.557,
+      "2021": 0.737,
+      "2022": 0.843,
+      "2023": 0.77,
+      "2024": 0.839,
+      "2025": 0.839
+    },
+    "Australia|Colombia": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.71,
+      "2025": 0.77
+    },
+    "Australia|Croatia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.742
+    },
+    "Australia|Czechia": {
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.753,
+      "2022": 0.753,
+      "2023": 0.843,
+      "2024": 0.85,
+      "2025": 0.82
+    },
+    "Australia|Denmark": {
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.843,
+      "2024": 0.82,
+      "2025": 0.79
+    },
+    "Australia|Egypt": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Australia|Estonia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.917,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.95,
+      "2024": 0.88,
+      "2025": 0.88
+    },
+    "Australia|Finland": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.839,
+      "2025": 0.82
+    },
+    "Australia|France": {
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.933,
+      "2022": 0.89,
+      "2023": 0.922,
+      "2024": 0.88,
+      "2025": 0.88
+    },
+    "Australia|Germany": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.77,
+      "2024": 0.875,
+      "2025": 0.839
+    },
+    "Australia|Greece": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.767,
+      "2025": 0.767
+    },
+    "Australia|Hungary": {
+      "2020": 0.0,
+      "2021": 0.753,
+      "2022": 0.753,
+      "2023": 0.753,
+      "2024": 0.787,
+      "2025": 0.787
+    },
+    "Australia|India": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.663,
+      "2024": 0.73,
+      "2025": 0.76
+    },
+    "Australia|Iran": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Australia|Iraq": {
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Australia|Israel": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.843,
+      "2023": 0.843,
+      "2024": 0.85,
+      "2025": 0.88
+    },
+    "Australia|Italy": {
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.663,
+      "2022": 0.663,
+      "2023": 0.753,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Australia|Japan": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.83,
+      "2024": 0.88,
+      "2025": 0.85
+    },
+    "Australia|Latvia": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.832,
+      "2025": 0.803
+    },
+    "Australia|Lithuania": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.83
+    },
+    "Australia|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.71,
+      "2025": 0.697
+    },
+    "Australia|Netherlands": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.77,
+      "2023": 0.832,
+      "2024": 0.85,
+      "2025": 0.88
+    },
+    "Australia|New Zealand": {
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.753,
+      "2024": 0.76,
+      "2025": 0.73
+    },
+    "Australia|North Korea": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.393,
+      "2025": 0.393
+    },
+    "Australia|Norway": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.89,
+      "2024": 0.79,
+      "2025": 0.85
+    },
+    "Australia|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.83,
+      "2025": 0.77
+    },
+    "Australia|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.917,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.843,
+      "2024": 0.91,
+      "2025": 0.91
+    },
+    "Australia|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.663,
+      "2022": 0.573,
+      "2023": 0.65,
+      "2024": 0.731,
+      "2025": 0.695
+    },
+    "Australia|Singapore": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.843,
+      "2023": 0.933,
+      "2024": 0.91,
+      "2025": 0.94
+    },
+    "Australia|South Africa": {
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Australia|South Korea": {
+      "2020": 0.0,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.933,
+      "2024": 0.88,
+      "2025": 0.91
+    },
+    "Australia|Spain": {
+      "2020": 0.917,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.83,
+      "2024": 0.767,
+      "2025": 0.839
+    },
+    "Australia|Sweden": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.839,
+      "2025": 0.839
+    },
+    "Australia|Turkey": {
+      "2020": 0.0,
+      "2021": 0.753,
+      "2022": 0.843,
+      "2023": 0.843,
+      "2024": 0.85,
+      "2025": 0.85
+    },
+    "Australia|UAE": {
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.663,
+      "2024": 0.832,
+      "2025": 0.877
+    },
+    "Australia|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.89,
+      "2022": 0.77,
+      "2023": 0.787,
+      "2024": 0.79,
+      "2025": 0.82
+    },
+    "Australia|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.843,
+      "2022": 0.753,
+      "2023": 0.77,
+      "2024": 0.76,
+      "2025": 0.79
+    },
+    "Australia|Ukraine": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.91,
+      "2025": 0.88
+    },
+    "Azerbaijan|Belgium": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.65,
+      "2025": 0.65
+    },
+    "Azerbaijan|Brazil": {
+      "2023": 0.0,
+      "2024": 0.787,
+      "2025": 0.787
+    },
+    "Azerbaijan|Bulgaria": {
+      "2023": 0.0,
+      "2024": 0.663,
+      "2025": 0.71
+    },
+    "Azerbaijan|Canada": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.742,
+      "2025": 0.742
+    },
+    "Azerbaijan|China": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.877,
+      "2025": 0.877
+    },
+    "Azerbaijan|Colombia": {
+      "2023": 0.0,
+      "2024": 0.77,
+      "2025": 0.83
+    },
+    "Azerbaijan|Croatia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.663,
+      "2025": 0.71
+    },
+    "Azerbaijan|Czechia": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.832,
+      "2025": 0.832
+    },
+    "Azerbaijan|Denmark": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.787,
+      "2025": 0.787
+    },
+    "Azerbaijan|Egypt": {
+      "2023": 0.0,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Azerbaijan|Estonia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.787,
+      "2025": 0.832
+    },
+    "Azerbaijan|Finland": {
+      "2023": 0.0,
+      "2024": 0.77,
+      "2025": 0.697
+    },
+    "Azerbaijan|France": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.697,
+      "2025": 0.697
+    },
+    "Azerbaijan|Germany": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.77,
+      "2025": 0.77
+    },
+    "Azerbaijan|Greece": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.787,
+      "2025": 0.787
+    },
+    "Azerbaijan|Hungary": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.77,
+      "2025": 0.77
+    },
+    "Azerbaijan|India": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.832,
+      "2025": 0.832
+    },
+    "Azerbaijan|Iran": {
+      "2023": 0.0,
+      "2024": 0.933,
+      "2025": 0.933
+    },
+    "Azerbaijan|Iraq": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Azerbaijan|Israel": {
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.787,
+      "2025": 0.787
+    },
+    "Azerbaijan|Italy": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.787,
+      "2025": 0.832
+    },
+    "Azerbaijan|Japan": {
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.697,
+      "2025": 0.652
+    },
+    "Azerbaijan|Latvia": {
+      "2023": 0.0,
+      "2024": 0.83,
+      "2025": 0.832
+    },
+    "Azerbaijan|Lithuania": {
+      "2023": 0.0,
+      "2024": 0.843,
+      "2025": 0.77
+    },
+    "Azerbaijan|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.663,
+      "2025": 0.71
+    },
+    "Azerbaijan|Netherlands": {
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.742,
+      "2025": 0.742
+    },
+    "Azerbaijan|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.697,
+      "2025": 0.697
+    },
+    "Azerbaijan|North Korea": {
+      "2023": 0.0,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Azerbaijan|Norway": {
+      "2023": 0.0,
+      "2024": 0.787,
+      "2025": 0.787
+    },
+    "Azerbaijan|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Azerbaijan|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.832,
+      "2025": 0.832
+    },
+    "Azerbaijan|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.652,
+      "2025": 0.652
+    },
+    "Azerbaijan|Singapore": {
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.742,
+      "2025": 0.742
+    },
+    "Azerbaijan|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Azerbaijan|South Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.787,
+      "2025": 0.787
+    },
+    "Azerbaijan|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.787,
+      "2025": 0.832
+    },
+    "Azerbaijan|Sweden": {
+      "2023": 0.0,
+      "2024": 0.77,
+      "2025": 0.77
+    },
+    "Azerbaijan|Turkey": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.877,
+      "2025": 0.832
+    },
+    "Azerbaijan|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.922,
+      "2025": 0.877
+    },
+    "Azerbaijan|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.607,
+      "2025": 0.607
+    },
+    "Azerbaijan|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.697,
+      "2025": 0.697
+    },
+    "Azerbaijan|Ukraine": {
+      "2023": 0.0,
+      "2024": 0.832,
+      "2025": 0.832
+    },
+    "Belgium|Brazil": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.832,
+      "2025": 0.832
+    },
+    "Belgium|Bulgaria": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.89,
+      "2025": 0.922
+    },
+    "Belgium|Canada": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.742,
+      "2025": 0.742
+    },
+    "Belgium|China": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.377,
+      "2024": 0.53,
+      "2025": 0.53
+    },
+    "Belgium|Colombia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.77
+    },
+    "Belgium|Croatia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.737,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.922
+    },
+    "Belgium|Czechia": {
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.832,
+      "2025": 0.832
+    },
+    "Belgium|Denmark": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.877,
+      "2025": 0.877
+    },
+    "Belgium|Egypt": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Belgium|Estonia": {
+      "2018": 0.557,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.697,
+      "2025": 0.652
+    },
+    "Belgium|Finland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.877,
+      "2025": 0.742
+    },
+    "Belgium|France": {
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.742,
+      "2025": 0.742
+    },
+    "Belgium|Germany": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.832,
+      "2025": 0.832
+    },
+    "Belgium|Greece": {
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.877,
+      "2025": 0.877
+    },
+    "Belgium|Hungary": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.877,
+      "2025": 0.877
+    },
+    "Belgium|India": {
+      "2018": 0.377,
+      "2019": 0.377,
+      "2020": 0.377,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.017,
+      "2024": 0.562,
+      "2025": 0.562
+    },
+    "Belgium|Iran": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Belgium|Iraq": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Belgium|Israel": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.697,
+      "2025": 0.697
+    },
+    "Belgium|Italy": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.877,
+      "2025": 0.877
+    },
+    "Belgium|Japan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.742,
+      "2025": 0.697
+    },
+    "Belgium|Latvia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.832,
+      "2025": 0.832
+    },
+    "Belgium|Lithuania": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.83
+    },
+    "Belgium|Morocco": {
+      "2018": 0.917,
+      "2019": 0.917,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.83,
+      "2025": 0.877
+    },
+    "Belgium|Netherlands": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.742,
+      "2025": 0.742
+    },
+    "Belgium|New Zealand": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.967,
+      "2025": 0.967
+    },
+    "Belgium|North Korea": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.213,
+      "2025": 0.213
+    },
+    "Belgium|Norway": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.832,
+      "2025": 0.787
+    },
+    "Belgium|Pakistan": {
+      "2018": 0.917,
+      "2019": 0.917,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.933,
+      "2025": 0.933
+    },
+    "Belgium|Poland": {
+      "2018": 0.557,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.787,
+      "2025": 0.742
+    },
+    "Belgium|Russia": {
+      "2018": 0.377,
+      "2019": 0.377,
+      "2020": 0.377,
+      "2021": 0.017,
+      "2022": 0.017,
+      "2023": 0.017,
+      "2024": 0.29,
+      "2025": 0.29
+    },
+    "Belgium|Singapore": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.697,
+      "2025": 0.697
+    },
+    "Belgium|South Africa": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Belgium|South Korea": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.697,
+      "2025": 0.697
+    },
+    "Belgium|Spain": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.877,
+      "2025": 0.832
+    },
+    "Belgium|Sweden": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.877,
+      "2025": 0.832
+    },
+    "Belgium|Turkey": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.697,
+      "2025": 0.697
+    },
+    "Belgium|UAE": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.377,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.71,
+      "2025": 0.71
+    },
+    "Belgium|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.607,
+      "2025": 0.607
+    },
+    "Belgium|USA": {
+      "2017": 0.0,
+      "2018": 0.377,
+      "2019": 0.377,
+      "2020": 0.377,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.607,
+      "2025": 0.607
+    },
+    "Belgium|Ukraine": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.787,
+      "2025": 0.787
+    },
+    "Brazil|Bulgaria": {
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.877
+    },
+    "Brazil|Canada": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.803,
+      "2025": 0.803
+    },
+    "Brazil|China": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.697,
+      "2025": 0.697
+    },
+    "Brazil|Colombia": {
+      "2023": 0.917,
+      "2024": 0.83,
+      "2025": 0.89
+    },
+    "Brazil|Croatia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.89,
+      "2025": 0.877
+    },
+    "Brazil|Czechia": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.911,
+      "2025": 0.911
+    },
+    "Brazil|Denmark": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.947,
+      "2025": 0.947
+    },
+    "Brazil|Egypt": {
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Brazil|Estonia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.767,
+      "2025": 0.731
+    },
+    "Brazil|Finland": {
+      "2023": 0.737,
+      "2024": 0.922,
+      "2025": 0.839
+    },
+    "Brazil|France": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.767,
+      "2025": 0.767
+    },
+    "Brazil|Germany": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.877,
+      "2025": 0.877
+    },
+    "Brazil|Greece": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.947,
+      "2025": 0.947
+    },
+    "Brazil|Hungary": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.832,
+      "2025": 0.832
+    },
+    "Brazil|India": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.197,
+      "2024": 0.731,
+      "2025": 0.731
+    },
+    "Brazil|Iran": {
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Brazil|Iraq": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Brazil|Israel": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.731,
+      "2025": 0.731
+    },
+    "Brazil|Italy": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.947,
+      "2025": 0.911
+    },
+    "Brazil|Japan": {
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.767,
+      "2025": 0.731
+    },
+    "Brazil|Latvia": {
+      "2023": 0.737,
+      "2024": 0.877,
+      "2025": 0.911
+    },
+    "Brazil|Lithuania": {
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.83
+    },
+    "Brazil|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.95,
+      "2025": 0.922
+    },
+    "Brazil|Netherlands": {
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.803,
+      "2025": 0.803
+    },
+    "Brazil|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.875,
+      "2025": 0.875
+    },
+    "Brazil|North Korea": {
+      "2023": 0.557,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "Brazil|Norway": {
+      "2023": 0.737,
+      "2024": 0.875,
+      "2025": 0.839
+    },
+    "Brazil|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Brazil|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.839,
+      "2025": 0.803
+    },
+    "Brazil|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.197,
+      "2024": 0.472,
+      "2025": 0.472
+    },
+    "Brazil|Singapore": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.731,
+      "2025": 0.731
+    },
+    "Brazil|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Brazil|South Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.767,
+      "2025": 0.767
+    },
+    "Brazil|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.947,
+      "2025": 0.875
+    },
+    "Brazil|Sweden": {
+      "2023": 0.737,
+      "2024": 0.922,
+      "2025": 0.877
+    },
+    "Brazil|Turkey": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.839,
+      "2025": 0.803
+    },
+    "Brazil|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.832,
+      "2025": 0.787
+    },
+    "Brazil|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.659,
+      "2025": 0.659
+    },
+    "Brazil|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.623,
+      "2025": 0.623
+    },
+    "Brazil|Ukraine": {
+      "2023": 0.737,
+      "2024": 0.839,
+      "2025": 0.839
+    },
+    "Bulgaria|Canada": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.787
+    },
+    "Bulgaria|China": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.59
+    },
+    "Bulgaria|Colombia": {
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.83
+    },
+    "Bulgaria|Croatia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.95,
+      "2025": 0.967
+    },
+    "Bulgaria|Czechia": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.89,
+      "2025": 0.877
+    },
+    "Bulgaria|Denmark": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.95,
+      "2025": 0.922
+    },
+    "Bulgaria|Egypt": {
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Bulgaria|Estonia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.77,
+      "2025": 0.697
+    },
+    "Bulgaria|Finland": {
+      "2023": 0.917,
+      "2024": 0.95,
+      "2025": 0.787
+    },
+    "Bulgaria|France": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.83,
+      "2025": 0.787
+    },
+    "Bulgaria|Germany": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.877
+    },
+    "Bulgaria|Greece": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.95,
+      "2025": 0.922
+    },
+    "Bulgaria|Hungary": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.89,
+      "2025": 0.922
+    },
+    "Bulgaria|India": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.59,
+      "2025": 0.607
+    },
+    "Bulgaria|Iran": {
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Bulgaria|Iraq": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Bulgaria|Israel": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.742
+    },
+    "Bulgaria|Italy": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.95,
+      "2025": 0.922
+    },
+    "Bulgaria|Japan": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.742
+    },
+    "Bulgaria|Latvia": {
+      "2023": 0.917,
+      "2024": 0.89,
+      "2025": 0.877
+    },
+    "Bulgaria|Lithuania": {
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.89
+    },
+    "Bulgaria|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.89,
+      "2025": 0.922
+    },
+    "Bulgaria|Netherlands": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.787
+    },
+    "Bulgaria|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.89,
+      "2025": 0.922
+    },
+    "Bulgaria|North Korea": {
+      "2023": 0.737,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "Bulgaria|Norway": {
+      "2023": 0.917,
+      "2024": 0.89,
+      "2025": 0.832
+    },
+    "Bulgaria|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Bulgaria|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.89,
+      "2025": 0.787
+    },
+    "Bulgaria|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.303,
+      "2025": 0.35
+    },
+    "Bulgaria|Singapore": {
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.77,
+      "2025": 0.742
+    },
+    "Bulgaria|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Bulgaria|South Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.77,
+      "2025": 0.742
+    },
+    "Bulgaria|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.95,
+      "2025": 0.877
+    },
+    "Bulgaria|Sweden": {
+      "2023": 0.917,
+      "2024": 0.95,
+      "2025": 0.877
+    },
+    "Bulgaria|Turkey": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.742
+    },
+    "Bulgaria|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.77
+    },
+    "Bulgaria|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.71,
+      "2025": 0.652
+    },
+    "Bulgaria|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.71,
+      "2025": 0.652
+    },
+    "Bulgaria|Ukraine": {
+      "2023": 0.917,
+      "2024": 0.89,
+      "2025": 0.832
+    },
+    "Canada|China": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.753,
+      "2023": 0.663,
+      "2024": 0.767,
+      "2025": 0.803
+    },
+    "Canada|Colombia": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.71,
+      "2025": 0.77
+    },
+    "Canada|Croatia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.917,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.83,
+      "2025": 0.787
+    },
+    "Canada|Czechia": {
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Canada|Denmark": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.85,
+      "2025": 0.85
+    },
+    "Canada|Egypt": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Canada|Estonia": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.843,
+      "2024": 0.97,
+      "2025": 0.94
+    },
+    "Canada|Finland": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.839,
+      "2025": 0.94
+    },
+    "Canada|France": {
+      "2019": 0.843,
+      "2020": 0.843,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.843,
+      "2024": 0.97,
+      "2025": 0.94
+    },
+    "Canada|Germany": {
+      "2019": 0.917,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.933,
+      "2024": 0.875,
+      "2025": 0.875
+    },
+    "Canada|Greece": {
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.839,
+      "2025": 0.839
+    },
+    "Canada|Hungary": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.742,
+      "2025": 0.742
+    },
+    "Canada|India": {
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.197,
+      "2024": 0.76,
+      "2025": 0.76
+    },
+    "Canada|Iran": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Canada|Iraq": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Canada|Israel": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Canada|Italy": {
+      "2019": 0.917,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.85,
+      "2025": 0.88
+    },
+    "Canada|Japan": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.97,
+      "2025": 0.91
+    },
+    "Canada|Latvia": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.787,
+      "2025": 0.803
+    },
+    "Canada|Lithuania": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.71
+    },
+    "Canada|Morocco": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.742
+    },
+    "Canada|Netherlands": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.933,
+      "2023": 0.843,
+      "2024": 1.0,
+      "2025": 1.0
+    },
+    "Canada|New Zealand": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.843,
+      "2024": 0.79,
+      "2025": 0.79
+    },
+    "Canada|North Korea": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.213,
+      "2025": 0.213
+    },
+    "Canada|Norway": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.94,
+      "2025": 0.97
+    },
+    "Canada|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.77
+    },
+    "Canada|Poland": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.88,
+      "2025": 0.91
+    },
+    "Canada|Russia": {
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.483,
+      "2022": 0.483,
+      "2023": 0.483,
+      "2024": 0.587,
+      "2025": 0.587
+    },
+    "Canada|Singapore": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.94,
+      "2025": 0.94
+    },
+    "Canada|South Africa": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Canada|South Korea": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.97,
+      "2025": 0.97
+    },
+    "Canada|Spain": {
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.753,
+      "2024": 0.839,
+      "2025": 0.911
+    },
+    "Canada|Sweden": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.839,
+      "2025": 0.875
+    },
+    "Canada|Turkey": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.82,
+      "2025": 0.79
+    },
+    "Canada|UAE": {
+      "2019": 0.0,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.787,
+      "2025": 0.742
+    },
+    "Canada|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.753,
+      "2023": 0.753,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Canada|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.663,
+      "2021": 0.663,
+      "2022": 0.663,
+      "2023": 0.663,
+      "2024": 0.79,
+      "2025": 0.79
+    },
+    "Canada|Ukraine": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.88,
+      "2025": 0.88
+    },
+    "China|Colombia": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.65,
+      "2025": 0.71
+    },
+    "China|Croatia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.59
+    },
+    "China|Czechia": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.377,
+      "2020": 0.377,
+      "2021": 0.377,
+      "2022": 0.663,
+      "2023": 0.71,
+      "2024": 0.803,
+      "2025": 0.767
+    },
+    "China|Denmark": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.663,
+      "2024": 0.767,
+      "2025": 0.731
+    },
+    "China|Egypt": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "China|Estonia": {
+      "2017": 0.0,
+      "2018": 0.737,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.832,
+      "2023": 0.839,
+      "2024": 0.803,
+      "2025": 0.875
+    },
+    "China|Finland": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.663,
+      "2024": 0.742,
+      "2025": 0.731
+    },
+    "China|France": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.753,
+      "2020": 0.753,
+      "2021": 0.787,
+      "2022": 0.839,
+      "2023": 0.803,
+      "2024": 0.731,
+      "2025": 0.731
+    },
+    "China|Germany": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.697,
+      "2024": 0.742,
+      "2025": 0.697
+    },
+    "China|Greece": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.737,
+      "2024": 0.697,
+      "2025": 0.697
+    },
+    "China|Hungary": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.377,
+      "2022": 0.663,
+      "2023": 0.573,
+      "2024": 0.65,
+      "2025": 0.65
+    },
+    "China|India": {
+      "2017": 0.0,
+      "2018": 0.737,
+      "2019": 0.753,
+      "2020": 0.843,
+      "2021": 0.843,
+      "2022": 0.83,
+      "2023": 0.77,
+      "2024": 0.839,
+      "2025": 0.875
+    },
+    "China|Iran": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.933,
+      "2025": 0.933
+    },
+    "China|Iraq": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "China|Israel": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.787,
+      "2023": 0.832,
+      "2024": 0.875,
+      "2025": 0.911
+    },
+    "China|Italy": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.377,
+      "2020": 0.377,
+      "2021": 0.377,
+      "2022": 0.573,
+      "2023": 0.742,
+      "2024": 0.767,
+      "2025": 0.767
+    },
+    "China|Japan": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.843,
+      "2023": 0.71,
+      "2024": 0.731,
+      "2025": 0.695
+    },
+    "China|Latvia": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.573,
+      "2024": 0.71,
+      "2025": 0.742
+    },
+    "China|Lithuania": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.65
+    },
+    "China|Morocco": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.377,
+      "2024": 0.663,
+      "2025": 0.59
+    },
+    "China|Netherlands": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.803,
+      "2023": 0.767,
+      "2024": 0.767,
+      "2025": 0.803
+    },
+    "China|New Zealand": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.573,
+      "2024": 0.695,
+      "2025": 0.659
+    },
+    "China|North Korea": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "China|Norway": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.803,
+      "2024": 0.731,
+      "2025": 0.767
+    },
+    "China|Pakistan": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.377,
+      "2024": 0.71,
+      "2025": 0.65
+    },
+    "China|Poland": {
+      "2017": 0.0,
+      "2018": 0.557,
+      "2019": 0.377,
+      "2020": 0.557,
+      "2021": 0.663,
+      "2022": 0.83,
+      "2023": 0.77,
+      "2024": 0.875,
+      "2025": 0.839
+    },
+    "China|Russia": {
+      "2017": 0.0,
+      "2018": 0.933,
+      "2019": 0.753,
+      "2020": 0.753,
+      "2021": 0.877,
+      "2022": 0.839,
+      "2023": 0.875,
+      "2024": 0.803,
+      "2025": 0.767
+    },
+    "China|Singapore": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.832,
+      "2023": 0.832,
+      "2024": 0.767,
+      "2025": 0.803
+    },
+    "China|South Africa": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.377,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "China|South Korea": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.832,
+      "2023": 0.832,
+      "2024": 0.803,
+      "2025": 0.839
+    },
+    "China|Spain": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.77,
+      "2023": 0.787,
+      "2024": 0.697,
+      "2025": 0.742
+    },
+    "China|Sweden": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.573,
+      "2024": 0.742,
+      "2025": 0.697
+    },
+    "China|Turkey": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.753,
+      "2022": 0.83,
+      "2023": 0.89,
+      "2024": 0.911,
+      "2025": 0.839
+    },
+    "China|UAE": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.843,
+      "2023": 0.77,
+      "2024": 0.832,
+      "2025": 0.787
+    },
+    "China|UK": {
+      "2017": 0.0,
+      "2018": 0.737,
+      "2019": 0.557,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.731,
+      "2023": 0.695,
+      "2024": 0.659,
+      "2025": 0.695
+    },
+    "China|USA": {
+      "2017": 0.0,
+      "2018": 0.917,
+      "2019": 0.753,
+      "2020": 0.753,
+      "2021": 0.697,
+      "2022": 0.767,
+      "2023": 0.731,
+      "2024": 0.731,
+      "2025": 0.767
+    },
+    "China|Ukraine": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.71,
+      "2024": 0.875,
+      "2025": 0.839
+    },
+    "Colombia|Croatia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.83
+    },
+    "Colombia|Czechia": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.83
+    },
+    "Colombia|Denmark": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.89
+    },
+    "Colombia|Egypt": {
+      "2023": 0.917,
+      "2024": 0.933,
+      "2025": 0.933
+    },
+    "Colombia|Estonia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.65,
+      "2025": 0.65
+    },
+    "Colombia|Finland": {
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.77
+    },
+    "Colombia|France": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.71,
+      "2025": 0.77
+    },
+    "Colombia|Germany": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.83,
+      "2025": 0.89
+    },
+    "Colombia|Greece": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.89
+    },
+    "Colombia|Hungary": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.77
+    },
+    "Colombia|India": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.197,
+      "2024": 0.59,
+      "2025": 0.65
+    },
+    "Colombia|Iran": {
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Colombia|Iraq": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.933,
+      "2025": 0.933
+    },
+    "Colombia|Israel": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.59,
+      "2025": 0.65
+    },
+    "Colombia|Italy": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.83,
+      "2025": 0.89
+    },
+    "Colombia|Japan": {
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.71,
+      "2025": 0.71
+    },
+    "Colombia|Latvia": {
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.83
+    },
+    "Colombia|Lithuania": {
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.77
+    },
+    "Colombia|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.83
+    },
+    "Colombia|Netherlands": {
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.71,
+      "2025": 0.77
+    },
+    "Colombia|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.77
+    },
+    "Colombia|North Korea": {
+      "2023": 0.557,
+      "2024": 0.393,
+      "2025": 0.393
+    },
+    "Colombia|Norway": {
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.83
+    },
+    "Colombia|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Colombia|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.71,
+      "2025": 0.77
+    },
+    "Colombia|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.197,
+      "2024": 0.41,
+      "2025": 0.47
+    },
+    "Colombia|Singapore": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.65,
+      "2025": 0.71
+    },
+    "Colombia|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Colombia|South Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.65,
+      "2025": 0.71
+    },
+    "Colombia|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.89
+    },
+    "Colombia|Sweden": {
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.89
+    },
+    "Colombia|Turkey": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.65,
+      "2025": 0.71
+    },
+    "Colombia|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.83,
+      "2025": 0.89
+    },
+    "Colombia|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.59,
+      "2025": 0.65
+    },
+    "Colombia|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.53,
+      "2025": 0.59
+    },
+    "Colombia|Ukraine": {
+      "2023": 0.737,
+      "2024": 0.71,
+      "2025": 0.77
+    },
+    "Croatia|Czechia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.877
+    },
+    "Croatia|Denmark": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.95,
+      "2025": 0.922
+    },
+    "Croatia|Egypt": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Croatia|Estonia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.737,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.697
+    },
+    "Croatia|Finland": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.95,
+      "2025": 0.787
+    },
+    "Croatia|France": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.787
+    },
+    "Croatia|Germany": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.917,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.89,
+      "2025": 0.877
+    },
+    "Croatia|Greece": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.95,
+      "2025": 0.922
+    },
+    "Croatia|Hungary": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.922
+    },
+    "Croatia|India": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.557,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.197,
+      "2024": 0.59,
+      "2025": 0.607
+    },
+    "Croatia|Iran": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Croatia|Iraq": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Croatia|Israel": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.83,
+      "2025": 0.742
+    },
+    "Croatia|Italy": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.917,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.95,
+      "2025": 0.922
+    },
+    "Croatia|Japan": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.83,
+      "2025": 0.742
+    },
+    "Croatia|Latvia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.877
+    },
+    "Croatia|Lithuania": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.89
+    },
+    "Croatia|Morocco": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.737,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.922
+    },
+    "Croatia|Netherlands": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.83,
+      "2025": 0.787
+    },
+    "Croatia|New Zealand": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.922
+    },
+    "Croatia|North Korea": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "Croatia|Norway": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.832
+    },
+    "Croatia|Pakistan": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.737,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Croatia|Poland": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.737,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.787
+    },
+    "Croatia|Russia": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.557,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.197,
+      "2022": 0.197,
+      "2023": 0.197,
+      "2024": 0.303,
+      "2025": 0.35
+    },
+    "Croatia|Singapore": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.742
+    },
+    "Croatia|South Africa": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Croatia|South Korea": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.742
+    },
+    "Croatia|Spain": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.95,
+      "2025": 0.877
+    },
+    "Croatia|Sweden": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.95,
+      "2025": 0.877
+    },
+    "Croatia|Turkey": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.77,
+      "2025": 0.742
+    },
+    "Croatia|UAE": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.77
+    },
+    "Croatia|UK": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.71,
+      "2025": 0.652
+    },
+    "Croatia|USA": {
+      "2016": 0.0,
+      "2017": 0.557,
+      "2018": 0.557,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.71,
+      "2025": 0.652
+    },
+    "Croatia|Ukraine": {
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.832
+    },
+    "Czechia|Denmark": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.933,
+      "2024": 0.97,
+      "2025": 0.97
+    },
+    "Czechia|Egypt": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Czechia|Estonia": {
+      "2018": 0.0,
+      "2019": 0.843,
+      "2020": 0.843,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.83,
+      "2024": 0.85,
+      "2025": 0.82
+    },
+    "Czechia|Finland": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.933,
+      "2024": 0.947,
+      "2025": 0.88
+    },
+    "Czechia|France": {
+      "2019": 0.753,
+      "2020": 0.753,
+      "2021": 0.753,
+      "2022": 0.753,
+      "2023": 0.77,
+      "2024": 0.79,
+      "2025": 0.76
+    },
+    "Czechia|Germany": {
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.753,
+      "2024": 0.911,
+      "2025": 0.911
+    },
+    "Czechia|Greece": {
+      "2019": 0.917,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.947,
+      "2025": 0.947
+    },
+    "Czechia|Hungary": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.933,
+      "2022": 0.933,
+      "2023": 0.843,
+      "2024": 0.922,
+      "2025": 0.922
+    },
+    "Czechia|India": {
+      "2018": 0.0,
+      "2019": 0.663,
+      "2020": 0.663,
+      "2021": 0.663,
+      "2022": 0.663,
+      "2023": 0.65,
+      "2024": 0.76,
+      "2025": 0.76
+    },
+    "Czechia|Iran": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Czechia|Iraq": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Czechia|Israel": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.663,
+      "2023": 0.71,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Czechia|Italy": {
+      "2019": 0.843,
+      "2020": 0.843,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.89,
+      "2024": 0.97,
+      "2025": 0.94
+    },
+    "Czechia|Japan": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.71,
+      "2024": 0.79,
+      "2025": 0.73
+    },
+    "Czechia|Latvia": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.967,
+      "2025": 0.983
+    },
+    "Czechia|Lithuania": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.89
+    },
+    "Czechia|Morocco": {
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.83,
+      "2025": 0.832
+    },
+    "Czechia|Netherlands": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.753,
+      "2023": 0.77,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Czechia|New Zealand": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.91,
+      "2025": 0.91
+    },
+    "Czechia|North Korea": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.393,
+      "2025": 0.393
+    },
+    "Czechia|Norway": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.89,
+      "2024": 0.88,
+      "2025": 0.85
+    },
+    "Czechia|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.83,
+      "2025": 0.83
+    },
+    "Czechia|Poland": {
+      "2018": 0.0,
+      "2019": 0.933,
+      "2020": 0.843,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.89,
+      "2024": 0.94,
+      "2025": 0.91
+    },
+    "Czechia|Russia": {
+      "2018": 0.0,
+      "2019": 0.663,
+      "2020": 0.663,
+      "2021": 0.483,
+      "2022": 0.393,
+      "2023": 0.53,
+      "2024": 0.623,
+      "2025": 0.623
+    },
+    "Czechia|Singapore": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.843,
+      "2023": 0.83,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Czechia|South Africa": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Czechia|South Korea": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.83,
+      "2024": 0.85,
+      "2025": 0.85
+    },
+    "Czechia|Spain": {
+      "2019": 0.0,
+      "2020": 0.843,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.95,
+      "2024": 0.947,
+      "2025": 0.875
+    },
+    "Czechia|Sweden": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.947,
+      "2025": 0.911
+    },
+    "Czechia|Turkey": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.753,
+      "2022": 0.663,
+      "2023": 0.77,
+      "2024": 0.88,
+      "2025": 0.85
+    },
+    "Czechia|UAE": {
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.77,
+      "2024": 0.877,
+      "2025": 0.832
+    },
+    "Czechia|UK": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.557,
+      "2021": 0.663,
+      "2022": 0.573,
+      "2023": 0.65,
+      "2024": 0.64,
+      "2025": 0.64
+    },
+    "Czechia|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.663,
+      "2020": 0.663,
+      "2021": 0.663,
+      "2022": 0.573,
+      "2023": 0.59,
+      "2024": 0.67,
+      "2025": 0.67
+    },
+    "Czechia|Ukraine": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.95,
+      "2024": 0.94,
+      "2025": 0.94
+    },
+    "Denmark|Egypt": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Denmark|Estonia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.843,
+      "2024": 0.82,
+      "2025": 0.79
+    },
+    "Denmark|Finland": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.933,
+      "2024": 0.983,
+      "2025": 0.91
+    },
+    "Denmark|France": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.843,
+      "2024": 0.82,
+      "2025": 0.79
+    },
+    "Denmark|Germany": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.947,
+      "2025": 0.947
+    },
+    "Denmark|Greece": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.983,
+      "2025": 0.983
+    },
+    "Denmark|Hungary": {
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.843,
+      "2024": 0.877,
+      "2025": 0.877
+    },
+    "Denmark|India": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.573,
+      "2024": 0.73,
+      "2025": 0.73
+    },
+    "Denmark|Iran": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Denmark|Iraq": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Denmark|Israel": {
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.753,
+      "2024": 0.79,
+      "2025": 0.79
+    },
+    "Denmark|Italy": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.843,
+      "2024": 1.0,
+      "2025": 0.97
+    },
+    "Denmark|Japan": {
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.753,
+      "2024": 0.82,
+      "2025": 0.76
+    },
+    "Denmark|Latvia": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.922,
+      "2025": 0.947
+    },
+    "Denmark|Lithuania": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.83
+    },
+    "Denmark|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.89,
+      "2025": 0.877
+    },
+    "Denmark|Netherlands": {
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.753,
+      "2024": 0.85,
+      "2025": 0.85
+    },
+    "Denmark|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.94,
+      "2025": 0.94
+    },
+    "Denmark|North Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "Denmark|Norway": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.933,
+      "2024": 0.91,
+      "2025": 0.88
+    },
+    "Denmark|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.89,
+      "2025": 0.89
+    },
+    "Denmark|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.933,
+      "2024": 0.91,
+      "2025": 0.88
+    },
+    "Denmark|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.557,
+      "2023": 0.483,
+      "2024": 0.587,
+      "2025": 0.587
+    },
+    "Denmark|Singapore": {
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.843,
+      "2024": 0.79,
+      "2025": 0.79
+    },
+    "Denmark|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Denmark|South Korea": {
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.843,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Denmark|Spain": {
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.933,
+      "2024": 0.983,
+      "2025": 0.911
+    },
+    "Denmark|Sweden": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.983,
+      "2025": 0.947
+    },
+    "Denmark|Turkey": {
+      "2021": 0.917,
+      "2022": 0.737,
+      "2023": 0.753,
+      "2024": 0.85,
+      "2025": 0.82
+    },
+    "Denmark|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.832,
+      "2025": 0.787
+    },
+    "Denmark|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.557,
+      "2023": 0.663,
+      "2024": 0.67,
+      "2025": 0.67
+    },
+    "Denmark|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.557,
+      "2023": 0.663,
+      "2024": 0.64,
+      "2025": 0.64
+    },
+    "Denmark|Ukraine": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.933,
+      "2024": 0.91,
+      "2025": 0.91
+    },
+    "Egypt|Estonia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.573
+    },
+    "Egypt|Finland": {
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.753
+    },
+    "Egypt|France": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Egypt|Germany": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Egypt|Greece": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Egypt|Hungary": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Egypt|India": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.197,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Egypt|Iran": {
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Egypt|Iraq": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.933,
+      "2025": 0.933
+    },
+    "Egypt|Israel": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Egypt|Italy": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Egypt|Japan": {
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.663
+    },
+    "Egypt|Latvia": {
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Egypt|Lithuania": {
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.753
+    },
+    "Egypt|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Egypt|Netherlands": {
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Egypt|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Egypt|North Korea": {
+      "2023": 0.557,
+      "2024": 0.393,
+      "2025": 0.393
+    },
+    "Egypt|Norway": {
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Egypt|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Egypt|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Egypt|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.197,
+      "2024": 0.393,
+      "2025": 0.393
+    },
+    "Egypt|Singapore": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Egypt|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Egypt|South Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Egypt|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Egypt|Sweden": {
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Egypt|Turkey": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Egypt|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Egypt|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Egypt|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Egypt|Ukraine": {
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Estonia|Finland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.803,
+      "2025": 0.88
+    },
+    "Estonia|France": {
+      "2018": 0.0,
+      "2019": 0.843,
+      "2020": 0.843,
+      "2021": 0.843,
+      "2022": 0.877,
+      "2023": 0.947,
+      "2024": 0.94,
+      "2025": 0.88
+    },
+    "Estonia|Germany": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.787,
+      "2024": 0.839,
+      "2025": 0.803
+    },
+    "Estonia|Greece": {
+      "2018": 0.0,
+      "2019": 0.917,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.803,
+      "2025": 0.767
+    },
+    "Estonia|Hungary": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.753,
+      "2024": 0.787,
+      "2025": 0.742
+    },
+    "Estonia|India": {
+      "2018": 0.843,
+      "2019": 0.753,
+      "2020": 0.753,
+      "2021": 0.753,
+      "2022": 0.83,
+      "2023": 0.77,
+      "2024": 0.79,
+      "2025": 0.82
+    },
+    "Estonia|Iran": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.753
+    },
+    "Estonia|Iraq": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.573
+    },
+    "Estonia|Israel": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.832,
+      "2023": 0.877,
+      "2024": 0.85,
+      "2025": 0.88
+    },
+    "Estonia|Italy": {
+      "2018": 0.0,
+      "2019": 0.753,
+      "2020": 0.753,
+      "2021": 0.753,
+      "2022": 0.753,
+      "2023": 0.787,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Estonia|Japan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.843,
+      "2023": 0.83,
+      "2024": 0.94,
+      "2025": 0.85
+    },
+    "Estonia|Latvia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.832,
+      "2025": 0.803
+    },
+    "Estonia|Lithuania": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.71
+    },
+    "Estonia|Morocco": {
+      "2018": 0.557,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.71,
+      "2025": 0.652
+    },
+    "Estonia|Netherlands": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.922,
+      "2023": 0.911,
+      "2024": 0.97,
+      "2025": 0.94
+    },
+    "Estonia|New Zealand": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.753,
+      "2024": 0.76,
+      "2025": 0.73
+    },
+    "Estonia|North Korea": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.303,
+      "2025": 0.393
+    },
+    "Estonia|Norway": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.947,
+      "2024": 0.91,
+      "2025": 0.91
+    },
+    "Estonia|Pakistan": {
+      "2018": 0.557,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.71,
+      "2025": 0.65
+    },
+    "Estonia|Poland": {
+      "2018": 0.843,
+      "2019": 0.843,
+      "2020": 0.933,
+      "2021": 0.933,
+      "2022": 0.95,
+      "2023": 0.89,
+      "2024": 0.91,
+      "2025": 0.91
+    },
+    "Estonia|Russia": {
+      "2018": 0.753,
+      "2019": 0.753,
+      "2020": 0.753,
+      "2021": 0.573,
+      "2022": 0.652,
+      "2023": 0.731,
+      "2024": 0.623,
+      "2025": 0.659
+    },
+    "Estonia|Singapore": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.967,
+      "2023": 0.967,
+      "2024": 0.97,
+      "2025": 0.94
+    },
+    "Estonia|South Africa": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.573,
+      "2025": 0.483
+    },
+    "Estonia|South Korea": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.933,
+      "2022": 0.967,
+      "2023": 0.967,
+      "2024": 1.0,
+      "2025": 0.97
+    },
+    "Estonia|Spain": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.933,
+      "2021": 0.933,
+      "2022": 0.89,
+      "2023": 0.832,
+      "2024": 0.803,
+      "2025": 0.839
+    },
+    "Estonia|Sweden": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.803,
+      "2025": 0.803
+    },
+    "Estonia|Turkey": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.843,
+      "2022": 0.83,
+      "2023": 0.89,
+      "2024": 0.85,
+      "2025": 0.85
+    },
+    "Estonia|UAE": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.843,
+      "2023": 0.77,
+      "2024": 0.832,
+      "2025": 0.742
+    },
+    "Estonia|UK": {
+      "2018": 0.917,
+      "2019": 0.917,
+      "2020": 0.737,
+      "2021": 0.753,
+      "2022": 0.742,
+      "2023": 0.767,
+      "2024": 0.79,
+      "2025": 0.76
+    },
+    "Estonia|USA": {
+      "2017": 0.0,
+      "2018": 0.753,
+      "2019": 0.753,
+      "2020": 0.753,
+      "2021": 0.753,
+      "2022": 0.742,
+      "2023": 0.731,
+      "2024": 0.82,
+      "2025": 0.85
+    },
+    "Estonia|Ukraine": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.83,
+      "2024": 0.91,
+      "2025": 0.88
+    },
+    "Finland|France": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.839,
+      "2025": 0.88
+    },
+    "Finland|Germany": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.947,
+      "2025": 0.911
+    },
+    "Finland|Greece": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.967,
+      "2025": 0.875
+    },
+    "Finland|Hungary": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.877,
+      "2025": 0.742
+    },
+    "Finland|India": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.573,
+      "2024": 0.695,
+      "2025": 0.7
+    },
+    "Finland|Iran": {
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.573
+    },
+    "Finland|Iraq": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.753
+    },
+    "Finland|Israel": {
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.803,
+      "2025": 0.76
+    },
+    "Finland|Italy": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.983,
+      "2025": 0.88
+    },
+    "Finland|Japan": {
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.839,
+      "2025": 0.85
+    },
+    "Finland|Latvia": {
+      "2023": 0.843,
+      "2024": 0.922,
+      "2025": 0.839
+    },
+    "Finland|Lithuania": {
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.71
+    },
+    "Finland|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.89,
+      "2025": 0.742
+    },
+    "Finland|Netherlands": {
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.839,
+      "2025": 0.94
+    },
+    "Finland|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.911,
+      "2025": 0.85
+    },
+    "Finland|North Korea": {
+      "2023": 0.737,
+      "2024": 0.303,
+      "2025": 0.213
+    },
+    "Finland|Norway": {
+      "2023": 0.933,
+      "2024": 0.911,
+      "2025": 0.91
+    },
+    "Finland|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.89,
+      "2025": 0.83
+    },
+    "Finland|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.933,
+      "2024": 0.911,
+      "2025": 0.91
+    },
+    "Finland|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.483,
+      "2024": 0.562,
+      "2025": 0.587
+    },
+    "Finland|Singapore": {
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.803,
+      "2025": 0.88
+    },
+    "Finland|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.663
+    },
+    "Finland|South Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.803,
+      "2025": 0.91
+    },
+    "Finland|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.933,
+      "2024": 0.967,
+      "2025": 0.875
+    },
+    "Finland|Sweden": {
+      "2023": 0.843,
+      "2024": 0.983,
+      "2025": 0.911
+    },
+    "Finland|Turkey": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.839,
+      "2025": 0.79
+    },
+    "Finland|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.83,
+      "2025": 0.697
+    },
+    "Finland|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.663,
+      "2024": 0.659,
+      "2025": 0.76
+    },
+    "Finland|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.663,
+      "2024": 0.659,
+      "2025": 0.73
+    },
+    "Finland|Ukraine": {
+      "2023": 0.933,
+      "2024": 0.911,
+      "2025": 0.88
+    },
+    "France|Germany": {
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.787,
+      "2024": 0.875,
+      "2025": 0.839
+    },
+    "France|Greece": {
+      "2019": 0.917,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.803,
+      "2025": 0.803
+    },
+    "France|Hungary": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.753,
+      "2022": 0.753,
+      "2023": 0.753,
+      "2024": 0.742,
+      "2025": 0.742
+    },
+    "France|India": {
+      "2018": 0.0,
+      "2019": 0.77,
+      "2020": 0.83,
+      "2021": 0.83,
+      "2022": 0.83,
+      "2023": 0.71,
+      "2024": 0.73,
+      "2025": 0.7
+    },
+    "France|Iran": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "France|Iraq": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "France|Israel": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.922,
+      "2023": 0.922,
+      "2024": 0.85,
+      "2025": 0.82
+    },
+    "France|Italy": {
+      "2019": 0.663,
+      "2020": 0.663,
+      "2021": 0.663,
+      "2022": 0.663,
+      "2023": 0.742,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "France|Japan": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.843,
+      "2023": 0.922,
+      "2024": 1.0,
+      "2025": 0.97
+    },
+    "France|Latvia": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.787,
+      "2025": 0.767
+    },
+    "France|Lithuania": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.663,
+      "2025": 0.71
+    },
+    "France|Morocco": {
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.77,
+      "2025": 0.742
+    },
+    "France|Netherlands": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.91,
+      "2023": 0.91,
+      "2024": 0.97,
+      "2025": 0.94
+    },
+    "France|New Zealand": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.753,
+      "2024": 0.76,
+      "2025": 0.73
+    },
+    "France|North Korea": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.213,
+      "2025": 0.213
+    },
+    "France|Norway": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.911,
+      "2024": 0.91,
+      "2025": 0.91
+    },
+    "France|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.77,
+      "2025": 0.71
+    },
+    "France|Poland": {
+      "2018": 0.0,
+      "2019": 0.753,
+      "2020": 0.843,
+      "2021": 0.77,
+      "2022": 0.83,
+      "2023": 0.83,
+      "2024": 0.85,
+      "2025": 0.85
+    },
+    "France|Russia": {
+      "2018": 0.0,
+      "2019": 0.89,
+      "2020": 0.89,
+      "2021": 0.803,
+      "2022": 0.767,
+      "2023": 0.767,
+      "2024": 0.623,
+      "2025": 0.587
+    },
+    "France|Singapore": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.877,
+      "2023": 0.922,
+      "2024": 0.97,
+      "2025": 0.94
+    },
+    "France|South Africa": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "France|South Korea": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.843,
+      "2022": 0.877,
+      "2023": 0.922,
+      "2024": 0.94,
+      "2025": 0.91
+    },
+    "France|Spain": {
+      "2019": 0.0,
+      "2020": 0.843,
+      "2021": 0.843,
+      "2022": 0.77,
+      "2023": 0.787,
+      "2024": 0.803,
+      "2025": 0.875
+    },
+    "France|Sweden": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.839,
+      "2025": 0.839
+    },
+    "France|Turkey": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.77,
+      "2022": 0.83,
+      "2023": 0.83,
+      "2024": 0.79,
+      "2025": 0.79
+    },
+    "France|UAE": {
+      "2019": 0.0,
+      "2020": 0.753,
+      "2021": 0.753,
+      "2022": 0.753,
+      "2023": 0.71,
+      "2024": 0.742,
+      "2025": 0.787
+    },
+    "France|UK": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.917,
+      "2021": 0.843,
+      "2022": 0.85,
+      "2023": 0.82,
+      "2024": 0.85,
+      "2025": 0.88
+    },
+    "France|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.89,
+      "2020": 0.839,
+      "2021": 0.875,
+      "2022": 0.839,
+      "2023": 0.767,
+      "2024": 0.82,
+      "2025": 0.85
+    },
+    "France|Ukraine": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.77,
+      "2024": 0.85,
+      "2025": 0.82
+    },
+    "Germany|Greece": {
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.922,
+      "2025": 0.922
+    },
+    "Germany|Hungary": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.843,
+      "2024": 0.832,
+      "2025": 0.832
+    },
+    "Germany|India": {
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.393,
+      "2024": 0.659,
+      "2025": 0.659
+    },
+    "Germany|Iran": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Germany|Iraq": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Germany|Israel": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.65,
+      "2024": 0.767,
+      "2025": 0.767
+    },
+    "Germany|Italy": {
+      "2019": 0.917,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.89,
+      "2024": 0.947,
+      "2025": 0.947
+    },
+    "Germany|Japan": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.875,
+      "2025": 0.803
+    },
+    "Germany|Latvia": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.877,
+      "2025": 0.877
+    },
+    "Germany|Lithuania": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.83
+    },
+    "Germany|Morocco": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.83,
+      "2025": 0.832
+    },
+    "Germany|Netherlands": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.787,
+      "2024": 0.875,
+      "2025": 0.875
+    },
+    "Germany|New Zealand": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.843,
+      "2024": 0.875,
+      "2025": 0.875
+    },
+    "Germany|North Korea": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "Germany|Norway": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.832,
+      "2024": 0.875,
+      "2025": 0.911
+    },
+    "Germany|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.89
+    },
+    "Germany|Poland": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.753,
+      "2024": 0.875,
+      "2025": 0.911
+    },
+    "Germany|Russia": {
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.197,
+      "2022": 0.197,
+      "2023": 0.607,
+      "2024": 0.562,
+      "2025": 0.562
+    },
+    "Germany|Singapore": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.71,
+      "2024": 0.839,
+      "2025": 0.839
+    },
+    "Germany|South Africa": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Germany|South Korea": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.71,
+      "2024": 0.839,
+      "2025": 0.839
+    },
+    "Germany|Spain": {
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.77,
+      "2024": 0.922,
+      "2025": 0.967
+    },
+    "Germany|Sweden": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.947,
+      "2025": 0.983
+    },
+    "Germany|Turkey": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.573,
+      "2024": 0.803,
+      "2025": 0.803
+    },
+    "Germany|UAE": {
+      "2019": 0.0,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.753,
+      "2024": 0.83,
+      "2025": 0.83
+    },
+    "Germany|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.652,
+      "2024": 0.695,
+      "2025": 0.695
+    },
+    "Germany|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.562,
+      "2024": 0.695,
+      "2025": 0.695
+    },
+    "Germany|Ukraine": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.875,
+      "2025": 0.875
+    },
+    "Greece|Hungary": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.877,
+      "2025": 0.877
+    },
+    "Greece|India": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.377,
+      "2024": 0.695,
+      "2025": 0.695
+    },
+    "Greece|Iran": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Greece|Iraq": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Greece|Israel": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.767,
+      "2025": 0.767
+    },
+    "Greece|Italy": {
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.983,
+      "2025": 0.947
+    },
+    "Greece|Japan": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.803,
+      "2025": 0.767
+    },
+    "Greece|Latvia": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.922,
+      "2025": 0.947
+    },
+    "Greece|Lithuania": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.83
+    },
+    "Greece|Morocco": {
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.89,
+      "2025": 0.877
+    },
+    "Greece|Netherlands": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.839,
+      "2025": 0.839
+    },
+    "Greece|New Zealand": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.911,
+      "2025": 0.911
+    },
+    "Greece|North Korea": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "Greece|Norway": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.911,
+      "2025": 0.875
+    },
+    "Greece|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Greece|Poland": {
+      "2018": 0.0,
+      "2019": 0.917,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.875,
+      "2025": 0.839
+    },
+    "Greece|Russia": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.472,
+      "2025": 0.472
+    },
+    "Greece|Singapore": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.767,
+      "2025": 0.767
+    },
+    "Greece|South Africa": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Greece|South Korea": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.803,
+      "2025": 0.803
+    },
+    "Greece|Spain": {
+      "2019": 0.0,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.983,
+      "2025": 0.911
+    },
+    "Greece|Sweden": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.967,
+      "2025": 0.922
+    },
+    "Greece|Turkey": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.803,
+      "2025": 0.767
+    },
+    "Greece|UAE": {
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.832,
+      "2025": 0.787
+    },
+    "Greece|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.695,
+      "2025": 0.695
+    },
+    "Greece|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.659,
+      "2025": 0.659
+    },
+    "Greece|Ukraine": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.875,
+      "2025": 0.875
+    },
+    "Hungary|India": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.663,
+      "2022": 0.663,
+      "2023": 0.483,
+      "2024": 0.652,
+      "2025": 0.652
+    },
+    "Hungary|Iran": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Hungary|Iraq": {
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Hungary|Israel": {
+      "2021": 0.0,
+      "2022": 0.663,
+      "2023": 0.663,
+      "2024": 0.787,
+      "2025": 0.787
+    },
+    "Hungary|Italy": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.753,
+      "2024": 0.877,
+      "2025": 0.877
+    },
+    "Hungary|Japan": {
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.663,
+      "2024": 0.742,
+      "2025": 0.697
+    },
+    "Hungary|Latvia": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.933,
+      "2024": 0.922,
+      "2025": 0.922
+    },
+    "Hungary|Lithuania": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.95
+    },
+    "Hungary|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.83,
+      "2025": 0.877
+    },
+    "Hungary|Netherlands": {
+      "2021": 0.0,
+      "2022": 0.753,
+      "2023": 0.663,
+      "2024": 0.742,
+      "2025": 0.742
+    },
+    "Hungary|New Zealand": {
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.877,
+      "2025": 0.877
+    },
+    "Hungary|North Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.393,
+      "2025": 0.393
+    },
+    "Hungary|Norway": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.832,
+      "2025": 0.787
+    },
+    "Hungary|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Hungary|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.843,
+      "2024": 0.877,
+      "2025": 0.832
+    },
+    "Hungary|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.483,
+      "2022": 0.393,
+      "2023": 0.393,
+      "2024": 0.41,
+      "2025": 0.41
+    },
+    "Hungary|Singapore": {
+      "2021": 0.0,
+      "2022": 0.843,
+      "2023": 0.753,
+      "2024": 0.787,
+      "2025": 0.787
+    },
+    "Hungary|South Africa": {
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Hungary|South Korea": {
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.753,
+      "2024": 0.787,
+      "2025": 0.787
+    },
+    "Hungary|Spain": {
+      "2020": 0.0,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.843,
+      "2024": 0.877,
+      "2025": 0.832
+    },
+    "Hungary|Sweden": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.933,
+      "2024": 0.877,
+      "2025": 0.832
+    },
+    "Hungary|Turkey": {
+      "2021": 0.753,
+      "2022": 0.663,
+      "2023": 0.663,
+      "2024": 0.787,
+      "2025": 0.787
+    },
+    "Hungary|UAE": {
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.843,
+      "2024": 0.83,
+      "2025": 0.83
+    },
+    "Hungary|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.663,
+      "2022": 0.573,
+      "2023": 0.573,
+      "2024": 0.607,
+      "2025": 0.607
+    },
+    "Hungary|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.663,
+      "2022": 0.573,
+      "2023": 0.573,
+      "2024": 0.697,
+      "2025": 0.697
+    },
+    "Hungary|Ukraine": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.877,
+      "2025": 0.877
+    },
+    "India|Iran": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "India|Iraq": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.197,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "India|Israel": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.89,
+      "2023": 0.77,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "India|Italy": {
+      "2018": 0.0,
+      "2019": 0.573,
+      "2020": 0.573,
+      "2021": 0.573,
+      "2022": 0.573,
+      "2023": 0.59,
+      "2024": 0.73,
+      "2025": 0.76
+    },
+    "India|Japan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.933,
+      "2023": 0.65,
+      "2024": 0.73,
+      "2025": 0.67
+    },
+    "India|Latvia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.483,
+      "2024": 0.697,
+      "2025": 0.731
+    },
+    "India|Lithuania": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.663,
+      "2025": 0.59
+    },
+    "India|Morocco": {
+      "2018": 0.377,
+      "2019": 0.377,
+      "2020": 0.377,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.017,
+      "2024": 0.65,
+      "2025": 0.652
+    },
+    "India|Netherlands": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.77,
+      "2023": 0.71,
+      "2024": 0.76,
+      "2025": 0.76
+    },
+    "India|New Zealand": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.017,
+      "2024": 0.67,
+      "2025": 0.67
+    },
+    "India|North Korea": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "India|Norway": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.71,
+      "2024": 0.76,
+      "2025": 0.73
+    },
+    "India|Pakistan": {
+      "2018": 0.377,
+      "2019": 0.377,
+      "2020": 0.377,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.017,
+      "2024": 0.53,
+      "2025": 0.53
+    },
+    "India|Poland": {
+      "2018": 0.753,
+      "2019": 0.663,
+      "2020": 0.753,
+      "2021": 0.77,
+      "2022": 0.83,
+      "2023": 0.71,
+      "2024": 0.82,
+      "2025": 0.79
+    },
+    "India|Russia": {
+      "2018": 0.843,
+      "2019": 0.83,
+      "2020": 0.89,
+      "2021": 0.77,
+      "2022": 0.71,
+      "2023": 0.83,
+      "2024": 0.803,
+      "2025": 0.803
+    },
+    "India|Singapore": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.83,
+      "2023": 0.77,
+      "2024": 0.76,
+      "2025": 0.76
+    },
+    "India|South Africa": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.017,
+      "2024": 0.483,
+      "2025": 0.483
+    },
+    "India|South Korea": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.753,
+      "2022": 0.83,
+      "2023": 0.77,
+      "2024": 0.79,
+      "2025": 0.79
+    },
+    "India|Spain": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.753,
+      "2021": 0.753,
+      "2022": 0.77,
+      "2023": 0.65,
+      "2024": 0.695,
+      "2025": 0.695
+    },
+    "India|Sweden": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.483,
+      "2024": 0.695,
+      "2025": 0.659
+    },
+    "India|Turkey": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.89,
+      "2022": 0.95,
+      "2023": 0.83,
+      "2024": 0.88,
+      "2025": 0.85
+    },
+    "India|UAE": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.933,
+      "2021": 0.933,
+      "2022": 0.933,
+      "2023": 0.71,
+      "2024": 0.787,
+      "2025": 0.742
+    },
+    "India|UK": {
+      "2018": 0.917,
+      "2019": 0.737,
+      "2020": 0.917,
+      "2021": 0.753,
+      "2022": 0.71,
+      "2023": 0.59,
+      "2024": 0.58,
+      "2025": 0.58
+    },
+    "India|USA": {
+      "2017": 0.0,
+      "2018": 0.843,
+      "2019": 0.83,
+      "2020": 0.89,
+      "2021": 0.89,
+      "2022": 0.83,
+      "2023": 0.65,
+      "2024": 0.67,
+      "2025": 0.67
+    },
+    "India|Ukraine": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.65,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Iran|Iraq": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Iran|Israel": {
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Iran|Italy": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Iran|Japan": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.573,
+      "2025": 0.483
+    },
+    "Iran|Latvia": {
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Iran|Lithuania": {
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.753
+    },
+    "Iran|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Iran|Netherlands": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Iran|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Iran|North Korea": {
+      "2023": 0.917,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Iran|Norway": {
+      "2023": 0.737,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Iran|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Iran|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Iran|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Iran|Singapore": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Iran|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Iran|South Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Iran|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Iran|Sweden": {
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Iran|Turkey": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Iran|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Iran|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.483,
+      "2025": 0.483
+    },
+    "Iran|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Iran|Ukraine": {
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Iraq|Israel": {
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Iraq|Italy": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Iraq|Japan": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.663
+    },
+    "Iraq|Latvia": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Iraq|Lithuania": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.753
+    },
+    "Iraq|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Iraq|Netherlands": {
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Iraq|New Zealand": {
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Iraq|North Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.393,
+      "2025": 0.393
+    },
+    "Iraq|Norway": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Iraq|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Iraq|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Iraq|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.197,
+      "2022": 0.197,
+      "2023": 0.197,
+      "2024": 0.393,
+      "2025": 0.393
+    },
+    "Iraq|Singapore": {
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Iraq|South Africa": {
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Iraq|South Korea": {
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Iraq|Spain": {
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Iraq|Sweden": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Iraq|Turkey": {
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Iraq|UAE": {
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Iraq|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Iraq|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Iraq|Ukraine": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Israel|Italy": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.573,
+      "2023": 0.697,
+      "2024": 0.79,
+      "2025": 0.82
+    },
+    "Israel|Japan": {
+      "2022": 0.843,
+      "2023": 0.83,
+      "2024": 0.85,
+      "2025": 0.79
+    },
+    "Israel|Latvia": {
+      "2022": 0.0,
+      "2023": 0.663,
+      "2024": 0.832,
+      "2025": 0.803
+    },
+    "Israel|Lithuania": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.71
+    },
+    "Israel|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.77,
+      "2025": 0.697
+    },
+    "Israel|Netherlands": {
+      "2022": 0.787,
+      "2023": 0.832,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Israel|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.73,
+      "2025": 0.73
+    },
+    "Israel|North Korea": {
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.483,
+      "2025": 0.483
+    },
+    "Israel|Norway": {
+      "2022": 0.0,
+      "2023": 0.832,
+      "2024": 0.82,
+      "2025": 0.79
+    },
+    "Israel|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.71,
+      "2025": 0.71
+    },
+    "Israel|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.77,
+      "2023": 0.77,
+      "2024": 0.88,
+      "2025": 0.85
+    },
+    "Israel|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.787,
+      "2023": 0.787,
+      "2024": 0.767,
+      "2025": 0.767
+    },
+    "Israel|Singapore": {
+      "2022": 0.832,
+      "2023": 0.877,
+      "2024": 0.88,
+      "2025": 0.88
+    },
+    "Israel|South Africa": {
+      "2021": 0.0,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Israel|South Korea": {
+      "2021": 0.0,
+      "2022": 0.832,
+      "2023": 0.877,
+      "2024": 0.85,
+      "2025": 0.85
+    },
+    "Israel|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.71,
+      "2023": 0.71,
+      "2024": 0.767,
+      "2025": 0.767
+    },
+    "Israel|Sweden": {
+      "2022": 0.0,
+      "2023": 0.663,
+      "2024": 0.803,
+      "2025": 0.767
+    },
+    "Israel|Turkey": {
+      "2021": 0.0,
+      "2022": 0.89,
+      "2023": 0.89,
+      "2024": 0.88,
+      "2025": 0.91
+    },
+    "Israel|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.843,
+      "2023": 0.77,
+      "2024": 0.742,
+      "2025": 0.787
+    },
+    "Israel|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.787,
+      "2023": 0.787,
+      "2024": 0.76,
+      "2025": 0.76
+    },
+    "Israel|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.877,
+      "2023": 0.787,
+      "2024": 0.85,
+      "2025": 0.85
+    },
+    "Israel|Ukraine": {
+      "2022": 0.0,
+      "2023": 0.71,
+      "2024": 0.88,
+      "2025": 0.88
+    },
+    "Italy|Japan": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.77,
+      "2024": 0.82,
+      "2025": 0.79
+    },
+    "Italy|Latvia": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.922,
+      "2025": 0.911
+    },
+    "Italy|Lithuania": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.83
+    },
+    "Italy|Morocco": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.877
+    },
+    "Italy|Netherlands": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.843,
+      "2023": 0.832,
+      "2024": 0.85,
+      "2025": 0.88
+    },
+    "Italy|New Zealand": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.94,
+      "2025": 0.91
+    },
+    "Italy|North Korea": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "Italy|Norway": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.832,
+      "2024": 0.91,
+      "2025": 0.91
+    },
+    "Italy|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.89,
+      "2025": 0.89
+    },
+    "Italy|Poland": {
+      "2018": 0.0,
+      "2019": 0.843,
+      "2020": 0.753,
+      "2021": 0.753,
+      "2022": 0.753,
+      "2023": 0.83,
+      "2024": 0.91,
+      "2025": 0.91
+    },
+    "Italy|Russia": {
+      "2018": 0.0,
+      "2019": 0.573,
+      "2020": 0.573,
+      "2021": 0.393,
+      "2022": 0.303,
+      "2023": 0.607,
+      "2024": 0.587,
+      "2025": 0.623
+    },
+    "Italy|Singapore": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.753,
+      "2023": 0.787,
+      "2024": 0.79,
+      "2025": 0.82
+    },
+    "Italy|South Africa": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Italy|South Korea": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.753,
+      "2022": 0.753,
+      "2023": 0.787,
+      "2024": 0.82,
+      "2025": 0.85
+    },
+    "Italy|Spain": {
+      "2019": 0.0,
+      "2020": 0.753,
+      "2021": 0.753,
+      "2022": 0.753,
+      "2023": 0.89,
+      "2024": 0.983,
+      "2025": 0.947
+    },
+    "Italy|Sweden": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.983,
+      "2025": 0.947
+    },
+    "Italy|Turkey": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.663,
+      "2022": 0.573,
+      "2023": 0.71,
+      "2024": 0.85,
+      "2025": 0.85
+    },
+    "Italy|UAE": {
+      "2019": 0.0,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.71,
+      "2024": 0.832,
+      "2025": 0.832
+    },
+    "Italy|UK": {
+      "2018": 0.0,
+      "2019": 0.737,
+      "2020": 0.557,
+      "2021": 0.753,
+      "2022": 0.663,
+      "2023": 0.697,
+      "2024": 0.67,
+      "2025": 0.7
+    },
+    "Italy|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.573,
+      "2020": 0.573,
+      "2021": 0.573,
+      "2022": 0.483,
+      "2023": 0.517,
+      "2024": 0.64,
+      "2025": 0.67
+    },
+    "Italy|Ukraine": {
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.89,
+      "2024": 0.91,
+      "2025": 0.94
+    },
+    "Japan|Latvia": {
+      "2022": 0.0,
+      "2023": 0.663,
+      "2024": 0.787,
+      "2025": 0.731
+    },
+    "Japan|Lithuania": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.65
+    },
+    "Japan|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.697
+    },
+    "Japan|Netherlands": {
+      "2022": 0.843,
+      "2023": 0.922,
+      "2024": 0.97,
+      "2025": 0.91
+    },
+    "Japan|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.76,
+      "2025": 0.7
+    },
+    "Japan|North Korea": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.213,
+      "2025": 0.123
+    },
+    "Japan|Norway": {
+      "2022": 0.0,
+      "2023": 0.77,
+      "2024": 0.91,
+      "2025": 0.88
+    },
+    "Japan|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.65
+    },
+    "Japan|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.843,
+      "2023": 0.77,
+      "2024": 0.85,
+      "2025": 0.82
+    },
+    "Japan|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.753,
+      "2023": 0.65,
+      "2024": 0.623,
+      "2025": 0.551
+    },
+    "Japan|Singapore": {
+      "2022": 0.843,
+      "2023": 0.83,
+      "2024": 0.97,
+      "2025": 0.91
+    },
+    "Japan|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.573
+    },
+    "Japan|South Korea": {
+      "2021": 0.0,
+      "2022": 0.843,
+      "2023": 0.83,
+      "2024": 0.94,
+      "2025": 0.88
+    },
+    "Japan|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.753,
+      "2023": 0.71,
+      "2024": 0.803,
+      "2025": 0.839
+    },
+    "Japan|Sweden": {
+      "2022": 0.0,
+      "2023": 0.663,
+      "2024": 0.839,
+      "2025": 0.803
+    },
+    "Japan|Turkey": {
+      "2021": 0.0,
+      "2022": 0.933,
+      "2023": 0.77,
+      "2024": 0.79,
+      "2025": 0.76
+    },
+    "Japan|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.917,
+      "2023": 0.65,
+      "2024": 0.742,
+      "2025": 0.742
+    },
+    "Japan|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.753,
+      "2023": 0.877,
+      "2024": 0.85,
+      "2025": 0.91
+    },
+    "Japan|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.753,
+      "2023": 0.71,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Japan|Ukraine": {
+      "2022": 0.0,
+      "2023": 0.71,
+      "2024": 0.85,
+      "2025": 0.79
+    },
+    "Latvia|Lithuania": {
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.89
+    },
+    "Latvia|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.83,
+      "2025": 0.832
+    },
+    "Latvia|Netherlands": {
+      "2022": 0.0,
+      "2023": 0.663,
+      "2024": 0.787,
+      "2025": 0.803
+    },
+    "Latvia|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.832,
+      "2025": 0.875
+    },
+    "Latvia|North Korea": {
+      "2023": 0.737,
+      "2024": 0.393,
+      "2025": 0.393
+    },
+    "Latvia|Norway": {
+      "2023": 0.843,
+      "2024": 0.877,
+      "2025": 0.839
+    },
+    "Latvia|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Latvia|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.922,
+      "2025": 0.875
+    },
+    "Latvia|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.393,
+      "2024": 0.47,
+      "2025": 0.517
+    },
+    "Latvia|Singapore": {
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.832,
+      "2025": 0.803
+    },
+    "Latvia|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Latvia|South Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.832,
+      "2025": 0.839
+    },
+    "Latvia|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.922,
+      "2025": 0.875
+    },
+    "Latvia|Sweden": {
+      "2023": 0.933,
+      "2024": 0.922,
+      "2025": 0.877
+    },
+    "Latvia|Turkey": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.663,
+      "2024": 0.832,
+      "2025": 0.803
+    },
+    "Latvia|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.89,
+      "2025": 0.832
+    },
+    "Latvia|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.573,
+      "2024": 0.652,
+      "2025": 0.659
+    },
+    "Latvia|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.573,
+      "2024": 0.742,
+      "2025": 0.695
+    },
+    "Latvia|Ukraine": {
+      "2023": 0.843,
+      "2024": 0.922,
+      "2025": 0.911
+    },
+    "Lithuania|Morocco": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.89
+    },
+    "Lithuania|Netherlands": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.71
+    },
+    "Lithuania|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.83
+    },
+    "Lithuania|North Korea": {
+      "2023": 0.737,
+      "2024": 0.483,
+      "2025": 0.393
+    },
+    "Lithuania|Norway": {
+      "2023": 0.917,
+      "2024": 0.663,
+      "2025": 0.77
+    },
+    "Lithuania|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.753
+    },
+    "Lithuania|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.83
+    },
+    "Lithuania|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.483,
+      "2025": 0.41
+    },
+    "Lithuania|Singapore": {
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.77
+    },
+    "Lithuania|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.663
+    },
+    "Lithuania|South Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.77
+    },
+    "Lithuania|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.83
+    },
+    "Lithuania|Sweden": {
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.83
+    },
+    "Lithuania|Turkey": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.753,
+      "2025": 0.77
+    },
+    "Lithuania|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.933,
+      "2025": 0.83
+    },
+    "Lithuania|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.573,
+      "2025": 0.59
+    },
+    "Lithuania|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.65
+    },
+    "Lithuania|Ukraine": {
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.83
+    },
+    "Morocco|Netherlands": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.742
+    },
+    "Morocco|New Zealand": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.83,
+      "2025": 0.877
+    },
+    "Morocco|North Korea": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "Morocco|Norway": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.83,
+      "2025": 0.787
+    },
+    "Morocco|Pakistan": {
+      "2018": 0.917,
+      "2019": 0.917,
+      "2020": 0.917,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Morocco|Poland": {
+      "2018": 0.557,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.83,
+      "2025": 0.742
+    },
+    "Morocco|Russia": {
+      "2018": 0.377,
+      "2019": 0.377,
+      "2020": 0.377,
+      "2021": 0.017,
+      "2022": 0.017,
+      "2023": 0.017,
+      "2024": 0.303,
+      "2025": 0.35
+    },
+    "Morocco|Singapore": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.71,
+      "2025": 0.697
+    },
+    "Morocco|South Africa": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "Morocco|South Korea": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.71,
+      "2025": 0.697
+    },
+    "Morocco|Spain": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.89,
+      "2025": 0.832
+    },
+    "Morocco|Sweden": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.89,
+      "2025": 0.832
+    },
+    "Morocco|Turkey": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.83,
+      "2025": 0.787
+    },
+    "Morocco|UAE": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.377,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.753,
+      "2025": 0.77
+    },
+    "Morocco|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.65,
+      "2025": 0.607
+    },
+    "Morocco|USA": {
+      "2017": 0.0,
+      "2018": 0.377,
+      "2019": 0.377,
+      "2020": 0.377,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.65,
+      "2025": 0.607
+    },
+    "Morocco|Ukraine": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.83,
+      "2025": 0.787
+    },
+    "Netherlands|New Zealand": {
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.753,
+      "2024": 0.79,
+      "2025": 0.79
+    },
+    "Netherlands|North Korea": {
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.213,
+      "2025": 0.213
+    },
+    "Netherlands|Norway": {
+      "2022": 0.0,
+      "2023": 0.875,
+      "2024": 0.94,
+      "2025": 0.97
+    },
+    "Netherlands|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.77,
+      "2025": 0.77
+    },
+    "Netherlands|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.89,
+      "2023": 0.83,
+      "2024": 0.88,
+      "2025": 0.91
+    },
+    "Netherlands|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.659,
+      "2023": 0.659,
+      "2024": 0.587,
+      "2025": 0.587
+    },
+    "Netherlands|Singapore": {
+      "2022": 0.922,
+      "2023": 0.922,
+      "2024": 0.94,
+      "2025": 0.94
+    },
+    "Netherlands|South Africa": {
+      "2021": 0.0,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Netherlands|South Korea": {
+      "2021": 0.0,
+      "2022": 0.922,
+      "2023": 0.922,
+      "2024": 0.97,
+      "2025": 0.97
+    },
+    "Netherlands|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.83,
+      "2023": 0.742,
+      "2024": 0.839,
+      "2025": 0.911
+    },
+    "Netherlands|Sweden": {
+      "2022": 0.0,
+      "2023": 0.663,
+      "2024": 0.839,
+      "2025": 0.875
+    },
+    "Netherlands|Turkey": {
+      "2021": 0.0,
+      "2022": 0.77,
+      "2023": 0.83,
+      "2024": 0.82,
+      "2025": 0.79
+    },
+    "Netherlands|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.753,
+      "2023": 0.71,
+      "2024": 0.787,
+      "2025": 0.742
+    },
+    "Netherlands|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.82,
+      "2023": 0.85,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Netherlands|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.731,
+      "2023": 0.731,
+      "2024": 0.79,
+      "2025": 0.79
+    },
+    "Netherlands|Ukraine": {
+      "2022": 0.0,
+      "2023": 0.77,
+      "2024": 0.88,
+      "2025": 0.88
+    },
+    "New Zealand|North Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.213,
+      "2025": 0.213
+    },
+    "New Zealand|Norway": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.85,
+      "2025": 0.82
+    },
+    "New Zealand|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.95,
+      "2025": 0.95
+    },
+    "New Zealand|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.85,
+      "2025": 0.82
+    },
+    "New Zealand|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.017,
+      "2022": 0.017,
+      "2023": 0.393,
+      "2024": 0.515,
+      "2025": 0.515
+    },
+    "New Zealand|Singapore": {
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.73,
+      "2025": 0.73
+    },
+    "New Zealand|South Africa": {
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "New Zealand|South Korea": {
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.76,
+      "2025": 0.76
+    },
+    "New Zealand|Spain": {
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.663,
+      "2024": 0.911,
+      "2025": 0.839
+    },
+    "New Zealand|Sweden": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.911,
+      "2025": 0.875
+    },
+    "New Zealand|Turkey": {
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.79,
+      "2025": 0.76
+    },
+    "New Zealand|UAE": {
+      "2020": 0.0,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.742,
+      "2025": 0.697
+    },
+    "New Zealand|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.663,
+      "2024": 0.61,
+      "2025": 0.61
+    },
+    "New Zealand|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.573,
+      "2024": 0.58,
+      "2025": 0.58
+    },
+    "New Zealand|Ukraine": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.85,
+      "2025": 0.85
+    },
+    "North Korea|Norway": {
+      "2023": 0.737,
+      "2024": 0.213,
+      "2025": 0.213
+    },
+    "North Korea|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.213,
+      "2025": 0.213
+    },
+    "North Korea|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.393,
+      "2025": 0.393
+    },
+    "North Korea|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.933,
+      "2025": 0.933
+    },
+    "North Korea|Singapore": {
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "North Korea|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.377,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "North Korea|South Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "North Korea|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.737,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "North Korea|Sweden": {
+      "2023": 0.737,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "North Korea|Turkey": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.483,
+      "2025": 0.483
+    },
+    "North Korea|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.483,
+      "2025": 0.483
+    },
+    "North Korea|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.123,
+      "2025": 0.123
+    },
+    "North Korea|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.917,
+      "2024": 0.393,
+      "2025": 0.393
+    },
+    "North Korea|Ukraine": {
+      "2023": 0.737,
+      "2024": 0.393,
+      "2025": 0.393
+    },
+    "Norway|Pakistan": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.77,
+      "2025": 0.77
+    },
+    "Norway|Poland": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.95,
+      "2024": 0.88,
+      "2025": 0.88
+    },
+    "Norway|Russia": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.695,
+      "2024": 0.551,
+      "2025": 0.551
+    },
+    "Norway|Singapore": {
+      "2022": 0.0,
+      "2023": 0.922,
+      "2024": 0.88,
+      "2025": 0.91
+    },
+    "Norway|South Africa": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Norway|South Korea": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.922,
+      "2024": 0.91,
+      "2025": 0.94
+    },
+    "Norway|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.877,
+      "2024": 0.911,
+      "2025": 0.947
+    },
+    "Norway|Sweden": {
+      "2023": 0.843,
+      "2024": 0.911,
+      "2025": 0.911
+    },
+    "Norway|Turkey": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.83,
+      "2024": 0.82,
+      "2025": 0.76
+    },
+    "Norway|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.83,
+      "2024": 0.832,
+      "2025": 0.787
+    },
+    "Norway|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.731,
+      "2024": 0.76,
+      "2025": 0.79
+    },
+    "Norway|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.695,
+      "2024": 0.73,
+      "2025": 0.76
+    },
+    "Norway|Ukraine": {
+      "2023": 0.89,
+      "2024": 0.88,
+      "2025": 0.85
+    },
+    "Pakistan|Poland": {
+      "2018": 0.557,
+      "2019": 0.557,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.83,
+      "2025": 0.83
+    },
+    "Pakistan|Russia": {
+      "2018": 0.377,
+      "2019": 0.377,
+      "2020": 0.377,
+      "2021": 0.017,
+      "2022": 0.017,
+      "2023": 0.017,
+      "2024": 0.47,
+      "2025": 0.47
+    },
+    "Pakistan|Singapore": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.71,
+      "2025": 0.71
+    },
+    "Pakistan|South Africa": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.917,
+      "2022": 0.917,
+      "2023": 0.917,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Pakistan|South Korea": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.71,
+      "2025": 0.71
+    },
+    "Pakistan|Spain": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.557,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.843,
+      "2025": 0.843
+    },
+    "Pakistan|Sweden": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.89,
+      "2025": 0.89
+    },
+    "Pakistan|Turkey": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.77,
+      "2025": 0.77
+    },
+    "Pakistan|UAE": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.377,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Pakistan|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.59,
+      "2025": 0.59
+    },
+    "Pakistan|USA": {
+      "2017": 0.0,
+      "2018": 0.377,
+      "2019": 0.377,
+      "2020": 0.377,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.53,
+      "2025": 0.53
+    },
+    "Pakistan|Ukraine": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.83,
+      "2025": 0.83
+    },
+    "Poland|Russia": {
+      "2018": 0.663,
+      "2019": 0.663,
+      "2020": 0.753,
+      "2021": 0.59,
+      "2022": 0.59,
+      "2023": 0.59,
+      "2024": 0.695,
+      "2025": 0.695
+    },
+    "Poland|Singapore": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.95,
+      "2023": 0.89,
+      "2024": 0.88,
+      "2025": 0.91
+    },
+    "Poland|South Africa": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "Poland|South Korea": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.933,
+      "2022": 0.95,
+      "2023": 0.89,
+      "2024": 0.91,
+      "2025": 0.94
+    },
+    "Poland|Spain": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.933,
+      "2021": 0.933,
+      "2022": 0.89,
+      "2023": 0.89,
+      "2024": 0.875,
+      "2025": 0.911
+    },
+    "Poland|Sweden": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.911,
+      "2025": 0.911
+    },
+    "Poland|Turkey": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.83,
+      "2022": 0.83,
+      "2023": 0.83,
+      "2024": 0.94,
+      "2025": 0.88
+    },
+    "Poland|UAE": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.753,
+      "2022": 0.843,
+      "2023": 0.83,
+      "2024": 0.877,
+      "2025": 0.832
+    },
+    "Poland|UK": {
+      "2018": 0.737,
+      "2019": 0.737,
+      "2020": 0.737,
+      "2021": 0.753,
+      "2022": 0.71,
+      "2023": 0.71,
+      "2024": 0.7,
+      "2025": 0.73
+    },
+    "Poland|USA": {
+      "2017": 0.0,
+      "2018": 0.663,
+      "2019": 0.663,
+      "2020": 0.753,
+      "2021": 0.71,
+      "2022": 0.71,
+      "2023": 0.65,
+      "2024": 0.73,
+      "2025": 0.76
+    },
+    "Poland|Ukraine": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.89,
+      "2024": 1.0,
+      "2025": 0.97
+    },
+    "Russia|Singapore": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.652,
+      "2023": 0.697,
+      "2024": 0.659,
+      "2025": 0.659
+    },
+    "Russia|South Africa": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.017,
+      "2022": 0.017,
+      "2023": 0.017,
+      "2024": 0.303,
+      "2025": 0.303
+    },
+    "Russia|South Korea": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.573,
+      "2022": 0.652,
+      "2023": 0.697,
+      "2024": 0.623,
+      "2025": 0.623
+    },
+    "Russia|Spain": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.753,
+      "2021": 0.573,
+      "2022": 0.53,
+      "2023": 0.652,
+      "2024": 0.472,
+      "2025": 0.517
+    },
+    "Russia|Sweden": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.393,
+      "2024": 0.562,
+      "2025": 0.562
+    },
+    "Russia|Turkey": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.71,
+      "2022": 0.71,
+      "2023": 0.71,
+      "2024": 0.731,
+      "2025": 0.767
+    },
+    "Russia|UAE": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.843,
+      "2021": 0.663,
+      "2022": 0.663,
+      "2023": 0.59,
+      "2024": 0.607,
+      "2025": 0.652
+    },
+    "Russia|UK": {
+      "2018": 0.737,
+      "2019": 0.737,
+      "2020": 0.917,
+      "2021": 0.573,
+      "2022": 0.659,
+      "2023": 0.659,
+      "2024": 0.551,
+      "2025": 0.551
+    },
+    "Russia|USA": {
+      "2017": 0.0,
+      "2018": 0.933,
+      "2019": 0.95,
+      "2020": 0.95,
+      "2021": 0.767,
+      "2022": 0.767,
+      "2023": 0.695,
+      "2024": 0.623,
+      "2025": 0.623
+    },
+    "Russia|Ukraine": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.53,
+      "2024": 0.695,
+      "2025": 0.695
+    },
+    "Singapore|South Africa": {
+      "2021": 0.0,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "Singapore|South Korea": {
+      "2021": 0.0,
+      "2022": 0.967,
+      "2023": 0.967,
+      "2024": 0.97,
+      "2025": 0.97
+    },
+    "Singapore|Spain": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.89,
+      "2023": 0.83,
+      "2024": 0.767,
+      "2025": 0.839
+    },
+    "Singapore|Sweden": {
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.803,
+      "2025": 0.839
+    },
+    "Singapore|Turkey": {
+      "2021": 0.0,
+      "2022": 0.83,
+      "2023": 0.89,
+      "2024": 0.82,
+      "2025": 0.85
+    },
+    "Singapore|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.843,
+      "2023": 0.77,
+      "2024": 0.787,
+      "2025": 0.832
+    },
+    "Singapore|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.742,
+      "2023": 0.787,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "Singapore|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.742,
+      "2023": 0.697,
+      "2024": 0.85,
+      "2025": 0.85
+    },
+    "Singapore|Ukraine": {
+      "2022": 0.0,
+      "2023": 0.83,
+      "2024": 0.88,
+      "2025": 0.88
+    },
+    "South Africa|South Korea": {
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "South Africa|Spain": {
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.557,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "South Africa|Sweden": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "South Africa|Turkey": {
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "South Africa|UAE": {
+      "2020": 0.0,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.753,
+      "2025": 0.753
+    },
+    "South Africa|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.737,
+      "2023": 0.737,
+      "2024": 0.573,
+      "2025": 0.573
+    },
+    "South Africa|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.377,
+      "2022": 0.377,
+      "2023": 0.377,
+      "2024": 0.483,
+      "2025": 0.483
+    },
+    "South Africa|Ukraine": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.557,
+      "2024": 0.663,
+      "2025": 0.663
+    },
+    "South Korea|Spain": {
+      "2020": 0.0,
+      "2021": 0.933,
+      "2022": 0.89,
+      "2023": 0.83,
+      "2024": 0.803,
+      "2025": 0.875
+    },
+    "South Korea|Sweden": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.753,
+      "2024": 0.803,
+      "2025": 0.839
+    },
+    "South Korea|Turkey": {
+      "2021": 0.843,
+      "2022": 0.83,
+      "2023": 0.89,
+      "2024": 0.85,
+      "2025": 0.82
+    },
+    "South Korea|UAE": {
+      "2020": 0.0,
+      "2021": 0.737,
+      "2022": 0.843,
+      "2023": 0.77,
+      "2024": 0.832,
+      "2025": 0.787
+    },
+    "South Korea|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.753,
+      "2022": 0.742,
+      "2023": 0.787,
+      "2024": 0.79,
+      "2025": 0.79
+    },
+    "South Korea|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.753,
+      "2022": 0.742,
+      "2023": 0.697,
+      "2024": 0.82,
+      "2025": 0.82
+    },
+    "South Korea|Ukraine": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.83,
+      "2024": 0.91,
+      "2025": 0.91
+    },
+    "Spain|Sweden": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.967,
+      "2025": 0.967
+    },
+    "Spain|Turkey": {
+      "2020": 0.0,
+      "2021": 0.843,
+      "2022": 0.77,
+      "2023": 0.77,
+      "2024": 0.803,
+      "2025": 0.767
+    },
+    "Spain|UAE": {
+      "2020": 0.737,
+      "2021": 0.737,
+      "2022": 0.753,
+      "2023": 0.77,
+      "2024": 0.832,
+      "2025": 0.832
+    },
+    "Spain|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.737,
+      "2021": 0.753,
+      "2022": 0.65,
+      "2023": 0.607,
+      "2024": 0.695,
+      "2025": 0.767
+    },
+    "Spain|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.753,
+      "2021": 0.753,
+      "2022": 0.65,
+      "2023": 0.607,
+      "2024": 0.659,
+      "2025": 0.731
+    },
+    "Spain|Ukraine": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.95,
+      "2024": 0.875,
+      "2025": 0.875
+    },
+    "Sweden|Turkey": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.663,
+      "2024": 0.839,
+      "2025": 0.803
+    },
+    "Sweden|UAE": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.843,
+      "2024": 0.83,
+      "2025": 0.83
+    },
+    "Sweden|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.573,
+      "2024": 0.659,
+      "2025": 0.695
+    },
+    "Sweden|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.573,
+      "2024": 0.659,
+      "2025": 0.695
+    },
+    "Sweden|Ukraine": {
+      "2023": 0.843,
+      "2024": 0.911,
+      "2025": 0.875
+    },
+    "Turkey|UAE": {
+      "2020": 0.0,
+      "2021": 0.933,
+      "2022": 0.933,
+      "2023": 0.83,
+      "2024": 0.832,
+      "2025": 0.832
+    },
+    "Turkey|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.663,
+      "2022": 0.71,
+      "2023": 0.71,
+      "2024": 0.64,
+      "2025": 0.67
+    },
+    "Turkey|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.83,
+      "2022": 0.83,
+      "2023": 0.77,
+      "2024": 0.73,
+      "2025": 0.76
+    },
+    "Turkey|Ukraine": {
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.77,
+      "2024": 0.94,
+      "2025": 0.91
+    },
+    "UAE|UK": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.557,
+      "2022": 0.663,
+      "2023": 0.59,
+      "2024": 0.652,
+      "2025": 0.697
+    },
+    "UAE|USA": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.843,
+      "2021": 0.843,
+      "2022": 0.843,
+      "2023": 0.65,
+      "2024": 0.652,
+      "2025": 0.697
+    },
+    "UAE|Ukraine": {
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.77,
+      "2024": 0.877,
+      "2025": 0.832
+    },
+    "UK|USA": {
+      "2017": 0.0,
+      "2018": 0.737,
+      "2019": 0.737,
+      "2020": 0.917,
+      "2021": 0.753,
+      "2022": 0.875,
+      "2023": 0.803,
+      "2024": 0.85,
+      "2025": 0.85
+    },
+    "UK|Ukraine": {
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.65,
+      "2024": 0.7,
+      "2025": 0.7
+    },
+    "USA|Ukraine": {
+      "2017": 0.0,
+      "2018": 0.0,
+      "2019": 0.0,
+      "2020": 0.0,
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.59,
+      "2024": 0.73,
+      "2025": 0.73
+    }
   }
 }
-;

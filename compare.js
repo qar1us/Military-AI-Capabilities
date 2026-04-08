@@ -361,37 +361,16 @@ function renderComparison() {
 
 function renderPairwiseConvergenceChart(country1, country2, container) {
   const years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
-  const data1 = policyData[country1] || {};
-  const data2 = policyData[country2] || {};
 
-  function getAreasActive(data, year) {
-    const active = new Set();
-    POLICY_AREAS.forEach(area => {
-      const d = data[area];
-      if (!d) return;
-      ['legal_directives', 'policy_documents', 'public_statements'].forEach(type => {
-        (d[type] || []).forEach(entry => {
-          const dt = extractDate(entry.text || "");
-          if (dt) {
-            const entryYear = parseInt(dt.match(/\d{4}/)?.[0]);
-            if (entryYear && entryYear <= year) active.add(area);
-          }
-        });
-      });
-    });
-    return active;
-  }
+  // Look up pre-calculated pairwise similarity from data
+  const pairwise = rawData.pairwise_similarity || {};
+  const key1 = country1 + '|' + country2;
+  const key2 = country2 + '|' + country1;
+  const pairData = pairwise[key1] || pairwise[key2] || {};
 
   const similarities = years.map(year => {
-    const areas1 = getAreasActive(data1, year);
-    const areas2 = getAreasActive(data2, year);
-    if (areas1.size === 0 && areas2.size === 0) return null;
-
-    const union = new Set([...areas1, ...areas2]);
-    const intersection = new Set([...areas1].filter(a => areas2.has(a)));
-    const jaccardBase = union.size > 0 ? intersection.size / union.size : 0;
-    const penalty = calcVotingDivergencePenalty(country1, country2, year);
-    return Math.max(0, Math.min(1, jaccardBase - penalty));
+    const val = pairData[String(year)];
+    return val !== undefined ? val : null;
   });
 
   const lastSim = similarities.filter(s => s !== null).pop() || 0;
@@ -403,7 +382,7 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
     <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.5rem;font-weight:800;color:var(--navy)">${Math.round(lastSim * 100)}%</div>
     <div>
       <div style="font-weight:600;color:var(--navy);margin-bottom:2px">Current Policy Similarity</div>
-      <div style="font-size:0.75rem;color:var(--text-muted)">Based on overlapping policy areas • ${displayNames[country1] || country1} vs ${displayNames[country2] || country2}</div>
+      <div style="font-size:0.75rem;color:var(--text-muted)">Blended score across 6 policy dimensions • ${displayNames[country1] || country1} vs ${displayNames[country2] || country2}</div>
     </div>`;
   container.appendChild(simHeader);
 
