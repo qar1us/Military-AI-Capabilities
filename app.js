@@ -313,13 +313,21 @@ function initTabs() {
       var viewNames = { overview: "Country Overview", alliance: "Alliance View", compare: "Compare Countries", analytics: "Analytics" };
       announceToScreenReader((viewNames[currentView] || currentView) + " view loaded");
 
+      // ---- MAP RESET: nuclear clear FIRST, then view-specific cleanup ----
+      // 1. Strip every class and inline style from all map paths
+      document.querySelectorAll(".country-path").forEach(function(p) {
+        p.classList.remove("selected", "disabled", "alliance-member", "has-data");
+        p.removeAttribute("style");
+      });
+
+      // 2. Clear alliance state when leaving alliance view
       if (currentView !== "alliance") {
         selectedAlliance = null;
-        document.querySelectorAll(".country-path").forEach(p => p.classList.remove("alliance-member"));
-        const conv = document.getElementById("convergence-timeline-container");
+        var conv = document.getElementById("convergence-timeline-container");
         if (conv) conv.style.display = "none";
       }
 
+      // 3. Reset alliance view UI when entering it
       if (currentView === "alliance") {
         selectedAlliance = null;
         activeConvergenceGroups = [];
@@ -327,29 +335,13 @@ function initTabs() {
         document.getElementById("alliance-header").style.display = "none";
         document.getElementById("alliance-members-list").style.display = "none";
         document.getElementById("convergence-timeline-container").style.display = "none";
-        document.getElementById("alliance-content").innerHTML = `
-          <div class="placeholder">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
-            </svg>
-            <p>Select an alliance to explore its<br>defense AI policy framework</p>
-          </div>`;
-        if (typeof d3 !== 'undefined') d3.selectAll(".country-path").classed("alliance-member", false);
+        document.getElementById("alliance-content").innerHTML =
+          '<div class="placeholder"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg><p>Select an alliance to explore its<br>defense AI policy framework</p></div>';
       }
 
-      // Reset all map path styles before re-applying highlights and choropleth
-      document.querySelectorAll(".country-path").forEach(function(p) {
-        p.classList.remove("selected", "disabled", "alliance-member");
-        p.style.fill = '';
-        p.style.stroke = '';
-        p.style.strokeWidth = '';
-      });
-
+      // 4. Re-apply highlights for the new view, then choropleth colors on top
       updateMapHighlights();
       updateCompareChipsState();
-
-      // Refresh choropleth fills on every tab switch to prevent color bleed
       if (typeof updateMapChoropleth === 'function' && typeof mapTimeSliderValue !== 'undefined') {
         updateMapChoropleth(mapTimeSliderValue);
       }

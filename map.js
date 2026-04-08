@@ -64,10 +64,6 @@ function updateMapHighlights() {
     }
 
     path.classList.remove("selected", "disabled", "alliance-member");
-    // Clear inline fill so CSS takes over cleanly on view switches
-    if (!isSelected && !isAllianceMember) {
-      path.style.fill = '';
-    }
     if (isSelected) path.classList.add("selected");
     if (isDisabled) path.classList.add("disabled");
     if (isAllianceMember) path.classList.add("alliance-member");
