@@ -257,12 +257,8 @@ function renderComparison() {
   // ---- PAIRWISE CONVERGENCE CHART ----
   const convergenceBox = document.createElement("div");
   convergenceBox.className = "compare-section-box";
-  const convTitle = document.createElement("div");
-  convTitle.className = "compare-section-title";
-  convTitle.textContent = "Policy Convergence Over Time";
-  convergenceBox.appendChild(convTitle);
-  renderPairwiseConvergenceChart(c1, c2, convergenceBox);
   content.appendChild(convergenceBox);
+  renderPairwiseConvergenceChart(c1, c2, convergenceBox);
 
   // ---- DETAIL TOGGLE ----
   const toggleBtn = document.createElement("button");
@@ -396,24 +392,20 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
     '<div class="convergence-zone-label high">High Convergence</div>' +
     '<div class="convergence-zone-label low">Low Convergence</div>';
 
-  // Append chart area first so we can measure its width
   container.appendChild(chartArea);
 
   var svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  svgEl.className = "convergence-chart-svg";
+  svgEl.setAttribute("class", "convergence-chart-svg");
 
-  var height = 300;
-  var margin = { top: 30, right: 20, bottom: 45, left: 50 };
-
-  // Measure container width, then size SVG to match exactly
   var width = chartArea.offsetWidth || container.offsetWidth || 700;
+  var height = 300;
+  var margin = { top: 30, right: 30, bottom: 45, left: 60 };
+  var plotWidth = width - margin.left - margin.right;
+  var plotHeight = height - margin.top - margin.bottom;
+
   svgEl.setAttribute("width", width);
   svgEl.setAttribute("height", height);
   svgEl.setAttribute("viewBox", "0 0 " + width + " " + height);
-  svgEl.style.display = "block";
-
-  var plotWidth = width - margin.left - margin.right;
-  var plotHeight = height - margin.top - margin.bottom;
 
   // Y-axis grid lines and labels
   [0, 25, 50, 75, 100].forEach(function(val) {
