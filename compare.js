@@ -396,15 +396,19 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
     '<div class="convergence-zone-label high">High Convergence</div>' +
     '<div class="convergence-zone-label low">Low Convergence</div>';
 
+  // Append chart area first so we can measure its width
+  container.appendChild(chartArea);
+
   var svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svgEl.className = "convergence-chart-svg";
 
-  var width = 700, height = 300;
-  var margin = { top: 30, right: 15, bottom: 45, left: 50 };
+  var width = chartArea.offsetWidth || 700;
+  var height = 300;
+  var margin = { top: 30, right: 20, bottom: 45, left: 50 };
   var plotWidth = width - margin.left - margin.right;
   var plotHeight = height - margin.top - margin.bottom;
 
-  svgEl.setAttribute("width", "100%");
+  svgEl.setAttribute("width", width);
   svgEl.setAttribute("height", height);
   svgEl.setAttribute("viewBox", "0 0 " + width + " " + height);
 
@@ -530,7 +534,6 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
   });
 
   chartArea.appendChild(svgEl);
-  container.appendChild(chartArea);
 
   // Legend
   var legend = document.createElement("div");
