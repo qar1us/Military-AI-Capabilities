@@ -260,6 +260,18 @@ function renderComparison() {
   content.appendChild(convergenceBox);
   renderPairwiseConvergenceChart(c1, c2, convergenceBox);
 
+  // Re-render convergence chart on resize so it fills the new width
+  var convergenceResizeTimer;
+  window.addEventListener("resize", function() {
+    clearTimeout(convergenceResizeTimer);
+    convergenceResizeTimer = setTimeout(function() {
+      if (document.contains(convergenceBox)) {
+        convergenceBox.innerHTML = "";
+        renderPairwiseConvergenceChart(c1, c2, convergenceBox);
+      }
+    }, 200);
+  });
+
   // ---- DETAIL TOGGLE ----
   const toggleBtn = document.createElement("button");
   toggleBtn.id = "detail-toggle-btn";
