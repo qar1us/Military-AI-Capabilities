@@ -405,13 +405,12 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
   var height = 300;
   var margin = { top: 30, right: 20, bottom: 45, left: 50 };
 
-  // Use 100% width and let viewBox scale to fill container
-  svgEl.setAttribute("width", "100%");
+  // Measure container width, then size SVG to match exactly
+  var width = chartArea.offsetWidth || container.offsetWidth || 700;
+  svgEl.setAttribute("width", width);
   svgEl.setAttribute("height", height);
-  // Defer viewBox to after SVG is in the DOM so we get actual width
-  chartArea.appendChild(svgEl);
-  var width = svgEl.getBoundingClientRect().width || 700;
   svgEl.setAttribute("viewBox", "0 0 " + width + " " + height);
+  svgEl.style.display = "block";
 
   var plotWidth = width - margin.left - margin.right;
   var plotHeight = height - margin.top - margin.bottom;
@@ -536,6 +535,8 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
     });
     svgEl.appendChild(circle);
   });
+
+  chartArea.appendChild(svgEl);
 
   // Legend
   var legend = document.createElement("div");
