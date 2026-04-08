@@ -1397,8 +1397,7 @@ function renderConvergenceTimeline(alliance) {
                 circle.addEventListener("mouseenter", function(e) {
                     var tooltip = document.getElementById("convergence-tooltip");
                     tooltip.innerHTML = '<strong>' + groupName + '</strong><br>' +
-                        'Year: ' + d.year + '<br>' +
-                        'Similarity: ' + d.similarity.toFixed(1) + '%';
+                        'Year: ' + d.year;
                     tooltip.classList.add("visible");
                 });
                 

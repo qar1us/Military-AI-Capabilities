@@ -383,7 +383,7 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
   titleDiv.innerHTML =
     '<div class="convergence-title">Policy Convergence Over Time ' +
     '<span class="convergence-info-icon">\u24D8' +
-    '<span class="convergence-info-tooltip">Convergence scores measure policy alignment across the 6 different policy areas, blending coverage (20%) with substantive stance similarity (80%). UN voting records on LAWS resolutions apply additional adjustments.</span>' +
+    '<span class="convergence-info-tooltip">Convergence scores measure policy alignment across the 6 different policy areas, blending coverage (10%) with substantive stance similarity (90%). UN voting records on LAWS resolutions apply additional adjustments.</span>' +
     '</span></div>' +
     '<div class="convergence-subtitle">' + name1 + ' vs ' + name2 + ' — Current similarity: <strong>' + currentSim.toFixed(0) + '%</strong></div>';
   container.appendChild(titleDiv);
@@ -399,8 +399,8 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
   var svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svgEl.className = "convergence-chart-svg";
 
-  var width = 600, height = 300;
-  var margin = { top: 30, right: 30, bottom: 45, left: 60 };
+  var width = 700, height = 300;
+  var margin = { top: 30, right: 15, bottom: 45, left: 50 };
   var plotWidth = width - margin.left - margin.right;
   var plotHeight = height - margin.top - margin.bottom;
 
@@ -541,16 +541,4 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
     '<span class="convergence-legend-name">' + name1 + ' vs ' + name2 + '</span>' +
     '</div></div>';
   container.appendChild(legend);
-
-  // Similarity bar
-  var simSection = document.createElement("div");
-  simSection.className = "convergence-similarity-section";
-  simSection.innerHTML =
-    '<div class="convergence-similarity-title">Current Similarity (Latest Year)</div>' +
-    '<div class="convergence-similarity-row">' +
-    '<div class="convergence-similarity-name" style="color:' + color + '">' + name1 + ' vs ' + name2 + '</div>' +
-    '<div class="convergence-similarity-bar-bg"><div class="convergence-similarity-bar-fill" style="width:' + currentSim + '%;background:' + color + '"></div></div>' +
-    '<div class="convergence-similarity-value">' + currentSim.toFixed(0) + '%</div>' +
-    '</div>';
-  container.appendChild(simSection);
 }
