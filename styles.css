@@ -904,9 +904,10 @@ h1, h2, h3, h4, h5, h6, .header-font {
 }
 .convergence-info-icon {
   position: relative; display: inline-flex; align-items: center; justify-content: center;
-  width: 18px; height: 18px; background: var(--text-muted); color: white;
-  border-radius: 50%; font-size: 0.7rem; font-weight: 700; cursor: help; flex-shrink: 0;
+  width: 20px; height: 20px; background: var(--text-muted); color: white;
+  border-radius: 50%; cursor: help; flex-shrink: 0; vertical-align: middle; margin-left: 6px;
 }
+.convergence-info-icon svg { pointer-events: none; }
 .convergence-info-icon:hover { background: var(--teal); }
 .convergence-info-tooltip {
   position: absolute; bottom: calc(100% + 10px); left: 50%; transform: translateX(-50%);

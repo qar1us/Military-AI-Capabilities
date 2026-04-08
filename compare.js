@@ -390,7 +390,7 @@ function renderPairwiseConvergenceChart(country1, country2, container) {
   titleDiv.className = "convergence-header";
   titleDiv.innerHTML =
     '<div class="convergence-title">Policy Convergence Over Time ' +
-    '<span class="convergence-info-icon">\u24D8' +
+    '<span class="convergence-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>' +
     '<span class="convergence-info-tooltip">Convergence scores measure policy alignment across the 6 different policy areas, blending coverage (10%) with substantive stance similarity (90%). UN voting records on LAWS resolutions apply additional adjustments.</span>' +
     '</span></div>' +
     '<div class="convergence-subtitle">' + name1 + ' vs ' + name2 + ' — Current similarity: <strong>' + currentSim.toFixed(0) + '%</strong></div>';
