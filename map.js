@@ -46,7 +46,7 @@ function updateMapHighlights() {
     let isSelected = false, isDisabled = false, isAllianceMember = false;
 
     if (currentView === "overview") {
-      isSelected = country === selectedCountry;
+      isSelected = country !== null && country === selectedCountry;
     } else if (currentView === "alliance" && selectedAlliance) {
       const members = allianceMembers[selectedAlliance];
       if (members && mapName) {
@@ -59,8 +59,8 @@ function updateMapHighlights() {
         }
       }
     } else if (currentView === "compare") {
-      isSelected = selectedCountries.has(country);
-      isDisabled = selectedCountries.size >= MAX_COMPARE && !isSelected && policyData[country];
+      isSelected = country !== null && selectedCountries.has(country);
+      isDisabled = country !== null && selectedCountries.size >= MAX_COMPARE && !isSelected && policyData[country];
     }
 
     path.classList.remove("selected", "disabled", "alliance-member");
