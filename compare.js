@@ -360,128 +360,197 @@ function renderComparison() {
 }
 
 function renderPairwiseConvergenceChart(country1, country2, container) {
-  const years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+  var years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+  var name1 = displayNames[country1] || country1;
+  var name2 = displayNames[country2] || country2;
+  var color = "#0d7377";
 
-  // Look up pre-calculated pairwise similarity from data
-  const pairwise = rawData.pairwise_similarity || {};
-  const key1 = country1 + '|' + country2;
-  const key2 = country2 + '|' + country1;
-  const pairData = pairwise[key1] || pairwise[key2] || {};
+  // Look up pre-calculated pairwise similarity
+  var pairwise = rawData.pairwise_similarity || {};
+  var pairData = pairwise[country1 + '|' + country2] || pairwise[country2 + '|' + country1] || {};
 
-  const similarities = years.map(year => {
-    const val = pairData[String(year)];
-    return val !== undefined ? val : null;
+  var chartData = years.map(function(year) {
+    var val = pairData[String(year)];
+    return { year: year, similarity: val !== undefined ? val * 100 : null };
   });
 
-  const lastSim = similarities.filter(s => s !== null).pop() || 0;
+  var lastPoint = chartData.filter(function(d) { return d.similarity !== null; }).slice(-1)[0];
+  var currentSim = lastPoint ? lastPoint.similarity : 0;
 
-  // Current similarity header
-  const simHeader = document.createElement("div");
-  simHeader.className = "convergence-current-similarity";
-  simHeader.innerHTML = `
-    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.5rem;font-weight:800;color:var(--navy)">${Math.round(lastSim * 100)}%</div>
-    <div>
-      <div style="font-weight:600;color:var(--navy);margin-bottom:2px">Current Policy Similarity</div>
-      <div style="font-size:0.75rem;color:var(--text-muted)">Blended score across 6 policy dimensions • ${displayNames[country1] || country1} vs ${displayNames[country2] || country2}</div>
-    </div>`;
-  container.appendChild(simHeader);
+  // Title with info tooltip
+  var titleDiv = document.createElement("div");
+  titleDiv.className = "convergence-header";
+  titleDiv.innerHTML =
+    '<div class="convergence-title">Policy Convergence Over Time ' +
+    '<span class="convergence-info-icon">\u24D8' +
+    '<span class="convergence-info-tooltip">Convergence scores measure policy alignment across the 6 different policy areas, blending coverage (20%) with substantive stance similarity (80%). UN voting records on LAWS resolutions apply additional adjustments.</span>' +
+    '</span></div>' +
+    '<div class="convergence-subtitle">' + name1 + ' vs ' + name2 + ' — Current similarity: <strong>' + currentSim.toFixed(0) + '%</strong></div>';
+  container.appendChild(titleDiv);
 
-  // SVG chart
-  const chartContainer = document.createElement("div");
-  chartContainer.className = "convergence-similarity-chart";
-  chartContainer.style.cssText = "height:auto;width:100%;";
+  // Chart area (matches alliance view structure)
+  var chartArea = document.createElement("div");
+  chartArea.className = "convergence-chart-area";
+  chartArea.id = "compare-convergence-chart-area";
+  chartArea.innerHTML =
+    '<div class="convergence-zone-label high">High Convergence</div>' +
+    '<div class="convergence-zone-label low">Low Convergence</div>';
 
-  const W = 700, H = 300;
-  const M = { top: 20, right: 40, bottom: 40, left: 50 };
-  const plotW = W - M.left - M.right;
-  const plotH = H - M.top - M.bottom;
+  var svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svgEl.className = "convergence-chart-svg";
 
-  const svgEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  svgEl.setAttribute("viewBox", `0 0 ${W} ${H}`);
-  svgEl.setAttribute("preserveAspectRatio", "xMidYMid meet");
-  svgEl.style.width = "100%";
-  svgEl.style.display = "block";
+  var width = 600, height = 300;
+  var margin = { top: 30, right: 30, bottom: 45, left: 60 };
+  var plotWidth = width - margin.left - margin.right;
+  var plotHeight = height - margin.top - margin.bottom;
 
-  // Threshold line
-  const threshY = M.top + plotH - 0.5 * plotH;
-  const threshLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
-  threshLine.setAttribute("x1", M.left); threshLine.setAttribute("y1", threshY);
-  threshLine.setAttribute("x2", M.left + plotW); threshLine.setAttribute("y2", threshY);
-  threshLine.setAttribute("stroke", "#ddd"); threshLine.setAttribute("stroke-dasharray", "4,4");
-  threshLine.setAttribute("stroke-width", "1.5");
-  svgEl.appendChild(threshLine);
+  svgEl.setAttribute("width", "100%");
+  svgEl.setAttribute("height", height);
+  svgEl.setAttribute("viewBox", "0 0 " + width + " " + height);
 
-  const threshLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
-  threshLabel.setAttribute("x", M.left + plotW + 4); threshLabel.setAttribute("y", threshY + 4);
-  threshLabel.setAttribute("font-size", "9"); threshLabel.setAttribute("fill", "#bbb");
-  threshLabel.textContent = "50%";
-  svgEl.appendChild(threshLabel);
+  // Y-axis grid lines and labels
+  [0, 25, 50, 75, 100].forEach(function(val) {
+    var y = margin.top + plotHeight - (val / 100) * plotHeight;
 
-  // Y axis labels
-  [0, 25, 50, 75, 100].forEach(pct => {
-    const y = M.top + plotH - (pct / 100) * plotH;
-    const lbl = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    lbl.setAttribute("x", M.left - 6); lbl.setAttribute("y", y + 4);
-    lbl.setAttribute("text-anchor", "end"); lbl.setAttribute("font-size", "9");
-    lbl.setAttribute("fill", "#999"); lbl.textContent = pct + "%";
-    svgEl.appendChild(lbl);
-    if (pct > 0 && pct < 100) {
-      const gl = document.createElementNS("http://www.w3.org/2000/svg", "line");
-      gl.setAttribute("x1", M.left); gl.setAttribute("y1", y);
-      gl.setAttribute("x2", M.left + plotW); gl.setAttribute("y2", y);
-      gl.setAttribute("stroke", "#f0f0f0"); gl.setAttribute("stroke-width", "1");
-      svgEl.appendChild(gl);
-    }
+    var line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    line.setAttribute("x1", margin.left);
+    line.setAttribute("y1", y);
+    line.setAttribute("x2", width - margin.right);
+    line.setAttribute("y2", y);
+    line.setAttribute("stroke", "#e8ebef");
+    line.setAttribute("stroke-width", "1");
+    if (val === 25 || val === 75) line.setAttribute("stroke-dasharray", "4,4");
+    svgEl.appendChild(line);
+
+    var label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    label.setAttribute("x", margin.left - 10);
+    label.setAttribute("y", y + 4);
+    label.setAttribute("text-anchor", "end");
+    label.setAttribute("font-size", "11");
+    label.setAttribute("fill", "#7a8a9a");
+    label.textContent = val + "%";
+    svgEl.appendChild(label);
   });
 
-  // Build path
-  const validPoints = [];
-  similarities.forEach((sim, idx) => {
-    if (sim === null) return;
-    const x = M.left + (idx / (years.length - 1)) * plotW;
-    const y = M.top + plotH - sim * plotH;
-    validPoints.push({ x, y, sim, year: years[idx] });
+  // Y-axis label
+  var yLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+  yLabel.setAttribute("x", 15);
+  yLabel.setAttribute("y", margin.top + plotHeight / 2);
+  yLabel.setAttribute("text-anchor", "middle");
+  yLabel.setAttribute("font-size", "11");
+  yLabel.setAttribute("fill", "#1a2744");
+  yLabel.setAttribute("font-weight", "600");
+  yLabel.setAttribute("transform", "rotate(-90, 15, " + (margin.top + plotHeight / 2) + ")");
+  yLabel.textContent = "Policy Similarity Index";
+  svgEl.appendChild(yLabel);
+
+  // X-axis with ticks and labels
+  years.forEach(function(year, idx) {
+    var x = margin.left + (idx / (years.length - 1)) * plotWidth;
+
+    var tick = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    tick.setAttribute("x1", x);
+    tick.setAttribute("y1", margin.top + plotHeight);
+    tick.setAttribute("x2", x);
+    tick.setAttribute("y2", margin.top + plotHeight + 5);
+    tick.setAttribute("stroke", "#7a8a9a");
+    tick.setAttribute("stroke-width", "1");
+    svgEl.appendChild(tick);
+
+    var label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    label.setAttribute("x", x);
+    label.setAttribute("y", margin.top + plotHeight + 20);
+    label.setAttribute("text-anchor", "middle");
+    label.setAttribute("font-size", "11");
+    label.setAttribute("fill", "#7a8a9a");
+    label.setAttribute("font-weight", "600");
+    label.textContent = year;
+    svgEl.appendChild(label);
   });
 
+  // X-axis label
+  var xLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+  xLabel.setAttribute("x", margin.left + plotWidth / 2);
+  xLabel.setAttribute("y", height - 8);
+  xLabel.setAttribute("text-anchor", "middle");
+  xLabel.setAttribute("font-size", "11");
+  xLabel.setAttribute("fill", "#1a2744");
+  xLabel.setAttribute("font-weight", "600");
+  xLabel.textContent = "Year";
+  svgEl.appendChild(xLabel);
+
+  // Line path
+  var validPoints = chartData.filter(function(d) { return d.similarity !== null; });
   if (validPoints.length >= 2) {
-    const pathD = validPoints.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`).join(' ');
-    const linePath = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    linePath.setAttribute("d", pathD);
-    linePath.setAttribute("fill", "none");
-    linePath.setAttribute("stroke", "#0d7377");
-    linePath.setAttribute("stroke-width", "2.5");
-    linePath.setAttribute("stroke-linecap", "round");
-    svgEl.appendChild(linePath);
+    var pathD = "";
+    validPoints.forEach(function(d, idx) {
+      var x = margin.left + ((d.year - 2016) / (2025 - 2016)) * plotWidth;
+      var y = margin.top + plotHeight - (d.similarity / 100) * plotHeight;
+      pathD += (idx === 0 ? "M " : " L ") + x + " " + y;
+    });
+    var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("d", pathD);
+    path.setAttribute("class", "convergence-line");
+    path.setAttribute("stroke", color);
+    svgEl.appendChild(path);
   }
 
-  validPoints.forEach(pt => {
-    const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-    dot.setAttribute("cx", pt.x); dot.setAttribute("cy", pt.y);
-    dot.setAttribute("r", "5"); dot.setAttribute("fill", "#0d7377");
-    dot.setAttribute("stroke", "white"); dot.setAttribute("stroke-width", "2");
-    dot.style.cursor = "pointer";
-    dot.setAttribute("title", `${pt.year}: ${Math.round(pt.sim * 100)}%`);
-    svgEl.appendChild(dot);
+  // Dots with hover tooltip
+  var tooltip = document.getElementById("compare-convergence-tooltip");
+  if (!tooltip) {
+    tooltip = document.createElement("div");
+    tooltip.id = "compare-convergence-tooltip";
+    tooltip.className = "convergence-tooltip";
+    document.body.appendChild(tooltip);
+  }
+
+  validPoints.forEach(function(d) {
+    var x = margin.left + ((d.year - 2016) / (2025 - 2016)) * plotWidth;
+    var y = margin.top + plotHeight - (d.similarity / 100) * plotHeight;
+
+    var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    circle.setAttribute("cx", x);
+    circle.setAttribute("cy", y);
+    circle.setAttribute("r", 6);
+    circle.setAttribute("fill", color);
+    circle.setAttribute("class", "convergence-dot");
+
+    circle.addEventListener("mouseenter", function(e) {
+      tooltip.innerHTML = '<strong>' + name1 + ' vs ' + name2 + '</strong><br>Year: ' + d.year + '<br>Similarity: ' + d.similarity.toFixed(1) + '%';
+      tooltip.classList.add("visible");
+    });
+    circle.addEventListener("mousemove", function(e) {
+      tooltip.style.left = (e.clientX + 15) + "px";
+      tooltip.style.top = (e.clientY - 10) + "px";
+    });
+    circle.addEventListener("mouseleave", function() {
+      tooltip.classList.remove("visible");
+    });
+    svgEl.appendChild(circle);
   });
 
-  // X labels
-  years.forEach((year, idx) => {
-    if (idx % 2 !== 0) return;
-    const x = M.left + (idx / (years.length - 1)) * plotW;
-    const lbl = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    lbl.setAttribute("x", x); lbl.setAttribute("y", M.top + plotH + 20);
-    lbl.setAttribute("text-anchor", "middle"); lbl.setAttribute("font-size", "9");
-    lbl.setAttribute("fill", "#999"); lbl.textContent = year;
-    svgEl.appendChild(lbl);
-  });
+  chartArea.appendChild(svgEl);
+  container.appendChild(chartArea);
 
-  chartContainer.appendChild(svgEl);
-  container.appendChild(chartContainer);
-
-  const legend = document.createElement("div");
-  legend.className = "convergence-chart-legend";
-  legend.innerHTML = `
-    <div class="convergence-chart-legend-item"><div class="convergence-legend-line similarity"></div><span>Policy similarity score</span></div>
-    <div class="convergence-chart-legend-item"><div class="convergence-legend-line threshold"></div><span>50% threshold</span></div>`;
+  // Legend
+  var legend = document.createElement("div");
+  legend.className = "convergence-legend";
+  legend.innerHTML =
+    '<div class="convergence-legend-item"><div class="convergence-legend-left">' +
+    '<div class="convergence-legend-marker" style="background:' + color + '"></div>' +
+    '<span class="convergence-legend-name">' + name1 + ' vs ' + name2 + '</span>' +
+    '</div></div>';
   container.appendChild(legend);
+
+  // Similarity bar
+  var simSection = document.createElement("div");
+  simSection.className = "convergence-similarity-section";
+  simSection.innerHTML =
+    '<div class="convergence-similarity-title">Current Similarity (Latest Year)</div>' +
+    '<div class="convergence-similarity-row">' +
+    '<div class="convergence-similarity-name" style="color:' + color + '">' + name1 + ' vs ' + name2 + '</div>' +
+    '<div class="convergence-similarity-bar-bg"><div class="convergence-similarity-bar-fill" style="width:' + currentSim + '%;background:' + color + '"></div></div>' +
+    '<div class="convergence-similarity-value">' + currentSim.toFixed(0) + '%</div>' +
+    '</div>';
+  container.appendChild(simSection);
 }
